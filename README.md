@@ -20,3 +20,6 @@
 <p align="center">
   <img src="https://github.com/mechanical-software-inc/MS1_board/blob/main/Images/ms1_blocks1-3.jpg?raw=true" width="400" title="blocks 1,2,3 image">
 </p>
+
+### Software
+Tooling and ethernet stack with Ethernet/IP (industrial protocol) host and MQTT support, still working out bugs, contact for more info
