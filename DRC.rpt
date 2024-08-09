@@ -1,0 +1,86 @@
+** Drc report for Kristerj.kicad_pcb **
+** Created on 2024-03-15T13:27:42-0500 **
+
+** Found 24 DRC violations **
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(312.8300 mm, 205.0100 mm): Zone [+5V] on B.Cu
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(312.8300 mm, 205.0100 mm): Zone [+5V] on B.Cu
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(206.1400 mm, 95.2500 mm): Footprint J4
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(230.6350 mm, 304.1600 mm): Footprint J9
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(324.1660 mm, 304.1600 mm): Footprint J15
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(267.9950 mm, 95.2500 mm): Footprint J16
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(386.1951 mm, 304.1600 mm): Footprint J17
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(393.1102 mm, 95.2500 mm): Footprint J18
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(380.5850 mm, 116.2050 mm): Footprint U17
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(161.1850 mm, 191.4550 mm): Footprint J1
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(361.7001 mm, 95.2500 mm): Footprint J21
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(417.6052 mm, 304.1600 mm): Footprint J22
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(174.7400 mm, 95.2500 mm): Footprint J10
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(292.4900 mm, 304.1600 mm): Footprint J11
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(299.6710 mm, 95.2500 mm): Footprint J12
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(211.4100 mm, 283.2050 mm): Footprint U1
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(199.2350 mm, 304.1600 mm): Footprint J3
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(193.6300 mm, 116.2050 mm): Footprint U2
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(287.0350 mm, 116.2050 mm): Footprint U9
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(304.8850 mm, 283.2050 mm): Footprint U10
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(398.3700 mm, 283.2050 mm): Footprint U18
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(427.4200 mm, 201.5100 mm): Footprint J7
+[lib_footprint_issues]: The current configuration does not include the library 'NAGG'.
+    Local override; warning
+    @(204.8600 mm, 199.7150 mm): Footprint PS1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(156.0000 mm, 199.7200 mm): Segment on F.Silkscreen
+
+** Found 1 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(437.1534 mm, 310.1876 mm): Zone [GND] on F.Cu
+    @(437.1534 mm, 310.1876 mm): Zone [GND] on F.Cu
+
+** Found 0 Footprint errors **
+
+** End of Report **

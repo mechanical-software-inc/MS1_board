@@ -1,0 +1,1 @@
+17 APR 2024 - 3.1 - Removed +24v to pin 3 of barrel connector J2

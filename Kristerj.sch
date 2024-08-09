@@ -1,0 +1,14275 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 53150 27559
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "2022-05-16"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 62665B3F
+P 1000 1025
+F 0 "J1" H 918 1242 50  0000 C CNN
+F 1 "24V IN" H 918 1151 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 1000 1025 50  0001 C CNN
+F 3 "https://www.sparkfun.com/datasheets/Prototyping/Barrel-Connector-PJ-202A.pdf" H 1000 1025 50  0001 C CNN
+F 4 "1.25" H 1000 1025 50  0001 C CNN "Cost"
+F 5 "PRT-00119" H 1000 1025 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/SparkFun/PRT-00119?qs=WyAARYrbSnbnQpS9xf%252Bx5A%3D%3D" H 1000 1025 50  0001 C CNN "Vendor Link"
+F 7 "474-PRT-00119" H 1000 1025 50  0001 C CNN "Vendor PN"
+	1    1000 1025
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0101
+U 1 1 62667104
+P 1275 900
+F 0 "#PWR0101" H 1275 750 50  0001 C CNN
+F 1 "+24V" H 1290 1073 50  0000 C CNN
+F 2 "" H 1275 900 50  0001 C CNN
+F 3 "" H 1275 900 50  0001 C CNN
+	1    1275 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1125 1275 1125
+Wire Wire Line
+	1275 1125 1275 1175
+Wire Wire Line
+	1275 900  1275 1025
+Wire Wire Line
+	1275 1025 1200 1025
+$Comp
+L Device:CP C1
+U 1 1 6266B992
+P 1125 2050
+F 0 "C1" H 1243 2096 50  0000 L CNN
+F 1 "330uF" H 1243 2005 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 1163 1900 50  0001 C CNN
+F 3 "https://www.tdk-electronics.tdk.com/inf/20/30/db/aec/B41858.pdf" H 1125 2050 50  0001 C CNN
+F 4 "0.74" H 1125 2050 50  0001 C CNN "Cost"
+F 5 "B41858C7337M" H 1125 2050 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/EPCOS-TDK/B41858C7337M?qs=nVvxX1UUhUwH5qDoqkD2jQ%3D%3D" H 1125 2050 50  0001 C CNN "Vendor Link"
+F 7 "871-B41858C7337M" H 1125 2050 50  0001 C CNN "Vendor PN"
+	1    1125 2050
+	-1   0    0    -1  
+$EndComp
+Text Notes 1875 950  0    146  ~ 29
+5V OUTPUT VOLAGE REGULATOR 
+Text Notes 750  750  0    146  ~ 29
+VIN
+$Comp
+L power:+24V #PWR0103
+U 1 1 62692AD7
+P 725 1725
+F 0 "#PWR0103" H 725 1575 50  0001 C CNN
+F 1 "+24V" H 740 1898 50  0000 C CNN
+F 2 "" H 725 1725 50  0001 C CNN
+F 3 "" H 725 1725 50  0001 C CNN
+	1    725  1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 6269B62A
+P 5025 1675
+F 0 "#PWR0109" H 5025 1525 50  0001 C CNN
+F 1 "+5V" H 5050 1825 50  0000 C CNN
+F 2 "" H 5025 1675 50  0001 C CNN
+F 3 "" H 5025 1675 50  0001 C CNN
+	1    5025 1675
+	1    0    0    -1  
+$EndComp
+Text GLabel 9575 900  0    47   Input ~ 0
+Pi1_SWDIO
+Text GLabel 9575 1000 0    47   Input ~ 0
+Pi1_SWCLK
+Text GLabel 9575 1100 0    47   Input ~ 0
+Pi1_RST
+Text Notes 10875 875  0    146  ~ 29
+SWD Connector
+$Comp
+L Device:R R23
+U 1 1 62671C22
+P 1050 12525
+F 0 "R23" H 1120 12571 50  0000 L CNN
+F 1 "68K" H 1120 12480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 980 12525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 1050 12525 50  0001 C CNN
+F 4 "0.10	" H 1050 12525 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 1050 12525 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 1050 12525 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 1050 12525 50  0001 C CNN "Vendor PN"
+	1    1050 12525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 626727E8
+P 1050 12950
+F 0 "R24" H 1120 12996 50  0000 L CNN
+F 1 "10K" H 1120 12905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 980 12950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 1050 12950 50  0001 C CNN
+F 4 "0.10	" H 1050 12950 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 1050 12950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 1050 12950 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 1050 12950 50  0001 C CNN "Vendor PN"
+	1    1050 12950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 12675 1050 12725
+$Comp
+L power:GND #PWR0112
+U 1 1 626748B9
+P 1050 13175
+F 0 "#PWR0112" H 1050 12925 50  0001 C CNN
+F 1 "GND" H 1055 13002 50  0000 C CNN
+F 2 "" H 1050 13175 50  0001 C CNN
+F 3 "" H 1050 13175 50  0001 C CNN
+	1    1050 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 13100 1050 13175
+Text Notes 1875 11350 0    146  ~ 29
+Discrete Input - 1
+$Comp
+L Device:R R25
+U 1 1 6267AC66
+P 2350 12525
+F 0 "R25" H 2420 12571 50  0000 L CNN
+F 1 "68K" H 2420 12480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 12525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 2350 12525 50  0001 C CNN
+F 4 "0.10	" H 2350 12525 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 2350 12525 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 2350 12525 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 2350 12525 50  0001 C CNN "Vendor PN"
+	1    2350 12525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 6267AC7C
+P 2350 12950
+F 0 "R26" H 2420 12996 50  0000 L CNN
+F 1 "10K" H 2420 12905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 12950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 2350 12950 50  0001 C CNN
+F 4 "0.10	" H 2350 12950 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 2350 12950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 2350 12950 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 2350 12950 50  0001 C CNN "Vendor PN"
+	1    2350 12950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 12675 2350 12725
+$Comp
+L power:GND #PWR0113
+U 1 1 6267AC87
+P 2350 13175
+F 0 "#PWR0113" H 2350 12925 50  0001 C CNN
+F 1 "GND" H 2355 13002 50  0000 C CNN
+F 2 "" H 2350 13175 50  0001 C CNN
+F 3 "" H 2350 13175 50  0001 C CNN
+	1    2350 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 13100 2350 13175
+$Comp
+L Device:R R27
+U 1 1 6267D653
+P 3725 12525
+F 0 "R27" H 3795 12571 50  0000 L CNN
+F 1 "68K" H 3795 12480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3655 12525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 3725 12525 50  0001 C CNN
+F 4 "0.10	" H 3725 12525 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 3725 12525 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 3725 12525 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 3725 12525 50  0001 C CNN "Vendor PN"
+	1    3725 12525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 6267D65D
+P 3725 12950
+F 0 "R28" H 3795 12996 50  0000 L CNN
+F 1 "10K" H 3795 12905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3655 12950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 3725 12950 50  0001 C CNN
+F 4 "0.10	" H 3725 12950 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 3725 12950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 3725 12950 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 3725 12950 50  0001 C CNN "Vendor PN"
+	1    3725 12950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3725 12675 3725 12725
+$Comp
+L power:GND #PWR0114
+U 1 1 6267D668
+P 3725 13175
+F 0 "#PWR0114" H 3725 12925 50  0001 C CNN
+F 1 "GND" H 3730 13002 50  0000 C CNN
+F 2 "" H 3725 13175 50  0001 C CNN
+F 3 "" H 3725 13175 50  0001 C CNN
+	1    3725 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3725 13100 3725 13175
+$Comp
+L Device:R R29
+U 1 1 6267D67E
+P 5025 12525
+F 0 "R29" H 5095 12571 50  0000 L CNN
+F 1 "68K" H 5095 12480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4955 12525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 5025 12525 50  0001 C CNN
+F 4 "0.10	" H 5025 12525 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 5025 12525 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 5025 12525 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 5025 12525 50  0001 C CNN "Vendor PN"
+	1    5025 12525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R30
+U 1 1 6267D6C0
+P 5025 12950
+F 0 "R30" H 5095 12996 50  0000 L CNN
+F 1 "10K" H 5095 12905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4955 12950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 5025 12950 50  0001 C CNN
+F 4 "0.10	" H 5025 12950 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 5025 12950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 5025 12950 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 5025 12950 50  0001 C CNN "Vendor PN"
+	1    5025 12950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 6267D6CB
+P 5025 13175
+F 0 "#PWR0115" H 5025 12925 50  0001 C CNN
+F 1 "GND" H 5030 13002 50  0000 C CNN
+F 2 "" H 5025 13175 50  0001 C CNN
+F 3 "" H 5025 13175 50  0001 C CNN
+	1    5025 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 13100 5025 13175
+Text GLabel 1500 12725 2    50   Input ~ 0
+Pi1_D-IN1
+Connection ~ 1050 12725
+Wire Wire Line
+	1050 12725 1050 12800
+Text GLabel 2850 12725 2    50   Input ~ 0
+Pi1_D-IN2
+Connection ~ 2350 12725
+Wire Wire Line
+	2350 12725 2350 12800
+Text GLabel 4200 12725 2    50   Input ~ 0
+Pi1_D-IN3
+Text GLabel 5500 12725 2    50   Input ~ 0
+Pi1_D-IN4
+Connection ~ 3725 12725
+Wire Wire Line
+	3725 12725 3725 12800
+$Comp
+L Device:R R9
+U 1 1 626B73BF
+P 10000 5600
+F 0 "R9" V 9793 5600 50  0000 C CNN
+F 1 "180" V 9884 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9930 5600 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 10000 5600 50  0001 C CNN
+F 4 "0.10	" H 10000 5600 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD1800F" H 10000 5600 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD1800F?qs=HhNNkgKj039bxTQtK3h5%252BQ%3D%3D" H 10000 5600 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD1800F" H 10000 5600 50  0001 C CNN "Vendor PN"
+	1    10000 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10150 5600 10300 5600
+Text GLabel 9775 5600 0    50   Input ~ 0
+Pi1_D-OUT1
+Wire Wire Line
+	9775 5600 9850 5600
+$Comp
+L power:GND #PWR0116
+U 1 1 626C2900
+P 10250 5825
+F 0 "#PWR0116" H 10250 5575 50  0001 C CNN
+F 1 "GND" H 10255 5652 50  0000 C CNN
+F 2 "" H 10250 5825 50  0001 C CNN
+F 3 "" H 10250 5825 50  0001 C CNN
+	1    10250 5825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN10H220L Q2
+U 1 1 626C8F37
+P 11600 5600
+F 0 "Q2" H 11804 5646 50  0000 L CNN
+F 1 "DMN10H220L" H 11700 5425 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11800 5525 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/lcsc/1810010612_Diodes-Incorporated-DMN10H220L-7_C102615.pdf" H 11600 5600 50  0001 L CNN
+F 4 "0.18" H 11600 5600 50  0001 C CNN "Cost"
+F 5 "DMN10H220L-7" H 11600 5600 50  0001 C CNN "Mfg PN"
+F 6 "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMN10H220L-7_C102615.html" H 11600 5600 50  0001 C CNN "Vendor Link"
+F 7 "C102615" H 11600 5600 50  0001 C CNN "Vendor PN"
+	1    11600 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 626CE9CD
+P 11375 5900
+F 0 "R11" H 11305 5854 50  0000 R CNN
+F 1 "100K" H 11305 5945 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11305 5900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 11375 5900 50  0001 C CNN
+F 4 "0.10	" H 11375 5900 50  0001 C CNN "Cost"
+F 5 "RC0603JR-07100KL" H 11375 5900 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-07100KL?qs=2cAdsCoAWRG9Rhqklpdeqg%3D%3D" H 11375 5900 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-07100KL" H 11375 5900 50  0001 C CNN "Vendor PN"
+	1    11375 5900
+	-1   0    0    1   
+$EndComp
+Text Notes 11750 3975 0    146  ~ 29
+Discrete Output - 1
+Wire Wire Line
+	2750 12825 2750 12725
+$Comp
+L power:GND #PWR0133
+U 1 1 628C4272
+P 2750 13175
+F 0 "#PWR0133" H 2750 12925 50  0001 C CNN
+F 1 "GND" H 2755 13002 50  0000 C CNN
+F 2 "" H 2750 13175 50  0001 C CNN
+F 3 "" H 2750 13175 50  0001 C CNN
+	1    2750 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 13125 2750 13175
+Wire Wire Line
+	4125 12725 4125 12825
+Wire Wire Line
+	3725 12725 4125 12725
+$Comp
+L power:GND #PWR0134
+U 1 1 628DC68A
+P 4125 13175
+F 0 "#PWR0134" H 4125 12925 50  0001 C CNN
+F 1 "GND" H 4130 13002 50  0000 C CNN
+F 2 "" H 4125 13175 50  0001 C CNN
+F 3 "" H 4125 13175 50  0001 C CNN
+	1    4125 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4125 13125 4125 13175
+Wire Wire Line
+	5025 12675 5025 12725
+Wire Wire Line
+	5425 12725 5425 12825
+Wire Wire Line
+	5025 12725 5425 12725
+$Comp
+L power:GND #PWR0135
+U 1 1 628EB8C3
+P 5425 13175
+F 0 "#PWR0135" H 5425 12925 50  0001 C CNN
+F 1 "GND" H 5430 13002 50  0000 C CNN
+F 2 "" H 5425 13175 50  0001 C CNN
+F 3 "" H 5425 13175 50  0001 C CNN
+	1    5425 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 13125 5425 13175
+Connection ~ 5025 12725
+Wire Wire Line
+	5025 12725 5025 12800
+Wire Wire Line
+	2350 12725 2750 12725
+Connection ~ 2750 12725
+Wire Wire Line
+	4200 12725 4125 12725
+Connection ~ 4125 12725
+Wire Wire Line
+	5500 12725 5425 12725
+Connection ~ 5425 12725
+Wire Wire Line
+	2750 12725 2850 12725
+$Comp
+L Device:R R1
+U 1 1 629742A2
+P 2875 9450
+F 0 "R1" H 2805 9404 50  0000 R CNN
+F 1 "150" H 2805 9495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2805 9450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 2875 9450 50  0001 C CNN
+F 4 "0.10	" H 2875 9450 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 2875 9450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 2875 9450 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 2875 9450 50  0001 C CNN "Vendor PN"
+	1    2875 9450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 629753E7
+P 3500 9450
+F 0 "R4" H 3430 9404 50  0000 R CNN
+F 1 "150" H 3430 9495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 9450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 3500 9450 50  0001 C CNN
+F 4 "0.10	" H 3500 9450 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 3500 9450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 3500 9450 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 3500 9450 50  0001 C CNN "Vendor PN"
+	1    3500 9450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 629756D8
+P 4100 9450
+F 0 "R6" H 4030 9404 50  0000 R CNN
+F 1 "150" H 4030 9495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4030 9450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 4100 9450 50  0001 C CNN
+F 4 "0.10	" H 4100 9450 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 4100 9450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 4100 9450 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 4100 9450 50  0001 C CNN "Vendor PN"
+	1    4100 9450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 62975D94
+P 2875 9675
+F 0 "#PWR0136" H 2875 9425 50  0001 C CNN
+F 1 "GND" H 2880 9502 50  0000 C CNN
+F 2 "" H 2875 9675 50  0001 C CNN
+F 3 "" H 2875 9675 50  0001 C CNN
+	1    2875 9675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0137
+U 1 1 6297658C
+P 3500 9675
+F 0 "#PWR0137" H 3500 9425 50  0001 C CNN
+F 1 "GND" H 3505 9502 50  0000 C CNN
+F 2 "" H 3500 9675 50  0001 C CNN
+F 3 "" H 3500 9675 50  0001 C CNN
+	1    3500 9675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 62976A5A
+P 4100 9675
+F 0 "#PWR0138" H 4100 9425 50  0001 C CNN
+F 1 "GND" H 4105 9502 50  0000 C CNN
+F 2 "" H 4100 9675 50  0001 C CNN
+F 3 "" H 4100 9675 50  0001 C CNN
+	1    4100 9675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 9600 4100 9675
+Wire Wire Line
+	3500 9600 3500 9675
+Wire Wire Line
+	2875 9600 2875 9675
+Text GLabel 4375 8600 2    50   Input ~ 0
+Pi1_4-20_IN1
+Text GLabel 4375 8700 2    50   Input ~ 0
+Pi1_4-20_IN2
+Text GLabel 4375 8800 2    50   Input ~ 0
+Pi1_4-20_IN3
+Wire Wire Line
+	4375 9325 4375 9175
+Wire Wire Line
+	4375 9175 4100 9175
+Wire Wire Line
+	4100 9175 4100 9300
+Wire Wire Line
+	3775 9325 3775 9175
+Wire Wire Line
+	3775 9175 3500 9175
+Wire Wire Line
+	3500 9175 3500 9300
+Wire Wire Line
+	3125 9325 3125 9175
+Wire Wire Line
+	3125 9175 2875 9175
+Wire Wire Line
+	2875 9175 2875 9300
+Wire Wire Line
+	2875 9175 2875 8600
+Connection ~ 2875 9175
+Connection ~ 2875 8600
+Wire Wire Line
+	2875 8600 4375 8600
+$Comp
+L power:GND #PWR0139
+U 1 1 62A584C9
+P 3125 9675
+F 0 "#PWR0139" H 3125 9425 50  0001 C CNN
+F 1 "GND" H 3130 9502 50  0000 C CNN
+F 2 "" H 3125 9675 50  0001 C CNN
+F 3 "" H 3125 9675 50  0001 C CNN
+	1    3125 9675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3125 9625 3125 9675
+$Comp
+L power:GND #PWR0140
+U 1 1 62A612AB
+P 3775 9675
+F 0 "#PWR0140" H 3775 9425 50  0001 C CNN
+F 1 "GND" H 3780 9502 50  0000 C CNN
+F 2 "" H 3775 9675 50  0001 C CNN
+F 3 "" H 3775 9675 50  0001 C CNN
+	1    3775 9675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3775 9625 3775 9675
+$Comp
+L power:GND #PWR0141
+U 1 1 62A6A1D0
+P 4375 9675
+F 0 "#PWR0141" H 4375 9425 50  0001 C CNN
+F 1 "GND" H 4380 9502 50  0000 C CNN
+F 2 "" H 4375 9675 50  0001 C CNN
+F 3 "" H 4375 9675 50  0001 C CNN
+	1    4375 9675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4375 9625 4375 9675
+Text Notes 2675 8275 0    146  ~ 29
+4-20mA INPUT - 1
+Text GLabel 2350 4800 0    50   Input ~ 0
+SDA-0
+Text GLabel 2350 4900 0    50   Input ~ 0
+SCL-0
+Wire Wire Line
+	3500 9175 3500 8700
+Connection ~ 3500 9175
+Connection ~ 3500 8700
+Wire Wire Line
+	3500 8700 4375 8700
+Wire Wire Line
+	4100 9175 4100 8800
+Connection ~ 4100 9175
+Connection ~ 4100 8800
+Wire Wire Line
+	4100 8800 4375 8800
+Text GLabel 3850 5700 2    50   Input ~ 0
+Pi1_4-20_IN1
+Text GLabel 3850 5600 2    50   Input ~ 0
+Pi1_4-20_IN2
+Text GLabel 3850 5400 2    50   Input ~ 0
+Pi1_4-20_IN3
+Text GLabel 2275 5100 0    50   Input ~ 0
+Pi1_D-IN1
+Text GLabel 2275 5200 0    50   Input ~ 0
+Pi1_D-IN2
+Text GLabel 2275 5300 0    50   Input ~ 0
+Pi1_D-IN3
+Text GLabel 2275 5400 0    50   Input ~ 0
+Pi1_D-IN4
+Text GLabel 3850 5800 2    47   Input ~ 0
+Pi1_RST
+Text GLabel 2275 5600 0    50   Input ~ 0
+Pi1_D-OUT1
+Text GLabel 2275 5800 0    50   Input ~ 0
+Pi1_D-OUT3
+Text GLabel 1025 12275 0    50   Input ~ 0
+Pi1_DI_1
+Wire Wire Line
+	1025 12275 1050 12275
+Wire Wire Line
+	1050 12275 1050 12375
+Text GLabel 2325 12275 0    50   Input ~ 0
+Pi1_DI_2
+Wire Wire Line
+	2350 12275 2350 12375
+Wire Wire Line
+	2325 12275 2350 12275
+Text GLabel 3700 12275 0    50   Input ~ 0
+Pi1_DI_3
+Wire Wire Line
+	3700 12275 3725 12275
+Wire Wire Line
+	3725 12275 3725 12375
+Text GLabel 5000 12275 0    50   Input ~ 0
+Pi1_DI_4
+Wire Wire Line
+	5000 12275 5025 12275
+Wire Wire Line
+	5025 12275 5025 12375
+$Comp
+L Connector:Screw_Terminal_01x04 J9
+U 1 1 62B5BCDB
+P 5225 11575
+F 0 "J9" H 5305 11567 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 5305 11476 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 5225 11575 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984633-1458842.pdf" H 5225 11575 50  0001 C CNN
+F 4 "1.07" H 5225 11575 50  0001 C CNN "Cost"
+F 5 "1984633" H 5225 11575 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984633?qs=dKKAVK9nnHOP434WOXxXdg%3D%3D" H 5225 11575 50  0001 C CNN "Vendor Link"
+F 7 "651-1984633" H 5225 11575 50  0001 C CNN "Vendor PN"
+	1    5225 11575
+	1    0    0    -1  
+$EndComp
+Text GLabel 4975 11475 0    50   Input ~ 0
+Pi1_DI_1
+Wire Wire Line
+	4975 11475 5025 11475
+Text GLabel 4975 11575 0    50   Input ~ 0
+Pi1_DI_2
+Wire Wire Line
+	4975 11575 5025 11575
+Text GLabel 4975 11675 0    50   Input ~ 0
+Pi1_DI_3
+Wire Wire Line
+	4975 11675 5025 11675
+Text GLabel 4975 11775 0    50   Input ~ 0
+Pi1_DI_4
+Wire Wire Line
+	4975 11775 5025 11775
+$Comp
+L Kristerj-rescue:PICO_RP2040-Juancho U1
+U 1 1 62BC0657
+P 3050 5750
+F 0 "U1" H 3025 7115 50  0000 C CNN
+F 1 "PICO_RP2040" H 3025 7024 50  0000 C CNN
+F 2 "Juancho:Rasp_Pi_PICO" H 2950 7200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/181/M20-782-1220556.pdf" H 2950 7200 50  0001 C CNN
+F 4 "2.30	" H 3050 5750 50  0001 C CNN "Cost"
+F 5 "M20-7822046" H 3050 5750 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Harwin/M20-7822046?qs=sGAEpiMZZMvlX3nhDDO4ABznH5rKKlExqY22J5gDOpY%3D" H 3050 5750 50  0001 C CNN "Vendor Link"
+F 7 "855-M20-7822046" H 3050 5750 50  0001 C CNN "Vendor PN"
+	1    3050 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 4900 2400 4900
+Wire Wire Line
+	2400 4800 2350 4800
+$Comp
+L power:GND #PWR0142
+U 1 1 62BE1BEA
+P 2325 6775
+F 0 "#PWR0142" H 2325 6525 50  0001 C CNN
+F 1 "GND" H 2330 6602 50  0000 C CNN
+F 2 "" H 2325 6775 50  0001 C CNN
+F 3 "" H 2325 6775 50  0001 C CNN
+	1    2325 6775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2325 6775 2325 6500
+Wire Wire Line
+	2325 6500 2400 6500
+Wire Wire Line
+	2400 6000 2325 6000
+Wire Wire Line
+	2325 6000 2325 6500
+Connection ~ 2325 6500
+Wire Wire Line
+	2400 5500 2325 5500
+Wire Wire Line
+	2325 5500 2325 6000
+Connection ~ 2325 6000
+Wire Wire Line
+	2400 5000 2325 5000
+Wire Wire Line
+	2325 5000 2325 5500
+Connection ~ 2325 5500
+Wire Wire Line
+	2275 5100 2400 5100
+Wire Wire Line
+	2275 5200 2400 5200
+Wire Wire Line
+	2275 5300 2400 5300
+Wire Wire Line
+	2275 5400 2400 5400
+Wire Wire Line
+	2275 5600 2400 5600
+Wire Wire Line
+	2275 5800 2400 5800
+Wire Wire Line
+	3650 5800 3850 5800
+Wire Wire Line
+	3650 5700 3850 5700
+Wire Wire Line
+	3650 5400 3850 5400
+Wire Wire Line
+	3850 5600 3650 5600
+$Comp
+L power:GND #PWR0143
+U 1 1 62CD429A
+P 3750 6775
+F 0 "#PWR0143" H 3750 6525 50  0001 C CNN
+F 1 "GND" H 3755 6602 50  0000 C CNN
+F 2 "" H 3750 6775 50  0001 C CNN
+F 3 "" H 3750 6775 50  0001 C CNN
+	1    3750 6775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 6775 3750 6500
+Wire Wire Line
+	3750 6500 3650 6500
+Wire Wire Line
+	3650 6000 3750 6000
+Wire Wire Line
+	3750 6000 3750 6500
+Connection ~ 3750 6500
+Wire Wire Line
+	3650 5500 3750 5500
+Wire Wire Line
+	3750 5500 3750 6000
+Connection ~ 3750 6000
+Wire Wire Line
+	3650 5000 3750 5000
+Wire Wire Line
+	3750 5000 3750 5500
+Connection ~ 3750 5500
+$Comp
+L power:+5V #PWR0144
+U 1 1 62D1BC13
+P 3750 4750
+F 0 "#PWR0144" H 3750 4600 50  0001 C CNN
+F 1 "+5V" H 3765 4923 50  0000 C CNN
+F 2 "" H 3750 4750 50  0001 C CNN
+F 3 "" H 3750 4750 50  0001 C CNN
+	1    3750 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4750 3750 4800
+Wire Wire Line
+	3750 4800 3650 4800
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 62D4E8F0
+P 7325 2100
+F 0 "J5" H 7405 2092 50  0000 L CNN
+F 1 "Conn_01x02" H 7405 2001 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 7325 2100 50  0001 C CNN
+F 3 "https://www.phoenixcontact.com/us/products/1984617/pdf" H 7325 2100 50  0001 C CNN
+F 4 "0.55	" H 7325 2100 50  0001 C CNN "Cost"
+F 5 "1984617" H 7325 2100 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984617?qs=ATjOrvm3mOhUrGlJQoUcpQ%3D%3D" H 7325 2100 50  0001 C CNN "Vendor Link"
+F 7 "651-1984617" H 7325 2100 50  0001 C CNN "Vendor PN"
+	1    7325 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 62D5BD13
+P 9025 1775
+F 0 "R2" H 9200 1725 50  0000 R CNN
+F 1 "5.1K" H 9250 1800 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8955 1775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C304-1149620.pdf" H 9025 1775 50  0001 C CNN
+F 4 "0.10	" H 9025 1775 50  0001 C CNN "Cost"
+F 5 "ERJ-3EKF5101V" H 9025 1775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3EKF5101V?qs=sGAEpiMZZMtG0KNrPCHnjTg0x5DoQJ5Pc7txJA%252BQHw8%3D" H 9025 1775 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3EKF5101V" H 9025 1775 50  0001 C CNN "Vendor PN"
+	1    9025 1775
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 62D5CB42
+P 10750 1650
+F 0 "R5" H 10680 1604 50  0000 R CNN
+F 1 "5.1K" H 10680 1695 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10680 1650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C304-1149620.pdf" H 10750 1650 50  0001 C CNN
+F 4 "0.10	" H 10750 1650 50  0001 C CNN "Cost"
+F 5 "ERJ-3EKF5101V" H 10750 1650 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3EKF5101V?qs=sGAEpiMZZMtG0KNrPCHnjTg0x5DoQJ5Pc7txJA%252BQHw8%3D" H 10750 1650 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3EKF5101V" H 10750 1650 50  0001 C CNN "Vendor PN"
+	1    10750 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0145
+U 1 1 62D96132
+P 9025 1600
+F 0 "#PWR0145" H 9025 1450 50  0001 C CNN
+F 1 "+5V" H 9040 1773 50  0000 C CNN
+F 2 "" H 9025 1600 50  0001 C CNN
+F 3 "" H 9025 1600 50  0001 C CNN
+	1    9025 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9025 1600 9025 1625
+$Comp
+L power:+5V #PWR0146
+U 1 1 62DA28C2
+P 10750 1475
+F 0 "#PWR0146" H 10750 1325 50  0001 C CNN
+F 1 "+5V" H 10765 1648 50  0000 C CNN
+F 2 "" H 10750 1475 50  0001 C CNN
+F 3 "" H 10750 1475 50  0001 C CNN
+	1    10750 1475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 1475 10750 1500
+Text Notes 6450 1200 0    146  ~ 29
+BUS I2C
+Text GLabel 26300 12800 0    50   Input ~ 0
+Pi1_O_1
+Text GLabel 9050 13025 0    50   Input ~ 0
+Pi1_O_0
+Text GLabel 33075 9550 2    50   Input ~ 0
+Pi1_4-20_OUT-1-
+Text GLabel 15525 20925 2    50   Input ~ 0
+Pi1_4-20_OUT-3-
+Text GLabel 3575 4150 0    47   Input ~ 0
+Pi1_SWDIO
+Text GLabel 3575 3950 0    47   Input ~ 0
+Pi1_SWCLK
+Text Notes 1375 4000 0    146  ~ 29
+PI PICO - 1
+Text Notes 10700 9375 0    146  ~ 29
+4-20mA OUTPUT - 0
+Text Notes 3550 3825 0    146  ~ 0
+debug\n
+Text Notes 4475 11225 0    146  ~ 0
+discrete input\n
+Text Notes 8025 3725 0    146  ~ 0
+discrete output\n
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 6272E06A
+P 3850 4050
+F 0 "J3" H 3930 4092 50  0000 L CNN
+F 1 "Conn_01x03" H 3930 4001 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3850 4050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/7/ENG_CD_215299_F-2028124.pdf" H 3850 4050 50  0001 C CNN
+F 4 "0.77	" H 3850 4050 50  0001 C CNN "Cost"
+F 5 "215299-3" H 3850 4050 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/TE-Connectivity/215299-3?qs=pol9tQvH%252BaHR%252B8PZSmhoEA%3D%3D" H 3850 4050 50  0001 C CNN "Vendor Link"
+F 7 "571-215299-3" H 3850 4050 50  0001 C CNN "Vendor PN"
+	1    3850 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3950 3575 3950
+Wire Wire Line
+	3650 4150 3575 4150
+$Comp
+L Connector:Screw_Terminal_01x06 J4
+U 1 1 6278D5B3
+P 2375 8700
+F 0 "J4" H 2375 9000 50  0000 C CNN
+F 1 "Screw_Terminal_01x06" V 2475 8650 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-6-3.5-H_1x06_P3.50mm_Horizontal" H 2375 8700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984659-1458991.pdf" H 2375 8700 50  0001 C CNN
+F 4 "1.54	" H 2375 8700 50  0001 C CNN "Cost"
+F 5 "1984659" H 2375 8700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984659?qs=FQYO1eEgUPBU2UOuKgfwDQ%3D%3D" H 2375 8700 50  0001 C CNN "Vendor Link"
+F 7 "651-1984659" H 2375 8700 50  0001 C CNN "Vendor PN"
+	1    2375 8700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0163
+U 1 1 627AEE3B
+P 2625 8425
+F 0 "#PWR0163" H 2625 8275 50  0001 C CNN
+F 1 "+24V" H 2640 8598 50  0000 C CNN
+F 2 "" H 2625 8425 50  0001 C CNN
+F 3 "" H 2625 8425 50  0001 C CNN
+	1    2625 8425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2575 8500 2625 8500
+Wire Wire Line
+	2625 8500 2625 8425
+Wire Wire Line
+	2625 8500 2625 8700
+Wire Wire Line
+	2625 8700 2575 8700
+Connection ~ 2625 8500
+Wire Wire Line
+	2625 8700 2625 8900
+Wire Wire Line
+	2625 8900 2575 8900
+Connection ~ 2625 8700
+Wire Wire Line
+	2575 8600 2875 8600
+Wire Wire Line
+	2775 8800 2775 9000
+Wire Wire Line
+	2775 8800 4100 8800
+Wire Wire Line
+	2575 9000 2775 9000
+Wire Wire Line
+	2700 8800 2700 8700
+Wire Wire Line
+	2700 8700 3500 8700
+Wire Wire Line
+	2575 8800 2700 8800
+$Comp
+L Isolator:HCPL-0600 U3
+U 1 1 628D4F9A
+P 10600 5600
+F 0 "U3" H 10600 6067 50  0000 C CNN
+F 1 "HCPL-0600" H 10600 5976 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 10600 5100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/678/AVGO_S_A0011438143_1-2524870.pdf" H 9750 6200 50  0001 C CNN
+F 4 "3.63	" H 10600 5600 50  0001 C CNN "Cost"
+F 5 "HCPL-0600" H 10600 5600 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Broadcom-Avago/HCPL-0600?qs=xnajaXqBF99WEoYcFXgJxQ%3D%3D" H 10600 5600 50  0001 C CNN "Vendor Link"
+F 7 "630-HCPL-0600" H 10600 5600 50  0001 C CNN "Vendor PN"
+	1    10600 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0167
+U 1 1 629CE13F
+P 11375 6125
+F 0 "#PWR0167" H 11375 5875 50  0001 C CNN
+F 1 "GND" H 11380 5952 50  0000 C CNN
+F 2 "" H 11375 6125 50  0001 C CNN
+F 3 "" H 11375 6125 50  0001 C CNN
+	1    11375 6125
+	1    0    0    -1  
+$EndComp
+Text GLabel 950  6100 0    50   Input ~ 0
+Pi1_SDA-1
+Text GLabel 950  6200 0    50   Input ~ 0
+Pi1_SCL-1
+Wire Wire Line
+	10250 5825 10250 5800
+Wire Wire Line
+	10250 5800 10300 5800
+$Comp
+L Device:R R14
+U 1 1 62956BE6
+P 11150 5600
+F 0 "R14" V 11250 5600 50  0000 R CNN
+F 1 "150" V 11150 5675 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11080 5600 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 11150 5600 50  0001 C CNN
+F 4 "0.10	" H 11150 5600 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 11150 5600 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 11150 5600 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 11150 5600 50  0001 C CNN "Vendor PN"
+	1    11150 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10900 5600 10950 5600
+Wire Wire Line
+	11300 5600 11375 5600
+Wire Wire Line
+	11375 5600 11375 5750
+Connection ~ 11375 5600
+Wire Wire Line
+	11375 5600 11400 5600
+Wire Wire Line
+	11375 6050 11375 6125
+$Comp
+L power:GND #PWR0117
+U 1 1 62B0CBC5
+P 11700 6125
+F 0 "#PWR0117" H 11700 5875 50  0001 C CNN
+F 1 "GND" H 11705 5952 50  0000 C CNN
+F 2 "" H 11700 6125 50  0001 C CNN
+F 3 "" H 11700 6125 50  0001 C CNN
+	1    11700 6125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 6125 11700 5800
+Wire Wire Line
+	10950 5400 10900 5400
+$Comp
+L power:GND #PWR0122
+U 1 1 63130C00
+P 10950 5825
+F 0 "#PWR0122" H 10950 5575 50  0001 C CNN
+F 1 "GND" H 10955 5652 50  0000 C CNN
+F 2 "" H 10950 5825 50  0001 C CNN
+F 3 "" H 10950 5825 50  0001 C CNN
+	1    10950 5825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 5825 10950 5800
+Wire Wire Line
+	10950 5800 10900 5800
+$Comp
+L power:+5V #PWR0123
+U 1 1 633AE6E5
+P 10375 750
+F 0 "#PWR0123" H 10375 600 50  0001 C CNN
+F 1 "+5V" H 10390 923 50  0000 C CNN
+F 2 "" H 10375 750 50  0001 C CNN
+F 3 "" H 10375 750 50  0001 C CNN
+	1    10375 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 633DFAA7
+P 4425 6175
+F 0 "R21" H 4355 6129 50  0000 R CNN
+F 1 "10K" H 4355 6220 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4355 6175 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 4425 6175 50  0001 C CNN
+F 4 "0.10	" H 4425 6175 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 4425 6175 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 4425 6175 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 4425 6175 50  0001 C CNN "Vendor PN"
+	1    4425 6175
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 633E1940
+P 3975 6650
+F 0 "R18" H 3905 6604 50  0000 R CNN
+F 1 "10K" H 3905 6695 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3905 6650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 3975 6650 50  0001 C CNN
+F 4 "0.10	" H 3975 6650 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 3975 6650 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 3975 6650 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 3975 6650 50  0001 C CNN "Vendor PN"
+	1    3975 6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 633E25B1
+P 4250 6650
+F 0 "R19" H 4180 6604 50  0000 R CNN
+F 1 "10K" H 4180 6695 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4180 6650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 4250 6650 50  0001 C CNN
+F 4 "0.10	" H 4250 6650 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 4250 6650 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 4250 6650 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 4250 6650 50  0001 C CNN "Vendor PN"
+	1    4250 6650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 6300 4250 6500
+Wire Wire Line
+	3650 6300 4250 6300
+$Comp
+L power:GND #PWR0124
+U 1 1 634416B8
+P 3975 6850
+F 0 "#PWR0124" H 3975 6600 50  0001 C CNN
+F 1 "GND" H 3980 6677 50  0000 C CNN
+F 2 "" H 3975 6850 50  0001 C CNN
+F 3 "" H 3975 6850 50  0001 C CNN
+	1    3975 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 6400 4425 6400
+Wire Wire Line
+	3975 6500 3975 6200
+Wire Wire Line
+	3650 6200 3975 6200
+Wire Wire Line
+	3975 6800 3975 6850
+$Comp
+L power:GND #PWR0125
+U 1 1 634D358A
+P 4250 6850
+F 0 "#PWR0125" H 4250 6600 50  0001 C CNN
+F 1 "GND" H 4255 6677 50  0000 C CNN
+F 2 "" H 4250 6850 50  0001 C CNN
+F 3 "" H 4250 6850 50  0001 C CNN
+	1    4250 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 6800 4250 6850
+$Comp
+L power:+5V #PWR0126
+U 1 1 63504B47
+P 4425 5975
+F 0 "#PWR0126" H 4425 5825 50  0001 C CNN
+F 1 "+5V" H 4440 6148 50  0000 C CNN
+F 2 "" H 4425 5975 50  0001 C CNN
+F 3 "" H 4425 5975 50  0001 C CNN
+	1    4425 5975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 5500 10950 5400
+Wire Wire Line
+	10900 5500 10950 5500
+Connection ~ 10950 5400
+$Comp
+L Device:R R13
+U 1 1 629478D8
+P 11150 5275
+F 0 "R13" H 11080 5229 50  0000 R CNN
+F 1 "3.3K" H 11080 5320 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11080 5275 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 11150 5275 50  0001 C CNN
+F 4 "0.10	" H 11150 5275 50  0001 C CNN "Cost"
+F 5 "RC0603JR-103K3L" H 11150 5275 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-103K3L?qs=IuGqVx9wL0LKNSLR70cQjA%3D%3D" H 11150 5275 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-103K3L" H 11150 5275 50  0001 C CNN "Vendor PN"
+	1    11150 5275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10950 5050 10950 5400
+Wire Wire Line
+	11150 5050 11150 5125
+Wire Wire Line
+	11150 5425 11150 5525
+Wire Wire Line
+	11150 5525 10950 5525
+Wire Wire Line
+	10950 5525 10950 5600
+Connection ~ 10950 5600
+Wire Wire Line
+	10950 5600 11000 5600
+$Comp
+L Device:D_Zener D1
+U 1 1 62A5D1A5
+P 1425 12975
+F 0 "D1" V 1379 13055 50  0000 L CNN
+F 1 "3.9V" V 1470 13055 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 1425 12975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 1425 12975 50  0001 C CNN
+F 4 "0.17" H 1425 12975 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 1425 12975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 1425 12975 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 1425 12975 50  0001 C CNN "Vendor PN"
+	1    1425 12975
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 62A5F7EB
+P 1425 13175
+F 0 "#PWR08" H 1425 12925 50  0001 C CNN
+F 1 "GND" H 1430 13002 50  0000 C CNN
+F 2 "" H 1425 13175 50  0001 C CNN
+F 3 "" H 1425 13175 50  0001 C CNN
+	1    1425 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 12725 1425 12725
+Wire Wire Line
+	1425 13125 1425 13175
+Wire Wire Line
+	1425 12725 1425 12825
+Wire Wire Line
+	1500 12725 1425 12725
+Connection ~ 1425 12725
+$Comp
+L Device:D_Zener D3
+U 1 1 62BEB36B
+P 2750 12975
+F 0 "D3" V 2704 13055 50  0000 L CNN
+F 1 "3.9V" V 2795 13055 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 2750 12975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 2750 12975 50  0001 C CNN
+F 4 "0.17" H 2750 12975 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 2750 12975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 2750 12975 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 2750 12975 50  0001 C CNN "Vendor PN"
+	1    2750 12975
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D9
+U 1 1 62BEBC41
+P 4125 12975
+F 0 "D9" V 4079 13055 50  0000 L CNN
+F 1 "3.9V" V 4170 13055 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 4125 12975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 4125 12975 50  0001 C CNN
+F 4 "0.17" H 4125 12975 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 4125 12975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 4125 12975 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 4125 12975 50  0001 C CNN "Vendor PN"
+	1    4125 12975
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D13
+U 1 1 62BEC13E
+P 5425 12975
+F 0 "D13" V 5379 13055 50  0000 L CNN
+F 1 "3.9V" V 5470 13055 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 5425 12975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 5425 12975 50  0001 C CNN
+F 4 "0.17" H 5425 12975 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 5425 12975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 5425 12975 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 5425 12975 50  0001 C CNN "Vendor PN"
+	1    5425 12975
+	0    1    1    0   
+$EndComp
+Text Notes 4375 8950 0    47   ~ 0
+600mV to 3V
+$Comp
+L Device:D_Zener D5
+U 1 1 62BED9A8
+P 3125 9475
+F 0 "D5" V 3079 9555 50  0000 L CNN
+F 1 "3.9V" V 3170 9555 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 3125 9475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 3125 9475 50  0001 C CNN
+F 4 "0.17" H 3125 9475 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 3125 9475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 3125 9475 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 3125 9475 50  0001 C CNN "Vendor PN"
+	1    3125 9475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D7
+U 1 1 62BEE7FB
+P 3775 9475
+F 0 "D7" V 3729 9555 50  0000 L CNN
+F 1 "3.9V" V 3820 9555 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 3775 9475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 3775 9475 50  0001 C CNN
+F 4 "0.17" H 3775 9475 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 3775 9475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 3775 9475 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 3775 9475 50  0001 C CNN "Vendor PN"
+	1    3775 9475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D11
+U 1 1 62BEECC6
+P 4375 9475
+F 0 "D11" V 4329 9555 50  0000 L CNN
+F 1 "3.9V" V 4420 9555 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 4375 9475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 4375 9475 50  0001 C CNN
+F 4 "0.17" H 4375 9475 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 4375 9475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 4375 9475 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 4375 9475 50  0001 C CNN "Vendor PN"
+	1    4375 9475
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR05
+U 1 1 62BF51FA
+P 1275 1175
+F 0 "#PWR05" H 1275 925 50  0001 C CNN
+F 1 "GNDA" H 1280 1002 50  0000 C CNN
+F 2 "" H 1275 1175 50  0001 C CNN
+F 3 "" H 1275 1175 50  0001 C CNN
+	1    1275 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR04
+U 1 1 62BF60B4
+P 1125 2400
+F 0 "#PWR04" H 1125 2150 50  0001 C CNN
+F 1 "GNDA" H 1130 2227 50  0000 C CNN
+F 2 "" H 1125 2400 50  0001 C CNN
+F 3 "" H 1125 2400 50  0001 C CNN
+	1    1125 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R61
+U 1 1 62D25D41
+P 12575 5450
+F 0 "R61" H 12505 5404 50  0000 R CNN
+F 1 "100" H 12505 5495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12505 5450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 12575 5450 50  0001 C CNN
+F 4 "0.10	" H 12575 5450 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 12575 5450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 12575 5450 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 12575 5450 50  0001 C CNN "Vendor PN"
+	1    12575 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 62D25D4B
+P 12575 5050
+F 0 "C16" H 12460 5004 50  0000 R CNN
+F 1 "0.01uF" H 12460 5095 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12613 4900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf" H 12575 5050 50  0001 C CNN
+F 4 "0.10" H 12575 5050 50  0001 C CNN "Cost"
+F 5 "0603B103K100CT" H 12575 5050 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Walsin/0603B103K100CT?qs=ZrPdAQfJ6DMGaCVYT7SqlA%3D%3D" H 12575 5050 50  0001 C CNN "Vendor Link"
+F 7 "791-0603B103K100CT" H 12575 5050 50  0001 C CNN "Vendor PN"
+	1    12575 5050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12575 5200 12575 5275
+$Comp
+L Device:D D25
+U 1 1 62D25D56
+P 13025 5475
+F 0 "D25" V 12979 5555 50  0000 L CNN
+F 1 "5A" V 13070 5555 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 13025 5475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/vs_5ech06_m3-1769535.pdf" H 13025 5475 50  0001 C CNN
+F 4 "0.98" H 13025 5475 50  0001 C CNN "Cost"
+F 5 "VS-5ECH06-M3/9AT" H 13025 5475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/VS-5ECH06-M3-9AT?qs=1FzmF4gO8okPI3ZFizAqng%3D%3D" H 13025 5475 50  0001 C CNN "Vendor Link"
+F 7 "78-VS-5ECH06-M3/9AT" H 13025 5475 50  0001 C CNN "Vendor PN"
+	1    13025 5475
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13025 5275 12575 5275
+Connection ~ 12575 5275
+Wire Wire Line
+	12575 5275 12575 5300
+Wire Wire Line
+	12575 5600 12575 5700
+Wire Wire Line
+	13025 5275 13025 5325
+Wire Wire Line
+	13025 5625 13025 5700
+Wire Wire Line
+	13025 5700 12575 5700
+Text GLabel 13150 5700 2    50   Input ~ 0
+Pi1_DO1
+Wire Wire Line
+	13025 5700 13150 5700
+Connection ~ 13025 5700
+$Comp
+L power:+24V #PWR069
+U 1 1 62E27470
+P 12100 4525
+F 0 "#PWR069" H 12100 4375 50  0001 C CNN
+F 1 "+24V" H 12115 4698 50  0000 C CNN
+F 2 "" H 12100 4525 50  0001 C CNN
+F 3 "" H 12100 4525 50  0001 C CNN
+	1    12100 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR048
+U 1 1 62EEE801
+P 10950 5050
+F 0 "#PWR048" H 10950 4900 50  0001 C CNN
+F 1 "+5V" H 10965 5223 50  0000 C CNN
+F 2 "" H 10950 5050 50  0001 C CNN
+F 3 "" H 10950 5050 50  0001 C CNN
+	1    10950 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR055
+U 1 1 62EF008A
+P 11150 5050
+F 0 "#PWR055" H 11150 4900 50  0001 C CNN
+F 1 "+5V" H 11165 5223 50  0000 C CNN
+F 2 "" H 11150 5050 50  0001 C CNN
+F 3 "" H 11150 5050 50  0001 C CNN
+	1    11150 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR062
+U 1 1 62EF0592
+P 11700 4525
+F 0 "#PWR062" H 11700 4375 50  0001 C CNN
+F 1 "+5V" H 11715 4698 50  0000 C CNN
+F 2 "" H 11700 4525 50  0001 C CNN
+F 3 "" H 11700 4525 50  0001 C CNN
+	1    11700 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 62944388
+P 5025 2025
+F 0 "C11" H 4910 1979 50  0000 R CNN
+F 1 "22uF" H 4910 2070 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5063 1875 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/1/GRM188R61A226ME15_02A-1985787.pdf" H 5025 2025 50  0001 C CNN
+F 4 "0.25	" H 5025 2025 50  0001 C CNN "Cost"
+F 5 "GRM188R61A226ME15D" H 5025 2025 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM188R61A226ME15D?qs=eeBpzGFlv%252B8DV%2FrilzyhAw%3D%3D" H 5025 2025 50  0001 C CNN "Vendor Link"
+F 7 "81-GRM188R61A226ME5D" H 5025 2025 50  0001 C CNN "Vendor PN"
+	1    5025 2025
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C10
+U 1 1 629CF210
+P 2950 2075
+F 0 "C10" H 3068 2121 50  0000 L CNN
+F 1 "330uF" H 3068 2030 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2988 1925 50  0001 C CNN
+F 3 "https://www.tdk-electronics.tdk.com/inf/20/30/db/aec/B41858.pdf" H 2950 2075 50  0001 C CNN
+F 4 "0.74" H 2950 2075 50  0001 C CNN "Cost"
+F 5 "B41858C7337M" H 2950 2075 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/EPCOS-TDK/B41858C7337M?qs=nVvxX1UUhUwH5qDoqkD2jQ%3D%3D" H 2950 2075 50  0001 C CNN "Vendor Link"
+F 7 "871-B41858C7337M" H 2950 2075 50  0001 C CNN "Vendor PN"
+	1    2950 2075
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 62AD0D31
+P 2300 2025
+F 0 "C9" H 2185 1979 50  0000 R CNN
+F 1 "10uF" H 2185 2070 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2338 1875 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/1/GRM188R6YA106MA73_01A-1985794.pdf" H 2300 2025 50  0001 C CNN
+F 4 "0.38" H 2300 2025 50  0001 C CNN "Cost"
+F 5 "GRM188R6YA106MA73D" H 2300 2025 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM188R6YA106MA73D?qs=I53XXhTNm8uKsiF7Obn3Gg%3D%3D" H 2300 2025 50  0001 C CNN "Vendor Link"
+F 7 "81-GRM188R6YA106MA3D" H 2300 2025 50  0001 C CNN "Vendor PN"
+	1    2300 2025
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 62C2284B
+P 5025 2275
+F 0 "#PWR027" H 5025 2025 50  0001 C CNN
+F 1 "GND" H 5030 2102 50  0000 C CNN
+F 2 "" H 5025 2275 50  0001 C CNN
+F 3 "" H 5025 2275 50  0001 C CNN
+	1    5025 2275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C CY1
+U 1 1 62C6824E
+P 2950 1550
+F 0 "CY1" H 2835 1504 50  0000 R CNN
+F 1 "1nF" H 2835 1595 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2988 1400 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1007_X8R_ULTRA_150C_SMD-1102703.pdf" H 2950 1550 50  0001 C CNN
+F 4 "0.11" H 2950 1550 50  0001 C CNN "Cost"
+F 5 "C0603C102J8HACTU" H 2950 1550 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KEMET/C0603C102J8HACTU?qs=W0yvOO0ixfGI74MGTGJgRQ%3D%3D" H 2950 1550 50  0001 C CNN "Vendor Link"
+F 7 "80-C0603C102J8HACTU" H 2950 1550 50  0001 C CNN "Vendor PN"
+	1    2950 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C CY2
+U 1 1 62CAD9BB
+P 2950 2575
+F 0 "CY2" H 2835 2529 50  0000 R CNN
+F 1 "1nF" H 2835 2620 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2988 2425 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1007_X8R_ULTRA_150C_SMD-1102703.pdf" H 2950 2575 50  0001 C CNN
+F 4 "0.11" H 2950 2575 50  0001 C CNN "Cost"
+F 5 "C0603C102J8HACTU" H 2950 2575 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KEMET/C0603C102J8HACTU?qs=W0yvOO0ixfGI74MGTGJgRQ%3D%3D" H 2950 2575 50  0001 C CNN "Vendor Link"
+F 7 "80-C0603C102J8HACTU" H 2950 2575 50  0001 C CNN "Vendor PN"
+	1    2950 2575
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 62DC91F6
+P 1975 1800
+F 0 "L1" V 2075 1775 50  0000 C CNN
+F 1 "1.5mH" V 1900 1800 50  0000 C CNN
+F 2 "Inductor_THT:L_Radial_D9.5mm_P5.00mm_Fastron_07HVP" H 1975 1800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/rlb9012-778371.pdf" H 1975 1800 50  0001 C CNN
+F 4 "0.86	" H 1975 1800 50  0001 C CNN "Cost"
+F 5 "RLB9012-152KL" H 1975 1800 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/RLB9012-152KL?qs=dB0LedT%252BmmDtmDJXzMqqfA%3D%3D" H 1975 1800 50  0001 C CNN "Vendor Link"
+F 7 "652-RLB9012-152KL" H 1975 1800 50  0001 C CNN "Vendor PN"
+	1    1975 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 62DC9F43
+P 1975 2325
+F 0 "L2" V 2075 2300 50  0000 C CNN
+F 1 "1.5mH" V 1900 2325 50  0000 C CNN
+F 2 "Inductor_THT:L_Radial_D9.5mm_P5.00mm_Fastron_07HVP" H 1975 2325 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/rlb9012-778371.pdf" H 1975 2325 50  0001 C CNN
+F 4 "0.86	" H 1975 2325 50  0001 C CNN "Cost"
+F 5 "RLB9012-152KL" H 1975 2325 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/RLB9012-152KL?qs=dB0LedT%252BmmDtmDJXzMqqfA%3D%3D" H 1975 2325 50  0001 C CNN "Vendor Link"
+F 7 "652-RLB9012-152KL" H 1975 2325 50  0001 C CNN "Vendor PN"
+	1    1975 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 62E5896E
+P 1625 2075
+F 0 "C3" H 1510 2029 50  0000 R CNN
+F 1 "10uF" H 1510 2120 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1663 1925 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/1/GRM188R6YA106MA73_01A-1985794.pdf" H 1625 2075 50  0001 C CNN
+F 4 "0.38" H 1625 2075 50  0001 C CNN "Cost"
+F 5 "GRM188R6YA106MA73D" H 1625 2075 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM188R6YA106MA73D?qs=I53XXhTNm8uKsiF7Obn3Gg%3D%3D" H 1625 2075 50  0001 C CNN "Vendor Link"
+F 7 "81-GRM188R6YA106MA3D" H 1625 2075 50  0001 C CNN "Vendor PN"
+	1    1625 2075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1625 1925 1625 1800
+Wire Wire Line
+	1625 1800 1825 1800
+Wire Wire Line
+	1625 2225 1625 2325
+Wire Wire Line
+	1625 2325 1825 2325
+Wire Wire Line
+	1125 1900 1125 1800
+Wire Wire Line
+	1125 1800 1625 1800
+Connection ~ 1625 1800
+Wire Wire Line
+	1125 2325 1625 2325
+Wire Wire Line
+	1125 2200 1125 2325
+Connection ~ 1625 2325
+$Comp
+L Device:Fuse F1
+U 1 1 630603BE
+P 925 1800
+F 0 "F1" V 728 1800 50  0000 C CNN
+F 1 "800mA" V 819 1800 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 855 1800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/sf_1206fp-1147012.pdf" H 925 1800 50  0001 C CNN
+F 4 "0.73" H 925 1800 50  0001 C CNN "Cost"
+F 5 "SF-1206FP080-2" H 925 1800 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/SF-1206FP080-2?qs=sGAEpiMZZMsIz3CjQ1xegQaWavv5npkedYq0MPpgWDrjGm%252B7jsuH4g%3D%3D" H 925 1800 50  0001 C CNN "Vendor Link"
+F 7 "652-SF-1206FP080-2" H 925 1800 50  0001 C CNN "Vendor PN"
+	1    925  1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	725  1725 725  1800
+$Comp
+L Kristerj-rescue:PQQ6W-Q24-S5-S-Juancho U4
+U 1 1 62A76277
+P 3800 1950
+F 0 "U4" H 3800 2417 50  0000 C CNN
+F 1 "URB2405S-6WR3" H 3800 2326 50  0000 C CNN
+F 2 "SamacSys_Parts:PQQ6WQ24S5S" H 3800 1950 50  0001 L BNN
+F 3 "https://www.mornsun-power.com/html/pdf/URB2405S-6WR3.html" H 3800 1950 50  0001 L BNN
+F 4 "12.83" H 3800 1950 50  0001 C CNN "Cost"
+F 5 "URB2405S-6WR3" H 3800 1950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.digikey.com/en/products/detail/mornsun-america-llc/URB2405S-6WR3/13168385" H 3800 1950 50  0001 C CNN "Vendor Link"
+F 7 "2725-URB2405S-6WR3-ND" H 3800 1950 50  0001 C CNN "Vendor PN"
+	1    3800 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	775  1800 725  1800
+Wire Wire Line
+	1125 2325 1125 2400
+Connection ~ 1125 2325
+Wire Wire Line
+	1075 1800 1125 1800
+Connection ~ 1125 1800
+Wire Wire Line
+	2950 1925 2950 1800
+Wire Wire Line
+	2950 2225 2950 2325
+NoConn ~ 3200 1750
+Wire Wire Line
+	3200 1950 3075 1950
+Wire Wire Line
+	3075 1950 3075 1800
+Wire Wire Line
+	3075 1800 2950 1800
+Connection ~ 2950 1800
+Wire Wire Line
+	3200 2150 3075 2150
+Wire Wire Line
+	3075 2150 3075 2325
+Wire Wire Line
+	3075 2325 2950 2325
+Connection ~ 2950 2325
+Wire Wire Line
+	4400 1950 4650 1950
+Wire Wire Line
+	4650 1950 4650 1750
+Wire Wire Line
+	4650 1750 5025 1750
+Wire Wire Line
+	5025 1750 5025 1875
+Wire Wire Line
+	5025 2175 5025 2225
+Wire Wire Line
+	4400 2150 4650 2150
+Wire Wire Line
+	4650 2150 4650 2225
+Wire Wire Line
+	4650 2225 5025 2225
+Connection ~ 5025 2225
+Wire Wire Line
+	5025 2225 5025 2275
+Wire Wire Line
+	2125 1800 2300 1800
+Wire Wire Line
+	2125 2325 2300 2325
+Wire Wire Line
+	2300 1875 2300 1800
+Connection ~ 2300 1800
+Wire Wire Line
+	2300 1800 2950 1800
+Wire Wire Line
+	2300 2175 2300 2325
+Connection ~ 2300 2325
+Wire Wire Line
+	2300 2325 2950 2325
+Wire Wire Line
+	2950 2425 2950 2325
+Wire Wire Line
+	2950 2725 2950 2775
+Wire Wire Line
+	2950 2775 4650 2775
+Wire Wire Line
+	4650 2775 4650 2225
+Connection ~ 4650 2225
+Wire Wire Line
+	5025 1675 5025 1750
+Connection ~ 5025 1750
+Wire Wire Line
+	2950 1700 2950 1800
+Wire Wire Line
+	2950 1400 2950 1300
+Wire Wire Line
+	2950 1300 4650 1300
+Wire Wire Line
+	4650 1300 4650 1750
+Connection ~ 4650 1750
+Text Notes 950  2200 0    47   ~ 0
+50V
+Text Notes 2800 2225 0    47   ~ 0
+50V
+Wire Notes Line
+	5800 2825 5800 475 
+Wire Notes Line
+	500  7325 7850 7325
+Text GLabel 16425 8025 2    50   Input ~ 0
+Pi1_DO3
+Text GLabel 13050 7925 0    50   Input ~ 0
+Pi1_D-OUT3
+Wire Notes Line
+	7950 2825 7950 475 
+Wire Notes Line
+	4700 7325 4700 3450
+Wire Notes Line
+	7850 3450 7850 8900
+Wire Notes Line
+	6900 14100 6900 8900
+Wire Notes Line
+	6900 8900 17825 8900
+Wire Notes Line
+	6900 10150 475  10150
+Wire Notes Line
+	475  10150 475  10175
+Text Notes 6425 3400 0    394  ~ 79
+RASPBERRY PI PICO 1
+Wire Wire Line
+	4425 5975 4425 6025
+Wire Wire Line
+	4425 6325 4425 6400
+Text GLabel 8750 24175 0    50   Input ~ 0
+Pi1_O_3
+Text GLabel 9575 1300 0    47   Input ~ 0
+Pi2_SWDIO
+Text GLabel 9575 1400 0    47   Input ~ 0
+Pi2_SWCLK
+Text GLabel 9575 1500 0    47   Input ~ 0
+Pi2_RST
+$Comp
+L Device:R R87
+U 1 1 6369FC0F
+P 18375 12525
+F 0 "R87" H 18445 12571 50  0000 L CNN
+F 1 "68K" H 18445 12480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 18305 12525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 18375 12525 50  0001 C CNN
+F 4 "0.10	" H 18375 12525 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 18375 12525 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 18375 12525 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 18375 12525 50  0001 C CNN "Vendor PN"
+	1    18375 12525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R88
+U 1 1 6369FC19
+P 18375 12950
+F 0 "R88" H 18445 12996 50  0000 L CNN
+F 1 "10K" H 18445 12905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 18305 12950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 18375 12950 50  0001 C CNN
+F 4 "0.10	" H 18375 12950 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 18375 12950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 18375 12950 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 18375 12950 50  0001 C CNN "Vendor PN"
+	1    18375 12950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18375 12675 18375 12725
+$Comp
+L power:GND #PWR0128
+U 1 1 6369FC24
+P 18375 13175
+F 0 "#PWR0128" H 18375 12925 50  0001 C CNN
+F 1 "GND" H 18380 13002 50  0000 C CNN
+F 2 "" H 18375 13175 50  0001 C CNN
+F 3 "" H 18375 13175 50  0001 C CNN
+	1    18375 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18375 13100 18375 13175
+Text Notes 19200 11350 0    146  ~ 29
+Discrete Input - 2
+$Comp
+L Device:R R93
+U 1 1 6369FC30
+P 19675 12525
+F 0 "R93" H 19745 12571 50  0000 L CNN
+F 1 "68K" H 19745 12480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19605 12525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 19675 12525 50  0001 C CNN
+F 4 "0.10	" H 19675 12525 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 19675 12525 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 19675 12525 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 19675 12525 50  0001 C CNN "Vendor PN"
+	1    19675 12525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R94
+U 1 1 6369FC3A
+P 19675 12950
+F 0 "R94" H 19745 12996 50  0000 L CNN
+F 1 "10K" H 19745 12905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19605 12950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 19675 12950 50  0001 C CNN
+F 4 "0.10	" H 19675 12950 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 19675 12950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 19675 12950 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 19675 12950 50  0001 C CNN "Vendor PN"
+	1    19675 12950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19675 12675 19675 12725
+$Comp
+L power:GND #PWR0166
+U 1 1 6369FC45
+P 19675 13175
+F 0 "#PWR0166" H 19675 12925 50  0001 C CNN
+F 1 "GND" H 19680 13002 50  0000 C CNN
+F 2 "" H 19675 13175 50  0001 C CNN
+F 3 "" H 19675 13175 50  0001 C CNN
+	1    19675 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19675 13100 19675 13175
+$Comp
+L Device:R R102
+U 1 1 6369FC50
+P 21050 12525
+F 0 "R102" H 21120 12571 50  0000 L CNN
+F 1 "68K" H 21120 12480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 20980 12525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 21050 12525 50  0001 C CNN
+F 4 "0.10	" H 21050 12525 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 21050 12525 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 21050 12525 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 21050 12525 50  0001 C CNN "Vendor PN"
+	1    21050 12525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R103
+U 1 1 6369FCB2
+P 21050 12950
+F 0 "R103" H 21120 12996 50  0000 L CNN
+F 1 "10K" H 21120 12905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 20980 12950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 21050 12950 50  0001 C CNN
+F 4 "0.10	" H 21050 12950 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 21050 12950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 21050 12950 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 21050 12950 50  0001 C CNN "Vendor PN"
+	1    21050 12950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21050 12675 21050 12725
+$Comp
+L power:GND #PWR0184
+U 1 1 6369FCBD
+P 21050 13175
+F 0 "#PWR0184" H 21050 12925 50  0001 C CNN
+F 1 "GND" H 21055 13002 50  0000 C CNN
+F 2 "" H 21050 13175 50  0001 C CNN
+F 3 "" H 21050 13175 50  0001 C CNN
+	1    21050 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21050 13100 21050 13175
+$Comp
+L Device:R R113
+U 1 1 6369FCC8
+P 22350 12525
+F 0 "R113" H 22420 12571 50  0000 L CNN
+F 1 "68K" H 22420 12480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 22280 12525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 22350 12525 50  0001 C CNN
+F 4 "0.10	" H 22350 12525 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 22350 12525 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 22350 12525 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 22350 12525 50  0001 C CNN "Vendor PN"
+	1    22350 12525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R114
+U 1 1 6369FCD2
+P 22350 12950
+F 0 "R114" H 22420 12996 50  0000 L CNN
+F 1 "10K" H 22420 12905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 22280 12950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 22350 12950 50  0001 C CNN
+F 4 "0.10	" H 22350 12950 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 22350 12950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 22350 12950 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 22350 12950 50  0001 C CNN "Vendor PN"
+	1    22350 12950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0199
+U 1 1 6369FCDC
+P 22350 13175
+F 0 "#PWR0199" H 22350 12925 50  0001 C CNN
+F 1 "GND" H 22355 13002 50  0000 C CNN
+F 2 "" H 22350 13175 50  0001 C CNN
+F 3 "" H 22350 13175 50  0001 C CNN
+	1    22350 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22350 13100 22350 13175
+Text GLabel 18825 12725 2    50   Input ~ 0
+Pi2_D-IN1
+Connection ~ 18375 12725
+Wire Wire Line
+	18375 12725 18375 12800
+Text GLabel 20175 12725 2    50   Input ~ 0
+Pi2_D-IN2
+Connection ~ 19675 12725
+Wire Wire Line
+	19675 12725 19675 12800
+Text GLabel 21525 12725 2    50   Input ~ 0
+Pi2_D-IN3
+Text GLabel 22825 12725 2    50   Input ~ 0
+Pi2_D-IN4
+Connection ~ 21050 12725
+Wire Wire Line
+	21050 12725 21050 12800
+Text GLabel 27000 5625 0    50   Input ~ 0
+Pi2_D-OUT1
+Text Notes 29075 3975 0    146  ~ 29
+Discrete Output - 2
+Wire Wire Line
+	20075 12825 20075 12725
+$Comp
+L power:GND #PWR0171
+U 1 1 6369FE16
+P 20075 13175
+F 0 "#PWR0171" H 20075 12925 50  0001 C CNN
+F 1 "GND" H 20080 13002 50  0000 C CNN
+F 2 "" H 20075 13175 50  0001 C CNN
+F 3 "" H 20075 13175 50  0001 C CNN
+	1    20075 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20075 13125 20075 13175
+Wire Wire Line
+	21450 12725 21450 12825
+Wire Wire Line
+	21050 12725 21450 12725
+$Comp
+L power:GND #PWR0193
+U 1 1 6369FE23
+P 21450 13175
+F 0 "#PWR0193" H 21450 12925 50  0001 C CNN
+F 1 "GND" H 21455 13002 50  0000 C CNN
+F 2 "" H 21450 13175 50  0001 C CNN
+F 3 "" H 21450 13175 50  0001 C CNN
+	1    21450 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21450 13125 21450 13175
+Wire Wire Line
+	22350 12675 22350 12725
+Wire Wire Line
+	22750 12725 22750 12825
+Wire Wire Line
+	22350 12725 22750 12725
+$Comp
+L power:GND #PWR0201
+U 1 1 6369FE31
+P 22750 13175
+F 0 "#PWR0201" H 22750 12925 50  0001 C CNN
+F 1 "GND" H 22755 13002 50  0000 C CNN
+F 2 "" H 22750 13175 50  0001 C CNN
+F 3 "" H 22750 13175 50  0001 C CNN
+	1    22750 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22750 13125 22750 13175
+Connection ~ 22350 12725
+Wire Wire Line
+	22350 12725 22350 12800
+Wire Wire Line
+	19675 12725 20075 12725
+Connection ~ 20075 12725
+Wire Wire Line
+	21525 12725 21450 12725
+Connection ~ 21450 12725
+Wire Wire Line
+	22825 12725 22750 12725
+Connection ~ 22750 12725
+Wire Wire Line
+	20075 12725 20175 12725
+$Comp
+L Device:R R97
+U 1 1 6369FE45
+P 20200 9450
+F 0 "R97" H 20130 9404 50  0000 R CNN
+F 1 "150" H 20130 9495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 20130 9450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 20200 9450 50  0001 C CNN
+F 4 "0.10	" H 20200 9450 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 20200 9450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 20200 9450 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 20200 9450 50  0001 C CNN "Vendor PN"
+	1    20200 9450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R99
+U 1 1 6369FE4F
+P 20825 9450
+F 0 "R99" H 20755 9404 50  0000 R CNN
+F 1 "150" H 20755 9495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 20755 9450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 20825 9450 50  0001 C CNN
+F 4 "0.10	" H 20825 9450 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 20825 9450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 20825 9450 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 20825 9450 50  0001 C CNN "Vendor PN"
+	1    20825 9450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R109
+U 1 1 6369FE59
+P 21425 9450
+F 0 "R109" H 21355 9404 50  0000 R CNN
+F 1 "150" H 21355 9495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 21355 9450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 21425 9450 50  0001 C CNN
+F 4 "0.10	" H 21425 9450 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 21425 9450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 21425 9450 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 21425 9450 50  0001 C CNN "Vendor PN"
+	1    21425 9450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0173
+U 1 1 6369FE63
+P 20200 9675
+F 0 "#PWR0173" H 20200 9425 50  0001 C CNN
+F 1 "GND" H 20205 9502 50  0000 C CNN
+F 2 "" H 20200 9675 50  0001 C CNN
+F 3 "" H 20200 9675 50  0001 C CNN
+	1    20200 9675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0179
+U 1 1 6369FE6D
+P 20825 9675
+F 0 "#PWR0179" H 20825 9425 50  0001 C CNN
+F 1 "GND" H 20830 9502 50  0000 C CNN
+F 2 "" H 20825 9675 50  0001 C CNN
+F 3 "" H 20825 9675 50  0001 C CNN
+	1    20825 9675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0191
+U 1 1 6369FE77
+P 21425 9675
+F 0 "#PWR0191" H 21425 9425 50  0001 C CNN
+F 1 "GND" H 21430 9502 50  0000 C CNN
+F 2 "" H 21425 9675 50  0001 C CNN
+F 3 "" H 21425 9675 50  0001 C CNN
+	1    21425 9675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21425 9600 21425 9675
+Wire Wire Line
+	20825 9600 20825 9675
+Wire Wire Line
+	20200 9600 20200 9675
+Text GLabel 21700 8600 2    50   Input ~ 0
+Pi2_4-20_IN1
+Text GLabel 21700 8700 2    50   Input ~ 0
+Pi2_4-20_IN2
+Text GLabel 21700 8800 2    50   Input ~ 0
+Pi2_4-20_IN3
+Wire Wire Line
+	21700 9325 21700 9175
+Wire Wire Line
+	21700 9175 21425 9175
+Wire Wire Line
+	21425 9175 21425 9300
+Wire Wire Line
+	21100 9325 21100 9175
+Wire Wire Line
+	21100 9175 20825 9175
+Wire Wire Line
+	20825 9175 20825 9300
+Wire Wire Line
+	20450 9325 20450 9175
+Wire Wire Line
+	20450 9175 20200 9175
+Wire Wire Line
+	20200 9175 20200 9300
+Wire Wire Line
+	20200 9175 20200 8600
+Connection ~ 20200 9175
+Connection ~ 20200 8600
+Wire Wire Line
+	20200 8600 21700 8600
+$Comp
+L power:GND #PWR0177
+U 1 1 6369FEE8
+P 20450 9675
+F 0 "#PWR0177" H 20450 9425 50  0001 C CNN
+F 1 "GND" H 20455 9502 50  0000 C CNN
+F 2 "" H 20450 9675 50  0001 C CNN
+F 3 "" H 20450 9675 50  0001 C CNN
+	1    20450 9675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20450 9625 20450 9675
+$Comp
+L power:GND #PWR0186
+U 1 1 6369FEF3
+P 21100 9675
+F 0 "#PWR0186" H 21100 9425 50  0001 C CNN
+F 1 "GND" H 21105 9502 50  0000 C CNN
+F 2 "" H 21100 9675 50  0001 C CNN
+F 3 "" H 21100 9675 50  0001 C CNN
+	1    21100 9675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21100 9625 21100 9675
+$Comp
+L power:GND #PWR0195
+U 1 1 6369FEFE
+P 21700 9675
+F 0 "#PWR0195" H 21700 9425 50  0001 C CNN
+F 1 "GND" H 21705 9502 50  0000 C CNN
+F 2 "" H 21700 9675 50  0001 C CNN
+F 3 "" H 21700 9675 50  0001 C CNN
+	1    21700 9675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21700 9625 21700 9675
+Text Notes 20000 8275 0    146  ~ 29
+4-20mA INPUT - 2
+Text GLabel 19525 4875 0    50   Input ~ 0
+SDA-0
+Text GLabel 19525 4975 0    50   Input ~ 0
+SCL-0
+Wire Wire Line
+	20825 9175 20825 8700
+Connection ~ 20825 9175
+Connection ~ 20825 8700
+Wire Wire Line
+	20825 8700 21700 8700
+Wire Wire Line
+	21425 9175 21425 8800
+Connection ~ 21425 9175
+Connection ~ 21425 8800
+Wire Wire Line
+	21425 8800 21700 8800
+Text GLabel 21025 5775 2    50   Input ~ 0
+Pi2_4-20_IN1
+Text GLabel 21025 5675 2    50   Input ~ 0
+Pi2_4-20_IN2
+Text GLabel 21025 5475 2    50   Input ~ 0
+Pi2_4-20_IN3
+Text GLabel 19450 5175 0    50   Input ~ 0
+Pi2_D-IN1
+Text GLabel 19450 5275 0    50   Input ~ 0
+Pi2_D-IN2
+Text GLabel 19450 5375 0    50   Input ~ 0
+Pi2_D-IN3
+Text GLabel 19450 5475 0    50   Input ~ 0
+Pi2_D-IN4
+Text GLabel 21025 5875 2    47   Input ~ 0
+Pi2_RST
+Text GLabel 19450 5675 0    50   Input ~ 0
+Pi2_D-OUT1
+Text GLabel 19450 5875 0    50   Input ~ 0
+Pi2_D-OUT3
+Text GLabel 18350 12275 0    50   Input ~ 0
+Pi2_DI_1
+Wire Wire Line
+	18350 12275 18375 12275
+Wire Wire Line
+	18375 12275 18375 12375
+Text GLabel 19650 12275 0    50   Input ~ 0
+Pi2_DI_2
+Wire Wire Line
+	19675 12275 19675 12375
+Wire Wire Line
+	19650 12275 19675 12275
+Text GLabel 21025 12275 0    50   Input ~ 0
+Pi2_DI_3
+Wire Wire Line
+	21025 12275 21050 12275
+Wire Wire Line
+	21050 12275 21050 12375
+Text GLabel 22325 12275 0    50   Input ~ 0
+Pi2_DI_4
+Wire Wire Line
+	22325 12275 22350 12275
+Wire Wire Line
+	22350 12275 22350 12375
+$Comp
+L Connector:Screw_Terminal_01x04 J19
+U 1 1 6369FF44
+P 22550 11575
+F 0 "J19" H 22630 11567 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 22630 11476 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 22550 11575 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984633-1458842.pdf" H 22550 11575 50  0001 C CNN
+F 4 "1.07" H 22550 11575 50  0001 C CNN "Cost"
+F 5 "1984633" H 22550 11575 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984633?qs=dKKAVK9nnHOP434WOXxXdg%3D%3D" H 22550 11575 50  0001 C CNN "Vendor Link"
+F 7 "651-1984633" H 22550 11575 50  0001 C CNN "Vendor PN"
+	1    22550 11575
+	1    0    0    -1  
+$EndComp
+Text GLabel 22300 11475 0    50   Input ~ 0
+Pi2_DI_1
+Wire Wire Line
+	22300 11475 22350 11475
+Text GLabel 22300 11575 0    50   Input ~ 0
+Pi2_DI_2
+Wire Wire Line
+	22300 11575 22350 11575
+Text GLabel 22300 11675 0    50   Input ~ 0
+Pi2_DI_3
+Wire Wire Line
+	22300 11675 22350 11675
+Text GLabel 22300 11775 0    50   Input ~ 0
+Pi2_DI_4
+Wire Wire Line
+	22300 11775 22350 11775
+Text GLabel 25875 4450 0    50   Input ~ 0
+Pi2_DO1
+Wire Wire Line
+	25875 4450 25950 4450
+Text GLabel 25875 4650 0    50   Input ~ 0
+Pi2_DO3
+Wire Wire Line
+	25875 4650 25950 4650
+$Comp
+L Kristerj-rescue:PICO_RP2040-Juancho U13
+U 1 1 6369FF6E
+P 20225 5825
+F 0 "U13" H 20200 7190 50  0000 C CNN
+F 1 "PICO_RP2040" H 20200 7099 50  0000 C CNN
+F 2 "Juancho:Rasp_Pi_PICO" H 20125 7275 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/181/M20-782-1220556.pdf" H 20125 7275 50  0001 C CNN
+F 4 "2.30	" H 20225 5825 50  0001 C CNN "Cost"
+F 5 "M20-7822046" H 20225 5825 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Harwin/M20-7822046?qs=sGAEpiMZZMvlX3nhDDO4ABznH5rKKlExqY22J5gDOpY%3D" H 20225 5825 50  0001 C CNN "Vendor Link"
+F 7 "855-M20-7822046" H 20225 5825 50  0001 C CNN "Vendor PN"
+	1    20225 5825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19525 4975 19575 4975
+Wire Wire Line
+	19575 4875 19525 4875
+$Comp
+L power:GND #PWR0165
+U 1 1 636A0024
+P 19500 6850
+F 0 "#PWR0165" H 19500 6600 50  0001 C CNN
+F 1 "GND" H 19505 6677 50  0000 C CNN
+F 2 "" H 19500 6850 50  0001 C CNN
+F 3 "" H 19500 6850 50  0001 C CNN
+	1    19500 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19500 6850 19500 6575
+Wire Wire Line
+	19500 6575 19575 6575
+Wire Wire Line
+	19575 6075 19500 6075
+Wire Wire Line
+	19500 6075 19500 6575
+Connection ~ 19500 6575
+Wire Wire Line
+	19575 5575 19500 5575
+Wire Wire Line
+	19500 5575 19500 6075
+Connection ~ 19500 6075
+Wire Wire Line
+	19575 5075 19500 5075
+Wire Wire Line
+	19500 5075 19500 5575
+Connection ~ 19500 5575
+Wire Wire Line
+	19450 5175 19575 5175
+Wire Wire Line
+	19450 5275 19575 5275
+Wire Wire Line
+	19450 5375 19575 5375
+Wire Wire Line
+	19450 5475 19575 5475
+Wire Wire Line
+	19450 5675 19575 5675
+Wire Wire Line
+	19450 5875 19575 5875
+Wire Wire Line
+	20825 5875 21025 5875
+Wire Wire Line
+	20825 5775 21025 5775
+Wire Wire Line
+	20825 5475 21025 5475
+Wire Wire Line
+	21025 5675 20825 5675
+$Comp
+L power:GND #PWR0183
+U 1 1 636A004D
+P 20925 6850
+F 0 "#PWR0183" H 20925 6600 50  0001 C CNN
+F 1 "GND" H 20930 6677 50  0000 C CNN
+F 2 "" H 20925 6850 50  0001 C CNN
+F 3 "" H 20925 6850 50  0001 C CNN
+	1    20925 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20925 6850 20925 6575
+Wire Wire Line
+	20925 6575 20825 6575
+Wire Wire Line
+	20825 6075 20925 6075
+Wire Wire Line
+	20925 6075 20925 6575
+Connection ~ 20925 6575
+Wire Wire Line
+	20825 5575 20925 5575
+Wire Wire Line
+	20925 5575 20925 6075
+Connection ~ 20925 6075
+Wire Wire Line
+	20825 5075 20925 5075
+Wire Wire Line
+	20925 5075 20925 5575
+Connection ~ 20925 5575
+$Comp
+L power:+5V #PWR0182
+U 1 1 636A0062
+P 20925 4825
+F 0 "#PWR0182" H 20925 4675 50  0001 C CNN
+F 1 "+5V" H 20940 4998 50  0000 C CNN
+F 2 "" H 20925 4825 50  0001 C CNN
+F 3 "" H 20925 4825 50  0001 C CNN
+	1    20925 4825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20925 4825 20925 4875
+Wire Wire Line
+	20925 4875 20825 4875
+Text GLabel 20900 4150 0    47   Input ~ 0
+Pi2_SWDIO
+Text GLabel 20900 3950 0    47   Input ~ 0
+Pi2_SWCLK
+Text Notes 18700 4000 0    146  ~ 29
+PI PICO - 2
+Text Notes 20875 3825 0    146  ~ 0
+debug\n
+Text Notes 21800 11225 0    146  ~ 0
+discrete input\n
+Text Notes 25400 4125 0    146  ~ 0
+discrete output\n
+$Comp
+L Connector_Generic:Conn_01x03 J17
+U 1 1 636A043E
+P 21175 4050
+F 0 "J17" H 21255 4092 50  0000 L CNN
+F 1 "Conn_01x03" H 21255 4001 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 21175 4050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/7/ENG_CD_215299_F-2028124.pdf" H 21175 4050 50  0001 C CNN
+F 4 "0.77	" H 21175 4050 50  0001 C CNN "Cost"
+F 5 "215299-3" H 21175 4050 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/TE-Connectivity/215299-3?qs=pol9tQvH%252BaHR%252B8PZSmhoEA%3D%3D" H 21175 4050 50  0001 C CNN "Vendor Link"
+F 7 "571-215299-3" H 21175 4050 50  0001 C CNN "Vendor PN"
+	1    21175 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 20900 4050 0    47   Input ~ 0
+Pi2_SWGND
+Wire Wire Line
+	20975 3950 20900 3950
+Wire Wire Line
+	20900 4050 20975 4050
+Wire Wire Line
+	20975 4150 20900 4150
+$Comp
+L Connector:Screw_Terminal_01x06 J15
+U 1 1 636A0460
+P 19700 8700
+F 0 "J15" H 19700 9000 50  0000 C CNN
+F 1 "Screw_Terminal_01x06" V 19800 8650 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-6-3.5-H_1x06_P3.50mm_Horizontal" H 19700 8700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984659-1458991.pdf" H 19700 8700 50  0001 C CNN
+F 4 "1.54	" H 19700 8700 50  0001 C CNN "Cost"
+F 5 "1984659" H 19700 8700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984659?qs=FQYO1eEgUPBU2UOuKgfwDQ%3D%3D" H 19700 8700 50  0001 C CNN "Vendor Link"
+F 7 "651-1984659" H 19700 8700 50  0001 C CNN "Vendor PN"
+	1    19700 8700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0169
+U 1 1 636A046A
+P 19950 8425
+F 0 "#PWR0169" H 19950 8275 50  0001 C CNN
+F 1 "+24V" H 19965 8598 50  0000 C CNN
+F 2 "" H 19950 8425 50  0001 C CNN
+F 3 "" H 19950 8425 50  0001 C CNN
+	1    19950 8425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19900 8500 19950 8500
+Wire Wire Line
+	19950 8500 19950 8425
+Wire Wire Line
+	19950 8500 19950 8700
+Wire Wire Line
+	19950 8700 19900 8700
+Connection ~ 19950 8500
+Wire Wire Line
+	19950 8700 19950 8900
+Wire Wire Line
+	19950 8900 19900 8900
+Connection ~ 19950 8700
+Wire Wire Line
+	19900 8600 20200 8600
+Wire Wire Line
+	20100 8800 20100 9000
+Wire Wire Line
+	20100 8800 21425 8800
+Wire Wire Line
+	19900 9000 20100 9000
+Wire Wire Line
+	20025 8800 20025 8700
+Wire Wire Line
+	20025 8700 20825 8700
+Wire Wire Line
+	19900 8800 20025 8800
+$Comp
+L Device:R R108
+U 1 1 636A05F1
+P 21425 6675
+F 0 "R108" H 21355 6629 50  0000 R CNN
+F 1 "10K" H 21355 6720 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 21355 6675 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 21425 6675 50  0001 C CNN
+F 4 "0.10	" H 21425 6675 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 21425 6675 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 21425 6675 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 21425 6675 50  0001 C CNN "Vendor PN"
+	1    21425 6675
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R106
+U 1 1 636A05FB
+P 21125 6650
+F 0 "R106" H 21055 6604 50  0000 R CNN
+F 1 "10K" H 21055 6695 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 21055 6650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 21125 6650 50  0001 C CNN
+F 4 "0.10	" H 21125 6650 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 21125 6650 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 21125 6650 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 21125 6650 50  0001 C CNN "Vendor PN"
+	1    21125 6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R112
+U 1 1 636A0605
+P 21775 6175
+F 0 "R112" H 21705 6129 50  0000 R CNN
+F 1 "10K" H 21705 6220 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 21705 6175 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 21775 6175 50  0001 C CNN
+F 4 "0.10	" H 21775 6175 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 21775 6175 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 21775 6175 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 21775 6175 50  0001 C CNN "Vendor PN"
+	1    21775 6175
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0188
+U 1 1 636A0611
+P 21125 6850
+F 0 "#PWR0188" H 21125 6600 50  0001 C CNN
+F 1 "GND" H 21130 6677 50  0000 C CNN
+F 2 "" H 21125 6850 50  0001 C CNN
+F 3 "" H 21125 6850 50  0001 C CNN
+	1    21125 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0190
+U 1 1 636A061F
+P 21425 6850
+F 0 "#PWR0190" H 21425 6600 50  0001 C CNN
+F 1 "GND" H 21430 6677 50  0000 C CNN
+F 2 "" H 21425 6850 50  0001 C CNN
+F 3 "" H 21425 6850 50  0001 C CNN
+	1    21425 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0198
+U 1 1 636A062A
+P 21775 5975
+F 0 "#PWR0198" H 21775 5825 50  0001 C CNN
+F 1 "+5V" H 21790 6148 50  0000 C CNN
+F 2 "" H 21775 5975 50  0001 C CNN
+F 3 "" H 21775 5975 50  0001 C CNN
+	1    21775 5975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D45
+U 1 1 636A06A0
+P 18750 12975
+F 0 "D45" V 18704 13055 50  0000 L CNN
+F 1 "3.9V" V 18795 13055 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 18750 12975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 18750 12975 50  0001 C CNN
+F 4 "0.17" H 18750 12975 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 18750 12975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 18750 12975 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 18750 12975 50  0001 C CNN "Vendor PN"
+	1    18750 12975
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 636A06AA
+P 18750 13175
+F 0 "#PWR0132" H 18750 12925 50  0001 C CNN
+F 1 "GND" H 18755 13002 50  0000 C CNN
+F 2 "" H 18750 13175 50  0001 C CNN
+F 3 "" H 18750 13175 50  0001 C CNN
+	1    18750 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18375 12725 18750 12725
+Wire Wire Line
+	18750 13125 18750 13175
+Wire Wire Line
+	18750 12725 18750 12825
+Wire Wire Line
+	18825 12725 18750 12725
+Connection ~ 18750 12725
+$Comp
+L Device:D_Zener D47
+U 1 1 636A06B9
+P 20075 12975
+F 0 "D47" V 20029 13055 50  0000 L CNN
+F 1 "3.9V" V 20120 13055 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 20075 12975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 20075 12975 50  0001 C CNN
+F 4 "0.17" H 20075 12975 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 20075 12975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 20075 12975 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 20075 12975 50  0001 C CNN "Vendor PN"
+	1    20075 12975
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D53
+U 1 1 636A06C3
+P 21450 12975
+F 0 "D53" V 21404 13055 50  0000 L CNN
+F 1 "3.9V" V 21495 13055 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 21450 12975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 21450 12975 50  0001 C CNN
+F 4 "0.17" H 21450 12975 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 21450 12975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 21450 12975 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 21450 12975 50  0001 C CNN "Vendor PN"
+	1    21450 12975
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D57
+U 1 1 636A06CD
+P 22750 12975
+F 0 "D57" V 22704 13055 50  0000 L CNN
+F 1 "3.9V" V 22795 13055 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 22750 12975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 22750 12975 50  0001 C CNN
+F 4 "0.17" H 22750 12975 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 22750 12975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 22750 12975 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 22750 12975 50  0001 C CNN "Vendor PN"
+	1    22750 12975
+	0    1    1    0   
+$EndComp
+Text Notes 21700 8950 0    47   ~ 0
+600mV to 3V
+$Comp
+L Device:D_Zener D49
+U 1 1 636A06D8
+P 20450 9475
+F 0 "D49" V 20404 9555 50  0000 L CNN
+F 1 "3.9V" V 20495 9555 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 20450 9475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 20450 9475 50  0001 C CNN
+F 4 "0.17" H 20450 9475 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 20450 9475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 20450 9475 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 20450 9475 50  0001 C CNN "Vendor PN"
+	1    20450 9475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D51
+U 1 1 636A06E2
+P 21100 9475
+F 0 "D51" V 21054 9555 50  0000 L CNN
+F 1 "3.9V" V 21145 9555 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 21100 9475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 21100 9475 50  0001 C CNN
+F 4 "0.17" H 21100 9475 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 21100 9475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 21100 9475 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 21100 9475 50  0001 C CNN "Vendor PN"
+	1    21100 9475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D55
+U 1 1 636A06EC
+P 21700 9475
+F 0 "D55" V 21654 9555 50  0000 L CNN
+F 1 "3.9V" V 21745 9555 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 21700 9475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 21700 9475 50  0001 C CNN
+F 4 "0.17" H 21700 9475 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 21700 9475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 21700 9475 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 21700 9475 50  0001 C CNN "Vendor PN"
+	1    21700 9475
+	0    1    1    0   
+$EndComp
+Text GLabel 30375 5725 2    50   Input ~ 0
+Pi2_DO1
+$Comp
+L power:GNDA #PWR0213
+U 1 1 636A084A
+P 25900 4850
+F 0 "#PWR0213" H 25900 4600 50  0001 C CNN
+F 1 "GNDA" H 25905 4677 50  0000 C CNN
+F 2 "" H 25900 4850 50  0001 C CNN
+F 3 "" H 25900 4850 50  0001 C CNN
+	1    25900 4850
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	17825 7325 25175 7325
+Text GLabel 34275 8000 2    50   Input ~ 0
+Pi2_DO3
+Text GLabel 30900 7900 0    50   Input ~ 0
+Pi2_D-OUT3
+Wire Notes Line
+	22025 7325 22025 3450
+Wire Notes Line
+	25175 3450 25175 8900
+Wire Notes Line
+	24225 14100 24225 8900
+Wire Notes Line
+	24225 8900 35150 8900
+Wire Notes Line
+	24225 10150 17800 10150
+Wire Notes Line
+	17800 10150 17800 10175
+Text Notes 23750 3400 0    394  ~ 79
+RASPBERRY PI PICO 2
+Wire Wire Line
+	20825 6475 21125 6475
+Wire Wire Line
+	21125 6475 21125 6500
+Wire Wire Line
+	21775 6325 21775 6375
+Wire Wire Line
+	21775 6375 20825 6375
+Wire Wire Line
+	21425 6525 21425 6275
+Wire Wire Line
+	21425 6275 20825 6275
+Wire Wire Line
+	21125 6800 21125 6850
+Wire Wire Line
+	21425 6825 21425 6850
+Wire Wire Line
+	21775 5975 21775 6025
+Text GLabel 9575 1700 0    47   Input ~ 0
+Pi3_SWDIO
+Text GLabel 9575 1800 0    47   Input ~ 0
+Pi3_SWCLK
+Text GLabel 9575 1900 0    47   Input ~ 0
+Pi3_RST
+$Comp
+L Device:R R169
+U 1 1 63FFA2D5
+P 35725 12525
+F 0 "R169" H 35795 12571 50  0000 L CNN
+F 1 "68K" H 35795 12480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 35655 12525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 35725 12525 50  0001 C CNN
+F 4 "0.10	" H 35725 12525 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 35725 12525 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 35725 12525 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 35725 12525 50  0001 C CNN "Vendor PN"
+	1    35725 12525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R170
+U 1 1 63FFA2DF
+P 35725 12950
+F 0 "R170" H 35795 12996 50  0000 L CNN
+F 1 "10K" H 35795 12905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 35655 12950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 35725 12950 50  0001 C CNN
+F 4 "0.10	" H 35725 12950 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 35725 12950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 35725 12950 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 35725 12950 50  0001 C CNN "Vendor PN"
+	1    35725 12950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	35725 12675 35725 12725
+$Comp
+L power:GND #PWR0307
+U 1 1 63FFA2EA
+P 35725 13175
+F 0 "#PWR0307" H 35725 12925 50  0001 C CNN
+F 1 "GND" H 35730 13002 50  0000 C CNN
+F 2 "" H 35725 13175 50  0001 C CNN
+F 3 "" H 35725 13175 50  0001 C CNN
+	1    35725 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	35725 13100 35725 13175
+Text Notes 36550 11350 0    146  ~ 29
+Discrete Input - 3
+$Comp
+L Device:R R175
+U 1 1 63FFA2F6
+P 37025 12525
+F 0 "R175" H 37095 12571 50  0000 L CNN
+F 1 "68K" H 37095 12480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 36955 12525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 37025 12525 50  0001 C CNN
+F 4 "0.10	" H 37025 12525 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 37025 12525 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 37025 12525 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 37025 12525 50  0001 C CNN "Vendor PN"
+	1    37025 12525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R176
+U 1 1 63FFA300
+P 37025 12950
+F 0 "R176" H 37095 12996 50  0000 L CNN
+F 1 "10K" H 37095 12905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 36955 12950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 37025 12950 50  0001 C CNN
+F 4 "0.10	" H 37025 12950 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 37025 12950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 37025 12950 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 37025 12950 50  0001 C CNN "Vendor PN"
+	1    37025 12950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	37025 12675 37025 12725
+$Comp
+L power:GND #PWR0315
+U 1 1 63FFA30B
+P 37025 13175
+F 0 "#PWR0315" H 37025 12925 50  0001 C CNN
+F 1 "GND" H 37030 13002 50  0000 C CNN
+F 2 "" H 37025 13175 50  0001 C CNN
+F 3 "" H 37025 13175 50  0001 C CNN
+	1    37025 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	37025 13100 37025 13175
+$Comp
+L Device:R R184
+U 1 1 63FFA316
+P 38400 12525
+F 0 "R184" H 38470 12571 50  0000 L CNN
+F 1 "68K" H 38470 12480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 38330 12525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 38400 12525 50  0001 C CNN
+F 4 "0.10	" H 38400 12525 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 38400 12525 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 38400 12525 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 38400 12525 50  0001 C CNN "Vendor PN"
+	1    38400 12525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R185
+U 1 1 63FFA320
+P 38400 12950
+F 0 "R185" H 38470 12996 50  0000 L CNN
+F 1 "10K" H 38470 12905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 38330 12950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 38400 12950 50  0001 C CNN
+F 4 "0.10	" H 38400 12950 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 38400 12950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 38400 12950 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 38400 12950 50  0001 C CNN "Vendor PN"
+	1    38400 12950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38400 12675 38400 12725
+$Comp
+L power:GND #PWR0332
+U 1 1 63FFA32B
+P 38400 13175
+F 0 "#PWR0332" H 38400 12925 50  0001 C CNN
+F 1 "GND" H 38405 13002 50  0000 C CNN
+F 2 "" H 38400 13175 50  0001 C CNN
+F 3 "" H 38400 13175 50  0001 C CNN
+	1    38400 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38400 13100 38400 13175
+$Comp
+L Device:R R195
+U 1 1 63FFA336
+P 39700 12525
+F 0 "R195" H 39770 12571 50  0000 L CNN
+F 1 "68K" H 39770 12480 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 39630 12525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 39700 12525 50  0001 C CNN
+F 4 "0.10	" H 39700 12525 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 39700 12525 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 39700 12525 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 39700 12525 50  0001 C CNN "Vendor PN"
+	1    39700 12525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R196
+U 1 1 63FFA340
+P 39700 12950
+F 0 "R196" H 39770 12996 50  0000 L CNN
+F 1 "10K" H 39770 12905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 39630 12950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 39700 12950 50  0001 C CNN
+F 4 "0.10	" H 39700 12950 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 39700 12950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 39700 12950 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 39700 12950 50  0001 C CNN "Vendor PN"
+	1    39700 12950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0347
+U 1 1 63FFA34A
+P 39700 13175
+F 0 "#PWR0347" H 39700 12925 50  0001 C CNN
+F 1 "GND" H 39705 13002 50  0000 C CNN
+F 2 "" H 39700 13175 50  0001 C CNN
+F 3 "" H 39700 13175 50  0001 C CNN
+	1    39700 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	39700 13100 39700 13175
+Text GLabel 36175 12725 2    50   Input ~ 0
+Pi3_D-IN1
+Connection ~ 35725 12725
+Wire Wire Line
+	35725 12725 35725 12800
+Text GLabel 37525 12725 2    50   Input ~ 0
+Pi3_D-IN2
+Connection ~ 37025 12725
+Wire Wire Line
+	37025 12725 37025 12800
+Text GLabel 38875 12725 2    50   Input ~ 0
+Pi3_D-IN3
+Text GLabel 40175 12725 2    50   Input ~ 0
+Pi3_D-IN4
+Connection ~ 38400 12725
+Wire Wire Line
+	38400 12725 38400 12800
+Text Notes 46425 3975 0    146  ~ 29
+Discrete Output - 3
+Wire Wire Line
+	37425 12825 37425 12725
+$Comp
+L power:GND #PWR0319
+U 1 1 63FFA40C
+P 37425 13175
+F 0 "#PWR0319" H 37425 12925 50  0001 C CNN
+F 1 "GND" H 37430 13002 50  0000 C CNN
+F 2 "" H 37425 13175 50  0001 C CNN
+F 3 "" H 37425 13175 50  0001 C CNN
+	1    37425 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	37425 13125 37425 13175
+Wire Wire Line
+	38800 12725 38800 12825
+Wire Wire Line
+	38400 12725 38800 12725
+$Comp
+L power:GND #PWR0340
+U 1 1 63FFA419
+P 38800 13175
+F 0 "#PWR0340" H 38800 12925 50  0001 C CNN
+F 1 "GND" H 38805 13002 50  0000 C CNN
+F 2 "" H 38800 13175 50  0001 C CNN
+F 3 "" H 38800 13175 50  0001 C CNN
+	1    38800 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38800 13125 38800 13175
+Wire Wire Line
+	39700 12675 39700 12725
+Wire Wire Line
+	40100 12725 40100 12825
+Wire Wire Line
+	39700 12725 40100 12725
+$Comp
+L power:GND #PWR0349
+U 1 1 63FFA4FB
+P 40100 13175
+F 0 "#PWR0349" H 40100 12925 50  0001 C CNN
+F 1 "GND" H 40105 13002 50  0000 C CNN
+F 2 "" H 40100 13175 50  0001 C CNN
+F 3 "" H 40100 13175 50  0001 C CNN
+	1    40100 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	40100 13125 40100 13175
+Connection ~ 39700 12725
+Wire Wire Line
+	39700 12725 39700 12800
+Wire Wire Line
+	37025 12725 37425 12725
+Connection ~ 37425 12725
+Wire Wire Line
+	38875 12725 38800 12725
+Connection ~ 38800 12725
+Wire Wire Line
+	40175 12725 40100 12725
+Connection ~ 40100 12725
+Wire Wire Line
+	37425 12725 37525 12725
+$Comp
+L Device:R R179
+U 1 1 63FFA50F
+P 37550 9450
+F 0 "R179" H 37480 9404 50  0000 R CNN
+F 1 "150" H 37480 9495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 37480 9450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 37550 9450 50  0001 C CNN
+F 4 "0.10	" H 37550 9450 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 37550 9450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 37550 9450 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 37550 9450 50  0001 C CNN "Vendor PN"
+	1    37550 9450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R182
+U 1 1 63FFA519
+P 38175 9450
+F 0 "R182" H 38105 9404 50  0000 R CNN
+F 1 "150" H 38105 9495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 38105 9450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 38175 9450 50  0001 C CNN
+F 4 "0.10	" H 38175 9450 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 38175 9450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 38175 9450 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 38175 9450 50  0001 C CNN "Vendor PN"
+	1    38175 9450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R190
+U 1 1 63FFA523
+P 38775 9450
+F 0 "R190" H 38705 9404 50  0000 R CNN
+F 1 "150" H 38705 9495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 38705 9450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 38775 9450 50  0001 C CNN
+F 4 "0.10	" H 38775 9450 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 38775 9450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 38775 9450 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 38775 9450 50  0001 C CNN "Vendor PN"
+	1    38775 9450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0321
+U 1 1 63FFA52D
+P 37550 9675
+F 0 "#PWR0321" H 37550 9425 50  0001 C CNN
+F 1 "GND" H 37555 9502 50  0000 C CNN
+F 2 "" H 37550 9675 50  0001 C CNN
+F 3 "" H 37550 9675 50  0001 C CNN
+	1    37550 9675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0328
+U 1 1 63FFA537
+P 38175 9675
+F 0 "#PWR0328" H 38175 9425 50  0001 C CNN
+F 1 "GND" H 38180 9502 50  0000 C CNN
+F 2 "" H 38175 9675 50  0001 C CNN
+F 3 "" H 38175 9675 50  0001 C CNN
+	1    38175 9675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0338
+U 1 1 63FFA541
+P 38775 9675
+F 0 "#PWR0338" H 38775 9425 50  0001 C CNN
+F 1 "GND" H 38780 9502 50  0000 C CNN
+F 2 "" H 38775 9675 50  0001 C CNN
+F 3 "" H 38775 9675 50  0001 C CNN
+	1    38775 9675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38775 9600 38775 9675
+Wire Wire Line
+	38175 9600 38175 9675
+Wire Wire Line
+	37550 9600 37550 9675
+Text GLabel 39050 8600 2    50   Input ~ 0
+Pi3_4-20_IN1
+Text GLabel 39050 8700 2    50   Input ~ 0
+Pi3_4-20_IN2
+Text GLabel 39050 8800 2    50   Input ~ 0
+Pi3_4-20_IN3
+Wire Wire Line
+	39050 9325 39050 9175
+Wire Wire Line
+	39050 9175 38775 9175
+Wire Wire Line
+	38775 9175 38775 9300
+Wire Wire Line
+	38450 9325 38450 9175
+Wire Wire Line
+	38450 9175 38175 9175
+Wire Wire Line
+	38175 9175 38175 9300
+Wire Wire Line
+	37800 9325 37800 9175
+Wire Wire Line
+	37800 9175 37550 9175
+Wire Wire Line
+	37550 9175 37550 9300
+Wire Wire Line
+	37550 9175 37550 8600
+Connection ~ 37550 9175
+Connection ~ 37550 8600
+Wire Wire Line
+	37550 8600 39050 8600
+$Comp
+L power:GND #PWR0325
+U 1 1 63FFA5A2
+P 37800 9675
+F 0 "#PWR0325" H 37800 9425 50  0001 C CNN
+F 1 "GND" H 37805 9502 50  0000 C CNN
+F 2 "" H 37800 9675 50  0001 C CNN
+F 3 "" H 37800 9675 50  0001 C CNN
+	1    37800 9675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	37800 9625 37800 9675
+$Comp
+L power:GND #PWR0334
+U 1 1 63FFA5AD
+P 38450 9675
+F 0 "#PWR0334" H 38450 9425 50  0001 C CNN
+F 1 "GND" H 38455 9502 50  0000 C CNN
+F 2 "" H 38450 9675 50  0001 C CNN
+F 3 "" H 38450 9675 50  0001 C CNN
+	1    38450 9675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38450 9625 38450 9675
+$Comp
+L power:GND #PWR0343
+U 1 1 63FFA5B8
+P 39050 9675
+F 0 "#PWR0343" H 39050 9425 50  0001 C CNN
+F 1 "GND" H 39055 9502 50  0000 C CNN
+F 2 "" H 39050 9675 50  0001 C CNN
+F 3 "" H 39050 9675 50  0001 C CNN
+	1    39050 9675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	39050 9625 39050 9675
+Text Notes 37350 8275 0    146  ~ 29
+4-20mA INPUT - 3
+Text GLabel 36900 4925 0    50   Input ~ 0
+SDA-0
+Text GLabel 36900 5025 0    50   Input ~ 0
+SCL-0
+Wire Wire Line
+	38175 9175 38175 8700
+Connection ~ 38175 9175
+Connection ~ 38175 8700
+Wire Wire Line
+	38175 8700 39050 8700
+Wire Wire Line
+	38775 9175 38775 8800
+Connection ~ 38775 9175
+Connection ~ 38775 8800
+Wire Wire Line
+	38775 8800 39050 8800
+Text GLabel 38400 5825 2    50   Input ~ 0
+Pi3_4-20_IN1
+Text GLabel 38400 5725 2    50   Input ~ 0
+Pi3_4-20_IN2
+Text GLabel 38400 5525 2    50   Input ~ 0
+Pi3_4-20_IN3
+Text GLabel 36825 5225 0    50   Input ~ 0
+Pi3_D-IN1
+Text GLabel 36825 5325 0    50   Input ~ 0
+Pi3_D-IN2
+Text GLabel 36825 5425 0    50   Input ~ 0
+Pi3_D-IN3
+Text GLabel 36825 5525 0    50   Input ~ 0
+Pi3_D-IN4
+Text GLabel 38400 5925 2    47   Input ~ 0
+Pi3_RST
+Text GLabel 36825 5725 0    50   Input ~ 0
+Pi3_D-OUT1
+Text GLabel 36825 5925 0    50   Input ~ 0
+Pi3_D-OUT3
+Text GLabel 35700 12275 0    50   Input ~ 0
+Pi3_DI_1
+Wire Wire Line
+	35700 12275 35725 12275
+Wire Wire Line
+	35725 12275 35725 12375
+Text GLabel 37000 12275 0    50   Input ~ 0
+Pi3_DI_2
+Wire Wire Line
+	37025 12275 37025 12375
+Wire Wire Line
+	37000 12275 37025 12275
+Text GLabel 38375 12275 0    50   Input ~ 0
+Pi3_DI_3
+Wire Wire Line
+	38375 12275 38400 12275
+Wire Wire Line
+	38400 12275 38400 12375
+Text GLabel 39675 12275 0    50   Input ~ 0
+Pi3_DI_4
+Wire Wire Line
+	39675 12275 39700 12275
+Wire Wire Line
+	39700 12275 39700 12375
+$Comp
+L Connector:Screw_Terminal_01x04 J31
+U 1 1 63FFA5FE
+P 39900 11575
+F 0 "J31" H 39980 11567 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 39980 11476 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 39900 11575 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984633-1458842.pdf" H 39900 11575 50  0001 C CNN
+F 4 "1.07" H 39900 11575 50  0001 C CNN "Cost"
+F 5 "1984633" H 39900 11575 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984633?qs=dKKAVK9nnHOP434WOXxXdg%3D%3D" H 39900 11575 50  0001 C CNN "Vendor Link"
+F 7 "651-1984633" H 39900 11575 50  0001 C CNN "Vendor PN"
+	1    39900 11575
+	1    0    0    -1  
+$EndComp
+Text GLabel 39650 11475 0    50   Input ~ 0
+Pi3_DI_1
+Wire Wire Line
+	39650 11475 39700 11475
+Text GLabel 39650 11575 0    50   Input ~ 0
+Pi3_DI_2
+Wire Wire Line
+	39650 11575 39700 11575
+Text GLabel 39650 11675 0    50   Input ~ 0
+Pi3_DI_3
+Wire Wire Line
+	39650 11675 39700 11675
+Text GLabel 39650 11775 0    50   Input ~ 0
+Pi3_DI_4
+Wire Wire Line
+	39650 11775 39700 11775
+Text GLabel 43275 4450 0    50   Input ~ 0
+Pi3_DO1
+Text GLabel 43275 4650 0    50   Input ~ 0
+Pi3_DO3
+$Comp
+L Kristerj-rescue:PICO_RP2040-Juancho U23
+U 1 1 63FFA650
+P 37600 5875
+F 0 "U23" H 37575 7240 50  0000 C CNN
+F 1 "PICO_RP2040" H 37575 7149 50  0000 C CNN
+F 2 "Juancho:Rasp_Pi_PICO" H 37500 7325 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/181/M20-782-1220556.pdf" H 37500 7325 50  0001 C CNN
+F 4 "2.30	" H 37600 5875 50  0001 C CNN "Cost"
+F 5 "M20-7822046" H 37600 5875 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Harwin/M20-7822046?qs=sGAEpiMZZMvlX3nhDDO4ABznH5rKKlExqY22J5gDOpY%3D" H 37600 5875 50  0001 C CNN "Vendor Link"
+F 7 "855-M20-7822046" H 37600 5875 50  0001 C CNN "Vendor PN"
+	1    37600 5875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	36900 5025 36950 5025
+Wire Wire Line
+	36950 4925 36900 4925
+$Comp
+L power:GND #PWR0314
+U 1 1 63FFA65C
+P 36875 6900
+F 0 "#PWR0314" H 36875 6650 50  0001 C CNN
+F 1 "GND" H 36880 6727 50  0000 C CNN
+F 2 "" H 36875 6900 50  0001 C CNN
+F 3 "" H 36875 6900 50  0001 C CNN
+	1    36875 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	36875 6900 36875 6625
+Wire Wire Line
+	36875 6625 36950 6625
+Wire Wire Line
+	36950 6125 36875 6125
+Wire Wire Line
+	36875 6125 36875 6625
+Connection ~ 36875 6625
+Wire Wire Line
+	36950 5625 36875 5625
+Wire Wire Line
+	36875 5625 36875 6125
+Connection ~ 36875 6125
+Wire Wire Line
+	36950 5125 36875 5125
+Wire Wire Line
+	36875 5125 36875 5625
+Connection ~ 36875 5625
+Wire Wire Line
+	36825 5225 36950 5225
+Wire Wire Line
+	36825 5325 36950 5325
+Wire Wire Line
+	36825 5425 36950 5425
+Wire Wire Line
+	36825 5525 36950 5525
+Wire Wire Line
+	36825 5725 36950 5725
+Wire Wire Line
+	36825 5925 36950 5925
+Wire Wire Line
+	38200 5925 38400 5925
+Wire Wire Line
+	38200 5825 38400 5825
+Wire Wire Line
+	38200 5525 38400 5525
+Wire Wire Line
+	38400 5725 38200 5725
+$Comp
+L power:GND #PWR0331
+U 1 1 63FFA707
+P 38300 6900
+F 0 "#PWR0331" H 38300 6650 50  0001 C CNN
+F 1 "GND" H 38305 6727 50  0000 C CNN
+F 2 "" H 38300 6900 50  0001 C CNN
+F 3 "" H 38300 6900 50  0001 C CNN
+	1    38300 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38300 6900 38300 6625
+Wire Wire Line
+	38300 6625 38200 6625
+Wire Wire Line
+	38200 6125 38300 6125
+Wire Wire Line
+	38300 6125 38300 6625
+Connection ~ 38300 6625
+Wire Wire Line
+	38200 5625 38300 5625
+Wire Wire Line
+	38300 5625 38300 6125
+Connection ~ 38300 6125
+Wire Wire Line
+	38200 5125 38300 5125
+Wire Wire Line
+	38300 5125 38300 5625
+Connection ~ 38300 5625
+$Comp
+L power:+5V #PWR0330
+U 1 1 63FFA724
+P 38300 4875
+F 0 "#PWR0330" H 38300 4725 50  0001 C CNN
+F 1 "+5V" H 38315 5048 50  0000 C CNN
+F 2 "" H 38300 4875 50  0001 C CNN
+F 3 "" H 38300 4875 50  0001 C CNN
+	1    38300 4875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38300 4875 38300 4925
+Wire Wire Line
+	38300 4925 38200 4925
+Text GLabel 38250 4150 0    47   Input ~ 0
+Pi3_SWDIO
+Text GLabel 38250 3950 0    47   Input ~ 0
+Pi3_SWCLK
+Text Notes 36050 4000 0    146  ~ 29
+PI PICO - 3
+Text Notes 38225 3825 0    146  ~ 0
+debug\n
+Text Notes 39150 11225 0    146  ~ 0
+discrete input\n
+Text Notes 42750 4125 0    146  ~ 0
+discrete output\n
+$Comp
+L Connector_Generic:Conn_01x03 J29
+U 1 1 63FFAAF8
+P 38525 4050
+F 0 "J29" H 38605 4092 50  0000 L CNN
+F 1 "Conn_01x03" H 38605 4001 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 38525 4050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/7/ENG_CD_215299_F-2028124.pdf" H 38525 4050 50  0001 C CNN
+F 4 "0.77	" H 38525 4050 50  0001 C CNN "Cost"
+F 5 "215299-3" H 38525 4050 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/TE-Connectivity/215299-3?qs=pol9tQvH%252BaHR%252B8PZSmhoEA%3D%3D" H 38525 4050 50  0001 C CNN "Vendor Link"
+F 7 "571-215299-3" H 38525 4050 50  0001 C CNN "Vendor PN"
+	1    38525 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 38250 4050 0    47   Input ~ 0
+Pi3_SWGND
+Wire Wire Line
+	38325 3950 38250 3950
+Wire Wire Line
+	38250 4050 38325 4050
+Wire Wire Line
+	38325 4150 38250 4150
+$Comp
+L Connector:Screw_Terminal_01x06 J27
+U 1 1 63FFAB06
+P 37050 8700
+F 0 "J27" H 37050 9000 50  0000 C CNN
+F 1 "Screw_Terminal_01x06" V 37150 8650 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-6-3.5-H_1x06_P3.50mm_Horizontal" H 37050 8700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984659-1458991.pdf" H 37050 8700 50  0001 C CNN
+F 4 "1.54	" H 37050 8700 50  0001 C CNN "Cost"
+F 5 "1984659" H 37050 8700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984659?qs=FQYO1eEgUPBU2UOuKgfwDQ%3D%3D" H 37050 8700 50  0001 C CNN "Vendor Link"
+F 7 "651-1984659" H 37050 8700 50  0001 C CNN "Vendor PN"
+	1    37050 8700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0317
+U 1 1 63FFAB10
+P 37300 8425
+F 0 "#PWR0317" H 37300 8275 50  0001 C CNN
+F 1 "+24V" H 37315 8598 50  0000 C CNN
+F 2 "" H 37300 8425 50  0001 C CNN
+F 3 "" H 37300 8425 50  0001 C CNN
+	1    37300 8425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	37250 8500 37300 8500
+Wire Wire Line
+	37300 8500 37300 8425
+Wire Wire Line
+	37300 8500 37300 8700
+Wire Wire Line
+	37300 8700 37250 8700
+Connection ~ 37300 8500
+Wire Wire Line
+	37300 8700 37300 8900
+Wire Wire Line
+	37300 8900 37250 8900
+Connection ~ 37300 8700
+Wire Wire Line
+	37250 8600 37550 8600
+Wire Wire Line
+	37450 8800 37450 9000
+Wire Wire Line
+	37450 8800 38775 8800
+Wire Wire Line
+	37250 9000 37450 9000
+Wire Wire Line
+	37375 8800 37375 8700
+Wire Wire Line
+	37375 8700 38175 8700
+Wire Wire Line
+	37250 8800 37375 8800
+$Comp
+L Device:R R194
+U 1 1 63FFACA3
+P 39250 6200
+F 0 "R194" H 39225 6050 50  0000 R CNN
+F 1 "10K" V 39250 6275 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 39180 6200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 39250 6200 50  0001 C CNN
+F 4 "0.10	" H 39250 6200 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 39250 6200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 39250 6200 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 39250 6200 50  0001 C CNN "Vendor PN"
+	1    39250 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R188
+U 1 1 63FFACB7
+P 38500 6700
+F 0 "R188" H 38430 6654 50  0000 R CNN
+F 1 "10K" H 38430 6745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 38430 6700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 38500 6700 50  0001 C CNN
+F 4 "0.10	" H 38500 6700 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 38500 6700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 38500 6700 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 38500 6700 50  0001 C CNN "Vendor PN"
+	1    38500 6700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0336
+U 1 1 63FFACC1
+P 38500 6900
+F 0 "#PWR0336" H 38500 6650 50  0001 C CNN
+F 1 "GND" H 38505 6727 50  0000 C CNN
+F 2 "" H 38500 6900 50  0001 C CNN
+F 3 "" H 38500 6900 50  0001 C CNN
+	1    38500 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0346
+U 1 1 63FFACD5
+P 39250 6000
+F 0 "#PWR0346" H 39250 5850 50  0001 C CNN
+F 1 "+5V" H 39265 6173 50  0000 C CNN
+F 2 "" H 39250 6000 50  0001 C CNN
+F 3 "" H 39250 6000 50  0001 C CNN
+	1    39250 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D89
+U 1 1 63FFAD53
+P 36100 12975
+F 0 "D89" V 36054 13055 50  0000 L CNN
+F 1 "3.9V" V 36145 13055 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 36100 12975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 36100 12975 50  0001 C CNN
+F 4 "0.17" H 36100 12975 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 36100 12975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 36100 12975 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 36100 12975 50  0001 C CNN "Vendor PN"
+	1    36100 12975
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0311
+U 1 1 63FFAD5D
+P 36100 13175
+F 0 "#PWR0311" H 36100 12925 50  0001 C CNN
+F 1 "GND" H 36105 13002 50  0000 C CNN
+F 2 "" H 36100 13175 50  0001 C CNN
+F 3 "" H 36100 13175 50  0001 C CNN
+	1    36100 13175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	35725 12725 36100 12725
+Wire Wire Line
+	36100 13125 36100 13175
+Wire Wire Line
+	36100 12725 36100 12825
+Wire Wire Line
+	36175 12725 36100 12725
+Connection ~ 36100 12725
+$Comp
+L Device:D_Zener D91
+U 1 1 63FFAD6C
+P 37425 12975
+F 0 "D91" V 37379 13055 50  0000 L CNN
+F 1 "3.9V" V 37470 13055 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 37425 12975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 37425 12975 50  0001 C CNN
+F 4 "0.17" H 37425 12975 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 37425 12975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 37425 12975 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 37425 12975 50  0001 C CNN "Vendor PN"
+	1    37425 12975
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D97
+U 1 1 63FFAD76
+P 38800 12975
+F 0 "D97" V 38754 13055 50  0000 L CNN
+F 1 "3.9V" V 38845 13055 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 38800 12975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 38800 12975 50  0001 C CNN
+F 4 "0.17" H 38800 12975 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 38800 12975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 38800 12975 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 38800 12975 50  0001 C CNN "Vendor PN"
+	1    38800 12975
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D101
+U 1 1 63FFAD80
+P 40100 12975
+F 0 "D101" V 40054 13055 50  0000 L CNN
+F 1 "3.9V" V 40145 13055 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 40100 12975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 40100 12975 50  0001 C CNN
+F 4 "0.17" H 40100 12975 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 40100 12975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 40100 12975 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 40100 12975 50  0001 C CNN "Vendor PN"
+	1    40100 12975
+	0    1    1    0   
+$EndComp
+Text Notes 39050 8950 0    47   ~ 0
+600mV to 3V
+$Comp
+L Device:D_Zener D93
+U 1 1 63FFAD8B
+P 37800 9475
+F 0 "D93" V 37754 9555 50  0000 L CNN
+F 1 "3.9V" V 37845 9555 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 37800 9475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 37800 9475 50  0001 C CNN
+F 4 "0.17" H 37800 9475 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 37800 9475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 37800 9475 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 37800 9475 50  0001 C CNN "Vendor PN"
+	1    37800 9475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D95
+U 1 1 63FFAD95
+P 38450 9475
+F 0 "D95" V 38404 9555 50  0000 L CNN
+F 1 "3.9V" V 38495 9555 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 38450 9475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 38450 9475 50  0001 C CNN
+F 4 "0.17" H 38450 9475 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 38450 9475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 38450 9475 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 38450 9475 50  0001 C CNN "Vendor PN"
+	1    38450 9475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D99
+U 1 1 63FFAD9F
+P 39050 9475
+F 0 "D99" V 39004 9555 50  0000 L CNN
+F 1 "3.9V" V 39095 9555 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 39050 9475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 39050 9475 50  0001 C CNN
+F 4 "0.17" H 39050 9475 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 39050 9475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 39050 9475 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 39050 9475 50  0001 C CNN "Vendor PN"
+	1    39050 9475
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	35175 7325 42525 7325
+Wire Notes Line
+	39375 7325 39375 3450
+Wire Notes Line
+	42525 3450 42525 8900
+Wire Notes Line
+	41575 14100 41575 8900
+Wire Notes Line
+	41575 8900 52500 8900
+Wire Notes Line
+	41575 10150 35150 10150
+Text Notes 41100 3400 0    394  ~ 79
+RASPBERRY PI PICO 3
+Wire Wire Line
+	39250 6000 39250 6050
+Wire Notes Line
+	500  3450 52500 3450
+Wire Notes Line
+	475  14100 52500 14100
+Wire Notes Line
+	475  2825 52500 2825
+Text GLabel 9575 2200 0    47   Input ~ 0
+Pi4_SWDIO
+Text GLabel 9575 2300 0    47   Input ~ 0
+Pi4_SWCLK
+Text GLabel 9575 2400 0    47   Input ~ 0
+Pi4_RST
+$Comp
+L Device:R R10
+U 1 1 648F79CB
+P 1050 23775
+F 0 "R10" H 1120 23821 50  0000 L CNN
+F 1 "68K" H 1120 23730 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 980 23775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 1050 23775 50  0001 C CNN
+F 4 "0.10	" H 1050 23775 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 1050 23775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 1050 23775 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 1050 23775 50  0001 C CNN "Vendor PN"
+	1    1050 23775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 648F79D5
+P 1050 24200
+F 0 "R12" H 1120 24246 50  0000 L CNN
+F 1 "10K" H 1120 24155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 980 24200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 1050 24200 50  0001 C CNN
+F 4 "0.10	" H 1050 24200 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 1050 24200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 1050 24200 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 1050 24200 50  0001 C CNN "Vendor PN"
+	1    1050 24200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 23925 1050 23975
+$Comp
+L power:GND #PWR01
+U 1 1 648F79E0
+P 1050 24425
+F 0 "#PWR01" H 1050 24175 50  0001 C CNN
+F 1 "GND" H 1055 24252 50  0000 C CNN
+F 2 "" H 1050 24425 50  0001 C CNN
+F 3 "" H 1050 24425 50  0001 C CNN
+	1    1050 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 24350 1050 24425
+Text Notes 1875 22600 0    146  ~ 29
+Discrete Input - 4
+$Comp
+L Device:R R32
+U 1 1 648F79EC
+P 2350 23775
+F 0 "R32" H 2420 23821 50  0000 L CNN
+F 1 "68K" H 2420 23730 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 23775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 2350 23775 50  0001 C CNN
+F 4 "0.10	" H 2350 23775 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 2350 23775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 2350 23775 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 2350 23775 50  0001 C CNN "Vendor PN"
+	1    2350 23775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R33
+U 1 1 648F79F6
+P 2350 24200
+F 0 "R33" H 2420 24246 50  0000 L CNN
+F 1 "10K" H 2420 24155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 24200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 2350 24200 50  0001 C CNN
+F 4 "0.10	" H 2350 24200 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 2350 24200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 2350 24200 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 2350 24200 50  0001 C CNN "Vendor PN"
+	1    2350 24200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 23925 2350 23975
+$Comp
+L power:GND #PWR011
+U 1 1 648F7A01
+P 2350 24425
+F 0 "#PWR011" H 2350 24175 50  0001 C CNN
+F 1 "GND" H 2355 24252 50  0000 C CNN
+F 2 "" H 2350 24425 50  0001 C CNN
+F 3 "" H 2350 24425 50  0001 C CNN
+	1    2350 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 24350 2350 24425
+$Comp
+L Device:R R36
+U 1 1 648F7A58
+P 3725 23775
+F 0 "R36" H 3795 23821 50  0000 L CNN
+F 1 "68K" H 3795 23730 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3655 23775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 3725 23775 50  0001 C CNN
+F 4 "0.10	" H 3725 23775 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 3725 23775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 3725 23775 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 3725 23775 50  0001 C CNN "Vendor PN"
+	1    3725 23775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R37
+U 1 1 648F7A62
+P 3725 24200
+F 0 "R37" H 3795 24246 50  0000 L CNN
+F 1 "10K" H 3795 24155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3655 24200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 3725 24200 50  0001 C CNN
+F 4 "0.10	" H 3725 24200 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 3725 24200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 3725 24200 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 3725 24200 50  0001 C CNN "Vendor PN"
+	1    3725 24200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3725 23925 3725 23975
+$Comp
+L power:GND #PWR019
+U 1 1 648F7A6D
+P 3725 24425
+F 0 "#PWR019" H 3725 24175 50  0001 C CNN
+F 1 "GND" H 3730 24252 50  0000 C CNN
+F 2 "" H 3725 24425 50  0001 C CNN
+F 3 "" H 3725 24425 50  0001 C CNN
+	1    3725 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3725 24350 3725 24425
+$Comp
+L Device:R R42
+U 1 1 648F7A78
+P 5025 23775
+F 0 "R42" H 5095 23821 50  0000 L CNN
+F 1 "68K" H 5095 23730 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4955 23775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 5025 23775 50  0001 C CNN
+F 4 "0.10	" H 5025 23775 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 5025 23775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 5025 23775 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 5025 23775 50  0001 C CNN "Vendor PN"
+	1    5025 23775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R43
+U 1 1 648F7A82
+P 5025 24200
+F 0 "R43" H 5095 24246 50  0000 L CNN
+F 1 "10K" H 5095 24155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4955 24200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 5025 24200 50  0001 C CNN
+F 4 "0.10	" H 5025 24200 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 5025 24200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 5025 24200 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 5025 24200 50  0001 C CNN "Vendor PN"
+	1    5025 24200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 648F7A8C
+P 5025 24425
+F 0 "#PWR028" H 5025 24175 50  0001 C CNN
+F 1 "GND" H 5030 24252 50  0000 C CNN
+F 2 "" H 5025 24425 50  0001 C CNN
+F 3 "" H 5025 24425 50  0001 C CNN
+	1    5025 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 24350 5025 24425
+Text GLabel 1500 23975 2    50   Input ~ 0
+Pi4_D-IN1
+Connection ~ 1050 23975
+Wire Wire Line
+	1050 23975 1050 24050
+Text GLabel 2850 23975 2    50   Input ~ 0
+Pi4_D-IN2
+Connection ~ 2350 23975
+Wire Wire Line
+	2350 23975 2350 24050
+Text GLabel 4200 23975 2    50   Input ~ 0
+Pi4_D-IN3
+Text GLabel 5500 23975 2    50   Input ~ 0
+Pi4_D-IN4
+Connection ~ 3725 23975
+Wire Wire Line
+	3725 23975 3725 24050
+Text GLabel 9775 16825 0    50   Input ~ 0
+Pi4_D-OUT1
+Text Notes 11750 15225 0    146  ~ 29
+Discrete Output - 4
+Wire Wire Line
+	2750 24075 2750 23975
+$Comp
+L power:GND #PWR013
+U 1 1 648F7BD2
+P 2750 24425
+F 0 "#PWR013" H 2750 24175 50  0001 C CNN
+F 1 "GND" H 2755 24252 50  0000 C CNN
+F 2 "" H 2750 24425 50  0001 C CNN
+F 3 "" H 2750 24425 50  0001 C CNN
+	1    2750 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 24375 2750 24425
+Wire Wire Line
+	4125 23975 4125 24075
+Wire Wire Line
+	3725 23975 4125 23975
+$Comp
+L power:GND #PWR023
+U 1 1 648F7BDF
+P 4125 24425
+F 0 "#PWR023" H 4125 24175 50  0001 C CNN
+F 1 "GND" H 4130 24252 50  0000 C CNN
+F 2 "" H 4125 24425 50  0001 C CNN
+F 3 "" H 4125 24425 50  0001 C CNN
+	1    4125 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4125 24375 4125 24425
+Wire Wire Line
+	5025 23925 5025 23975
+Wire Wire Line
+	5425 23975 5425 24075
+Wire Wire Line
+	5025 23975 5425 23975
+$Comp
+L power:GND #PWR029
+U 1 1 648F7BED
+P 5425 24425
+F 0 "#PWR029" H 5425 24175 50  0001 C CNN
+F 1 "GND" H 5430 24252 50  0000 C CNN
+F 2 "" H 5425 24425 50  0001 C CNN
+F 3 "" H 5425 24425 50  0001 C CNN
+	1    5425 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 24375 5425 24425
+Connection ~ 5025 23975
+Wire Wire Line
+	5025 23975 5025 24050
+Wire Wire Line
+	2350 23975 2750 23975
+Connection ~ 2750 23975
+Wire Wire Line
+	4200 23975 4125 23975
+Connection ~ 4125 23975
+Wire Wire Line
+	5500 23975 5425 23975
+Connection ~ 5425 23975
+Wire Wire Line
+	2750 23975 2850 23975
+$Comp
+L Device:R R34
+U 1 1 648F7C01
+P 2875 20700
+F 0 "R34" H 2805 20654 50  0000 R CNN
+F 1 "150" H 2805 20745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2805 20700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 2875 20700 50  0001 C CNN
+F 4 "0.10	" H 2875 20700 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 2875 20700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 2875 20700 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 2875 20700 50  0001 C CNN "Vendor PN"
+	1    2875 20700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R35
+U 1 1 648F7C0B
+P 3500 20700
+F 0 "R35" H 3430 20654 50  0000 R CNN
+F 1 "150" H 3430 20745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 20700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 3500 20700 50  0001 C CNN
+F 4 "0.10	" H 3500 20700 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 3500 20700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 3500 20700 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 3500 20700 50  0001 C CNN "Vendor PN"
+	1    3500 20700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R39
+U 1 1 648F7C15
+P 4100 20700
+F 0 "R39" H 4030 20654 50  0000 R CNN
+F 1 "150" H 4030 20745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4030 20700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 4100 20700 50  0001 C CNN
+F 4 "0.10	" H 4100 20700 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 4100 20700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 4100 20700 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 4100 20700 50  0001 C CNN "Vendor PN"
+	1    4100 20700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 648F7C5B
+P 2875 20925
+F 0 "#PWR014" H 2875 20675 50  0001 C CNN
+F 1 "GND" H 2880 20752 50  0000 C CNN
+F 2 "" H 2875 20925 50  0001 C CNN
+F 3 "" H 2875 20925 50  0001 C CNN
+	1    2875 20925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 648F7C65
+P 3500 20925
+F 0 "#PWR016" H 3500 20675 50  0001 C CNN
+F 1 "GND" H 3505 20752 50  0000 C CNN
+F 2 "" H 3500 20925 50  0001 C CNN
+F 3 "" H 3500 20925 50  0001 C CNN
+	1    3500 20925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 648F7C6F
+P 4100 20925
+F 0 "#PWR022" H 4100 20675 50  0001 C CNN
+F 1 "GND" H 4105 20752 50  0000 C CNN
+F 2 "" H 4100 20925 50  0001 C CNN
+F 3 "" H 4100 20925 50  0001 C CNN
+	1    4100 20925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 20850 4100 20925
+Wire Wire Line
+	3500 20850 3500 20925
+Wire Wire Line
+	2875 20850 2875 20925
+Text GLabel 4375 19850 2    50   Input ~ 0
+Pi4_4-20_IN1
+Text GLabel 4375 19950 2    50   Input ~ 0
+Pi4_4-20_IN2
+Text GLabel 4375 20050 2    50   Input ~ 0
+Pi4_4-20_IN3
+Wire Wire Line
+	4375 20575 4375 20425
+Wire Wire Line
+	4375 20425 4100 20425
+Wire Wire Line
+	4100 20425 4100 20550
+Wire Wire Line
+	3775 20575 3775 20425
+Wire Wire Line
+	3775 20425 3500 20425
+Wire Wire Line
+	3500 20425 3500 20550
+Wire Wire Line
+	3125 20575 3125 20425
+Wire Wire Line
+	3125 20425 2875 20425
+Wire Wire Line
+	2875 20425 2875 20550
+Wire Wire Line
+	2875 20425 2875 19850
+Connection ~ 2875 20425
+Connection ~ 2875 19850
+Wire Wire Line
+	2875 19850 4375 19850
+$Comp
+L power:GND #PWR015
+U 1 1 648F7C8C
+P 3125 20925
+F 0 "#PWR015" H 3125 20675 50  0001 C CNN
+F 1 "GND" H 3130 20752 50  0000 C CNN
+F 2 "" H 3125 20925 50  0001 C CNN
+F 3 "" H 3125 20925 50  0001 C CNN
+	1    3125 20925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3125 20875 3125 20925
+$Comp
+L power:GND #PWR020
+U 1 1 648F7C97
+P 3775 20925
+F 0 "#PWR020" H 3775 20675 50  0001 C CNN
+F 1 "GND" H 3780 20752 50  0000 C CNN
+F 2 "" H 3775 20925 50  0001 C CNN
+F 3 "" H 3775 20925 50  0001 C CNN
+	1    3775 20925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3775 20875 3775 20925
+$Comp
+L power:GND #PWR025
+U 1 1 648F7CA2
+P 4375 20925
+F 0 "#PWR025" H 4375 20675 50  0001 C CNN
+F 1 "GND" H 4380 20752 50  0000 C CNN
+F 2 "" H 4375 20925 50  0001 C CNN
+F 3 "" H 4375 20925 50  0001 C CNN
+	1    4375 20925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4375 20875 4375 20925
+Text Notes 2675 19525 0    146  ~ 29
+4-20mA INPUT - 4
+Text GLabel 2300 16200 0    50   Input ~ 0
+SDA-0
+Text GLabel 2300 16300 0    50   Input ~ 0
+SCL-0
+Wire Wire Line
+	3500 20425 3500 19950
+Connection ~ 3500 20425
+Connection ~ 3500 19950
+Wire Wire Line
+	3500 19950 4375 19950
+Wire Wire Line
+	4100 20425 4100 20050
+Connection ~ 4100 20425
+Connection ~ 4100 20050
+Wire Wire Line
+	4100 20050 4375 20050
+Text GLabel 3800 17100 2    50   Input ~ 0
+Pi4_4-20_IN1
+Text GLabel 3800 17000 2    50   Input ~ 0
+Pi4_4-20_IN2
+Text GLabel 3800 16800 2    50   Input ~ 0
+Pi4_4-20_IN3
+Text GLabel 2225 16500 0    50   Input ~ 0
+Pi4_D-IN1
+Text GLabel 2225 16600 0    50   Input ~ 0
+Pi4_D-IN2
+Text GLabel 2225 16700 0    50   Input ~ 0
+Pi4_D-IN3
+Text GLabel 2225 16800 0    50   Input ~ 0
+Pi4_D-IN4
+Text GLabel 3800 17200 2    47   Input ~ 0
+Pi4_RST
+Text GLabel 2225 17000 0    50   Input ~ 0
+Pi4_D-OUT1
+Text GLabel 2225 17200 0    50   Input ~ 0
+Pi4_D-OUT3
+Text GLabel 1025 23525 0    50   Input ~ 0
+Pi4_DI_1
+Wire Wire Line
+	1025 23525 1050 23525
+Wire Wire Line
+	1050 23525 1050 23625
+Text GLabel 2325 23525 0    50   Input ~ 0
+Pi4_DI_2
+Wire Wire Line
+	2350 23525 2350 23625
+Wire Wire Line
+	2325 23525 2350 23525
+Text GLabel 3700 23525 0    50   Input ~ 0
+Pi4_DI_3
+Wire Wire Line
+	3700 23525 3725 23525
+Wire Wire Line
+	3725 23525 3725 23625
+Text GLabel 5000 23525 0    50   Input ~ 0
+Pi4_DI_4
+Wire Wire Line
+	5000 23525 5025 23525
+Wire Wire Line
+	5025 23525 5025 23625
+$Comp
+L Connector:Screw_Terminal_01x04 J11
+U 1 1 648F7D00
+P 5225 22825
+F 0 "J11" H 5305 22817 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 5305 22726 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 5225 22825 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984633-1458842.pdf" H 5225 22825 50  0001 C CNN
+F 4 "1.07" H 5225 22825 50  0001 C CNN "Cost"
+F 5 "1984633" H 5225 22825 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984633?qs=dKKAVK9nnHOP434WOXxXdg%3D%3D" H 5225 22825 50  0001 C CNN "Vendor Link"
+F 7 "651-1984633" H 5225 22825 50  0001 C CNN "Vendor PN"
+	1    5225 22825
+	1    0    0    -1  
+$EndComp
+Text GLabel 4975 22725 0    50   Input ~ 0
+Pi4_DI_1
+Wire Wire Line
+	4975 22725 5025 22725
+Text GLabel 4975 22825 0    50   Input ~ 0
+Pi4_DI_2
+Wire Wire Line
+	4975 22825 5025 22825
+Text GLabel 4975 22925 0    50   Input ~ 0
+Pi4_DI_3
+Wire Wire Line
+	4975 22925 5025 22925
+Text GLabel 4975 23025 0    50   Input ~ 0
+Pi4_DI_4
+Wire Wire Line
+	4975 23025 5025 23025
+Text GLabel 8525 15850 0    50   Input ~ 0
+Pi4_DO1
+Text GLabel 8525 16050 0    50   Input ~ 0
+Pi4_DO3
+$Comp
+L Kristerj-rescue:PICO_RP2040-Juancho U2
+U 1 1 648F7D7C
+P 3000 17150
+F 0 "U2" H 2975 18515 50  0000 C CNN
+F 1 "PICO_RP2040" H 2975 18424 50  0000 C CNN
+F 2 "Juancho:Rasp_Pi_PICO" H 2900 18600 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/181/M20-782-1220556.pdf" H 2900 18600 50  0001 C CNN
+F 4 "2.30	" H 3000 17150 50  0001 C CNN "Cost"
+F 5 "M20-7822046" H 3000 17150 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Harwin/M20-7822046?qs=sGAEpiMZZMvlX3nhDDO4ABznH5rKKlExqY22J5gDOpY%3D" H 3000 17150 50  0001 C CNN "Vendor Link"
+F 7 "855-M20-7822046" H 3000 17150 50  0001 C CNN "Vendor PN"
+	1    3000 17150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 16300 2350 16300
+Wire Wire Line
+	2350 16200 2300 16200
+$Comp
+L power:GND #PWR010
+U 1 1 648F7D88
+P 2275 18175
+F 0 "#PWR010" H 2275 17925 50  0001 C CNN
+F 1 "GND" H 2280 18002 50  0000 C CNN
+F 2 "" H 2275 18175 50  0001 C CNN
+F 3 "" H 2275 18175 50  0001 C CNN
+	1    2275 18175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2275 18175 2275 17900
+Wire Wire Line
+	2275 17900 2350 17900
+Wire Wire Line
+	2350 17400 2275 17400
+Wire Wire Line
+	2275 17400 2275 17900
+Connection ~ 2275 17900
+Wire Wire Line
+	2350 16900 2275 16900
+Wire Wire Line
+	2275 16900 2275 17400
+Connection ~ 2275 17400
+Wire Wire Line
+	2350 16400 2275 16400
+Wire Wire Line
+	2275 16400 2275 16900
+Connection ~ 2275 16900
+Wire Wire Line
+	2225 16500 2350 16500
+Wire Wire Line
+	2225 16600 2350 16600
+Wire Wire Line
+	2225 16700 2350 16700
+Wire Wire Line
+	2225 16800 2350 16800
+Wire Wire Line
+	2225 17000 2350 17000
+Wire Wire Line
+	2225 17200 2350 17200
+Wire Wire Line
+	3600 17200 3800 17200
+Wire Wire Line
+	3600 17100 3800 17100
+Wire Wire Line
+	3600 16800 3800 16800
+Wire Wire Line
+	3800 17000 3600 17000
+$Comp
+L power:GND #PWR018
+U 1 1 648F7E09
+P 3700 18175
+F 0 "#PWR018" H 3700 17925 50  0001 C CNN
+F 1 "GND" H 3705 18002 50  0000 C CNN
+F 2 "" H 3700 18175 50  0001 C CNN
+F 3 "" H 3700 18175 50  0001 C CNN
+	1    3700 18175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 18175 3700 17900
+Wire Wire Line
+	3700 17900 3600 17900
+Wire Wire Line
+	3600 17400 3700 17400
+Wire Wire Line
+	3700 17400 3700 17900
+Connection ~ 3700 17900
+Wire Wire Line
+	3600 16900 3700 16900
+Wire Wire Line
+	3700 16900 3700 17400
+Connection ~ 3700 17400
+Wire Wire Line
+	3600 16400 3700 16400
+Wire Wire Line
+	3700 16400 3700 16900
+Connection ~ 3700 16900
+$Comp
+L power:+5V #PWR017
+U 1 1 648F7E1E
+P 3700 16150
+F 0 "#PWR017" H 3700 16000 50  0001 C CNN
+F 1 "+5V" H 3715 16323 50  0000 C CNN
+F 2 "" H 3700 16150 50  0001 C CNN
+F 3 "" H 3700 16150 50  0001 C CNN
+	1    3700 16150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 16150 3700 16200
+Wire Wire Line
+	3700 16200 3600 16200
+Text GLabel 3575 15400 0    47   Input ~ 0
+Pi4_SWDIO
+Text GLabel 3575 15200 0    47   Input ~ 0
+Pi4_SWCLK
+Text Notes 1375 15250 0    146  ~ 29
+PI PICO - 4
+Text Notes 3550 15075 0    146  ~ 0
+debug\n
+Text Notes 4475 22475 0    146  ~ 0
+discrete input\n
+Text Notes 8075 15375 0    146  ~ 0
+discrete output\n
+$Comp
+L Connector_Generic:Conn_01x03 J10
+U 1 1 648F81FA
+P 3850 15300
+F 0 "J10" H 3930 15342 50  0000 L CNN
+F 1 "Conn_01x03" H 3930 15251 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3850 15300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/7/ENG_CD_215299_F-2028124.pdf" H 3850 15300 50  0001 C CNN
+F 4 "0.77	" H 3850 15300 50  0001 C CNN "Cost"
+F 5 "215299-3" H 3850 15300 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/TE-Connectivity/215299-3?qs=pol9tQvH%252BaHR%252B8PZSmhoEA%3D%3D" H 3850 15300 50  0001 C CNN "Vendor Link"
+F 7 "571-215299-3" H 3850 15300 50  0001 C CNN "Vendor PN"
+	1    3850 15300
+	1    0    0    -1  
+$EndComp
+Text GLabel 3575 15300 0    47   Input ~ 0
+Pi4_SWGND
+Wire Wire Line
+	3650 15200 3575 15200
+Wire Wire Line
+	3575 15300 3650 15300
+Wire Wire Line
+	3650 15400 3575 15400
+$Comp
+L Connector:Screw_Terminal_01x06 J8
+U 1 1 648F8208
+P 2375 19950
+F 0 "J8" H 2375 20250 50  0000 C CNN
+F 1 "Screw_Terminal_01x06" V 2475 19900 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-6-3.5-H_1x06_P3.50mm_Horizontal" H 2375 19950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984659-1458991.pdf" H 2375 19950 50  0001 C CNN
+F 4 "1.54	" H 2375 19950 50  0001 C CNN "Cost"
+F 5 "1984659" H 2375 19950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984659?qs=FQYO1eEgUPBU2UOuKgfwDQ%3D%3D" H 2375 19950 50  0001 C CNN "Vendor Link"
+F 7 "651-1984659" H 2375 19950 50  0001 C CNN "Vendor PN"
+	1    2375 19950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR012
+U 1 1 648F825E
+P 2625 19675
+F 0 "#PWR012" H 2625 19525 50  0001 C CNN
+F 1 "+24V" H 2640 19848 50  0000 C CNN
+F 2 "" H 2625 19675 50  0001 C CNN
+F 3 "" H 2625 19675 50  0001 C CNN
+	1    2625 19675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2575 19750 2625 19750
+Wire Wire Line
+	2625 19750 2625 19675
+Wire Wire Line
+	2625 19750 2625 19950
+Wire Wire Line
+	2625 19950 2575 19950
+Connection ~ 2625 19750
+Wire Wire Line
+	2625 19950 2625 20150
+Wire Wire Line
+	2625 20150 2575 20150
+Connection ~ 2625 19950
+Wire Wire Line
+	2575 19850 2875 19850
+Wire Wire Line
+	2775 20050 2775 20250
+Wire Wire Line
+	2775 20050 4100 20050
+Wire Wire Line
+	2575 20250 2775 20250
+Wire Wire Line
+	2700 20050 2700 19950
+Wire Wire Line
+	2700 19950 3500 19950
+Wire Wire Line
+	2575 20050 2700 20050
+$Comp
+L Device:R R41
+U 1 1 648F83B9
+P 4475 17275
+F 0 "R41" H 4405 17229 50  0000 R CNN
+F 1 "10K" H 4405 17320 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4405 17275 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 4475 17275 50  0001 C CNN
+F 4 "0.10	" H 4475 17275 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 4475 17275 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 4475 17275 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 4475 17275 50  0001 C CNN "Vendor PN"
+	1    4475 17275
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R38
+U 1 1 648F83C3
+P 3925 18050
+F 0 "R38" H 3855 18004 50  0000 R CNN
+F 1 "10K" H 3855 18095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3855 18050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 3925 18050 50  0001 C CNN
+F 4 "0.10	" H 3925 18050 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 3925 18050 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 3925 18050 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 3925 18050 50  0001 C CNN "Vendor PN"
+	1    3925 18050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R40
+U 1 1 648F83CD
+P 4200 18050
+F 0 "R40" H 4130 18004 50  0000 R CNN
+F 1 "10K" H 4130 18095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4130 18050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 4200 18050 50  0001 C CNN
+F 4 "0.10	" H 4200 18050 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 4200 18050 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 4200 18050 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 4200 18050 50  0001 C CNN "Vendor PN"
+	1    4200 18050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 648F83D9
+P 3925 18250
+F 0 "#PWR021" H 3925 18000 50  0001 C CNN
+F 1 "GND" H 3930 18077 50  0000 C CNN
+F 2 "" H 3925 18250 50  0001 C CNN
+F 3 "" H 3925 18250 50  0001 C CNN
+	1    3925 18250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3925 18200 3925 18250
+$Comp
+L power:GND #PWR024
+U 1 1 648F83E7
+P 4200 18250
+F 0 "#PWR024" H 4200 18000 50  0001 C CNN
+F 1 "GND" H 4205 18077 50  0000 C CNN
+F 2 "" H 4200 18250 50  0001 C CNN
+F 3 "" H 4200 18250 50  0001 C CNN
+	1    4200 18250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 18200 4200 18250
+$Comp
+L power:+5V #PWR026
+U 1 1 648F83F2
+P 4475 17075
+F 0 "#PWR026" H 4475 16925 50  0001 C CNN
+F 1 "+5V" H 4490 17248 50  0000 C CNN
+F 2 "" H 4475 17075 50  0001 C CNN
+F 3 "" H 4475 17075 50  0001 C CNN
+	1    4475 17075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D2
+U 1 1 648F845C
+P 1425 24225
+F 0 "D2" V 1379 24305 50  0000 L CNN
+F 1 "3.9V" V 1470 24305 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 1425 24225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 1425 24225 50  0001 C CNN
+F 4 "0.17" H 1425 24225 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 1425 24225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 1425 24225 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 1425 24225 50  0001 C CNN "Vendor PN"
+	1    1425 24225
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 648F8466
+P 1425 24425
+F 0 "#PWR09" H 1425 24175 50  0001 C CNN
+F 1 "GND" H 1430 24252 50  0000 C CNN
+F 2 "" H 1425 24425 50  0001 C CNN
+F 3 "" H 1425 24425 50  0001 C CNN
+	1    1425 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 23975 1425 23975
+Wire Wire Line
+	1425 24375 1425 24425
+Wire Wire Line
+	1425 23975 1425 24075
+Wire Wire Line
+	1500 23975 1425 23975
+Connection ~ 1425 23975
+$Comp
+L Device:D_Zener D4
+U 1 1 648F8475
+P 2750 24225
+F 0 "D4" V 2704 24305 50  0000 L CNN
+F 1 "3.9V" V 2795 24305 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 2750 24225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 2750 24225 50  0001 C CNN
+F 4 "0.17" H 2750 24225 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 2750 24225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 2750 24225 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 2750 24225 50  0001 C CNN "Vendor PN"
+	1    2750 24225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D10
+U 1 1 648F847F
+P 4125 24225
+F 0 "D10" V 4079 24305 50  0000 L CNN
+F 1 "3.9V" V 4170 24305 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 4125 24225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 4125 24225 50  0001 C CNN
+F 4 "0.17" H 4125 24225 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 4125 24225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 4125 24225 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 4125 24225 50  0001 C CNN "Vendor PN"
+	1    4125 24225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D14
+U 1 1 648F8489
+P 5425 24225
+F 0 "D14" V 5379 24305 50  0000 L CNN
+F 1 "3.9V" V 5470 24305 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 5425 24225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 5425 24225 50  0001 C CNN
+F 4 "0.17" H 5425 24225 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 5425 24225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 5425 24225 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 5425 24225 50  0001 C CNN "Vendor PN"
+	1    5425 24225
+	0    1    1    0   
+$EndComp
+Text Notes 4375 20200 0    47   ~ 0
+600mV to 3V
+$Comp
+L Device:D_Zener D6
+U 1 1 648F8494
+P 3125 20725
+F 0 "D6" V 3079 20805 50  0000 L CNN
+F 1 "3.9V" V 3170 20805 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 3125 20725 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 3125 20725 50  0001 C CNN
+F 4 "0.17" H 3125 20725 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 3125 20725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 3125 20725 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 3125 20725 50  0001 C CNN "Vendor PN"
+	1    3125 20725
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D8
+U 1 1 648F849E
+P 3775 20725
+F 0 "D8" V 3729 20805 50  0000 L CNN
+F 1 "3.9V" V 3820 20805 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 3775 20725 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 3775 20725 50  0001 C CNN
+F 4 "0.17" H 3775 20725 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 3775 20725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 3775 20725 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 3775 20725 50  0001 C CNN "Vendor PN"
+	1    3775 20725
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D12
+U 1 1 648F84A8
+P 4375 20725
+F 0 "D12" V 4329 20805 50  0000 L CNN
+F 1 "3.9V" V 4420 20805 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 4375 20725 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 4375 20725 50  0001 C CNN
+F 4 "0.17" H 4375 20725 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 4375 20725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 4375 20725 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 4375 20725 50  0001 C CNN "Vendor PN"
+	1    4375 20725
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	500  18575 7850 18575
+Text GLabel 13450 19175 0    50   Input ~ 0
+Pi4_D-OUT3
+Wire Notes Line
+	4700 18575 4700 14700
+Wire Notes Line
+	7850 14700 7850 20150
+Wire Notes Line
+	6900 25350 6900 20150
+Wire Notes Line
+	6900 20150 17825 20150
+Wire Notes Line
+	6900 21400 475  21400
+Wire Notes Line
+	450  21400 450  21425
+Text Notes 6425 14650 0    394  ~ 79
+RASPBERRY PI PICO 4
+Wire Wire Line
+	4475 17075 4475 17125
+Text GLabel 10225 1800 2    47   Input ~ 0
+Pi5_SWDIO
+Text GLabel 10225 1900 2    47   Input ~ 0
+Pi5_SWCLK
+Text GLabel 10225 2000 2    47   Input ~ 0
+Pi5_RST
+$Comp
+L Device:R R89
+U 1 1 648F9107
+P 18375 23775
+F 0 "R89" H 18445 23821 50  0000 L CNN
+F 1 "68K" H 18445 23730 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 18305 23775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 18375 23775 50  0001 C CNN
+F 4 "0.10	" H 18375 23775 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 18375 23775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 18375 23775 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 18375 23775 50  0001 C CNN "Vendor PN"
+	1    18375 23775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R90
+U 1 1 648F9111
+P 18375 24200
+F 0 "R90" H 18445 24246 50  0000 L CNN
+F 1 "10K" H 18445 24155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 18305 24200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 18375 24200 50  0001 C CNN
+F 4 "0.10	" H 18375 24200 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 18375 24200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 18375 24200 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 18375 24200 50  0001 C CNN "Vendor PN"
+	1    18375 24200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18375 23925 18375 23975
+$Comp
+L power:GND #PWR0129
+U 1 1 648F911C
+P 18375 24425
+F 0 "#PWR0129" H 18375 24175 50  0001 C CNN
+F 1 "GND" H 18380 24252 50  0000 C CNN
+F 2 "" H 18375 24425 50  0001 C CNN
+F 3 "" H 18375 24425 50  0001 C CNN
+	1    18375 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18375 24350 18375 24425
+Text Notes 19200 22600 0    146  ~ 29
+Discrete Input - 5
+$Comp
+L Device:R R95
+U 1 1 648F9128
+P 19675 23775
+F 0 "R95" H 19745 23821 50  0000 L CNN
+F 1 "68K" H 19745 23730 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19605 23775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 19675 23775 50  0001 C CNN
+F 4 "0.10	" H 19675 23775 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 19675 23775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 19675 23775 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 19675 23775 50  0001 C CNN "Vendor PN"
+	1    19675 23775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R96
+U 1 1 648F9132
+P 19675 24200
+F 0 "R96" H 19745 24246 50  0000 L CNN
+F 1 "10K" H 19745 24155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19605 24200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 19675 24200 50  0001 C CNN
+F 4 "0.10	" H 19675 24200 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 19675 24200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 19675 24200 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 19675 24200 50  0001 C CNN "Vendor PN"
+	1    19675 24200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19675 23925 19675 23975
+$Comp
+L power:GND #PWR0168
+U 1 1 648F913D
+P 19675 24425
+F 0 "#PWR0168" H 19675 24175 50  0001 C CNN
+F 1 "GND" H 19680 24252 50  0000 C CNN
+F 2 "" H 19675 24425 50  0001 C CNN
+F 3 "" H 19675 24425 50  0001 C CNN
+	1    19675 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19675 24350 19675 24425
+$Comp
+L Device:R R104
+U 1 1 648F9148
+P 21050 23775
+F 0 "R104" H 21120 23821 50  0000 L CNN
+F 1 "68K" H 21120 23730 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 20980 23775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 21050 23775 50  0001 C CNN
+F 4 "0.10	" H 21050 23775 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 21050 23775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 21050 23775 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 21050 23775 50  0001 C CNN "Vendor PN"
+	1    21050 23775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R105
+U 1 1 648F9152
+P 21050 24200
+F 0 "R105" H 21120 24246 50  0000 L CNN
+F 1 "10K" H 21120 24155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 20980 24200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 21050 24200 50  0001 C CNN
+F 4 "0.10	" H 21050 24200 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 21050 24200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 21050 24200 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 21050 24200 50  0001 C CNN "Vendor PN"
+	1    21050 24200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21050 23925 21050 23975
+$Comp
+L power:GND #PWR0185
+U 1 1 648F915D
+P 21050 24425
+F 0 "#PWR0185" H 21050 24175 50  0001 C CNN
+F 1 "GND" H 21055 24252 50  0000 C CNN
+F 2 "" H 21050 24425 50  0001 C CNN
+F 3 "" H 21050 24425 50  0001 C CNN
+	1    21050 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21050 24350 21050 24425
+$Comp
+L Device:R R115
+U 1 1 648F9168
+P 22350 23775
+F 0 "R115" H 22420 23821 50  0000 L CNN
+F 1 "68K" H 22420 23730 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 22280 23775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 22350 23775 50  0001 C CNN
+F 4 "0.10	" H 22350 23775 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 22350 23775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 22350 23775 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 22350 23775 50  0001 C CNN "Vendor PN"
+	1    22350 23775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R116
+U 1 1 648F91EA
+P 22350 24200
+F 0 "R116" H 22420 24246 50  0000 L CNN
+F 1 "10K" H 22420 24155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 22280 24200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 22350 24200 50  0001 C CNN
+F 4 "0.10	" H 22350 24200 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 22350 24200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 22350 24200 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 22350 24200 50  0001 C CNN "Vendor PN"
+	1    22350 24200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0200
+U 1 1 648F91F4
+P 22350 24425
+F 0 "#PWR0200" H 22350 24175 50  0001 C CNN
+F 1 "GND" H 22355 24252 50  0000 C CNN
+F 2 "" H 22350 24425 50  0001 C CNN
+F 3 "" H 22350 24425 50  0001 C CNN
+	1    22350 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22350 24350 22350 24425
+Text GLabel 18825 23975 2    50   Input ~ 0
+Pi5_D-IN1
+Connection ~ 18375 23975
+Wire Wire Line
+	18375 23975 18375 24050
+Text GLabel 20175 23975 2    50   Input ~ 0
+Pi5_D-IN2
+Connection ~ 19675 23975
+Wire Wire Line
+	19675 23975 19675 24050
+Text GLabel 21525 23975 2    50   Input ~ 0
+Pi5_D-IN3
+Text GLabel 22825 23975 2    50   Input ~ 0
+Pi5_D-IN4
+Connection ~ 21050 23975
+Wire Wire Line
+	21050 23975 21050 24050
+Text GLabel 27075 16875 0    50   Input ~ 0
+Pi5_D-OUT1
+Text Notes 29075 15225 0    146  ~ 29
+Discrete Output - 5
+Wire Wire Line
+	20075 24075 20075 23975
+$Comp
+L power:GND #PWR0172
+U 1 1 648F9236
+P 20075 24425
+F 0 "#PWR0172" H 20075 24175 50  0001 C CNN
+F 1 "GND" H 20080 24252 50  0000 C CNN
+F 2 "" H 20075 24425 50  0001 C CNN
+F 3 "" H 20075 24425 50  0001 C CNN
+	1    20075 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20075 24375 20075 24425
+Wire Wire Line
+	21450 23975 21450 24075
+Wire Wire Line
+	21050 23975 21450 23975
+$Comp
+L power:GND #PWR0194
+U 1 1 648F9323
+P 21450 24425
+F 0 "#PWR0194" H 21450 24175 50  0001 C CNN
+F 1 "GND" H 21455 24252 50  0000 C CNN
+F 2 "" H 21450 24425 50  0001 C CNN
+F 3 "" H 21450 24425 50  0001 C CNN
+	1    21450 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21450 24375 21450 24425
+Wire Wire Line
+	22350 23925 22350 23975
+Wire Wire Line
+	22750 23975 22750 24075
+Wire Wire Line
+	22350 23975 22750 23975
+$Comp
+L power:GND #PWR0202
+U 1 1 648F9331
+P 22750 24425
+F 0 "#PWR0202" H 22750 24175 50  0001 C CNN
+F 1 "GND" H 22755 24252 50  0000 C CNN
+F 2 "" H 22750 24425 50  0001 C CNN
+F 3 "" H 22750 24425 50  0001 C CNN
+	1    22750 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22750 24375 22750 24425
+Connection ~ 22350 23975
+Wire Wire Line
+	22350 23975 22350 24050
+Wire Wire Line
+	19675 23975 20075 23975
+Connection ~ 20075 23975
+Wire Wire Line
+	21525 23975 21450 23975
+Connection ~ 21450 23975
+Wire Wire Line
+	22825 23975 22750 23975
+Connection ~ 22750 23975
+Wire Wire Line
+	20075 23975 20175 23975
+$Comp
+L Device:R R98
+U 1 1 648F9345
+P 20200 20700
+F 0 "R98" H 20130 20654 50  0000 R CNN
+F 1 "150" H 20130 20745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 20130 20700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 20200 20700 50  0001 C CNN
+F 4 "0.10	" H 20200 20700 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 20200 20700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 20200 20700 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 20200 20700 50  0001 C CNN "Vendor PN"
+	1    20200 20700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R100
+U 1 1 648F934F
+P 20825 20700
+F 0 "R100" H 20755 20654 50  0000 R CNN
+F 1 "150" H 20755 20745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 20755 20700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 20825 20700 50  0001 C CNN
+F 4 "0.10	" H 20825 20700 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 20825 20700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 20825 20700 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 20825 20700 50  0001 C CNN "Vendor PN"
+	1    20825 20700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R110
+U 1 1 648F9359
+P 21425 20700
+F 0 "R110" H 21355 20654 50  0000 R CNN
+F 1 "150" H 21355 20745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 21355 20700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 21425 20700 50  0001 C CNN
+F 4 "0.10	" H 21425 20700 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 21425 20700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 21425 20700 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 21425 20700 50  0001 C CNN "Vendor PN"
+	1    21425 20700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0174
+U 1 1 648F9363
+P 20200 20925
+F 0 "#PWR0174" H 20200 20675 50  0001 C CNN
+F 1 "GND" H 20205 20752 50  0000 C CNN
+F 2 "" H 20200 20925 50  0001 C CNN
+F 3 "" H 20200 20925 50  0001 C CNN
+	1    20200 20925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0180
+U 1 1 648F936D
+P 20825 20925
+F 0 "#PWR0180" H 20825 20675 50  0001 C CNN
+F 1 "GND" H 20830 20752 50  0000 C CNN
+F 2 "" H 20825 20925 50  0001 C CNN
+F 3 "" H 20825 20925 50  0001 C CNN
+	1    20825 20925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0192
+U 1 1 648F9377
+P 21425 20925
+F 0 "#PWR0192" H 21425 20675 50  0001 C CNN
+F 1 "GND" H 21430 20752 50  0000 C CNN
+F 2 "" H 21425 20925 50  0001 C CNN
+F 3 "" H 21425 20925 50  0001 C CNN
+	1    21425 20925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21425 20850 21425 20925
+Wire Wire Line
+	20825 20850 20825 20925
+Wire Wire Line
+	20200 20850 20200 20925
+Text GLabel 21700 19850 2    50   Input ~ 0
+Pi5_4-20_IN1
+Text GLabel 21700 19950 2    50   Input ~ 0
+Pi5_4-20_IN2
+Text GLabel 21700 20050 2    50   Input ~ 0
+Pi5_4-20_IN3
+Wire Wire Line
+	21700 20575 21700 20425
+Wire Wire Line
+	21700 20425 21425 20425
+Wire Wire Line
+	21425 20425 21425 20550
+Wire Wire Line
+	21100 20575 21100 20425
+Wire Wire Line
+	21100 20425 20825 20425
+Wire Wire Line
+	20825 20425 20825 20550
+Wire Wire Line
+	20450 20575 20450 20425
+Wire Wire Line
+	20450 20425 20200 20425
+Wire Wire Line
+	20200 20425 20200 20550
+Wire Wire Line
+	20200 20425 20200 19850
+Connection ~ 20200 20425
+Connection ~ 20200 19850
+Wire Wire Line
+	20200 19850 21700 19850
+$Comp
+L power:GND #PWR0178
+U 1 1 648F93E0
+P 20450 20925
+F 0 "#PWR0178" H 20450 20675 50  0001 C CNN
+F 1 "GND" H 20455 20752 50  0000 C CNN
+F 2 "" H 20450 20925 50  0001 C CNN
+F 3 "" H 20450 20925 50  0001 C CNN
+	1    20450 20925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20450 20875 20450 20925
+$Comp
+L power:GND #PWR0187
+U 1 1 648F93EB
+P 21100 20925
+F 0 "#PWR0187" H 21100 20675 50  0001 C CNN
+F 1 "GND" H 21105 20752 50  0000 C CNN
+F 2 "" H 21100 20925 50  0001 C CNN
+F 3 "" H 21100 20925 50  0001 C CNN
+	1    21100 20925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21100 20875 21100 20925
+$Comp
+L power:GND #PWR0197
+U 1 1 648F93F6
+P 21700 20925
+F 0 "#PWR0197" H 21700 20675 50  0001 C CNN
+F 1 "GND" H 21705 20752 50  0000 C CNN
+F 2 "" H 21700 20925 50  0001 C CNN
+F 3 "" H 21700 20925 50  0001 C CNN
+	1    21700 20925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21700 20875 21700 20925
+Text Notes 20000 19525 0    146  ~ 29
+4-20mA INPUT - 5
+Text GLabel 19250 15950 0    50   Input ~ 0
+SDA-0
+Text GLabel 19250 16050 0    50   Input ~ 0
+SCL-0
+Wire Wire Line
+	20825 20425 20825 19950
+Connection ~ 20825 20425
+Connection ~ 20825 19950
+Wire Wire Line
+	20825 19950 21700 19950
+Wire Wire Line
+	21425 20425 21425 20050
+Connection ~ 21425 20425
+Connection ~ 21425 20050
+Wire Wire Line
+	21425 20050 21700 20050
+Text GLabel 20750 16850 2    50   Input ~ 0
+Pi5_4-20_IN1
+Text GLabel 20750 16750 2    50   Input ~ 0
+Pi5_4-20_IN2
+Text GLabel 20750 16550 2    50   Input ~ 0
+Pi5_4-20_IN3
+Text GLabel 19175 16250 0    50   Input ~ 0
+Pi5_D-IN1
+Text GLabel 19175 16350 0    50   Input ~ 0
+Pi5_D-IN2
+Text GLabel 19175 16450 0    50   Input ~ 0
+Pi5_D-IN3
+Text GLabel 19175 16550 0    50   Input ~ 0
+Pi5_D-IN4
+Text GLabel 20750 16950 2    47   Input ~ 0
+Pi5_RST
+Text GLabel 18350 23525 0    50   Input ~ 0
+Pi5_DI_1
+Wire Wire Line
+	18350 23525 18375 23525
+Wire Wire Line
+	18375 23525 18375 23625
+Text GLabel 19650 23525 0    50   Input ~ 0
+Pi5_DI_2
+Wire Wire Line
+	19675 23525 19675 23625
+Wire Wire Line
+	19650 23525 19675 23525
+Text GLabel 21025 23525 0    50   Input ~ 0
+Pi5_DI_3
+Wire Wire Line
+	21025 23525 21050 23525
+Wire Wire Line
+	21050 23525 21050 23625
+Text GLabel 22325 23525 0    50   Input ~ 0
+Pi5_DI_4
+Wire Wire Line
+	22325 23525 22350 23525
+Wire Wire Line
+	22350 23525 22350 23625
+$Comp
+L Connector:Screw_Terminal_01x04 J20
+U 1 1 648F943C
+P 22550 22825
+F 0 "J20" H 22630 22817 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 22630 22726 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 22550 22825 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984633-1458842.pdf" H 22550 22825 50  0001 C CNN
+F 4 "1.07" H 22550 22825 50  0001 C CNN "Cost"
+F 5 "1984633" H 22550 22825 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984633?qs=dKKAVK9nnHOP434WOXxXdg%3D%3D" H 22550 22825 50  0001 C CNN "Vendor Link"
+F 7 "651-1984633" H 22550 22825 50  0001 C CNN "Vendor PN"
+	1    22550 22825
+	1    0    0    -1  
+$EndComp
+Text GLabel 22300 22725 0    50   Input ~ 0
+Pi5_DI_1
+Wire Wire Line
+	22300 22725 22350 22725
+Text GLabel 22300 22825 0    50   Input ~ 0
+Pi5_DI_2
+Wire Wire Line
+	22300 22825 22350 22825
+Text GLabel 22300 22925 0    50   Input ~ 0
+Pi5_DI_3
+Wire Wire Line
+	22300 22925 22350 22925
+Text GLabel 22300 23025 0    50   Input ~ 0
+Pi5_DI_4
+Wire Wire Line
+	22300 23025 22350 23025
+Text GLabel 25900 15725 0    50   Input ~ 0
+Pi5_DO1
+Text GLabel 25900 15925 0    50   Input ~ 0
+Pi5_DO3
+$Comp
+L Kristerj-rescue:PICO_RP2040-Juancho U12
+U 1 1 648F9466
+P 19950 16900
+F 0 "U12" H 19925 18265 50  0000 C CNN
+F 1 "PICO_RP2040" H 19925 18174 50  0000 C CNN
+F 2 "Juancho:Rasp_Pi_PICO" H 19850 18350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/181/M20-782-1220556.pdf" H 19850 18350 50  0001 C CNN
+F 4 "2.30	" H 19950 16900 50  0001 C CNN "Cost"
+F 5 "M20-7822046" H 19950 16900 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Harwin/M20-7822046?qs=sGAEpiMZZMvlX3nhDDO4ABznH5rKKlExqY22J5gDOpY%3D" H 19950 16900 50  0001 C CNN "Vendor Link"
+F 7 "855-M20-7822046" H 19950 16900 50  0001 C CNN "Vendor PN"
+	1    19950 16900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19250 16050 19300 16050
+Wire Wire Line
+	19300 15950 19250 15950
+$Comp
+L power:GND #PWR0164
+U 1 1 648F9472
+P 19225 17925
+F 0 "#PWR0164" H 19225 17675 50  0001 C CNN
+F 1 "GND" H 19230 17752 50  0000 C CNN
+F 2 "" H 19225 17925 50  0001 C CNN
+F 3 "" H 19225 17925 50  0001 C CNN
+	1    19225 17925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19225 17925 19225 17650
+Wire Wire Line
+	19225 17650 19300 17650
+Wire Wire Line
+	19300 17150 19225 17150
+Wire Wire Line
+	19225 17150 19225 17650
+Connection ~ 19225 17650
+Wire Wire Line
+	19300 16650 19225 16650
+Wire Wire Line
+	19225 16650 19225 17150
+Connection ~ 19225 17150
+Wire Wire Line
+	19300 16150 19225 16150
+Wire Wire Line
+	19225 16150 19225 16650
+Connection ~ 19225 16650
+Wire Wire Line
+	19175 16250 19300 16250
+Wire Wire Line
+	19175 16350 19300 16350
+Wire Wire Line
+	19175 16450 19300 16450
+Wire Wire Line
+	19175 16550 19300 16550
+Wire Wire Line
+	19175 16750 19300 16750
+Wire Wire Line
+	19175 16950 19300 16950
+Wire Wire Line
+	20550 16950 20750 16950
+Wire Wire Line
+	20550 16850 20750 16850
+Wire Wire Line
+	20550 16550 20750 16550
+Wire Wire Line
+	20750 16750 20550 16750
+$Comp
+L power:GND #PWR0176
+U 1 1 648F9545
+P 20650 17925
+F 0 "#PWR0176" H 20650 17675 50  0001 C CNN
+F 1 "GND" H 20655 17752 50  0000 C CNN
+F 2 "" H 20650 17925 50  0001 C CNN
+F 3 "" H 20650 17925 50  0001 C CNN
+	1    20650 17925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20650 17925 20650 17650
+Wire Wire Line
+	20650 17650 20550 17650
+Wire Wire Line
+	20550 17150 20650 17150
+Wire Wire Line
+	20650 17150 20650 17650
+Connection ~ 20650 17650
+Wire Wire Line
+	20550 16650 20650 16650
+Wire Wire Line
+	20650 16650 20650 17150
+Connection ~ 20650 17150
+Wire Wire Line
+	20550 16150 20650 16150
+Wire Wire Line
+	20650 16150 20650 16650
+Connection ~ 20650 16650
+$Comp
+L power:+5V #PWR0175
+U 1 1 648F9562
+P 20650 15900
+F 0 "#PWR0175" H 20650 15750 50  0001 C CNN
+F 1 "+5V" H 20665 16073 50  0000 C CNN
+F 2 "" H 20650 15900 50  0001 C CNN
+F 3 "" H 20650 15900 50  0001 C CNN
+	1    20650 15900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20650 15900 20650 15950
+Wire Wire Line
+	20650 15950 20550 15950
+Text GLabel 21175 15400 0    47   Input ~ 0
+Pi5_SWDIO
+Text GLabel 21175 15200 0    47   Input ~ 0
+Pi5_SWCLK
+Text Notes 18975 15250 0    146  ~ 29
+PI PICO - 5
+Text Notes 21150 15075 0    146  ~ 0
+debug\n
+Text Notes 21800 22475 0    146  ~ 0
+discrete input\n
+Text Notes 25400 15375 0    146  ~ 0
+discrete output\n
+$Comp
+L Connector_Generic:Conn_01x03 J18
+U 1 1 648F9936
+P 21450 15300
+F 0 "J18" H 21530 15342 50  0000 L CNN
+F 1 "Conn_01x03" H 21530 15251 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 21450 15300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/7/ENG_CD_215299_F-2028124.pdf" H 21450 15300 50  0001 C CNN
+F 4 "0.77	" H 21450 15300 50  0001 C CNN "Cost"
+F 5 "215299-3" H 21450 15300 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/TE-Connectivity/215299-3?qs=pol9tQvH%252BaHR%252B8PZSmhoEA%3D%3D" H 21450 15300 50  0001 C CNN "Vendor Link"
+F 7 "571-215299-3" H 21450 15300 50  0001 C CNN "Vendor PN"
+	1    21450 15300
+	1    0    0    -1  
+$EndComp
+Text GLabel 21175 15300 0    47   Input ~ 0
+Pi5_SWGND
+Wire Wire Line
+	21250 15200 21175 15200
+Wire Wire Line
+	21175 15300 21250 15300
+Wire Wire Line
+	21250 15400 21175 15400
+$Comp
+L Connector:Screw_Terminal_01x06 J16
+U 1 1 648F9944
+P 19700 19950
+F 0 "J16" H 19700 20250 50  0000 C CNN
+F 1 "Screw_Terminal_01x06" V 19800 19900 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-6-3.5-H_1x06_P3.50mm_Horizontal" H 19700 19950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984659-1458991.pdf" H 19700 19950 50  0001 C CNN
+F 4 "1.54	" H 19700 19950 50  0001 C CNN "Cost"
+F 5 "1984659" H 19700 19950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984659?qs=FQYO1eEgUPBU2UOuKgfwDQ%3D%3D" H 19700 19950 50  0001 C CNN "Vendor Link"
+F 7 "651-1984659" H 19700 19950 50  0001 C CNN "Vendor PN"
+	1    19700 19950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0170
+U 1 1 648F994E
+P 19950 19675
+F 0 "#PWR0170" H 19950 19525 50  0001 C CNN
+F 1 "+24V" H 19965 19848 50  0000 C CNN
+F 2 "" H 19950 19675 50  0001 C CNN
+F 3 "" H 19950 19675 50  0001 C CNN
+	1    19950 19675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19900 19750 19950 19750
+Wire Wire Line
+	19950 19750 19950 19675
+Wire Wire Line
+	19950 19750 19950 19950
+Wire Wire Line
+	19950 19950 19900 19950
+Connection ~ 19950 19750
+Wire Wire Line
+	19950 19950 19950 20150
+Wire Wire Line
+	19950 20150 19900 20150
+Connection ~ 19950 19950
+Wire Wire Line
+	19900 19850 20200 19850
+Wire Wire Line
+	20100 20050 20100 20250
+Wire Wire Line
+	20100 20050 21425 20050
+Wire Wire Line
+	19900 20250 20100 20250
+Wire Wire Line
+	20025 20050 20025 19950
+Wire Wire Line
+	20025 19950 20825 19950
+Wire Wire Line
+	19900 20050 20025 20050
+$Comp
+L Device:R R101
+U 1 1 648F9A91
+P 21150 17750
+F 0 "R101" H 21080 17704 50  0000 R CNN
+F 1 "10K" H 21080 17795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 21080 17750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 21150 17750 50  0001 C CNN
+F 4 "0.10	" H 21150 17750 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 21150 17750 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 21150 17750 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 21150 17750 50  0001 C CNN "Vendor PN"
+	1    21150 17750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R111
+U 1 1 648F9A9B
+P 21750 17050
+F 0 "R111" H 21680 17004 50  0000 R CNN
+F 1 "10K" H 21680 17095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 21680 17050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 21750 17050 50  0001 C CNN
+F 4 "0.10	" H 21750 17050 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 21750 17050 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 21750 17050 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 21750 17050 50  0001 C CNN "Vendor PN"
+	1    21750 17050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R107
+U 1 1 648F9B21
+P 21450 17050
+F 0 "R107" H 21380 17004 50  0000 R CNN
+F 1 "10K" H 21380 17095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 21380 17050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 21450 17050 50  0001 C CNN
+F 4 "0.10	" H 21450 17050 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 21450 17050 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 21450 17050 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 21450 17050 50  0001 C CNN "Vendor PN"
+	1    21450 17050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0181
+U 1 1 648F9B35
+P 21150 17925
+F 0 "#PWR0181" H 21150 17675 50  0001 C CNN
+F 1 "GND" H 21155 17752 50  0000 C CNN
+F 2 "" H 21150 17925 50  0001 C CNN
+F 3 "" H 21150 17925 50  0001 C CNN
+	1    21150 17925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0189
+U 1 1 648F9B3F
+P 21450 16850
+F 0 "#PWR0189" H 21450 16700 50  0001 C CNN
+F 1 "+5V" H 21465 17023 50  0000 C CNN
+F 2 "" H 21450 16850 50  0001 C CNN
+F 3 "" H 21450 16850 50  0001 C CNN
+	1    21450 16850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D46
+U 1 1 648F9B5D
+P 18750 24225
+F 0 "D46" V 18704 24305 50  0000 L CNN
+F 1 "3.9V" V 18795 24305 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 18750 24225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 18750 24225 50  0001 C CNN
+F 4 "0.17" H 18750 24225 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 18750 24225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 18750 24225 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 18750 24225 50  0001 C CNN "Vendor PN"
+	1    18750 24225
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0162
+U 1 1 648F9B67
+P 18750 24425
+F 0 "#PWR0162" H 18750 24175 50  0001 C CNN
+F 1 "GND" H 18755 24252 50  0000 C CNN
+F 2 "" H 18750 24425 50  0001 C CNN
+F 3 "" H 18750 24425 50  0001 C CNN
+	1    18750 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18375 23975 18750 23975
+Wire Wire Line
+	18750 24375 18750 24425
+Wire Wire Line
+	18750 23975 18750 24075
+Wire Wire Line
+	18825 23975 18750 23975
+Connection ~ 18750 23975
+$Comp
+L Device:D_Zener D48
+U 1 1 648F9B76
+P 20075 24225
+F 0 "D48" V 20029 24305 50  0000 L CNN
+F 1 "3.9V" V 20120 24305 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 20075 24225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 20075 24225 50  0001 C CNN
+F 4 "0.17" H 20075 24225 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 20075 24225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 20075 24225 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 20075 24225 50  0001 C CNN "Vendor PN"
+	1    20075 24225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D54
+U 1 1 648F9B80
+P 21450 24225
+F 0 "D54" V 21404 24305 50  0000 L CNN
+F 1 "3.9V" V 21495 24305 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 21450 24225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 21450 24225 50  0001 C CNN
+F 4 "0.17" H 21450 24225 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 21450 24225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 21450 24225 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 21450 24225 50  0001 C CNN "Vendor PN"
+	1    21450 24225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D58
+U 1 1 648F9B8A
+P 22750 24225
+F 0 "D58" V 22704 24305 50  0000 L CNN
+F 1 "3.9V" V 22795 24305 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 22750 24225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 22750 24225 50  0001 C CNN
+F 4 "0.17" H 22750 24225 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 22750 24225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 22750 24225 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 22750 24225 50  0001 C CNN "Vendor PN"
+	1    22750 24225
+	0    1    1    0   
+$EndComp
+Text Notes 21700 20200 0    47   ~ 0
+600mV to 3V
+$Comp
+L Device:D_Zener D50
+U 1 1 648F9B95
+P 20450 20725
+F 0 "D50" V 20404 20805 50  0000 L CNN
+F 1 "3.9V" V 20495 20805 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 20450 20725 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 20450 20725 50  0001 C CNN
+F 4 "0.17" H 20450 20725 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 20450 20725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 20450 20725 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 20450 20725 50  0001 C CNN "Vendor PN"
+	1    20450 20725
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D52
+U 1 1 648F9C2B
+P 21100 20725
+F 0 "D52" V 21054 20805 50  0000 L CNN
+F 1 "3.9V" V 21145 20805 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 21100 20725 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 21100 20725 50  0001 C CNN
+F 4 "0.17" H 21100 20725 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 21100 20725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 21100 20725 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 21100 20725 50  0001 C CNN "Vendor PN"
+	1    21100 20725
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D56
+U 1 1 648F9C35
+P 21700 20725
+F 0 "D56" V 21654 20805 50  0000 L CNN
+F 1 "3.9V" V 21745 20805 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 21700 20725 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 21700 20725 50  0001 C CNN
+F 4 "0.17" H 21700 20725 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 21700 20725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 21700 20725 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 21700 20725 50  0001 C CNN "Vendor PN"
+	1    21700 20725
+	0    1    1    0   
+$EndComp
+Text GLabel 30450 16975 2    50   Input ~ 0
+Pi5_DO1
+Wire Notes Line
+	17825 18575 25175 18575
+Text GLabel 34000 19400 2    50   Input ~ 0
+Pi5_DO3
+Text GLabel 30625 19300 0    50   Input ~ 0
+Pi5_D-OUT3
+Wire Notes Line
+	22025 18575 22025 14700
+Wire Notes Line
+	25175 14700 25175 20150
+Wire Notes Line
+	24225 25350 24225 20150
+Wire Notes Line
+	24225 20150 35150 20150
+Wire Notes Line
+	24225 21400 17800 21400
+Wire Notes Line
+	17800 21400 17800 21425
+Text Notes 23750 14650 0    394  ~ 79
+RASPBERRY PI PICO 5
+Wire Wire Line
+	21150 17900 21150 17925
+Wire Wire Line
+	21450 16850 21450 16900
+Text GLabel 10225 2500 2    47   Input ~ 0
+Pi6_SWDIO
+Text GLabel 10225 2600 2    47   Input ~ 0
+Pi6_SWCLK
+Text GLabel 10225 2700 2    47   Input ~ 0
+Pi6_RST
+$Comp
+L Device:R R171
+U 1 1 648FA843
+P 35725 23775
+F 0 "R171" H 35795 23821 50  0000 L CNN
+F 1 "68K" H 35795 23730 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 35655 23775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 35725 23775 50  0001 C CNN
+F 4 "0.10	" H 35725 23775 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 35725 23775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 35725 23775 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 35725 23775 50  0001 C CNN "Vendor PN"
+	1    35725 23775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R172
+U 1 1 648FA865
+P 35725 24200
+F 0 "R172" H 35795 24246 50  0000 L CNN
+F 1 "10K" H 35795 24155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 35655 24200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 35725 24200 50  0001 C CNN
+F 4 "0.10	" H 35725 24200 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 35725 24200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 35725 24200 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 35725 24200 50  0001 C CNN "Vendor PN"
+	1    35725 24200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	35725 23925 35725 23975
+$Comp
+L power:GND #PWR0308
+U 1 1 648FA870
+P 35725 24425
+F 0 "#PWR0308" H 35725 24175 50  0001 C CNN
+F 1 "GND" H 35730 24252 50  0000 C CNN
+F 2 "" H 35725 24425 50  0001 C CNN
+F 3 "" H 35725 24425 50  0001 C CNN
+	1    35725 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	35725 24350 35725 24425
+Text Notes 36550 22600 0    146  ~ 29
+Discrete Input - 6
+$Comp
+L Device:R R177
+U 1 1 648FA87C
+P 37025 23775
+F 0 "R177" H 37095 23821 50  0000 L CNN
+F 1 "68K" H 37095 23730 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 36955 23775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 37025 23775 50  0001 C CNN
+F 4 "0.10	" H 37025 23775 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 37025 23775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 37025 23775 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 37025 23775 50  0001 C CNN "Vendor PN"
+	1    37025 23775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R178
+U 1 1 648FA886
+P 37025 24200
+F 0 "R178" H 37095 24246 50  0000 L CNN
+F 1 "10K" H 37095 24155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 36955 24200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 37025 24200 50  0001 C CNN
+F 4 "0.10	" H 37025 24200 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 37025 24200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 37025 24200 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 37025 24200 50  0001 C CNN "Vendor PN"
+	1    37025 24200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	37025 23925 37025 23975
+$Comp
+L power:GND #PWR0316
+U 1 1 648FA891
+P 37025 24425
+F 0 "#PWR0316" H 37025 24175 50  0001 C CNN
+F 1 "GND" H 37030 24252 50  0000 C CNN
+F 2 "" H 37025 24425 50  0001 C CNN
+F 3 "" H 37025 24425 50  0001 C CNN
+	1    37025 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	37025 24350 37025 24425
+$Comp
+L Device:R R186
+U 1 1 648FA89C
+P 38400 23775
+F 0 "R186" H 38470 23821 50  0000 L CNN
+F 1 "68K" H 38470 23730 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 38330 23775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 38400 23775 50  0001 C CNN
+F 4 "0.10	" H 38400 23775 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 38400 23775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 38400 23775 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 38400 23775 50  0001 C CNN "Vendor PN"
+	1    38400 23775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R187
+U 1 1 648FA8A6
+P 38400 24200
+F 0 "R187" H 38470 24246 50  0000 L CNN
+F 1 "10K" H 38470 24155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 38330 24200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 38400 24200 50  0001 C CNN
+F 4 "0.10	" H 38400 24200 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 38400 24200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 38400 24200 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 38400 24200 50  0001 C CNN "Vendor PN"
+	1    38400 24200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38400 23925 38400 23975
+$Comp
+L power:GND #PWR0333
+U 1 1 648FA8B1
+P 38400 24425
+F 0 "#PWR0333" H 38400 24175 50  0001 C CNN
+F 1 "GND" H 38405 24252 50  0000 C CNN
+F 2 "" H 38400 24425 50  0001 C CNN
+F 3 "" H 38400 24425 50  0001 C CNN
+	1    38400 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38400 24350 38400 24425
+$Comp
+L Device:R R197
+U 1 1 648FA8BC
+P 39700 23775
+F 0 "R197" H 39770 23821 50  0000 L CNN
+F 1 "68K" H 39770 23730 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 39630 23775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 39700 23775 50  0001 C CNN
+F 4 "0.10	" H 39700 23775 50  0001 C CNN "Cost"
+F 5 "RC0603FR-0768KL" H 39700 23775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0768KL?qs=2cAdsCoAWRGB9YFxGbVftw%3D%3D" H 39700 23775 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-0768KL" H 39700 23775 50  0001 C CNN "Vendor PN"
+	1    39700 23775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R198
+U 1 1 648FA8C6
+P 39700 24200
+F 0 "R198" H 39770 24246 50  0000 L CNN
+F 1 "10K" H 39770 24155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 39630 24200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 39700 24200 50  0001 C CNN
+F 4 "0.10	" H 39700 24200 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 39700 24200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 39700 24200 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 39700 24200 50  0001 C CNN "Vendor PN"
+	1    39700 24200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0348
+U 1 1 648FA8D0
+P 39700 24425
+F 0 "#PWR0348" H 39700 24175 50  0001 C CNN
+F 1 "GND" H 39705 24252 50  0000 C CNN
+F 2 "" H 39700 24425 50  0001 C CNN
+F 3 "" H 39700 24425 50  0001 C CNN
+	1    39700 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	39700 24350 39700 24425
+Text GLabel 36175 23975 2    50   Input ~ 0
+Pi6_D-IN1
+Connection ~ 35725 23975
+Wire Wire Line
+	35725 23975 35725 24050
+Text GLabel 37525 23975 2    50   Input ~ 0
+Pi6_D-IN2
+Connection ~ 37025 23975
+Wire Wire Line
+	37025 23975 37025 24050
+Text GLabel 38875 23975 2    50   Input ~ 0
+Pi6_D-IN3
+Text GLabel 40175 23975 2    50   Input ~ 0
+Pi6_D-IN4
+Connection ~ 38400 23975
+Wire Wire Line
+	38400 23975 38400 24050
+Text GLabel 44500 16900 0    50   Input ~ 0
+Pi6_D-OUT1
+Text Notes 46425 15225 0    146  ~ 29
+Discrete Output - 6
+Wire Wire Line
+	37425 24075 37425 23975
+$Comp
+L power:GND #PWR0320
+U 1 1 648FA986
+P 37425 24425
+F 0 "#PWR0320" H 37425 24175 50  0001 C CNN
+F 1 "GND" H 37430 24252 50  0000 C CNN
+F 2 "" H 37425 24425 50  0001 C CNN
+F 3 "" H 37425 24425 50  0001 C CNN
+	1    37425 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	37425 24375 37425 24425
+Wire Wire Line
+	38800 23975 38800 24075
+Wire Wire Line
+	38400 23975 38800 23975
+$Comp
+L power:GND #PWR0341
+U 1 1 648FA993
+P 38800 24425
+F 0 "#PWR0341" H 38800 24175 50  0001 C CNN
+F 1 "GND" H 38805 24252 50  0000 C CNN
+F 2 "" H 38800 24425 50  0001 C CNN
+F 3 "" H 38800 24425 50  0001 C CNN
+	1    38800 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38800 24375 38800 24425
+Wire Wire Line
+	39700 23925 39700 23975
+Wire Wire Line
+	40100 23975 40100 24075
+Wire Wire Line
+	39700 23975 40100 23975
+$Comp
+L power:GND #PWR0350
+U 1 1 648FA9A1
+P 40100 24425
+F 0 "#PWR0350" H 40100 24175 50  0001 C CNN
+F 1 "GND" H 40105 24252 50  0000 C CNN
+F 2 "" H 40100 24425 50  0001 C CNN
+F 3 "" H 40100 24425 50  0001 C CNN
+	1    40100 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	40100 24375 40100 24425
+Connection ~ 39700 23975
+Wire Wire Line
+	39700 23975 39700 24050
+Wire Wire Line
+	37025 23975 37425 23975
+Connection ~ 37425 23975
+Wire Wire Line
+	38875 23975 38800 23975
+Connection ~ 38800 23975
+Wire Wire Line
+	40175 23975 40100 23975
+Connection ~ 40100 23975
+Wire Wire Line
+	37425 23975 37525 23975
+$Comp
+L Device:R R180
+U 1 1 648FAA91
+P 37550 20700
+F 0 "R180" H 37480 20654 50  0000 R CNN
+F 1 "150" H 37480 20745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 37480 20700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 37550 20700 50  0001 C CNN
+F 4 "0.10	" H 37550 20700 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 37550 20700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 37550 20700 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 37550 20700 50  0001 C CNN "Vendor PN"
+	1    37550 20700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R183
+U 1 1 648FAA9B
+P 38175 20700
+F 0 "R183" H 38105 20654 50  0000 R CNN
+F 1 "150" H 38105 20745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 38105 20700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 38175 20700 50  0001 C CNN
+F 4 "0.10	" H 38175 20700 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 38175 20700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 38175 20700 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 38175 20700 50  0001 C CNN "Vendor PN"
+	1    38175 20700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R191
+U 1 1 648FAAA5
+P 38775 20700
+F 0 "R191" H 38705 20654 50  0000 R CNN
+F 1 "150" H 38705 20745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 38705 20700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 38775 20700 50  0001 C CNN
+F 4 "0.10	" H 38775 20700 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 38775 20700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 38775 20700 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 38775 20700 50  0001 C CNN "Vendor PN"
+	1    38775 20700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0322
+U 1 1 648FAAAF
+P 37550 20925
+F 0 "#PWR0322" H 37550 20675 50  0001 C CNN
+F 1 "GND" H 37555 20752 50  0000 C CNN
+F 2 "" H 37550 20925 50  0001 C CNN
+F 3 "" H 37550 20925 50  0001 C CNN
+	1    37550 20925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0329
+U 1 1 648FAAB9
+P 38175 20925
+F 0 "#PWR0329" H 38175 20675 50  0001 C CNN
+F 1 "GND" H 38180 20752 50  0000 C CNN
+F 2 "" H 38175 20925 50  0001 C CNN
+F 3 "" H 38175 20925 50  0001 C CNN
+	1    38175 20925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0339
+U 1 1 648FAAC3
+P 38775 20925
+F 0 "#PWR0339" H 38775 20675 50  0001 C CNN
+F 1 "GND" H 38780 20752 50  0000 C CNN
+F 2 "" H 38775 20925 50  0001 C CNN
+F 3 "" H 38775 20925 50  0001 C CNN
+	1    38775 20925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38775 20850 38775 20925
+Wire Wire Line
+	38175 20850 38175 20925
+Wire Wire Line
+	37550 20850 37550 20925
+Text GLabel 39050 19850 2    50   Input ~ 0
+Pi6_4-20_IN1
+Text GLabel 39050 19950 2    50   Input ~ 0
+Pi6_4-20_IN2
+Text GLabel 39050 20050 2    50   Input ~ 0
+Pi6_4-20_IN3
+Wire Wire Line
+	39050 20575 39050 20425
+Wire Wire Line
+	39050 20425 38775 20425
+Wire Wire Line
+	38775 20425 38775 20550
+Wire Wire Line
+	38450 20575 38450 20425
+Wire Wire Line
+	38450 20425 38175 20425
+Wire Wire Line
+	38175 20425 38175 20550
+Wire Wire Line
+	37800 20575 37800 20425
+Wire Wire Line
+	37800 20425 37550 20425
+Wire Wire Line
+	37550 20425 37550 20550
+Wire Wire Line
+	37550 20425 37550 19850
+Connection ~ 37550 20425
+Connection ~ 37550 19850
+Wire Wire Line
+	37550 19850 39050 19850
+$Comp
+L power:GND #PWR0326
+U 1 1 648FAB1C
+P 37800 20925
+F 0 "#PWR0326" H 37800 20675 50  0001 C CNN
+F 1 "GND" H 37805 20752 50  0000 C CNN
+F 2 "" H 37800 20925 50  0001 C CNN
+F 3 "" H 37800 20925 50  0001 C CNN
+	1    37800 20925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	37800 20875 37800 20925
+$Comp
+L power:GND #PWR0335
+U 1 1 648FAB27
+P 38450 20925
+F 0 "#PWR0335" H 38450 20675 50  0001 C CNN
+F 1 "GND" H 38455 20752 50  0000 C CNN
+F 2 "" H 38450 20925 50  0001 C CNN
+F 3 "" H 38450 20925 50  0001 C CNN
+	1    38450 20925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38450 20875 38450 20925
+$Comp
+L power:GND #PWR0344
+U 1 1 648FAB32
+P 39050 20925
+F 0 "#PWR0344" H 39050 20675 50  0001 C CNN
+F 1 "GND" H 39055 20752 50  0000 C CNN
+F 2 "" H 39050 20925 50  0001 C CNN
+F 3 "" H 39050 20925 50  0001 C CNN
+	1    39050 20925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	39050 20875 39050 20925
+Text Notes 37350 19525 0    146  ~ 29
+4-20mA INPUT - 6
+Text GLabel 36625 15950 0    50   Input ~ 0
+SDA-0
+Text GLabel 36625 16050 0    50   Input ~ 0
+SCL-0
+Wire Wire Line
+	38175 20425 38175 19950
+Connection ~ 38175 20425
+Connection ~ 38175 19950
+Wire Wire Line
+	38175 19950 39050 19950
+Wire Wire Line
+	38775 20425 38775 20050
+Connection ~ 38775 20425
+Connection ~ 38775 20050
+Wire Wire Line
+	38775 20050 39050 20050
+Text GLabel 38125 16850 2    50   Input ~ 0
+Pi6_4-20_IN1
+Text GLabel 38125 16750 2    50   Input ~ 0
+Pi6_4-20_IN2
+Text GLabel 38125 16550 2    50   Input ~ 0
+Pi6_4-20_IN3
+Text GLabel 36550 16250 0    50   Input ~ 0
+Pi6_D-IN1
+Text GLabel 36550 16350 0    50   Input ~ 0
+Pi6_D-IN2
+Text GLabel 36550 16450 0    50   Input ~ 0
+Pi6_D-IN3
+Text GLabel 36550 16550 0    50   Input ~ 0
+Pi6_D-IN4
+Text GLabel 38125 16950 2    47   Input ~ 0
+Pi6_RST
+Text GLabel 36550 16750 0    50   Input ~ 0
+Pi6_D-OUT1
+Text GLabel 36550 16950 0    50   Input ~ 0
+Pi6_D-OUT3
+Text GLabel 35700 23525 0    50   Input ~ 0
+Pi6_DI_1
+Wire Wire Line
+	35700 23525 35725 23525
+Wire Wire Line
+	35725 23525 35725 23625
+Text GLabel 37000 23525 0    50   Input ~ 0
+Pi6_DI_2
+Wire Wire Line
+	37025 23525 37025 23625
+Wire Wire Line
+	37000 23525 37025 23525
+Text GLabel 38375 23525 0    50   Input ~ 0
+Pi6_DI_3
+Wire Wire Line
+	38375 23525 38400 23525
+Wire Wire Line
+	38400 23525 38400 23625
+Text GLabel 39675 23525 0    50   Input ~ 0
+Pi6_DI_4
+Wire Wire Line
+	39675 23525 39700 23525
+Wire Wire Line
+	39700 23525 39700 23625
+$Comp
+L Connector:Screw_Terminal_01x04 J32
+U 1 1 648FAB78
+P 39900 22825
+F 0 "J32" H 39980 22817 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 39980 22726 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 39900 22825 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984633-1458842.pdf" H 39900 22825 50  0001 C CNN
+F 4 "1.07" H 39900 22825 50  0001 C CNN "Cost"
+F 5 "1984633" H 39900 22825 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984633?qs=dKKAVK9nnHOP434WOXxXdg%3D%3D" H 39900 22825 50  0001 C CNN "Vendor Link"
+F 7 "651-1984633" H 39900 22825 50  0001 C CNN "Vendor PN"
+	1    39900 22825
+	1    0    0    -1  
+$EndComp
+Text GLabel 39650 22725 0    50   Input ~ 0
+Pi6_DI_1
+Wire Wire Line
+	39650 22725 39700 22725
+Text GLabel 39650 22825 0    50   Input ~ 0
+Pi6_DI_2
+Wire Wire Line
+	39650 22825 39700 22825
+Text GLabel 39650 22925 0    50   Input ~ 0
+Pi6_DI_3
+Wire Wire Line
+	39650 22925 39700 22925
+Text GLabel 39650 23025 0    50   Input ~ 0
+Pi6_DI_4
+Wire Wire Line
+	39650 23025 39700 23025
+Text GLabel 43350 15775 0    50   Input ~ 0
+Pi6_DO1
+Text GLabel 43350 15975 0    50   Input ~ 0
+Pi6_DO3
+$Comp
+L Kristerj-rescue:PICO_RP2040-Juancho U22
+U 1 1 648FABCA
+P 37325 16900
+F 0 "U22" H 37300 18265 50  0000 C CNN
+F 1 "PICO_RP2040" H 37300 18174 50  0000 C CNN
+F 2 "Juancho:Rasp_Pi_PICO" H 37225 18350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/181/M20-782-1220556.pdf" H 37225 18350 50  0001 C CNN
+F 4 "2.30	" H 37325 16900 50  0001 C CNN "Cost"
+F 5 "M20-7822046" H 37325 16900 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Harwin/M20-7822046?qs=sGAEpiMZZMvlX3nhDDO4ABznH5rKKlExqY22J5gDOpY%3D" H 37325 16900 50  0001 C CNN "Vendor Link"
+F 7 "855-M20-7822046" H 37325 16900 50  0001 C CNN "Vendor PN"
+	1    37325 16900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	36625 16050 36675 16050
+Wire Wire Line
+	36675 15950 36625 15950
+$Comp
+L power:GND #PWR0313
+U 1 1 648FABD6
+P 36600 17925
+F 0 "#PWR0313" H 36600 17675 50  0001 C CNN
+F 1 "GND" H 36605 17752 50  0000 C CNN
+F 2 "" H 36600 17925 50  0001 C CNN
+F 3 "" H 36600 17925 50  0001 C CNN
+	1    36600 17925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	36600 17925 36600 17650
+Wire Wire Line
+	36600 17650 36675 17650
+Wire Wire Line
+	36675 17150 36600 17150
+Wire Wire Line
+	36600 17150 36600 17650
+Connection ~ 36600 17650
+Wire Wire Line
+	36675 16650 36600 16650
+Wire Wire Line
+	36600 16650 36600 17150
+Connection ~ 36600 17150
+Wire Wire Line
+	36675 16150 36600 16150
+Wire Wire Line
+	36600 16150 36600 16650
+Connection ~ 36600 16650
+Wire Wire Line
+	36550 16250 36675 16250
+Wire Wire Line
+	36550 16350 36675 16350
+Wire Wire Line
+	36550 16450 36675 16450
+Wire Wire Line
+	36550 16550 36675 16550
+Wire Wire Line
+	36550 16750 36675 16750
+Wire Wire Line
+	36550 16950 36675 16950
+Wire Wire Line
+	37925 16950 38125 16950
+Wire Wire Line
+	37925 16850 38125 16850
+Wire Wire Line
+	37925 16550 38125 16550
+Wire Wire Line
+	38125 16750 37925 16750
+$Comp
+L power:GND #PWR0324
+U 1 1 648FAC81
+P 38025 17925
+F 0 "#PWR0324" H 38025 17675 50  0001 C CNN
+F 1 "GND" H 38030 17752 50  0000 C CNN
+F 2 "" H 38025 17925 50  0001 C CNN
+F 3 "" H 38025 17925 50  0001 C CNN
+	1    38025 17925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38025 17925 38025 17650
+Wire Wire Line
+	38025 17650 37925 17650
+Wire Wire Line
+	37925 17150 38025 17150
+Wire Wire Line
+	38025 17150 38025 17650
+Connection ~ 38025 17650
+Wire Wire Line
+	37925 16650 38025 16650
+Wire Wire Line
+	38025 16650 38025 17150
+Connection ~ 38025 17150
+Wire Wire Line
+	37925 16150 38025 16150
+Wire Wire Line
+	38025 16150 38025 16650
+Connection ~ 38025 16650
+$Comp
+L power:+5V #PWR0323
+U 1 1 648FAC96
+P 38025 15900
+F 0 "#PWR0323" H 38025 15750 50  0001 C CNN
+F 1 "+5V" H 38040 16073 50  0000 C CNN
+F 2 "" H 38025 15900 50  0001 C CNN
+F 3 "" H 38025 15900 50  0001 C CNN
+	1    38025 15900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38025 15900 38025 15950
+Wire Wire Line
+	38025 15950 37925 15950
+Text GLabel 38550 15400 0    47   Input ~ 0
+Pi6_SWDIO
+Text GLabel 38550 15200 0    47   Input ~ 0
+Pi6_SWCLK
+Text Notes 36350 15250 0    146  ~ 29
+PI PICO - 6
+Text Notes 38525 15075 0    146  ~ 0
+debug\n
+Text Notes 39150 22475 0    146  ~ 0
+discrete input\n
+Text Notes 42750 15375 0    146  ~ 0
+discrete output\n
+$Comp
+L Connector_Generic:Conn_01x03 J30
+U 1 1 648FB072
+P 38825 15300
+F 0 "J30" H 38905 15342 50  0000 L CNN
+F 1 "Conn_01x03" H 38905 15251 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 38825 15300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/7/ENG_CD_215299_F-2028124.pdf" H 38825 15300 50  0001 C CNN
+F 4 "0.77	" H 38825 15300 50  0001 C CNN "Cost"
+F 5 "215299-3" H 38825 15300 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/TE-Connectivity/215299-3?qs=pol9tQvH%252BaHR%252B8PZSmhoEA%3D%3D" H 38825 15300 50  0001 C CNN "Vendor Link"
+F 7 "571-215299-3" H 38825 15300 50  0001 C CNN "Vendor PN"
+	1    38825 15300
+	1    0    0    -1  
+$EndComp
+Text GLabel 38550 15300 0    47   Input ~ 0
+Pi6_SWGND
+Wire Wire Line
+	38625 15200 38550 15200
+Wire Wire Line
+	38550 15300 38625 15300
+Wire Wire Line
+	38625 15400 38550 15400
+$Comp
+L Connector:Screw_Terminal_01x06 J28
+U 1 1 648FB080
+P 37050 19950
+F 0 "J28" H 37050 20250 50  0000 C CNN
+F 1 "Screw_Terminal_01x06" V 37150 19900 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-6-3.5-H_1x06_P3.50mm_Horizontal" H 37050 19950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984659-1458991.pdf" H 37050 19950 50  0001 C CNN
+F 4 "1.54	" H 37050 19950 50  0001 C CNN "Cost"
+F 5 "1984659" H 37050 19950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984659?qs=FQYO1eEgUPBU2UOuKgfwDQ%3D%3D" H 37050 19950 50  0001 C CNN "Vendor Link"
+F 7 "651-1984659" H 37050 19950 50  0001 C CNN "Vendor PN"
+	1    37050 19950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0318
+U 1 1 648FB08A
+P 37300 19675
+F 0 "#PWR0318" H 37300 19525 50  0001 C CNN
+F 1 "+24V" H 37315 19848 50  0000 C CNN
+F 2 "" H 37300 19675 50  0001 C CNN
+F 3 "" H 37300 19675 50  0001 C CNN
+	1    37300 19675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	37250 19750 37300 19750
+Wire Wire Line
+	37300 19750 37300 19675
+Wire Wire Line
+	37300 19750 37300 19950
+Wire Wire Line
+	37300 19950 37250 19950
+Connection ~ 37300 19750
+Wire Wire Line
+	37300 19950 37300 20150
+Wire Wire Line
+	37300 20150 37250 20150
+Connection ~ 37300 19950
+Wire Wire Line
+	37250 19850 37550 19850
+Wire Wire Line
+	37450 20050 37450 20250
+Wire Wire Line
+	37450 20050 38775 20050
+Wire Wire Line
+	37250 20250 37450 20250
+Wire Wire Line
+	37375 20050 37375 19950
+Wire Wire Line
+	37375 19950 38175 19950
+Wire Wire Line
+	37250 20050 37375 20050
+$Comp
+L Device:R R189
+U 1 1 648FB21D
+P 38775 17125
+F 0 "R189" H 38705 17079 50  0000 R CNN
+F 1 "10K" H 38705 17170 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 38705 17125 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 38775 17125 50  0001 C CNN
+F 4 "0.10	" H 38775 17125 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 38775 17125 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 38775 17125 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 38775 17125 50  0001 C CNN "Vendor PN"
+	1    38775 17125
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R181
+U 1 1 648FB227
+P 38225 17725
+F 0 "R181" H 38155 17679 50  0000 R CNN
+F 1 "10K" H 38155 17770 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 38155 17725 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 38225 17725 50  0001 C CNN
+F 4 "0.10	" H 38225 17725 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 38225 17725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 38225 17725 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 38225 17725 50  0001 C CNN "Vendor PN"
+	1    38225 17725
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R192
+U 1 1 648FB231
+P 39075 17125
+F 0 "R192" H 39005 17079 50  0000 R CNN
+F 1 "10K" H 39005 17170 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 39005 17125 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 39075 17125 50  0001 C CNN
+F 4 "0.10	" H 39075 17125 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 39075 17125 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 39075 17125 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 39075 17125 50  0001 C CNN "Vendor PN"
+	1    39075 17125
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0327
+U 1 1 648FB23B
+P 38225 17925
+F 0 "#PWR0327" H 38225 17675 50  0001 C CNN
+F 1 "GND" H 38230 17752 50  0000 C CNN
+F 2 "" H 38225 17925 50  0001 C CNN
+F 3 "" H 38225 17925 50  0001 C CNN
+	1    38225 17925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0342
+U 1 1 648FB24F
+P 39075 16900
+F 0 "#PWR0342" H 39075 16750 50  0001 C CNN
+F 1 "+5V" H 39090 17073 50  0000 C CNN
+F 2 "" H 39075 16900 50  0001 C CNN
+F 3 "" H 39075 16900 50  0001 C CNN
+	1    39075 16900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D90
+U 1 1 648FB2CD
+P 36100 24225
+F 0 "D90" V 36054 24305 50  0000 L CNN
+F 1 "3.9V" V 36145 24305 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 36100 24225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 36100 24225 50  0001 C CNN
+F 4 "0.17" H 36100 24225 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 36100 24225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 36100 24225 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 36100 24225 50  0001 C CNN "Vendor PN"
+	1    36100 24225
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0312
+U 1 1 648FB2D7
+P 36100 24425
+F 0 "#PWR0312" H 36100 24175 50  0001 C CNN
+F 1 "GND" H 36105 24252 50  0000 C CNN
+F 2 "" H 36100 24425 50  0001 C CNN
+F 3 "" H 36100 24425 50  0001 C CNN
+	1    36100 24425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	35725 23975 36100 23975
+Wire Wire Line
+	36100 24375 36100 24425
+Wire Wire Line
+	36100 23975 36100 24075
+Wire Wire Line
+	36175 23975 36100 23975
+Connection ~ 36100 23975
+$Comp
+L Device:D_Zener D92
+U 1 1 648FB2E6
+P 37425 24225
+F 0 "D92" V 37379 24305 50  0000 L CNN
+F 1 "3.9V" V 37470 24305 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 37425 24225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 37425 24225 50  0001 C CNN
+F 4 "0.17" H 37425 24225 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 37425 24225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 37425 24225 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 37425 24225 50  0001 C CNN "Vendor PN"
+	1    37425 24225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D98
+U 1 1 648FB2F0
+P 38800 24225
+F 0 "D98" V 38754 24305 50  0000 L CNN
+F 1 "3.9V" V 38845 24305 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 38800 24225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 38800 24225 50  0001 C CNN
+F 4 "0.17" H 38800 24225 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 38800 24225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 38800 24225 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 38800 24225 50  0001 C CNN "Vendor PN"
+	1    38800 24225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D102
+U 1 1 648FB2FA
+P 40100 24225
+F 0 "D102" V 40054 24305 50  0000 L CNN
+F 1 "3.9V" V 40145 24305 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 40100 24225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 40100 24225 50  0001 C CNN
+F 4 "0.17" H 40100 24225 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 40100 24225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 40100 24225 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 40100 24225 50  0001 C CNN "Vendor PN"
+	1    40100 24225
+	0    1    1    0   
+$EndComp
+Text Notes 39050 20200 0    47   ~ 0
+600mV to 3V
+$Comp
+L Device:D_Zener D94
+U 1 1 648FB305
+P 37800 20725
+F 0 "D94" V 37754 20805 50  0000 L CNN
+F 1 "3.9V" V 37845 20805 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 37800 20725 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 37800 20725 50  0001 C CNN
+F 4 "0.17" H 37800 20725 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 37800 20725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 37800 20725 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 37800 20725 50  0001 C CNN "Vendor PN"
+	1    37800 20725
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D96
+U 1 1 648FB30F
+P 38450 20725
+F 0 "D96" V 38404 20805 50  0000 L CNN
+F 1 "3.9V" V 38495 20805 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 38450 20725 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 38450 20725 50  0001 C CNN
+F 4 "0.17" H 38450 20725 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 38450 20725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 38450 20725 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 38450 20725 50  0001 C CNN "Vendor PN"
+	1    38450 20725
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D100
+U 1 1 648FB319
+P 39050 20725
+F 0 "D100" V 39004 20805 50  0000 L CNN
+F 1 "3.9V" V 39095 20805 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 39050 20725 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/1/MM3Z2V4ST1_D-2316005.pdf" H 39050 20725 50  0001 C CNN
+F 4 "0.17" H 39050 20725 50  0001 C CNN "Cost"
+F 5 "MM3Z3V9ST1G" H 39050 20725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/onsemi/MM3Z3V9ST1G?qs=OSf9jACorvYe4BzweOlGeA%3D%3D" H 39050 20725 50  0001 C CNN "Vendor Link"
+F 7 "863-MM3Z3V9ST1G" H 39050 20725 50  0001 C CNN "Vendor PN"
+	1    39050 20725
+	0    1    1    0   
+$EndComp
+Text GLabel 47875 17000 2    50   Input ~ 0
+Pi6_DO1
+Wire Notes Line
+	35175 18575 42525 18575
+Text GLabel 51500 19250 2    50   Input ~ 0
+Pi6_DO3
+Text GLabel 48125 19150 0    50   Input ~ 0
+Pi6_D-OUT3
+Wire Notes Line
+	39375 18575 39375 14700
+Wire Notes Line
+	42525 14700 42525 20150
+Wire Notes Line
+	41575 25350 41575 20150
+Wire Notes Line
+	41575 20150 52500 20150
+Wire Notes Line
+	41575 21400 35150 21400
+Text Notes 41100 14650 0    394  ~ 79
+RASPBERRY PI PICO 6
+Wire Wire Line
+	37925 17550 38225 17550
+Wire Wire Line
+	38225 17550 38225 17575
+Wire Wire Line
+	38225 17875 38225 17925
+Wire Notes Line
+	500  14700 52500 14700
+Wire Notes Line
+	475  25350 52500 25350
+Wire Notes Line
+	17825 2825 17825 25350
+Wire Notes Line
+	35150 2825 35150 25350
+Wire Notes Line
+	52500 2825 52500 25350
+$Comp
+L Device:R R17
+U 1 1 669E676D
+P 1075 5825
+F 0 "R17" H 1005 5779 50  0000 R CNN
+F 1 "5.1K" H 1005 5870 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1005 5825 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C304-1149620.pdf" H 1075 5825 50  0001 C CNN
+F 4 "0.10	" H 1075 5825 50  0001 C CNN "Cost"
+F 5 "ERJ-3EKF5101V" H 1075 5825 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3EKF5101V?qs=sGAEpiMZZMtG0KNrPCHnjTg0x5DoQJ5Pc7txJA%252BQHw8%3D" H 1075 5825 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3EKF5101V" H 1075 5825 50  0001 C CNN "Vendor PN"
+	1    1075 5825
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 669E6777
+P 1375 5825
+F 0 "R22" H 1305 5779 50  0000 R CNN
+F 1 "5.1K" H 1305 5870 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1305 5825 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C304-1149620.pdf" H 1375 5825 50  0001 C CNN
+F 4 "0.10	" H 1375 5825 50  0001 C CNN "Cost"
+F 5 "ERJ-3EKF5101V" H 1375 5825 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3EKF5101V?qs=sGAEpiMZZMtG0KNrPCHnjTg0x5DoQJ5Pc7txJA%252BQHw8%3D" H 1375 5825 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3EKF5101V" H 1375 5825 50  0001 C CNN "Vendor PN"
+	1    1375 5825
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 669E6783
+P 1075 5650
+F 0 "#PWR02" H 1075 5500 50  0001 C CNN
+F 1 "+5V" H 1090 5823 50  0000 C CNN
+F 2 "" H 1075 5650 50  0001 C CNN
+F 3 "" H 1075 5650 50  0001 C CNN
+	1    1075 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1075 5650 1075 5675
+$Comp
+L power:+5V #PWR06
+U 1 1 669E678E
+P 1375 5650
+F 0 "#PWR06" H 1375 5500 50  0001 C CNN
+F 1 "+5V" H 1390 5823 50  0000 C CNN
+F 2 "" H 1375 5650 50  0001 C CNN
+F 3 "" H 1375 5650 50  0001 C CNN
+	1    1375 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1375 5650 1375 5675
+Wire Wire Line
+	950  6100 1075 6100
+Wire Wire Line
+	1375 5975 1375 6200
+Connection ~ 1375 6200
+Wire Wire Line
+	1375 6200 2400 6200
+Wire Wire Line
+	950  6200 1375 6200
+Wire Wire Line
+	1075 5975 1075 6100
+Connection ~ 1075 6100
+Wire Wire Line
+	1075 6100 2400 6100
+Wire Wire Line
+	38500 6850 38500 6900
+Wire Wire Line
+	38500 6550 38500 6325
+Wire Wire Line
+	38500 6325 38200 6325
+$Comp
+L Device:R R193
+U 1 1 63FFACAD
+P 39100 6200
+F 0 "R193" H 39075 6075 50  0000 R CNN
+F 1 "10K" V 39100 6275 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 39030 6200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 39100 6200 50  0001 C CNN
+F 4 "0.10	" H 39100 6200 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 39100 6200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 39100 6200 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 39100 6200 50  0001 C CNN "Vendor PN"
+	1    39100 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0345
+U 1 1 7805A8AC
+P 39100 6000
+F 0 "#PWR0345" H 39100 5850 50  0001 C CNN
+F 1 "+5V" H 39115 6173 50  0000 C CNN
+F 2 "" H 39100 6000 50  0001 C CNN
+F 3 "" H 39100 6000 50  0001 C CNN
+	1    39100 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	39100 6000 39100 6050
+Wire Wire Line
+	38200 6525 39250 6525
+Wire Wire Line
+	39250 6350 39250 6525
+Wire Wire Line
+	39100 6350 39100 6425
+Wire Wire Line
+	39100 6425 38200 6425
+Wire Wire Line
+	3600 17800 3925 17800
+Wire Wire Line
+	3925 17800 3925 17900
+Wire Wire Line
+	3600 17700 4200 17700
+Wire Wire Line
+	4200 17700 4200 17900
+Wire Wire Line
+	3600 17600 4475 17600
+Wire Wire Line
+	4475 17425 4475 17600
+Wire Wire Line
+	21150 17600 21150 17450
+Wire Wire Line
+	21150 17450 20550 17450
+Wire Wire Line
+	21750 17550 21750 17200
+Wire Wire Line
+	21450 17200 21450 17350
+$Comp
+L power:+5V #PWR0196
+U 1 1 872667CB
+P 21750 16850
+F 0 "#PWR0196" H 21750 16700 50  0001 C CNN
+F 1 "+5V" H 21765 17023 50  0000 C CNN
+F 2 "" H 21750 16850 50  0001 C CNN
+F 3 "" H 21750 16850 50  0001 C CNN
+	1    21750 16850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21750 16850 21750 16900
+Wire Wire Line
+	39075 16900 39075 16975
+Wire Wire Line
+	39075 17450 39075 17275
+Wire Wire Line
+	38775 17350 38775 17275
+$Comp
+L power:+5V #PWR0337
+U 1 1 8B5D7E97
+P 38775 16900
+F 0 "#PWR0337" H 38775 16750 50  0001 C CNN
+F 1 "+5V" H 38790 17073 50  0000 C CNN
+F 2 "" H 38775 16900 50  0001 C CNN
+F 3 "" H 38775 16900 50  0001 C CNN
+	1    38775 16900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	38775 16900 38775 16975
+$Comp
+L Transistor_FET:QM6015D Q38
+U 1 1 675294E0
+P 12000 4950
+F 0 "Q38" H 12204 4904 50  0000 L CNN
+F 1 "RD3P130S" H 12150 5125 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 12200 4875 50  0001 L CIN
+F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rd3p130spfratl-e.pdf" V 12000 4950 50  0001 L CNN
+F 4 "1.629" H 12000 4950 50  0001 C CNN "Cost"
+F 5 "RD3P130SPFRATL" H 12000 4950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.zaikostore.com/zaikostore/en/stockDetail?stockID=st46295645" H 12000 4950 50  0001 C CNN "Vendor Link"
+F 7 "RD3P130SPFRATL" H 12000 4950 50  0001 C CNN "Vendor PN"
+	1    12000 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R251
+U 1 1 67DA7C1A
+P 11700 4750
+F 0 "R251" H 11630 4704 50  0000 R CNN
+F 1 "10K" H 11630 4795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11630 4750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 11700 4750 50  0001 C CNN
+F 4 "0.10	" H 11700 4750 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 11700 4750 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 11700 4750 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 11700 4750 50  0001 C CNN "Vendor PN"
+	1    11700 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11800 4950 11700 4950
+Wire Wire Line
+	11700 4950 11700 5400
+Wire Wire Line
+	11700 4525 11700 4600
+Wire Wire Line
+	11700 4900 11700 4950
+Connection ~ 11700 4950
+Wire Wire Line
+	12100 4525 12100 4700
+Wire Wire Line
+	12575 4700 12100 4700
+Wire Wire Line
+	12575 4700 12575 4900
+Connection ~ 12100 4700
+Wire Wire Line
+	12100 4700 12100 4750
+Wire Wire Line
+	12575 5700 12100 5700
+Wire Wire Line
+	12100 5700 12100 5150
+Connection ~ 12575 5700
+$Comp
+L Device:R R47
+U 1 1 68C7C3D6
+P 13275 7925
+F 0 "R47" V 13068 7925 50  0000 C CNN
+F 1 "180" V 13159 7925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13205 7925 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 13275 7925 50  0001 C CNN
+F 4 "0.10	" H 13275 7925 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD1800F" H 13275 7925 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD1800F?qs=HhNNkgKj039bxTQtK3h5%252BQ%3D%3D" H 13275 7925 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD1800F" H 13275 7925 50  0001 C CNN "Vendor PN"
+	1    13275 7925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13425 7925 13575 7925
+Wire Wire Line
+	13050 7925 13125 7925
+$Comp
+L power:GND #PWR041
+U 1 1 68C7C3E3
+P 13525 8150
+F 0 "#PWR041" H 13525 7900 50  0001 C CNN
+F 1 "GND" H 13530 7977 50  0000 C CNN
+F 2 "" H 13525 8150 50  0001 C CNN
+F 3 "" H 13525 8150 50  0001 C CNN
+	1    13525 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN10H220L Q1
+U 1 1 68C7C3F1
+P 14875 7925
+F 0 "Q1" H 15079 7971 50  0000 L CNN
+F 1 "DMN10H220L" H 14975 7750 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 15075 7850 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/lcsc/1810010612_Diodes-Incorporated-DMN10H220L-7_C102615.pdf" H 14875 7925 50  0001 L CNN
+F 4 "0.18" H 14875 7925 50  0001 C CNN "Cost"
+F 5 "DMN10H220L-7" H 14875 7925 50  0001 C CNN "Mfg PN"
+F 6 "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMN10H220L-7_C102615.html" H 14875 7925 50  0001 C CNN "Vendor Link"
+F 7 "C102615" H 14875 7925 50  0001 C CNN "Vendor PN"
+	1    14875 7925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R58
+U 1 1 68C7C3FF
+P 14650 8225
+F 0 "R58" H 14580 8179 50  0000 R CNN
+F 1 "100K" H 14580 8270 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14580 8225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 14650 8225 50  0001 C CNN
+F 4 "0.10	" H 14650 8225 50  0001 C CNN "Cost"
+F 5 "RC0603JR-07100KL" H 14650 8225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-07100KL?qs=2cAdsCoAWRG9Rhqklpdeqg%3D%3D" H 14650 8225 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-07100KL" H 14650 8225 50  0001 C CNN "Vendor PN"
+	1    14650 8225
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:HCPL-0600 U5
+U 1 1 68C7C40D
+P 13875 7925
+F 0 "U5" H 13875 8392 50  0000 C CNN
+F 1 "HCPL-0600" H 13875 8301 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 13875 7425 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/678/AVGO_S_A0011438143_1-2524870.pdf" H 13025 8525 50  0001 C CNN
+F 4 "3.63	" H 13875 7925 50  0001 C CNN "Cost"
+F 5 "HCPL-0600" H 13875 7925 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Broadcom-Avago/HCPL-0600?qs=xnajaXqBF99WEoYcFXgJxQ%3D%3D" H 13875 7925 50  0001 C CNN "Vendor Link"
+F 7 "630-HCPL-0600" H 13875 7925 50  0001 C CNN "Vendor PN"
+	1    13875 7925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR059
+U 1 1 68C7C417
+P 14650 8450
+F 0 "#PWR059" H 14650 8200 50  0001 C CNN
+F 1 "GND" H 14655 8277 50  0000 C CNN
+F 2 "" H 14650 8450 50  0001 C CNN
+F 3 "" H 14650 8450 50  0001 C CNN
+	1    14650 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13525 8150 13525 8125
+Wire Wire Line
+	13525 8125 13575 8125
+$Comp
+L Device:R R53
+U 1 1 68C7C427
+P 14425 7925
+F 0 "R53" V 14525 7925 50  0000 R CNN
+F 1 "150" V 14425 8000 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14355 7925 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 14425 7925 50  0001 C CNN
+F 4 "0.10	" H 14425 7925 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 14425 7925 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 14425 7925 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 14425 7925 50  0001 C CNN "Vendor PN"
+	1    14425 7925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14175 7925 14225 7925
+Wire Wire Line
+	14575 7925 14650 7925
+Wire Wire Line
+	14650 7925 14650 8075
+Connection ~ 14650 7925
+Wire Wire Line
+	14650 7925 14675 7925
+Wire Wire Line
+	14650 8375 14650 8450
+$Comp
+L power:GND #PWR064
+U 1 1 68C7C569
+P 14975 8450
+F 0 "#PWR064" H 14975 8200 50  0001 C CNN
+F 1 "GND" H 14980 8277 50  0000 C CNN
+F 2 "" H 14975 8450 50  0001 C CNN
+F 3 "" H 14975 8450 50  0001 C CNN
+	1    14975 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14975 8450 14975 8125
+Wire Wire Line
+	14225 7725 14175 7725
+$Comp
+L power:GND #PWR050
+U 1 1 68C7C575
+P 14225 8150
+F 0 "#PWR050" H 14225 7900 50  0001 C CNN
+F 1 "GND" H 14230 7977 50  0000 C CNN
+F 2 "" H 14225 8150 50  0001 C CNN
+F 3 "" H 14225 8150 50  0001 C CNN
+	1    14225 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14225 8150 14225 8125
+Wire Wire Line
+	14225 8125 14175 8125
+Wire Wire Line
+	14225 7825 14225 7725
+Wire Wire Line
+	14175 7825 14225 7825
+Connection ~ 14225 7725
+$Comp
+L Device:R R52
+U 1 1 68C7C588
+P 14425 7600
+F 0 "R52" H 14355 7554 50  0000 R CNN
+F 1 "3.3K" H 14355 7645 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14355 7600 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 14425 7600 50  0001 C CNN
+F 4 "0.10	" H 14425 7600 50  0001 C CNN "Cost"
+F 5 "RC0603JR-103K3L" H 14425 7600 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-103K3L?qs=IuGqVx9wL0LKNSLR70cQjA%3D%3D" H 14425 7600 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-103K3L" H 14425 7600 50  0001 C CNN "Vendor PN"
+	1    14425 7600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14225 7375 14225 7725
+Wire Wire Line
+	14425 7375 14425 7450
+Wire Wire Line
+	14425 7750 14425 7850
+Wire Wire Line
+	14425 7850 14225 7850
+Wire Wire Line
+	14225 7850 14225 7925
+Connection ~ 14225 7925
+Wire Wire Line
+	14225 7925 14275 7925
+$Comp
+L Device:R R65
+U 1 1 68C7C59D
+P 15850 7775
+F 0 "R65" H 15780 7729 50  0000 R CNN
+F 1 "100" H 15780 7820 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15780 7775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 15850 7775 50  0001 C CNN
+F 4 "0.10	" H 15850 7775 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 15850 7775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 15850 7775 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 15850 7775 50  0001 C CNN "Vendor PN"
+	1    15850 7775
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 68C7C5AB
+P 15850 7375
+F 0 "C17" H 15735 7329 50  0000 R CNN
+F 1 "0.01uF" H 15735 7420 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 15888 7225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf" H 15850 7375 50  0001 C CNN
+F 4 "0.10" H 15850 7375 50  0001 C CNN "Cost"
+F 5 "0603B103K100CT" H 15850 7375 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Walsin/0603B103K100CT?qs=ZrPdAQfJ6DMGaCVYT7SqlA%3D%3D" H 15850 7375 50  0001 C CNN "Vendor Link"
+F 7 "791-0603B103K100CT" H 15850 7375 50  0001 C CNN "Vendor PN"
+	1    15850 7375
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15850 7525 15850 7600
+$Comp
+L Device:D D15
+U 1 1 68C7C5BA
+P 16300 7800
+F 0 "D15" V 16254 7880 50  0000 L CNN
+F 1 "5A" V 16345 7880 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 16300 7800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/vs_5ech06_m3-1769535.pdf" H 16300 7800 50  0001 C CNN
+F 4 "0.98" H 16300 7800 50  0001 C CNN "Cost"
+F 5 "VS-5ECH06-M3/9AT" H 16300 7800 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/VS-5ECH06-M3-9AT?qs=1FzmF4gO8okPI3ZFizAqng%3D%3D" H 16300 7800 50  0001 C CNN "Vendor Link"
+F 7 "78-VS-5ECH06-M3/9AT" H 16300 7800 50  0001 C CNN "Vendor PN"
+	1    16300 7800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	16300 7600 15850 7600
+Connection ~ 15850 7600
+Wire Wire Line
+	15850 7600 15850 7625
+Wire Wire Line
+	15850 7925 15850 8025
+Wire Wire Line
+	16300 7600 16300 7650
+Wire Wire Line
+	16300 7950 16300 8025
+Wire Wire Line
+	16300 8025 15850 8025
+Wire Wire Line
+	16300 8025 16425 8025
+Connection ~ 16300 8025
+$Comp
+L power:+24V #PWR070
+U 1 1 68C7C614
+P 15375 6850
+F 0 "#PWR070" H 15375 6700 50  0001 C CNN
+F 1 "+24V" H 15390 7023 50  0000 C CNN
+F 2 "" H 15375 6850 50  0001 C CNN
+F 3 "" H 15375 6850 50  0001 C CNN
+	1    15375 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR049
+U 1 1 68C7C61E
+P 14225 7375
+F 0 "#PWR049" H 14225 7225 50  0001 C CNN
+F 1 "+5V" H 14240 7548 50  0000 C CNN
+F 2 "" H 14225 7375 50  0001 C CNN
+F 3 "" H 14225 7375 50  0001 C CNN
+	1    14225 7375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR056
+U 1 1 68C7C628
+P 14425 7375
+F 0 "#PWR056" H 14425 7225 50  0001 C CNN
+F 1 "+5V" H 14440 7548 50  0000 C CNN
+F 2 "" H 14425 7375 50  0001 C CNN
+F 3 "" H 14425 7375 50  0001 C CNN
+	1    14425 7375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR063
+U 1 1 68C7C632
+P 14975 6850
+F 0 "#PWR063" H 14975 6700 50  0001 C CNN
+F 1 "+5V" H 14990 7023 50  0000 C CNN
+F 2 "" H 14975 6850 50  0001 C CNN
+F 3 "" H 14975 6850 50  0001 C CNN
+	1    14975 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:QM6015D Q11
+U 1 1 68C7C642
+P 15275 7275
+F 0 "Q11" H 15479 7229 50  0000 L CNN
+F 1 "RD3P130S" H 15425 7450 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 15475 7200 50  0001 L CIN
+F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rd3p130spfratl-e.pdf" V 15275 7275 50  0001 L CNN
+F 4 "1.629" H 15275 7275 50  0001 C CNN "Cost"
+F 5 "RD3P130SPFRATL" H 15275 7275 50  0001 C CNN "Mfg PN"
+F 6 "https://www.zaikostore.com/zaikostore/en/stockDetail?stockID=st46295645" H 15275 7275 50  0001 C CNN "Vendor Link"
+F 7 "RD3P130SPFRATL" H 15275 7275 50  0001 C CNN "Vendor PN"
+	1    15275 7275
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R62
+U 1 1 68C7C650
+P 14975 7075
+F 0 "R62" H 14905 7029 50  0000 R CNN
+F 1 "10K" H 14905 7120 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14905 7075 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 14975 7075 50  0001 C CNN
+F 4 "0.10	" H 14975 7075 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 14975 7075 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 14975 7075 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 14975 7075 50  0001 C CNN "Vendor PN"
+	1    14975 7075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15075 7275 14975 7275
+Wire Wire Line
+	14975 7275 14975 7725
+Wire Wire Line
+	14975 6850 14975 6925
+Wire Wire Line
+	14975 7225 14975 7275
+Connection ~ 14975 7275
+Wire Wire Line
+	15375 6850 15375 7025
+Wire Wire Line
+	15850 7025 15375 7025
+Wire Wire Line
+	15850 7025 15850 7225
+Connection ~ 15375 7025
+Wire Wire Line
+	15375 7025 15375 7075
+Wire Wire Line
+	15850 8025 15375 8025
+Wire Wire Line
+	15375 8025 15375 7475
+Connection ~ 15850 8025
+$Comp
+L Device:R R133
+U 1 1 6ACEFF0C
+P 27225 5625
+F 0 "R133" V 27018 5625 50  0000 C CNN
+F 1 "180" V 27109 5625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 27155 5625 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 27225 5625 50  0001 C CNN
+F 4 "0.10	" H 27225 5625 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD1800F" H 27225 5625 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD1800F?qs=HhNNkgKj039bxTQtK3h5%252BQ%3D%3D" H 27225 5625 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD1800F" H 27225 5625 50  0001 C CNN "Vendor PN"
+	1    27225 5625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	27375 5625 27525 5625
+Wire Wire Line
+	27000 5625 27075 5625
+$Comp
+L power:GND #PWR0118
+U 1 1 6ACEFF25
+P 27475 5850
+F 0 "#PWR0118" H 27475 5600 50  0001 C CNN
+F 1 "GND" H 27480 5677 50  0000 C CNN
+F 2 "" H 27475 5850 50  0001 C CNN
+F 3 "" H 27475 5850 50  0001 C CNN
+	1    27475 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN10H220L Q33
+U 1 1 6ACEFF33
+P 28825 5625
+F 0 "Q33" H 29029 5671 50  0000 L CNN
+F 1 "DMN10H220L" H 28925 5450 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 29025 5550 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/lcsc/1810010612_Diodes-Incorporated-DMN10H220L-7_C102615.pdf" H 28825 5625 50  0001 L CNN
+F 4 "0.18" H 28825 5625 50  0001 C CNN "Cost"
+F 5 "DMN10H220L-7" H 28825 5625 50  0001 C CNN "Mfg PN"
+F 6 "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMN10H220L-7_C102615.html" H 28825 5625 50  0001 C CNN "Vendor Link"
+F 7 "C102615" H 28825 5625 50  0001 C CNN "Vendor PN"
+	1    28825 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R145
+U 1 1 6ACEFF41
+P 28600 5925
+F 0 "R145" H 28530 5879 50  0000 R CNN
+F 1 "100K" H 28530 5970 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 28530 5925 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 28600 5925 50  0001 C CNN
+F 4 "0.10	" H 28600 5925 50  0001 C CNN "Cost"
+F 5 "RC0603JR-07100KL" H 28600 5925 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-07100KL?qs=2cAdsCoAWRG9Rhqklpdeqg%3D%3D" H 28600 5925 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-07100KL" H 28600 5925 50  0001 C CNN "Vendor PN"
+	1    28600 5925
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:HCPL-0600 U15
+U 1 1 6ACEFF4F
+P 27825 5625
+F 0 "U15" H 27825 6092 50  0000 C CNN
+F 1 "HCPL-0600" H 27825 6001 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 27825 5125 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/678/AVGO_S_A0011438143_1-2524870.pdf" H 26975 6225 50  0001 C CNN
+F 4 "3.63	" H 27825 5625 50  0001 C CNN "Cost"
+F 5 "HCPL-0600" H 27825 5625 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Broadcom-Avago/HCPL-0600?qs=xnajaXqBF99WEoYcFXgJxQ%3D%3D" H 27825 5625 50  0001 C CNN "Vendor Link"
+F 7 "630-HCPL-0600" H 27825 5625 50  0001 C CNN "Vendor PN"
+	1    27825 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0240
+U 1 1 6ACEFF59
+P 28600 6150
+F 0 "#PWR0240" H 28600 5900 50  0001 C CNN
+F 1 "GND" H 28605 5977 50  0000 C CNN
+F 2 "" H 28600 6150 50  0001 C CNN
+F 3 "" H 28600 6150 50  0001 C CNN
+	1    28600 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	27475 5850 27475 5825
+Wire Wire Line
+	27475 5825 27525 5825
+$Comp
+L Device:R R139
+U 1 1 6ACEFF69
+P 28375 5625
+F 0 "R139" V 28475 5625 50  0000 R CNN
+F 1 "150" V 28375 5700 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 28305 5625 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 28375 5625 50  0001 C CNN
+F 4 "0.10	" H 28375 5625 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 28375 5625 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 28375 5625 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 28375 5625 50  0001 C CNN "Vendor PN"
+	1    28375 5625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28125 5625 28175 5625
+Wire Wire Line
+	28525 5625 28600 5625
+Wire Wire Line
+	28600 5625 28600 5775
+Connection ~ 28600 5625
+Wire Wire Line
+	28600 5625 28625 5625
+Wire Wire Line
+	28600 6075 28600 6150
+$Comp
+L power:GND #PWR0246
+U 1 1 6ACEFF79
+P 28925 6150
+F 0 "#PWR0246" H 28925 5900 50  0001 C CNN
+F 1 "GND" H 28930 5977 50  0000 C CNN
+F 2 "" H 28925 6150 50  0001 C CNN
+F 3 "" H 28925 6150 50  0001 C CNN
+	1    28925 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	28925 6150 28925 5825
+Wire Wire Line
+	28175 5425 28125 5425
+$Comp
+L power:GND #PWR0222
+U 1 1 6ACEFF85
+P 28175 5850
+F 0 "#PWR0222" H 28175 5600 50  0001 C CNN
+F 1 "GND" H 28180 5677 50  0000 C CNN
+F 2 "" H 28175 5850 50  0001 C CNN
+F 3 "" H 28175 5850 50  0001 C CNN
+	1    28175 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	28175 5850 28175 5825
+Wire Wire Line
+	28175 5825 28125 5825
+Wire Wire Line
+	28175 5525 28175 5425
+Wire Wire Line
+	28125 5525 28175 5525
+Connection ~ 28175 5425
+$Comp
+L Device:R R138
+U 1 1 6ACEFF98
+P 28375 5300
+F 0 "R138" H 28305 5254 50  0000 R CNN
+F 1 "3.3K" H 28305 5345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 28305 5300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 28375 5300 50  0001 C CNN
+F 4 "0.10	" H 28375 5300 50  0001 C CNN "Cost"
+F 5 "RC0603JR-103K3L" H 28375 5300 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-103K3L?qs=IuGqVx9wL0LKNSLR70cQjA%3D%3D" H 28375 5300 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-103K3L" H 28375 5300 50  0001 C CNN "Vendor PN"
+	1    28375 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	28175 5075 28175 5425
+Wire Wire Line
+	28375 5075 28375 5150
+Wire Wire Line
+	28375 5450 28375 5550
+Wire Wire Line
+	28375 5550 28175 5550
+Wire Wire Line
+	28175 5550 28175 5625
+Connection ~ 28175 5625
+Wire Wire Line
+	28175 5625 28225 5625
+$Comp
+L Device:R R157
+U 1 1 6ACF00EF
+P 29800 5475
+F 0 "R157" H 29730 5429 50  0000 R CNN
+F 1 "100" H 29730 5520 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 29730 5475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 29800 5475 50  0001 C CNN
+F 4 "0.10	" H 29800 5475 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 29800 5475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 29800 5475 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 29800 5475 50  0001 C CNN "Vendor PN"
+	1    29800 5475
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C35
+U 1 1 6ACF00FD
+P 29800 5075
+F 0 "C35" H 29685 5029 50  0000 R CNN
+F 1 "0.01uF" H 29685 5120 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 29838 4925 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf" H 29800 5075 50  0001 C CNN
+F 4 "0.10" H 29800 5075 50  0001 C CNN "Cost"
+F 5 "0603B103K100CT" H 29800 5075 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Walsin/0603B103K100CT?qs=ZrPdAQfJ6DMGaCVYT7SqlA%3D%3D" H 29800 5075 50  0001 C CNN "Vendor Link"
+F 7 "791-0603B103K100CT" H 29800 5075 50  0001 C CNN "Vendor PN"
+	1    29800 5075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	29800 5225 29800 5300
+$Comp
+L Device:D D30
+U 1 1 6ACF010C
+P 30250 5500
+F 0 "D30" V 30204 5580 50  0000 L CNN
+F 1 "5A" V 30295 5580 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 30250 5500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/vs_5ech06_m3-1769535.pdf" H 30250 5500 50  0001 C CNN
+F 4 "0.98" H 30250 5500 50  0001 C CNN "Cost"
+F 5 "VS-5ECH06-M3/9AT" H 30250 5500 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/VS-5ECH06-M3-9AT?qs=1FzmF4gO8okPI3ZFizAqng%3D%3D" H 30250 5500 50  0001 C CNN "Vendor Link"
+F 7 "78-VS-5ECH06-M3/9AT" H 30250 5500 50  0001 C CNN "Vendor PN"
+	1    30250 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	30250 5300 29800 5300
+Connection ~ 29800 5300
+Wire Wire Line
+	29800 5300 29800 5325
+Wire Wire Line
+	29800 5625 29800 5725
+Wire Wire Line
+	30250 5300 30250 5350
+Wire Wire Line
+	30250 5650 30250 5725
+Wire Wire Line
+	30250 5725 29800 5725
+Wire Wire Line
+	30250 5725 30375 5725
+Connection ~ 30250 5725
+$Comp
+L power:+24V #PWR0252
+U 1 1 6ACF0120
+P 29325 4550
+F 0 "#PWR0252" H 29325 4400 50  0001 C CNN
+F 1 "+24V" H 29340 4723 50  0000 C CNN
+F 2 "" H 29325 4550 50  0001 C CNN
+F 3 "" H 29325 4550 50  0001 C CNN
+	1    29325 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0221
+U 1 1 6ACF012A
+P 28175 5075
+F 0 "#PWR0221" H 28175 4925 50  0001 C CNN
+F 1 "+5V" H 28190 5248 50  0000 C CNN
+F 2 "" H 28175 5075 50  0001 C CNN
+F 3 "" H 28175 5075 50  0001 C CNN
+	1    28175 5075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0236
+U 1 1 6ACF0134
+P 28375 5075
+F 0 "#PWR0236" H 28375 4925 50  0001 C CNN
+F 1 "+5V" H 28390 5248 50  0000 C CNN
+F 2 "" H 28375 5075 50  0001 C CNN
+F 3 "" H 28375 5075 50  0001 C CNN
+	1    28375 5075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0245
+U 1 1 6ACF013E
+P 28925 4550
+F 0 "#PWR0245" H 28925 4400 50  0001 C CNN
+F 1 "+5V" H 28940 4723 50  0000 C CNN
+F 2 "" H 28925 4550 50  0001 C CNN
+F 3 "" H 28925 4550 50  0001 C CNN
+	1    28925 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:QM6015D Q41
+U 1 1 6ACF0152
+P 29225 4975
+F 0 "Q41" H 29429 4929 50  0000 L CNN
+F 1 "RD3P130S" H 29375 5150 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 29425 4900 50  0001 L CIN
+F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rd3p130spfratl-e.pdf" V 29225 4975 50  0001 L CNN
+F 4 "1.629" H 29225 4975 50  0001 C CNN "Cost"
+F 5 "RD3P130SPFRATL" H 29225 4975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.zaikostore.com/zaikostore/en/stockDetail?stockID=st46295645" H 29225 4975 50  0001 C CNN "Vendor Link"
+F 7 "RD3P130SPFRATL" H 29225 4975 50  0001 C CNN "Vendor PN"
+	1    29225 4975
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R153
+U 1 1 6ACF0160
+P 28925 4775
+F 0 "R153" H 28855 4729 50  0000 R CNN
+F 1 "10K" H 28855 4820 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 28855 4775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 28925 4775 50  0001 C CNN
+F 4 "0.10	" H 28925 4775 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 28925 4775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 28925 4775 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 28925 4775 50  0001 C CNN "Vendor PN"
+	1    28925 4775
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	29025 4975 28925 4975
+Wire Wire Line
+	28925 4975 28925 5425
+Wire Wire Line
+	28925 4550 28925 4625
+Wire Wire Line
+	28925 4925 28925 4975
+Connection ~ 28925 4975
+Wire Wire Line
+	29325 4550 29325 4725
+Wire Wire Line
+	29800 4725 29325 4725
+Wire Wire Line
+	29800 4725 29800 4925
+Connection ~ 29325 4725
+Wire Wire Line
+	29325 4725 29325 4775
+Wire Wire Line
+	29800 5725 29325 5725
+Wire Wire Line
+	29325 5725 29325 5175
+Connection ~ 29800 5725
+$Comp
+L Device:R R132
+U 1 1 6ACF04FE
+P 31125 7900
+F 0 "R132" V 30918 7900 50  0000 C CNN
+F 1 "180" V 31009 7900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 31055 7900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 31125 7900 50  0001 C CNN
+F 4 "0.10	" H 31125 7900 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD1800F" H 31125 7900 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD1800F?qs=HhNNkgKj039bxTQtK3h5%252BQ%3D%3D" H 31125 7900 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD1800F" H 31125 7900 50  0001 C CNN "Vendor PN"
+	1    31125 7900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	31275 7900 31425 7900
+Wire Wire Line
+	30900 7900 30975 7900
+$Comp
+L power:GND #PWR0110
+U 1 1 6ACF050A
+P 31375 8125
+F 0 "#PWR0110" H 31375 7875 50  0001 C CNN
+F 1 "GND" H 31380 7952 50  0000 C CNN
+F 2 "" H 31375 8125 50  0001 C CNN
+F 3 "" H 31375 8125 50  0001 C CNN
+	1    31375 8125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN10H220L Q28
+U 1 1 6ACF0518
+P 32725 7900
+F 0 "Q28" H 32929 7946 50  0000 L CNN
+F 1 "DMN10H220L" H 32825 7725 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 32925 7825 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/lcsc/1810010612_Diodes-Incorporated-DMN10H220L-7_C102615.pdf" H 32725 7900 50  0001 L CNN
+F 4 "0.18" H 32725 7900 50  0001 C CNN "Cost"
+F 5 "DMN10H220L-7" H 32725 7900 50  0001 C CNN "Mfg PN"
+F 6 "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMN10H220L-7_C102615.html" H 32725 7900 50  0001 C CNN "Vendor Link"
+F 7 "C102615" H 32725 7900 50  0001 C CNN "Vendor PN"
+	1    32725 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R144
+U 1 1 6ACF0526
+P 32500 8200
+F 0 "R144" H 32430 8154 50  0000 R CNN
+F 1 "100K" H 32430 8245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 32430 8200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 32500 8200 50  0001 C CNN
+F 4 "0.10	" H 32500 8200 50  0001 C CNN "Cost"
+F 5 "RC0603JR-07100KL" H 32500 8200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-07100KL?qs=2cAdsCoAWRG9Rhqklpdeqg%3D%3D" H 32500 8200 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-07100KL" H 32500 8200 50  0001 C CNN "Vendor PN"
+	1    32500 8200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:HCPL-0600 U14
+U 1 1 6ACF0534
+P 31725 7900
+F 0 "U14" H 31725 8367 50  0000 C CNN
+F 1 "HCPL-0600" H 31725 8276 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 31725 7400 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/678/AVGO_S_A0011438143_1-2524870.pdf" H 30875 8500 50  0001 C CNN
+F 4 "3.63	" H 31725 7900 50  0001 C CNN "Cost"
+F 5 "HCPL-0600" H 31725 7900 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Broadcom-Avago/HCPL-0600?qs=xnajaXqBF99WEoYcFXgJxQ%3D%3D" H 31725 7900 50  0001 C CNN "Vendor Link"
+F 7 "630-HCPL-0600" H 31725 7900 50  0001 C CNN "Vendor PN"
+	1    31725 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0239
+U 1 1 6ACF053E
+P 32500 8425
+F 0 "#PWR0239" H 32500 8175 50  0001 C CNN
+F 1 "GND" H 32505 8252 50  0000 C CNN
+F 2 "" H 32500 8425 50  0001 C CNN
+F 3 "" H 32500 8425 50  0001 C CNN
+	1    32500 8425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	31375 8125 31375 8100
+Wire Wire Line
+	31375 8100 31425 8100
+$Comp
+L Device:R R137
+U 1 1 6ACF054E
+P 32275 7900
+F 0 "R137" V 32375 7900 50  0000 R CNN
+F 1 "150" V 32275 7975 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 32205 7900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 32275 7900 50  0001 C CNN
+F 4 "0.10	" H 32275 7900 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 32275 7900 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 32275 7900 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 32275 7900 50  0001 C CNN "Vendor PN"
+	1    32275 7900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	32025 7900 32075 7900
+Wire Wire Line
+	32425 7900 32500 7900
+Wire Wire Line
+	32500 7900 32500 8050
+Connection ~ 32500 7900
+Wire Wire Line
+	32500 7900 32525 7900
+Wire Wire Line
+	32500 8350 32500 8425
+$Comp
+L power:GND #PWR0244
+U 1 1 6ACF055E
+P 32825 8425
+F 0 "#PWR0244" H 32825 8175 50  0001 C CNN
+F 1 "GND" H 32830 8252 50  0000 C CNN
+F 2 "" H 32825 8425 50  0001 C CNN
+F 3 "" H 32825 8425 50  0001 C CNN
+	1    32825 8425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	32825 8425 32825 8100
+Wire Wire Line
+	32075 7700 32025 7700
+$Comp
+L power:GND #PWR0220
+U 1 1 6ACF056A
+P 32075 8125
+F 0 "#PWR0220" H 32075 7875 50  0001 C CNN
+F 1 "GND" H 32080 7952 50  0000 C CNN
+F 2 "" H 32075 8125 50  0001 C CNN
+F 3 "" H 32075 8125 50  0001 C CNN
+	1    32075 8125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	32075 8125 32075 8100
+Wire Wire Line
+	32075 8100 32025 8100
+Wire Wire Line
+	32075 7800 32075 7700
+Wire Wire Line
+	32025 7800 32075 7800
+Connection ~ 32075 7700
+$Comp
+L Device:R R136
+U 1 1 6ACF057D
+P 32275 7575
+F 0 "R136" H 32205 7529 50  0000 R CNN
+F 1 "3.3K" H 32205 7620 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 32205 7575 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 32275 7575 50  0001 C CNN
+F 4 "0.10	" H 32275 7575 50  0001 C CNN "Cost"
+F 5 "RC0603JR-103K3L" H 32275 7575 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-103K3L?qs=IuGqVx9wL0LKNSLR70cQjA%3D%3D" H 32275 7575 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-103K3L" H 32275 7575 50  0001 C CNN "Vendor PN"
+	1    32275 7575
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	32075 7350 32075 7700
+Wire Wire Line
+	32275 7350 32275 7425
+Wire Wire Line
+	32275 7725 32275 7825
+Wire Wire Line
+	32275 7825 32075 7825
+Wire Wire Line
+	32075 7825 32075 7900
+Connection ~ 32075 7900
+Wire Wire Line
+	32075 7900 32125 7900
+$Comp
+L Device:R R156
+U 1 1 6ACF06E0
+P 33700 7750
+F 0 "R156" H 33630 7704 50  0000 R CNN
+F 1 "100" H 33630 7795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 33630 7750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 33700 7750 50  0001 C CNN
+F 4 "0.10	" H 33700 7750 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 33700 7750 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 33700 7750 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 33700 7750 50  0001 C CNN "Vendor PN"
+	1    33700 7750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C34
+U 1 1 6ACF06EE
+P 33700 7350
+F 0 "C34" H 33585 7304 50  0000 R CNN
+F 1 "0.01uF" H 33585 7395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 33738 7200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf" H 33700 7350 50  0001 C CNN
+F 4 "0.10" H 33700 7350 50  0001 C CNN "Cost"
+F 5 "0603B103K100CT" H 33700 7350 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Walsin/0603B103K100CT?qs=ZrPdAQfJ6DMGaCVYT7SqlA%3D%3D" H 33700 7350 50  0001 C CNN "Vendor Link"
+F 7 "791-0603B103K100CT" H 33700 7350 50  0001 C CNN "Vendor PN"
+	1    33700 7350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	33700 7500 33700 7575
+$Comp
+L Device:D D29
+U 1 1 6ACF06FD
+P 34150 7775
+F 0 "D29" V 34104 7855 50  0000 L CNN
+F 1 "5A" V 34195 7855 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 34150 7775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/vs_5ech06_m3-1769535.pdf" H 34150 7775 50  0001 C CNN
+F 4 "0.98" H 34150 7775 50  0001 C CNN "Cost"
+F 5 "VS-5ECH06-M3/9AT" H 34150 7775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/VS-5ECH06-M3-9AT?qs=1FzmF4gO8okPI3ZFizAqng%3D%3D" H 34150 7775 50  0001 C CNN "Vendor Link"
+F 7 "78-VS-5ECH06-M3/9AT" H 34150 7775 50  0001 C CNN "Vendor PN"
+	1    34150 7775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	34150 7575 33700 7575
+Connection ~ 33700 7575
+Wire Wire Line
+	33700 7575 33700 7600
+Wire Wire Line
+	33700 7900 33700 8000
+Wire Wire Line
+	34150 7575 34150 7625
+Wire Wire Line
+	34150 7925 34150 8000
+Wire Wire Line
+	34150 8000 33700 8000
+Wire Wire Line
+	34150 8000 34275 8000
+Connection ~ 34150 8000
+$Comp
+L power:+24V #PWR0251
+U 1 1 6ACF0710
+P 33225 6825
+F 0 "#PWR0251" H 33225 6675 50  0001 C CNN
+F 1 "+24V" H 33240 6998 50  0000 C CNN
+F 2 "" H 33225 6825 50  0001 C CNN
+F 3 "" H 33225 6825 50  0001 C CNN
+	1    33225 6825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0219
+U 1 1 6ACF071A
+P 32075 7350
+F 0 "#PWR0219" H 32075 7200 50  0001 C CNN
+F 1 "+5V" H 32090 7523 50  0000 C CNN
+F 2 "" H 32075 7350 50  0001 C CNN
+F 3 "" H 32075 7350 50  0001 C CNN
+	1    32075 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0235
+U 1 1 6ACF0724
+P 32275 7350
+F 0 "#PWR0235" H 32275 7200 50  0001 C CNN
+F 1 "+5V" H 32290 7523 50  0000 C CNN
+F 2 "" H 32275 7350 50  0001 C CNN
+F 3 "" H 32275 7350 50  0001 C CNN
+	1    32275 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0243
+U 1 1 6ACF072E
+P 32825 6825
+F 0 "#PWR0243" H 32825 6675 50  0001 C CNN
+F 1 "+5V" H 32840 6998 50  0000 C CNN
+F 2 "" H 32825 6825 50  0001 C CNN
+F 3 "" H 32825 6825 50  0001 C CNN
+	1    32825 6825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:QM6015D Q36
+U 1 1 6ACF073C
+P 33125 7250
+F 0 "Q36" H 33329 7204 50  0000 L CNN
+F 1 "RD3P130S" H 33275 7425 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 33325 7175 50  0001 L CIN
+F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rd3p130spfratl-e.pdf" V 33125 7250 50  0001 L CNN
+F 4 "1.629" H 33125 7250 50  0001 C CNN "Cost"
+F 5 "RD3P130SPFRATL" H 33125 7250 50  0001 C CNN "Mfg PN"
+F 6 "https://www.zaikostore.com/zaikostore/en/stockDetail?stockID=st46295645" H 33125 7250 50  0001 C CNN "Vendor Link"
+F 7 "RD3P130SPFRATL" H 33125 7250 50  0001 C CNN "Vendor PN"
+	1    33125 7250
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R148
+U 1 1 6ACF074A
+P 32825 7050
+F 0 "R148" H 32755 7004 50  0000 R CNN
+F 1 "10K" H 32755 7095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 32755 7050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 32825 7050 50  0001 C CNN
+F 4 "0.10	" H 32825 7050 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 32825 7050 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 32825 7050 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 32825 7050 50  0001 C CNN "Vendor PN"
+	1    32825 7050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	32925 7250 32825 7250
+Wire Wire Line
+	32825 7250 32825 7700
+Wire Wire Line
+	32825 6825 32825 6900
+Wire Wire Line
+	32825 7200 32825 7250
+Connection ~ 32825 7250
+Wire Wire Line
+	33225 6825 33225 7000
+Wire Wire Line
+	33700 7000 33225 7000
+Wire Wire Line
+	33700 7000 33700 7200
+Connection ~ 33225 7000
+Wire Wire Line
+	33225 7000 33225 7050
+Wire Wire Line
+	33700 8000 33225 8000
+Wire Wire Line
+	33225 8000 33225 7450
+Connection ~ 33700 8000
+Text GLabel 48300 8075 0    50   Input ~ 0
+Pi3_D-OUT3
+Text GLabel 44125 5650 0    50   Input ~ 0
+Pi3_D-OUT1
+Text GLabel 51675 8175 2    50   Input ~ 0
+Pi3_DO3
+Text GLabel 47500 5750 2    50   Input ~ 0
+Pi3_DO1
+$Comp
+L Device:R R223
+U 1 1 71A957A8
+P 44350 5650
+F 0 "R223" V 44143 5650 50  0000 C CNN
+F 1 "180" V 44234 5650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 44280 5650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 44350 5650 50  0001 C CNN
+F 4 "0.10	" H 44350 5650 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD1800F" H 44350 5650 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD1800F?qs=HhNNkgKj039bxTQtK3h5%252BQ%3D%3D" H 44350 5650 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD1800F" H 44350 5650 50  0001 C CNN "Vendor PN"
+	1    44350 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	44500 5650 44650 5650
+Wire Wire Line
+	44125 5650 44200 5650
+$Comp
+L power:GND #PWR0296
+U 1 1 71A957B1
+P 44600 5875
+F 0 "#PWR0296" H 44600 5625 50  0001 C CNN
+F 1 "GND" H 44605 5702 50  0000 C CNN
+F 2 "" H 44600 5875 50  0001 C CNN
+F 3 "" H 44600 5875 50  0001 C CNN
+	1    44600 5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN10H220L Q58
+U 1 1 71A957BB
+P 45950 5650
+F 0 "Q58" H 46154 5696 50  0000 L CNN
+F 1 "DMN10H220L" H 46050 5475 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 46150 5575 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/lcsc/1810010612_Diodes-Incorporated-DMN10H220L-7_C102615.pdf" H 45950 5650 50  0001 L CNN
+F 4 "0.18" H 45950 5650 50  0001 C CNN "Cost"
+F 5 "DMN10H220L-7" H 45950 5650 50  0001 C CNN "Mfg PN"
+F 6 "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMN10H220L-7_C102615.html" H 45950 5650 50  0001 C CNN "Vendor Link"
+F 7 "C102615" H 45950 5650 50  0001 C CNN "Vendor PN"
+	1    45950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R235
+U 1 1 71A957C5
+P 45725 5950
+F 0 "R235" H 45655 5904 50  0000 R CNN
+F 1 "100K" H 45655 5995 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 45655 5950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 45725 5950 50  0001 C CNN
+F 4 "0.10	" H 45725 5950 50  0001 C CNN "Cost"
+F 5 "RC0603JR-07100KL" H 45725 5950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-07100KL?qs=2cAdsCoAWRG9Rhqklpdeqg%3D%3D" H 45725 5950 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-07100KL" H 45725 5950 50  0001 C CNN "Vendor PN"
+	1    45725 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:HCPL-0600 U25
+U 1 1 71A957CF
+P 44950 5650
+F 0 "U25" H 44950 6117 50  0000 C CNN
+F 1 "HCPL-0600" H 44950 6026 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 44950 5150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/678/AVGO_S_A0011438143_1-2524870.pdf" H 44100 6250 50  0001 C CNN
+F 4 "3.63	" H 44950 5650 50  0001 C CNN "Cost"
+F 5 "HCPL-0600" H 44950 5650 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Broadcom-Avago/HCPL-0600?qs=xnajaXqBF99WEoYcFXgJxQ%3D%3D" H 44950 5650 50  0001 C CNN "Vendor Link"
+F 7 "630-HCPL-0600" H 44950 5650 50  0001 C CNN "Vendor PN"
+	1    44950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0382
+U 1 1 71A957D5
+P 45725 6175
+F 0 "#PWR0382" H 45725 5925 50  0001 C CNN
+F 1 "GND" H 45730 6002 50  0000 C CNN
+F 2 "" H 45725 6175 50  0001 C CNN
+F 3 "" H 45725 6175 50  0001 C CNN
+	1    45725 6175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	44600 5875 44600 5850
+Wire Wire Line
+	44600 5850 44650 5850
+$Comp
+L Device:R R229
+U 1 1 71A957E1
+P 45500 5650
+F 0 "R229" V 45600 5650 50  0000 R CNN
+F 1 "150" V 45500 5725 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 45430 5650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 45500 5650 50  0001 C CNN
+F 4 "0.10	" H 45500 5650 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 45500 5650 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 45500 5650 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 45500 5650 50  0001 C CNN "Vendor PN"
+	1    45500 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	45250 5650 45300 5650
+Wire Wire Line
+	45650 5650 45725 5650
+Wire Wire Line
+	45725 5650 45725 5800
+Connection ~ 45725 5650
+Wire Wire Line
+	45725 5650 45750 5650
+Wire Wire Line
+	45725 6100 45725 6175
+$Comp
+L power:GND #PWR0388
+U 1 1 71A957ED
+P 46050 6175
+F 0 "#PWR0388" H 46050 5925 50  0001 C CNN
+F 1 "GND" H 46055 6002 50  0000 C CNN
+F 2 "" H 46050 6175 50  0001 C CNN
+F 3 "" H 46050 6175 50  0001 C CNN
+	1    46050 6175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	46050 6175 46050 5850
+Wire Wire Line
+	45300 5450 45250 5450
+$Comp
+L power:GND #PWR0302
+U 1 1 71A957F5
+P 45300 5875
+F 0 "#PWR0302" H 45300 5625 50  0001 C CNN
+F 1 "GND" H 45305 5702 50  0000 C CNN
+F 2 "" H 45300 5875 50  0001 C CNN
+F 3 "" H 45300 5875 50  0001 C CNN
+	1    45300 5875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	45300 5875 45300 5850
+Wire Wire Line
+	45300 5850 45250 5850
+Wire Wire Line
+	45300 5550 45300 5450
+Wire Wire Line
+	45250 5550 45300 5550
+Connection ~ 45300 5450
+$Comp
+L Device:R R228
+U 1 1 71A95804
+P 45500 5325
+F 0 "R228" H 45430 5279 50  0000 R CNN
+F 1 "3.3K" H 45430 5370 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 45430 5325 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 45500 5325 50  0001 C CNN
+F 4 "0.10	" H 45500 5325 50  0001 C CNN "Cost"
+F 5 "RC0603JR-103K3L" H 45500 5325 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-103K3L?qs=IuGqVx9wL0LKNSLR70cQjA%3D%3D" H 45500 5325 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-103K3L" H 45500 5325 50  0001 C CNN "Vendor PN"
+	1    45500 5325
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	45300 5100 45300 5450
+Wire Wire Line
+	45500 5100 45500 5175
+Wire Wire Line
+	45500 5475 45500 5575
+Wire Wire Line
+	45500 5575 45300 5575
+Wire Wire Line
+	45300 5575 45300 5650
+Connection ~ 45300 5650
+Wire Wire Line
+	45300 5650 45350 5650
+$Comp
+L Device:R R247
+U 1 1 71A95815
+P 46925 5500
+F 0 "R247" H 46855 5454 50  0000 R CNN
+F 1 "100" H 46855 5545 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 46855 5500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 46925 5500 50  0001 C CNN
+F 4 "0.10	" H 46925 5500 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 46925 5500 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 46925 5500 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 46925 5500 50  0001 C CNN "Vendor PN"
+	1    46925 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C55
+U 1 1 71A9581F
+P 46925 5100
+F 0 "C55" H 46810 5054 50  0000 R CNN
+F 1 "0.01uF" H 46810 5145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 46963 4950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf" H 46925 5100 50  0001 C CNN
+F 4 "0.10" H 46925 5100 50  0001 C CNN "Cost"
+F 5 "0603B103K100CT" H 46925 5100 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Walsin/0603B103K100CT?qs=ZrPdAQfJ6DMGaCVYT7SqlA%3D%3D" H 46925 5100 50  0001 C CNN "Vendor Link"
+F 7 "791-0603B103K100CT" H 46925 5100 50  0001 C CNN "Vendor PN"
+	1    46925 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	46925 5250 46925 5325
+$Comp
+L Device:D D60
+U 1 1 71A9582A
+P 47375 5525
+F 0 "D60" V 47329 5605 50  0000 L CNN
+F 1 "5A" V 47420 5605 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 47375 5525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/vs_5ech06_m3-1769535.pdf" H 47375 5525 50  0001 C CNN
+F 4 "0.98" H 47375 5525 50  0001 C CNN "Cost"
+F 5 "VS-5ECH06-M3/9AT" H 47375 5525 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/VS-5ECH06-M3-9AT?qs=1FzmF4gO8okPI3ZFizAqng%3D%3D" H 47375 5525 50  0001 C CNN "Vendor Link"
+F 7 "78-VS-5ECH06-M3/9AT" H 47375 5525 50  0001 C CNN "Vendor PN"
+	1    47375 5525
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	47375 5325 46925 5325
+Connection ~ 46925 5325
+Wire Wire Line
+	46925 5325 46925 5350
+Wire Wire Line
+	46925 5650 46925 5750
+Wire Wire Line
+	47375 5325 47375 5375
+Wire Wire Line
+	47375 5675 47375 5750
+Wire Wire Line
+	47375 5750 46925 5750
+Wire Wire Line
+	47375 5750 47500 5750
+Connection ~ 47375 5750
+$Comp
+L power:+24V #PWR0396
+U 1 1 71A9583A
+P 46450 4575
+F 0 "#PWR0396" H 46450 4425 50  0001 C CNN
+F 1 "+24V" H 46465 4748 50  0000 C CNN
+F 2 "" H 46450 4575 50  0001 C CNN
+F 3 "" H 46450 4575 50  0001 C CNN
+	1    46450 4575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0301
+U 1 1 71A95840
+P 45300 5100
+F 0 "#PWR0301" H 45300 4950 50  0001 C CNN
+F 1 "+5V" H 45315 5273 50  0000 C CNN
+F 2 "" H 45300 5100 50  0001 C CNN
+F 3 "" H 45300 5100 50  0001 C CNN
+	1    45300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0368
+U 1 1 71A95846
+P 45500 5100
+F 0 "#PWR0368" H 45500 4950 50  0001 C CNN
+F 1 "+5V" H 45515 5273 50  0000 C CNN
+F 2 "" H 45500 5100 50  0001 C CNN
+F 3 "" H 45500 5100 50  0001 C CNN
+	1    45500 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0387
+U 1 1 71A9584C
+P 46050 4575
+F 0 "#PWR0387" H 46050 4425 50  0001 C CNN
+F 1 "+5V" H 46065 4748 50  0000 C CNN
+F 2 "" H 46050 4575 50  0001 C CNN
+F 3 "" H 46050 4575 50  0001 C CNN
+	1    46050 4575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:QM6015D Q62
+U 1 1 71A9585C
+P 46350 5000
+F 0 "Q62" H 46554 4954 50  0000 L CNN
+F 1 "RD3P130S" H 46500 5175 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 46550 4925 50  0001 L CIN
+F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rd3p130spfratl-e.pdf" V 46350 5000 50  0001 L CNN
+F 4 "1.629" H 46350 5000 50  0001 C CNN "Cost"
+F 5 "RD3P130SPFRATL" H 46350 5000 50  0001 C CNN "Mfg PN"
+F 6 "https://www.zaikostore.com/zaikostore/en/stockDetail?stockID=st46295645" H 46350 5000 50  0001 C CNN "Vendor Link"
+F 7 "RD3P130SPFRATL" H 46350 5000 50  0001 C CNN "Vendor PN"
+	1    46350 5000
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R241
+U 1 1 71A95866
+P 46050 4800
+F 0 "R241" H 45980 4754 50  0000 R CNN
+F 1 "10K" H 45980 4845 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 45980 4800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 46050 4800 50  0001 C CNN
+F 4 "0.10	" H 46050 4800 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 46050 4800 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 46050 4800 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 46050 4800 50  0001 C CNN "Vendor PN"
+	1    46050 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	46150 5000 46050 5000
+Wire Wire Line
+	46050 5000 46050 5450
+Wire Wire Line
+	46050 4575 46050 4650
+Wire Wire Line
+	46050 4950 46050 5000
+Connection ~ 46050 5000
+Wire Wire Line
+	46450 4575 46450 4750
+Wire Wire Line
+	46925 4750 46450 4750
+Wire Wire Line
+	46925 4750 46925 4950
+Connection ~ 46450 4750
+Wire Wire Line
+	46450 4750 46450 4800
+Wire Wire Line
+	46925 5750 46450 5750
+Wire Wire Line
+	46450 5750 46450 5200
+Connection ~ 46925 5750
+$Comp
+L Device:R R222
+U 1 1 71A9594A
+P 48525 8075
+F 0 "R222" V 48318 8075 50  0000 C CNN
+F 1 "180" V 48409 8075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 48455 8075 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 48525 8075 50  0001 C CNN
+F 4 "0.10	" H 48525 8075 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD1800F" H 48525 8075 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD1800F?qs=HhNNkgKj039bxTQtK3h5%252BQ%3D%3D" H 48525 8075 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD1800F" H 48525 8075 50  0001 C CNN "Vendor PN"
+	1    48525 8075
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	48675 8075 48825 8075
+Wire Wire Line
+	48300 8075 48375 8075
+$Comp
+L power:GND #PWR0295
+U 1 1 71A95952
+P 48775 8300
+F 0 "#PWR0295" H 48775 8050 50  0001 C CNN
+F 1 "GND" H 48780 8127 50  0000 C CNN
+F 2 "" H 48775 8300 50  0001 C CNN
+F 3 "" H 48775 8300 50  0001 C CNN
+	1    48775 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN10H220L Q57
+U 1 1 71A9595C
+P 50125 8075
+F 0 "Q57" H 50329 8121 50  0000 L CNN
+F 1 "DMN10H220L" H 50225 7900 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 50325 8000 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/lcsc/1810010612_Diodes-Incorporated-DMN10H220L-7_C102615.pdf" H 50125 8075 50  0001 L CNN
+F 4 "0.18" H 50125 8075 50  0001 C CNN "Cost"
+F 5 "DMN10H220L-7" H 50125 8075 50  0001 C CNN "Mfg PN"
+F 6 "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMN10H220L-7_C102615.html" H 50125 8075 50  0001 C CNN "Vendor Link"
+F 7 "C102615" H 50125 8075 50  0001 C CNN "Vendor PN"
+	1    50125 8075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R230
+U 1 1 71A95966
+P 49900 8375
+F 0 "R230" H 49830 8329 50  0000 R CNN
+F 1 "100K" H 49830 8420 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 49830 8375 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 49900 8375 50  0001 C CNN
+F 4 "0.10	" H 49900 8375 50  0001 C CNN "Cost"
+F 5 "RC0603JR-07100KL" H 49900 8375 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-07100KL?qs=2cAdsCoAWRG9Rhqklpdeqg%3D%3D" H 49900 8375 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-07100KL" H 49900 8375 50  0001 C CNN "Vendor PN"
+	1    49900 8375
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:HCPL-0600 U24
+U 1 1 71A95970
+P 49125 8075
+F 0 "U24" H 49125 8542 50  0000 C CNN
+F 1 "HCPL-0600" H 49125 8451 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 49125 7575 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/678/AVGO_S_A0011438143_1-2524870.pdf" H 48275 8675 50  0001 C CNN
+F 4 "3.63	" H 49125 8075 50  0001 C CNN "Cost"
+F 5 "HCPL-0600" H 49125 8075 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Broadcom-Avago/HCPL-0600?qs=xnajaXqBF99WEoYcFXgJxQ%3D%3D" H 49125 8075 50  0001 C CNN "Vendor Link"
+F 7 "630-HCPL-0600" H 49125 8075 50  0001 C CNN "Vendor PN"
+	1    49125 8075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0379
+U 1 1 71A95976
+P 49900 8600
+F 0 "#PWR0379" H 49900 8350 50  0001 C CNN
+F 1 "GND" H 49905 8427 50  0000 C CNN
+F 2 "" H 49900 8600 50  0001 C CNN
+F 3 "" H 49900 8600 50  0001 C CNN
+	1    49900 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	48775 8300 48775 8275
+Wire Wire Line
+	48775 8275 48825 8275
+$Comp
+L Device:R R227
+U 1 1 71A95982
+P 49675 8075
+F 0 "R227" V 49775 8075 50  0000 R CNN
+F 1 "150" V 49675 8150 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 49605 8075 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 49675 8075 50  0001 C CNN
+F 4 "0.10	" H 49675 8075 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 49675 8075 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 49675 8075 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 49675 8075 50  0001 C CNN "Vendor PN"
+	1    49675 8075
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	49425 8075 49475 8075
+Wire Wire Line
+	49825 8075 49900 8075
+Wire Wire Line
+	49900 8075 49900 8225
+Connection ~ 49900 8075
+Wire Wire Line
+	49900 8075 49925 8075
+Wire Wire Line
+	49900 8525 49900 8600
+$Comp
+L power:GND #PWR0386
+U 1 1 71A9598E
+P 50225 8600
+F 0 "#PWR0386" H 50225 8350 50  0001 C CNN
+F 1 "GND" H 50230 8427 50  0000 C CNN
+F 2 "" H 50225 8600 50  0001 C CNN
+F 3 "" H 50225 8600 50  0001 C CNN
+	1    50225 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	50225 8600 50225 8275
+Wire Wire Line
+	49475 7875 49425 7875
+$Comp
+L power:GND #PWR0300
+U 1 1 71A95996
+P 49475 8300
+F 0 "#PWR0300" H 49475 8050 50  0001 C CNN
+F 1 "GND" H 49480 8127 50  0000 C CNN
+F 2 "" H 49475 8300 50  0001 C CNN
+F 3 "" H 49475 8300 50  0001 C CNN
+	1    49475 8300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	49475 8300 49475 8275
+Wire Wire Line
+	49475 8275 49425 8275
+Wire Wire Line
+	49475 7975 49475 7875
+Wire Wire Line
+	49425 7975 49475 7975
+Connection ~ 49475 7875
+$Comp
+L Device:R R226
+U 1 1 71A959A5
+P 49675 7750
+F 0 "R226" H 49605 7704 50  0000 R CNN
+F 1 "3.3K" H 49605 7795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 49605 7750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 49675 7750 50  0001 C CNN
+F 4 "0.10	" H 49675 7750 50  0001 C CNN "Cost"
+F 5 "RC0603JR-103K3L" H 49675 7750 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-103K3L?qs=IuGqVx9wL0LKNSLR70cQjA%3D%3D" H 49675 7750 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-103K3L" H 49675 7750 50  0001 C CNN "Vendor PN"
+	1    49675 7750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	49475 7525 49475 7875
+Wire Wire Line
+	49675 7525 49675 7600
+Wire Wire Line
+	49675 7900 49675 8000
+Wire Wire Line
+	49675 8000 49475 8000
+Wire Wire Line
+	49475 8000 49475 8075
+Connection ~ 49475 8075
+Wire Wire Line
+	49475 8075 49525 8075
+$Comp
+L Device:R R246
+U 1 1 71A959B6
+P 51100 7925
+F 0 "R246" H 51030 7879 50  0000 R CNN
+F 1 "100" H 51030 7970 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 51030 7925 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 51100 7925 50  0001 C CNN
+F 4 "0.10	" H 51100 7925 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 51100 7925 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 51100 7925 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 51100 7925 50  0001 C CNN "Vendor PN"
+	1    51100 7925
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C54
+U 1 1 71A959C0
+P 51100 7525
+F 0 "C54" H 50985 7479 50  0000 R CNN
+F 1 "0.01uF" H 50985 7570 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 51138 7375 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf" H 51100 7525 50  0001 C CNN
+F 4 "0.10" H 51100 7525 50  0001 C CNN "Cost"
+F 5 "0603B103K100CT" H 51100 7525 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Walsin/0603B103K100CT?qs=ZrPdAQfJ6DMGaCVYT7SqlA%3D%3D" H 51100 7525 50  0001 C CNN "Vendor Link"
+F 7 "791-0603B103K100CT" H 51100 7525 50  0001 C CNN "Vendor PN"
+	1    51100 7525
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	51100 7675 51100 7750
+$Comp
+L Device:D D59
+U 1 1 71A959CB
+P 51550 7950
+F 0 "D59" V 51504 8030 50  0000 L CNN
+F 1 "5A" V 51595 8030 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 51550 7950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/vs_5ech06_m3-1769535.pdf" H 51550 7950 50  0001 C CNN
+F 4 "0.98" H 51550 7950 50  0001 C CNN "Cost"
+F 5 "VS-5ECH06-M3/9AT" H 51550 7950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/VS-5ECH06-M3-9AT?qs=1FzmF4gO8okPI3ZFizAqng%3D%3D" H 51550 7950 50  0001 C CNN "Vendor Link"
+F 7 "78-VS-5ECH06-M3/9AT" H 51550 7950 50  0001 C CNN "Vendor PN"
+	1    51550 7950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	51550 7750 51100 7750
+Connection ~ 51100 7750
+Wire Wire Line
+	51100 7750 51100 7775
+Wire Wire Line
+	51100 8075 51100 8175
+Wire Wire Line
+	51550 7750 51550 7800
+Wire Wire Line
+	51550 8100 51550 8175
+Wire Wire Line
+	51550 8175 51100 8175
+Wire Wire Line
+	51550 8175 51675 8175
+Connection ~ 51550 8175
+$Comp
+L power:+24V #PWR0393
+U 1 1 71A959DA
+P 50625 7000
+F 0 "#PWR0393" H 50625 6850 50  0001 C CNN
+F 1 "+24V" H 50640 7173 50  0000 C CNN
+F 2 "" H 50625 7000 50  0001 C CNN
+F 3 "" H 50625 7000 50  0001 C CNN
+	1    50625 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0299
+U 1 1 71A959E0
+P 49475 7525
+F 0 "#PWR0299" H 49475 7375 50  0001 C CNN
+F 1 "+5V" H 49490 7698 50  0000 C CNN
+F 2 "" H 49475 7525 50  0001 C CNN
+F 3 "" H 49475 7525 50  0001 C CNN
+	1    49475 7525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0367
+U 1 1 71A959E6
+P 49675 7525
+F 0 "#PWR0367" H 49675 7375 50  0001 C CNN
+F 1 "+5V" H 49690 7698 50  0000 C CNN
+F 2 "" H 49675 7525 50  0001 C CNN
+F 3 "" H 49675 7525 50  0001 C CNN
+	1    49675 7525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0385
+U 1 1 71A959EC
+P 50225 7000
+F 0 "#PWR0385" H 50225 6850 50  0001 C CNN
+F 1 "+5V" H 50240 7173 50  0000 C CNN
+F 2 "" H 50225 7000 50  0001 C CNN
+F 3 "" H 50225 7000 50  0001 C CNN
+	1    50225 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:QM6015D Q60
+U 1 1 71A959F6
+P 50525 7425
+F 0 "Q60" H 50729 7379 50  0000 L CNN
+F 1 "RD3P130S" H 50675 7600 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 50725 7350 50  0001 L CIN
+F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rd3p130spfratl-e.pdf" V 50525 7425 50  0001 L CNN
+F 4 "1.629" H 50525 7425 50  0001 C CNN "Cost"
+F 5 "RD3P130SPFRATL" H 50525 7425 50  0001 C CNN "Mfg PN"
+F 6 "https://www.zaikostore.com/zaikostore/en/stockDetail?stockID=st46295645" H 50525 7425 50  0001 C CNN "Vendor Link"
+F 7 "RD3P130SPFRATL" H 50525 7425 50  0001 C CNN "Vendor PN"
+	1    50525 7425
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R240
+U 1 1 71A95A00
+P 50225 7225
+F 0 "R240" H 50155 7179 50  0000 R CNN
+F 1 "10K" H 50155 7270 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 50155 7225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 50225 7225 50  0001 C CNN
+F 4 "0.10	" H 50225 7225 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 50225 7225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 50225 7225 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 50225 7225 50  0001 C CNN "Vendor PN"
+	1    50225 7225
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	50325 7425 50225 7425
+Wire Wire Line
+	50225 7425 50225 7875
+Wire Wire Line
+	50225 7000 50225 7075
+Wire Wire Line
+	50225 7375 50225 7425
+Connection ~ 50225 7425
+Wire Wire Line
+	50625 7000 50625 7175
+Wire Wire Line
+	51100 7175 50625 7175
+Wire Wire Line
+	51100 7175 51100 7375
+Connection ~ 50625 7175
+Wire Wire Line
+	50625 7175 50625 7225
+Wire Wire Line
+	51100 8175 50625 8175
+Wire Wire Line
+	50625 8175 50625 7625
+Connection ~ 51100 8175
+$Comp
+L Device:R R49
+U 1 1 767B0E29
+P 10000 16825
+F 0 "R49" V 9793 16825 50  0000 C CNN
+F 1 "180" V 9884 16825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9930 16825 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 10000 16825 50  0001 C CNN
+F 4 "0.10	" H 10000 16825 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD1800F" H 10000 16825 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD1800F?qs=HhNNkgKj039bxTQtK3h5%252BQ%3D%3D" H 10000 16825 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD1800F" H 10000 16825 50  0001 C CNN "Vendor PN"
+	1    10000 16825
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10150 16825 10300 16825
+Wire Wire Line
+	9775 16825 9850 16825
+$Comp
+L power:GND #PWR043
+U 1 1 767B0E32
+P 10250 17050
+F 0 "#PWR043" H 10250 16800 50  0001 C CNN
+F 1 "GND" H 10255 16877 50  0000 C CNN
+F 2 "" H 10250 17050 50  0001 C CNN
+F 3 "" H 10250 17050 50  0001 C CNN
+	1    10250 17050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN10H220L Q6
+U 1 1 767B0E3C
+P 11600 16825
+F 0 "Q6" H 11804 16871 50  0000 L CNN
+F 1 "DMN10H220L" H 11700 16650 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11800 16750 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/lcsc/1810010612_Diodes-Incorporated-DMN10H220L-7_C102615.pdf" H 11600 16825 50  0001 L CNN
+F 4 "0.18" H 11600 16825 50  0001 C CNN "Cost"
+F 5 "DMN10H220L-7" H 11600 16825 50  0001 C CNN "Mfg PN"
+F 6 "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMN10H220L-7_C102615.html" H 11600 16825 50  0001 C CNN "Vendor Link"
+F 7 "C102615" H 11600 16825 50  0001 C CNN "Vendor PN"
+	1    11600 16825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R60
+U 1 1 767B0E46
+P 11375 17125
+F 0 "R60" H 11305 17079 50  0000 R CNN
+F 1 "100K" H 11305 17170 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11305 17125 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 11375 17125 50  0001 C CNN
+F 4 "0.10	" H 11375 17125 50  0001 C CNN "Cost"
+F 5 "RC0603JR-07100KL" H 11375 17125 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-07100KL?qs=2cAdsCoAWRG9Rhqklpdeqg%3D%3D" H 11375 17125 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-07100KL" H 11375 17125 50  0001 C CNN "Vendor PN"
+	1    11375 17125
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:HCPL-0600 U7
+U 1 1 767B0E50
+P 10600 16825
+F 0 "U7" H 10600 17292 50  0000 C CNN
+F 1 "HCPL-0600" H 10600 17201 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 10600 16325 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/678/AVGO_S_A0011438143_1-2524870.pdf" H 9750 17425 50  0001 C CNN
+F 4 "3.63	" H 10600 16825 50  0001 C CNN "Cost"
+F 5 "HCPL-0600" H 10600 16825 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Broadcom-Avago/HCPL-0600?qs=xnajaXqBF99WEoYcFXgJxQ%3D%3D" H 10600 16825 50  0001 C CNN "Vendor Link"
+F 7 "630-HCPL-0600" H 10600 16825 50  0001 C CNN "Vendor PN"
+	1    10600 16825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR061
+U 1 1 767B0E56
+P 11375 17350
+F 0 "#PWR061" H 11375 17100 50  0001 C CNN
+F 1 "GND" H 11380 17177 50  0000 C CNN
+F 2 "" H 11375 17350 50  0001 C CNN
+F 3 "" H 11375 17350 50  0001 C CNN
+	1    11375 17350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 17050 10250 17025
+Wire Wire Line
+	10250 17025 10300 17025
+$Comp
+L Device:R R57
+U 1 1 767B0E62
+P 11150 16825
+F 0 "R57" V 11250 16825 50  0000 R CNN
+F 1 "150" V 11150 16900 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11080 16825 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 11150 16825 50  0001 C CNN
+F 4 "0.10	" H 11150 16825 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 11150 16825 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 11150 16825 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 11150 16825 50  0001 C CNN "Vendor PN"
+	1    11150 16825
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10900 16825 10950 16825
+Wire Wire Line
+	11300 16825 11375 16825
+Wire Wire Line
+	11375 16825 11375 16975
+Connection ~ 11375 16825
+Wire Wire Line
+	11375 16825 11400 16825
+Wire Wire Line
+	11375 17275 11375 17350
+$Comp
+L power:GND #PWR068
+U 1 1 767B0E6E
+P 11700 17350
+F 0 "#PWR068" H 11700 17100 50  0001 C CNN
+F 1 "GND" H 11705 17177 50  0000 C CNN
+F 2 "" H 11700 17350 50  0001 C CNN
+F 3 "" H 11700 17350 50  0001 C CNN
+	1    11700 17350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 17350 11700 17025
+Wire Wire Line
+	10950 16625 10900 16625
+$Comp
+L power:GND #PWR054
+U 1 1 767B0E76
+P 10950 17050
+F 0 "#PWR054" H 10950 16800 50  0001 C CNN
+F 1 "GND" H 10955 16877 50  0000 C CNN
+F 2 "" H 10950 17050 50  0001 C CNN
+F 3 "" H 10950 17050 50  0001 C CNN
+	1    10950 17050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 17050 10950 17025
+Wire Wire Line
+	10950 17025 10900 17025
+Wire Wire Line
+	10950 16725 10950 16625
+Wire Wire Line
+	10900 16725 10950 16725
+Connection ~ 10950 16625
+$Comp
+L Device:R R56
+U 1 1 767B0E85
+P 11150 16500
+F 0 "R56" H 11080 16454 50  0000 R CNN
+F 1 "3.3K" H 11080 16545 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11080 16500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 11150 16500 50  0001 C CNN
+F 4 "0.10	" H 11150 16500 50  0001 C CNN "Cost"
+F 5 "RC0603JR-103K3L" H 11150 16500 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-103K3L?qs=IuGqVx9wL0LKNSLR70cQjA%3D%3D" H 11150 16500 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-103K3L" H 11150 16500 50  0001 C CNN "Vendor PN"
+	1    11150 16500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10950 16275 10950 16625
+Wire Wire Line
+	11150 16275 11150 16350
+Wire Wire Line
+	11150 16650 11150 16750
+Wire Wire Line
+	11150 16750 10950 16750
+Wire Wire Line
+	10950 16750 10950 16825
+Connection ~ 10950 16825
+Wire Wire Line
+	10950 16825 11000 16825
+$Comp
+L Device:R R67
+U 1 1 767B0E96
+P 12575 16675
+F 0 "R67" H 12505 16629 50  0000 R CNN
+F 1 "100" H 12505 16720 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12505 16675 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 12575 16675 50  0001 C CNN
+F 4 "0.10	" H 12575 16675 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 12575 16675 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 12575 16675 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 12575 16675 50  0001 C CNN "Vendor PN"
+	1    12575 16675
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C19
+U 1 1 767B0EA0
+P 12575 16275
+F 0 "C19" H 12460 16229 50  0000 R CNN
+F 1 "0.01uF" H 12460 16320 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12613 16125 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf" H 12575 16275 50  0001 C CNN
+F 4 "0.10" H 12575 16275 50  0001 C CNN "Cost"
+F 5 "0603B103K100CT" H 12575 16275 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Walsin/0603B103K100CT?qs=ZrPdAQfJ6DMGaCVYT7SqlA%3D%3D" H 12575 16275 50  0001 C CNN "Vendor Link"
+F 7 "791-0603B103K100CT" H 12575 16275 50  0001 C CNN "Vendor PN"
+	1    12575 16275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12575 16425 12575 16500
+$Comp
+L Device:D D17
+U 1 1 767B0EAB
+P 13025 16700
+F 0 "D17" V 12979 16780 50  0000 L CNN
+F 1 "5A" V 13070 16780 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 13025 16700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/vs_5ech06_m3-1769535.pdf" H 13025 16700 50  0001 C CNN
+F 4 "0.98" H 13025 16700 50  0001 C CNN "Cost"
+F 5 "VS-5ECH06-M3/9AT" H 13025 16700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/VS-5ECH06-M3-9AT?qs=1FzmF4gO8okPI3ZFizAqng%3D%3D" H 13025 16700 50  0001 C CNN "Vendor Link"
+F 7 "78-VS-5ECH06-M3/9AT" H 13025 16700 50  0001 C CNN "Vendor PN"
+	1    13025 16700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13025 16500 12575 16500
+Connection ~ 12575 16500
+Wire Wire Line
+	12575 16500 12575 16525
+Wire Wire Line
+	12575 16825 12575 16925
+Wire Wire Line
+	13025 16500 13025 16550
+Wire Wire Line
+	13025 16850 13025 16925
+Wire Wire Line
+	13025 16925 12575 16925
+Wire Wire Line
+	13025 16925 13150 16925
+Connection ~ 13025 16925
+$Comp
+L power:+24V #PWR072
+U 1 1 767B0EBB
+P 12100 15750
+F 0 "#PWR072" H 12100 15600 50  0001 C CNN
+F 1 "+24V" H 12115 15923 50  0000 C CNN
+F 2 "" H 12100 15750 50  0001 C CNN
+F 3 "" H 12100 15750 50  0001 C CNN
+	1    12100 15750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR053
+U 1 1 767B0EC1
+P 10950 16275
+F 0 "#PWR053" H 10950 16125 50  0001 C CNN
+F 1 "+5V" H 10965 16448 50  0000 C CNN
+F 2 "" H 10950 16275 50  0001 C CNN
+F 3 "" H 10950 16275 50  0001 C CNN
+	1    10950 16275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR058
+U 1 1 767B0EC7
+P 11150 16275
+F 0 "#PWR058" H 11150 16125 50  0001 C CNN
+F 1 "+5V" H 11165 16448 50  0000 C CNN
+F 2 "" H 11150 16275 50  0001 C CNN
+F 3 "" H 11150 16275 50  0001 C CNN
+	1    11150 16275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR067
+U 1 1 767B0ECD
+P 11700 15750
+F 0 "#PWR067" H 11700 15600 50  0001 C CNN
+F 1 "+5V" H 11715 15923 50  0000 C CNN
+F 2 "" H 11700 15750 50  0001 C CNN
+F 3 "" H 11700 15750 50  0001 C CNN
+	1    11700 15750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:QM6015D Q13
+U 1 1 767B0EDD
+P 12000 16175
+F 0 "Q13" H 12204 16129 50  0000 L CNN
+F 1 "RD3P130S" H 12150 16350 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 12200 16100 50  0001 L CIN
+F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rd3p130spfratl-e.pdf" V 12000 16175 50  0001 L CNN
+F 4 "1.629" H 12000 16175 50  0001 C CNN "Cost"
+F 5 "RD3P130SPFRATL" H 12000 16175 50  0001 C CNN "Mfg PN"
+F 6 "https://www.zaikostore.com/zaikostore/en/stockDetail?stockID=st46295645" H 12000 16175 50  0001 C CNN "Vendor Link"
+F 7 "RD3P130SPFRATL" H 12000 16175 50  0001 C CNN "Vendor PN"
+	1    12000 16175
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R64
+U 1 1 767B0EE7
+P 11700 15975
+F 0 "R64" H 11630 15929 50  0000 R CNN
+F 1 "10K" H 11630 16020 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11630 15975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 11700 15975 50  0001 C CNN
+F 4 "0.10	" H 11700 15975 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 11700 15975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 11700 15975 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 11700 15975 50  0001 C CNN "Vendor PN"
+	1    11700 15975
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11800 16175 11700 16175
+Wire Wire Line
+	11700 16175 11700 16625
+Wire Wire Line
+	11700 15750 11700 15825
+Wire Wire Line
+	11700 16125 11700 16175
+Connection ~ 11700 16175
+Wire Wire Line
+	12100 15750 12100 15925
+Wire Wire Line
+	12575 15925 12100 15925
+Wire Wire Line
+	12575 15925 12575 16125
+Connection ~ 12100 15925
+Wire Wire Line
+	12100 15925 12100 15975
+Wire Wire Line
+	12575 16925 12100 16925
+Wire Wire Line
+	12100 16925 12100 16375
+Connection ~ 12575 16925
+$Comp
+L Device:R R48
+U 1 1 767B0FCB
+P 13675 19175
+F 0 "R48" V 13468 19175 50  0000 C CNN
+F 1 "180" V 13559 19175 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13605 19175 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 13675 19175 50  0001 C CNN
+F 4 "0.10	" H 13675 19175 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD1800F" H 13675 19175 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD1800F?qs=HhNNkgKj039bxTQtK3h5%252BQ%3D%3D" H 13675 19175 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD1800F" H 13675 19175 50  0001 C CNN "Vendor PN"
+	1    13675 19175
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13825 19175 13975 19175
+Wire Wire Line
+	13450 19175 13525 19175
+$Comp
+L power:GND #PWR042
+U 1 1 767B0FD3
+P 13925 19400
+F 0 "#PWR042" H 13925 19150 50  0001 C CNN
+F 1 "GND" H 13930 19227 50  0000 C CNN
+F 2 "" H 13925 19400 50  0001 C CNN
+F 3 "" H 13925 19400 50  0001 C CNN
+	1    13925 19400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN10H220L Q5
+U 1 1 767B0FDD
+P 15275 19175
+F 0 "Q5" H 15479 19221 50  0000 L CNN
+F 1 "DMN10H220L" H 15375 19000 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 15475 19100 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/lcsc/1810010612_Diodes-Incorporated-DMN10H220L-7_C102615.pdf" H 15275 19175 50  0001 L CNN
+F 4 "0.18" H 15275 19175 50  0001 C CNN "Cost"
+F 5 "DMN10H220L-7" H 15275 19175 50  0001 C CNN "Mfg PN"
+F 6 "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMN10H220L-7_C102615.html" H 15275 19175 50  0001 C CNN "Vendor Link"
+F 7 "C102615" H 15275 19175 50  0001 C CNN "Vendor PN"
+	1    15275 19175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R59
+U 1 1 767B0FE7
+P 15050 19475
+F 0 "R59" H 14980 19429 50  0000 R CNN
+F 1 "100K" H 14980 19520 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14980 19475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 15050 19475 50  0001 C CNN
+F 4 "0.10	" H 15050 19475 50  0001 C CNN "Cost"
+F 5 "RC0603JR-07100KL" H 15050 19475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-07100KL?qs=2cAdsCoAWRG9Rhqklpdeqg%3D%3D" H 15050 19475 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-07100KL" H 15050 19475 50  0001 C CNN "Vendor PN"
+	1    15050 19475
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:HCPL-0600 U6
+U 1 1 767B0FF1
+P 14275 19175
+F 0 "U6" H 14275 19642 50  0000 C CNN
+F 1 "HCPL-0600" H 14275 19551 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 14275 18675 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/678/AVGO_S_A0011438143_1-2524870.pdf" H 13425 19775 50  0001 C CNN
+F 4 "3.63	" H 14275 19175 50  0001 C CNN "Cost"
+F 5 "HCPL-0600" H 14275 19175 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Broadcom-Avago/HCPL-0600?qs=xnajaXqBF99WEoYcFXgJxQ%3D%3D" H 14275 19175 50  0001 C CNN "Vendor Link"
+F 7 "630-HCPL-0600" H 14275 19175 50  0001 C CNN "Vendor PN"
+	1    14275 19175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR060
+U 1 1 767B0FF7
+P 15050 19700
+F 0 "#PWR060" H 15050 19450 50  0001 C CNN
+F 1 "GND" H 15055 19527 50  0000 C CNN
+F 2 "" H 15050 19700 50  0001 C CNN
+F 3 "" H 15050 19700 50  0001 C CNN
+	1    15050 19700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13925 19400 13925 19375
+Wire Wire Line
+	13925 19375 13975 19375
+$Comp
+L Device:R R55
+U 1 1 767B1003
+P 14825 19175
+F 0 "R55" V 14925 19175 50  0000 R CNN
+F 1 "150" V 14825 19250 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14755 19175 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 14825 19175 50  0001 C CNN
+F 4 "0.10	" H 14825 19175 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 14825 19175 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 14825 19175 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 14825 19175 50  0001 C CNN "Vendor PN"
+	1    14825 19175
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14575 19175 14625 19175
+Wire Wire Line
+	14975 19175 15050 19175
+Wire Wire Line
+	15050 19175 15050 19325
+Connection ~ 15050 19175
+Wire Wire Line
+	15050 19175 15075 19175
+Wire Wire Line
+	15050 19625 15050 19700
+$Comp
+L power:GND #PWR066
+U 1 1 767B100F
+P 15375 19700
+F 0 "#PWR066" H 15375 19450 50  0001 C CNN
+F 1 "GND" H 15380 19527 50  0000 C CNN
+F 2 "" H 15375 19700 50  0001 C CNN
+F 3 "" H 15375 19700 50  0001 C CNN
+	1    15375 19700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15375 19700 15375 19375
+Wire Wire Line
+	14625 18975 14575 18975
+$Comp
+L power:GND #PWR052
+U 1 1 767B1017
+P 14625 19400
+F 0 "#PWR052" H 14625 19150 50  0001 C CNN
+F 1 "GND" H 14630 19227 50  0000 C CNN
+F 2 "" H 14625 19400 50  0001 C CNN
+F 3 "" H 14625 19400 50  0001 C CNN
+	1    14625 19400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14625 19400 14625 19375
+Wire Wire Line
+	14625 19375 14575 19375
+Wire Wire Line
+	14625 19075 14625 18975
+Wire Wire Line
+	14575 19075 14625 19075
+Connection ~ 14625 18975
+$Comp
+L Device:R R54
+U 1 1 767B1026
+P 14825 18850
+F 0 "R54" H 14755 18804 50  0000 R CNN
+F 1 "3.3K" H 14755 18895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14755 18850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 14825 18850 50  0001 C CNN
+F 4 "0.10	" H 14825 18850 50  0001 C CNN "Cost"
+F 5 "RC0603JR-103K3L" H 14825 18850 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-103K3L?qs=IuGqVx9wL0LKNSLR70cQjA%3D%3D" H 14825 18850 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-103K3L" H 14825 18850 50  0001 C CNN "Vendor PN"
+	1    14825 18850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14625 18625 14625 18975
+Wire Wire Line
+	14825 18625 14825 18700
+Wire Wire Line
+	14825 19000 14825 19100
+Wire Wire Line
+	14825 19100 14625 19100
+Wire Wire Line
+	14625 19100 14625 19175
+Connection ~ 14625 19175
+Wire Wire Line
+	14625 19175 14675 19175
+$Comp
+L Device:R R66
+U 1 1 767B1037
+P 16250 19025
+F 0 "R66" H 16180 18979 50  0000 R CNN
+F 1 "100" H 16180 19070 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 16180 19025 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 16250 19025 50  0001 C CNN
+F 4 "0.10	" H 16250 19025 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 16250 19025 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 16250 19025 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 16250 19025 50  0001 C CNN "Vendor PN"
+	1    16250 19025
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 767B1041
+P 16250 18625
+F 0 "C18" H 16135 18579 50  0000 R CNN
+F 1 "0.01uF" H 16135 18670 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 16288 18475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf" H 16250 18625 50  0001 C CNN
+F 4 "0.10" H 16250 18625 50  0001 C CNN "Cost"
+F 5 "0603B103K100CT" H 16250 18625 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Walsin/0603B103K100CT?qs=ZrPdAQfJ6DMGaCVYT7SqlA%3D%3D" H 16250 18625 50  0001 C CNN "Vendor Link"
+F 7 "791-0603B103K100CT" H 16250 18625 50  0001 C CNN "Vendor PN"
+	1    16250 18625
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	16250 18775 16250 18850
+$Comp
+L Device:D D16
+U 1 1 767B104C
+P 16700 19050
+F 0 "D16" V 16654 19130 50  0000 L CNN
+F 1 "5A" V 16745 19130 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 16700 19050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/vs_5ech06_m3-1769535.pdf" H 16700 19050 50  0001 C CNN
+F 4 "0.98" H 16700 19050 50  0001 C CNN "Cost"
+F 5 "VS-5ECH06-M3/9AT" H 16700 19050 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/VS-5ECH06-M3-9AT?qs=1FzmF4gO8okPI3ZFizAqng%3D%3D" H 16700 19050 50  0001 C CNN "Vendor Link"
+F 7 "78-VS-5ECH06-M3/9AT" H 16700 19050 50  0001 C CNN "Vendor PN"
+	1    16700 19050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	16700 18850 16250 18850
+Connection ~ 16250 18850
+Wire Wire Line
+	16250 18850 16250 18875
+Wire Wire Line
+	16250 19175 16250 19275
+Wire Wire Line
+	16700 18850 16700 18900
+Wire Wire Line
+	16700 19200 16700 19275
+Wire Wire Line
+	16700 19275 16250 19275
+Wire Wire Line
+	16700 19275 16825 19275
+Connection ~ 16700 19275
+$Comp
+L power:+24V #PWR071
+U 1 1 767B105B
+P 15775 18100
+F 0 "#PWR071" H 15775 17950 50  0001 C CNN
+F 1 "+24V" H 15790 18273 50  0000 C CNN
+F 2 "" H 15775 18100 50  0001 C CNN
+F 3 "" H 15775 18100 50  0001 C CNN
+	1    15775 18100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR051
+U 1 1 767B1061
+P 14625 18625
+F 0 "#PWR051" H 14625 18475 50  0001 C CNN
+F 1 "+5V" H 14640 18798 50  0000 C CNN
+F 2 "" H 14625 18625 50  0001 C CNN
+F 3 "" H 14625 18625 50  0001 C CNN
+	1    14625 18625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR057
+U 1 1 767B1067
+P 14825 18625
+F 0 "#PWR057" H 14825 18475 50  0001 C CNN
+F 1 "+5V" H 14840 18798 50  0000 C CNN
+F 2 "" H 14825 18625 50  0001 C CNN
+F 3 "" H 14825 18625 50  0001 C CNN
+	1    14825 18625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR065
+U 1 1 767B106D
+P 15375 18100
+F 0 "#PWR065" H 15375 17950 50  0001 C CNN
+F 1 "+5V" H 15390 18273 50  0000 C CNN
+F 2 "" H 15375 18100 50  0001 C CNN
+F 3 "" H 15375 18100 50  0001 C CNN
+	1    15375 18100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:QM6015D Q12
+U 1 1 767B1077
+P 15675 18525
+F 0 "Q12" H 15879 18479 50  0000 L CNN
+F 1 "RD3P130S" H 15825 18700 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 15875 18450 50  0001 L CIN
+F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rd3p130spfratl-e.pdf" V 15675 18525 50  0001 L CNN
+F 4 "1.629" H 15675 18525 50  0001 C CNN "Cost"
+F 5 "RD3P130SPFRATL" H 15675 18525 50  0001 C CNN "Mfg PN"
+F 6 "https://www.zaikostore.com/zaikostore/en/stockDetail?stockID=st46295645" H 15675 18525 50  0001 C CNN "Vendor Link"
+F 7 "RD3P130SPFRATL" H 15675 18525 50  0001 C CNN "Vendor PN"
+	1    15675 18525
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R63
+U 1 1 767B1081
+P 15375 18325
+F 0 "R63" H 15305 18279 50  0000 R CNN
+F 1 "10K" H 15305 18370 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15305 18325 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 15375 18325 50  0001 C CNN
+F 4 "0.10	" H 15375 18325 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 15375 18325 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 15375 18325 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 15375 18325 50  0001 C CNN "Vendor PN"
+	1    15375 18325
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15475 18525 15375 18525
+Wire Wire Line
+	15375 18525 15375 18975
+Wire Wire Line
+	15375 18100 15375 18175
+Wire Wire Line
+	15375 18475 15375 18525
+Connection ~ 15375 18525
+Wire Wire Line
+	15775 18100 15775 18275
+Wire Wire Line
+	16250 18275 15775 18275
+Wire Wire Line
+	16250 18275 16250 18475
+Connection ~ 15775 18275
+Wire Wire Line
+	15775 18275 15775 18325
+Wire Wire Line
+	16250 19275 15775 19275
+Wire Wire Line
+	15775 19275 15775 18725
+Connection ~ 16250 19275
+$Comp
+L Device:R R135
+U 1 1 796F069B
+P 27300 16875
+F 0 "R135" V 27093 16875 50  0000 C CNN
+F 1 "180" V 27184 16875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 27230 16875 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 27300 16875 50  0001 C CNN
+F 4 "0.10	" H 27300 16875 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD1800F" H 27300 16875 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD1800F?qs=HhNNkgKj039bxTQtK3h5%252BQ%3D%3D" H 27300 16875 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD1800F" H 27300 16875 50  0001 C CNN "Vendor PN"
+	1    27300 16875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	27450 16875 27600 16875
+Wire Wire Line
+	27075 16875 27150 16875
+$Comp
+L power:GND #PWR0120
+U 1 1 796F06A4
+P 27550 17100
+F 0 "#PWR0120" H 27550 16850 50  0001 C CNN
+F 1 "GND" H 27555 16927 50  0000 C CNN
+F 2 "" H 27550 17100 50  0001 C CNN
+F 3 "" H 27550 17100 50  0001 C CNN
+	1    27550 17100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN10H220L Q35
+U 1 1 796F06AE
+P 28900 16875
+F 0 "Q35" H 29104 16921 50  0000 L CNN
+F 1 "DMN10H220L" H 29000 16700 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 29100 16800 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/lcsc/1810010612_Diodes-Incorporated-DMN10H220L-7_C102615.pdf" H 28900 16875 50  0001 L CNN
+F 4 "0.18" H 28900 16875 50  0001 C CNN "Cost"
+F 5 "DMN10H220L-7" H 28900 16875 50  0001 C CNN "Mfg PN"
+F 6 "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMN10H220L-7_C102615.html" H 28900 16875 50  0001 C CNN "Vendor Link"
+F 7 "C102615" H 28900 16875 50  0001 C CNN "Vendor PN"
+	1    28900 16875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R147
+U 1 1 796F06B8
+P 28675 17175
+F 0 "R147" H 28605 17129 50  0000 R CNN
+F 1 "100K" H 28605 17220 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 28605 17175 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 28675 17175 50  0001 C CNN
+F 4 "0.10	" H 28675 17175 50  0001 C CNN "Cost"
+F 5 "RC0603JR-07100KL" H 28675 17175 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-07100KL?qs=2cAdsCoAWRG9Rhqklpdeqg%3D%3D" H 28675 17175 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-07100KL" H 28675 17175 50  0001 C CNN "Vendor PN"
+	1    28675 17175
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:HCPL-0600 U17
+U 1 1 796F06C2
+P 27900 16875
+F 0 "U17" H 27900 17342 50  0000 C CNN
+F 1 "HCPL-0600" H 27900 17251 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 27900 16375 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/678/AVGO_S_A0011438143_1-2524870.pdf" H 27050 17475 50  0001 C CNN
+F 4 "3.63	" H 27900 16875 50  0001 C CNN "Cost"
+F 5 "HCPL-0600" H 27900 16875 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Broadcom-Avago/HCPL-0600?qs=xnajaXqBF99WEoYcFXgJxQ%3D%3D" H 27900 16875 50  0001 C CNN "Vendor Link"
+F 7 "630-HCPL-0600" H 27900 16875 50  0001 C CNN "Vendor PN"
+	1    27900 16875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0242
+U 1 1 796F06C8
+P 28675 17400
+F 0 "#PWR0242" H 28675 17150 50  0001 C CNN
+F 1 "GND" H 28680 17227 50  0000 C CNN
+F 2 "" H 28675 17400 50  0001 C CNN
+F 3 "" H 28675 17400 50  0001 C CNN
+	1    28675 17400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	27550 17100 27550 17075
+Wire Wire Line
+	27550 17075 27600 17075
+$Comp
+L Device:R R143
+U 1 1 796F06D4
+P 28450 16875
+F 0 "R143" V 28550 16875 50  0000 R CNN
+F 1 "150" V 28450 16950 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 28380 16875 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 28450 16875 50  0001 C CNN
+F 4 "0.10	" H 28450 16875 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 28450 16875 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 28450 16875 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 28450 16875 50  0001 C CNN "Vendor PN"
+	1    28450 16875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28200 16875 28250 16875
+Wire Wire Line
+	28600 16875 28675 16875
+Wire Wire Line
+	28675 16875 28675 17025
+Connection ~ 28675 16875
+Wire Wire Line
+	28675 16875 28700 16875
+Wire Wire Line
+	28675 17325 28675 17400
+$Comp
+L power:GND #PWR0250
+U 1 1 796F06E0
+P 29000 17400
+F 0 "#PWR0250" H 29000 17150 50  0001 C CNN
+F 1 "GND" H 29005 17227 50  0000 C CNN
+F 2 "" H 29000 17400 50  0001 C CNN
+F 3 "" H 29000 17400 50  0001 C CNN
+	1    29000 17400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29000 17400 29000 17075
+Wire Wire Line
+	28250 16675 28200 16675
+$Comp
+L power:GND #PWR0234
+U 1 1 796F06E8
+P 28250 17100
+F 0 "#PWR0234" H 28250 16850 50  0001 C CNN
+F 1 "GND" H 28255 16927 50  0000 C CNN
+F 2 "" H 28250 17100 50  0001 C CNN
+F 3 "" H 28250 17100 50  0001 C CNN
+	1    28250 17100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	28250 17100 28250 17075
+Wire Wire Line
+	28250 17075 28200 17075
+Wire Wire Line
+	28250 16775 28250 16675
+Wire Wire Line
+	28200 16775 28250 16775
+Connection ~ 28250 16675
+$Comp
+L Device:R R142
+U 1 1 796F06F7
+P 28450 16550
+F 0 "R142" H 28380 16504 50  0000 R CNN
+F 1 "3.3K" H 28380 16595 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 28380 16550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 28450 16550 50  0001 C CNN
+F 4 "0.10	" H 28450 16550 50  0001 C CNN "Cost"
+F 5 "RC0603JR-103K3L" H 28450 16550 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-103K3L?qs=IuGqVx9wL0LKNSLR70cQjA%3D%3D" H 28450 16550 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-103K3L" H 28450 16550 50  0001 C CNN "Vendor PN"
+	1    28450 16550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	28250 16325 28250 16675
+Wire Wire Line
+	28450 16325 28450 16400
+Wire Wire Line
+	28450 16700 28450 16800
+Wire Wire Line
+	28450 16800 28250 16800
+Wire Wire Line
+	28250 16800 28250 16875
+Connection ~ 28250 16875
+Wire Wire Line
+	28250 16875 28300 16875
+$Comp
+L Device:R R159
+U 1 1 796F0708
+P 29875 16725
+F 0 "R159" H 29805 16679 50  0000 R CNN
+F 1 "100" H 29805 16770 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 29805 16725 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 29875 16725 50  0001 C CNN
+F 4 "0.10	" H 29875 16725 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 29875 16725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 29875 16725 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 29875 16725 50  0001 C CNN "Vendor PN"
+	1    29875 16725
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C37
+U 1 1 796F0712
+P 29875 16325
+F 0 "C37" H 29760 16279 50  0000 R CNN
+F 1 "0.01uF" H 29760 16370 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 29913 16175 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf" H 29875 16325 50  0001 C CNN
+F 4 "0.10" H 29875 16325 50  0001 C CNN "Cost"
+F 5 "0603B103K100CT" H 29875 16325 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Walsin/0603B103K100CT?qs=ZrPdAQfJ6DMGaCVYT7SqlA%3D%3D" H 29875 16325 50  0001 C CNN "Vendor Link"
+F 7 "791-0603B103K100CT" H 29875 16325 50  0001 C CNN "Vendor PN"
+	1    29875 16325
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	29875 16475 29875 16550
+$Comp
+L Device:D D32
+U 1 1 796F071D
+P 30325 16750
+F 0 "D32" V 30279 16830 50  0000 L CNN
+F 1 "5A" V 30370 16830 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 30325 16750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/vs_5ech06_m3-1769535.pdf" H 30325 16750 50  0001 C CNN
+F 4 "0.98" H 30325 16750 50  0001 C CNN "Cost"
+F 5 "VS-5ECH06-M3/9AT" H 30325 16750 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/VS-5ECH06-M3-9AT?qs=1FzmF4gO8okPI3ZFizAqng%3D%3D" H 30325 16750 50  0001 C CNN "Vendor Link"
+F 7 "78-VS-5ECH06-M3/9AT" H 30325 16750 50  0001 C CNN "Vendor PN"
+	1    30325 16750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	30325 16550 29875 16550
+Connection ~ 29875 16550
+Wire Wire Line
+	29875 16550 29875 16575
+Wire Wire Line
+	29875 16875 29875 16975
+Wire Wire Line
+	30325 16550 30325 16600
+Wire Wire Line
+	30325 16900 30325 16975
+Wire Wire Line
+	30325 16975 29875 16975
+Wire Wire Line
+	30325 16975 30450 16975
+Connection ~ 30325 16975
+$Comp
+L power:+24V #PWR0254
+U 1 1 796F072D
+P 29400 15800
+F 0 "#PWR0254" H 29400 15650 50  0001 C CNN
+F 1 "+24V" H 29415 15973 50  0000 C CNN
+F 2 "" H 29400 15800 50  0001 C CNN
+F 3 "" H 29400 15800 50  0001 C CNN
+	1    29400 15800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0233
+U 1 1 796F0733
+P 28250 16325
+F 0 "#PWR0233" H 28250 16175 50  0001 C CNN
+F 1 "+5V" H 28265 16498 50  0000 C CNN
+F 2 "" H 28250 16325 50  0001 C CNN
+F 3 "" H 28250 16325 50  0001 C CNN
+	1    28250 16325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0238
+U 1 1 796F0739
+P 28450 16325
+F 0 "#PWR0238" H 28450 16175 50  0001 C CNN
+F 1 "+5V" H 28465 16498 50  0000 C CNN
+F 2 "" H 28450 16325 50  0001 C CNN
+F 3 "" H 28450 16325 50  0001 C CNN
+	1    28450 16325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0249
+U 1 1 796F073F
+P 29000 15800
+F 0 "#PWR0249" H 29000 15650 50  0001 C CNN
+F 1 "+5V" H 29015 15973 50  0000 C CNN
+F 2 "" H 29000 15800 50  0001 C CNN
+F 3 "" H 29000 15800 50  0001 C CNN
+	1    29000 15800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:QM6015D Q43
+U 1 1 796F074F
+P 29300 16225
+F 0 "Q43" H 29504 16179 50  0000 L CNN
+F 1 "RD3P130S" H 29450 16400 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 29500 16150 50  0001 L CIN
+F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rd3p130spfratl-e.pdf" V 29300 16225 50  0001 L CNN
+F 4 "1.629" H 29300 16225 50  0001 C CNN "Cost"
+F 5 "RD3P130SPFRATL" H 29300 16225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.zaikostore.com/zaikostore/en/stockDetail?stockID=st46295645" H 29300 16225 50  0001 C CNN "Vendor Link"
+F 7 "RD3P130SPFRATL" H 29300 16225 50  0001 C CNN "Vendor PN"
+	1    29300 16225
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R155
+U 1 1 796F0759
+P 29000 16025
+F 0 "R155" H 28930 15979 50  0000 R CNN
+F 1 "10K" H 28930 16070 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 28930 16025 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 29000 16025 50  0001 C CNN
+F 4 "0.10	" H 29000 16025 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 29000 16025 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 29000 16025 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 29000 16025 50  0001 C CNN "Vendor PN"
+	1    29000 16025
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	29100 16225 29000 16225
+Wire Wire Line
+	29000 16225 29000 16675
+Wire Wire Line
+	29000 15800 29000 15875
+Wire Wire Line
+	29000 16175 29000 16225
+Connection ~ 29000 16225
+Wire Wire Line
+	29400 15800 29400 15975
+Wire Wire Line
+	29875 15975 29400 15975
+Wire Wire Line
+	29875 15975 29875 16175
+Connection ~ 29400 15975
+Wire Wire Line
+	29400 15975 29400 16025
+Wire Wire Line
+	29875 16975 29400 16975
+Wire Wire Line
+	29400 16975 29400 16425
+Connection ~ 29875 16975
+$Comp
+L Device:R R134
+U 1 1 796F083D
+P 30850 19300
+F 0 "R134" V 30643 19300 50  0000 C CNN
+F 1 "180" V 30734 19300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 30780 19300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 30850 19300 50  0001 C CNN
+F 4 "0.10	" H 30850 19300 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD1800F" H 30850 19300 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD1800F?qs=HhNNkgKj039bxTQtK3h5%252BQ%3D%3D" H 30850 19300 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD1800F" H 30850 19300 50  0001 C CNN "Vendor PN"
+	1    30850 19300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	31000 19300 31150 19300
+Wire Wire Line
+	30625 19300 30700 19300
+$Comp
+L power:GND #PWR0119
+U 1 1 796F0845
+P 31100 19525
+F 0 "#PWR0119" H 31100 19275 50  0001 C CNN
+F 1 "GND" H 31105 19352 50  0000 C CNN
+F 2 "" H 31100 19525 50  0001 C CNN
+F 3 "" H 31100 19525 50  0001 C CNN
+	1    31100 19525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN10H220L Q34
+U 1 1 796F084F
+P 32450 19300
+F 0 "Q34" H 32654 19346 50  0000 L CNN
+F 1 "DMN10H220L" H 32550 19125 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 32650 19225 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/lcsc/1810010612_Diodes-Incorporated-DMN10H220L-7_C102615.pdf" H 32450 19300 50  0001 L CNN
+F 4 "0.18" H 32450 19300 50  0001 C CNN "Cost"
+F 5 "DMN10H220L-7" H 32450 19300 50  0001 C CNN "Mfg PN"
+F 6 "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMN10H220L-7_C102615.html" H 32450 19300 50  0001 C CNN "Vendor Link"
+F 7 "C102615" H 32450 19300 50  0001 C CNN "Vendor PN"
+	1    32450 19300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R146
+U 1 1 796F0859
+P 32225 19600
+F 0 "R146" H 32155 19554 50  0000 R CNN
+F 1 "100K" H 32155 19645 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 32155 19600 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 32225 19600 50  0001 C CNN
+F 4 "0.10	" H 32225 19600 50  0001 C CNN "Cost"
+F 5 "RC0603JR-07100KL" H 32225 19600 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-07100KL?qs=2cAdsCoAWRG9Rhqklpdeqg%3D%3D" H 32225 19600 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-07100KL" H 32225 19600 50  0001 C CNN "Vendor PN"
+	1    32225 19600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:HCPL-0600 U16
+U 1 1 796F0863
+P 31450 19300
+F 0 "U16" H 31450 19767 50  0000 C CNN
+F 1 "HCPL-0600" H 31450 19676 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 31450 18800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/678/AVGO_S_A0011438143_1-2524870.pdf" H 30600 19900 50  0001 C CNN
+F 4 "3.63	" H 31450 19300 50  0001 C CNN "Cost"
+F 5 "HCPL-0600" H 31450 19300 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Broadcom-Avago/HCPL-0600?qs=xnajaXqBF99WEoYcFXgJxQ%3D%3D" H 31450 19300 50  0001 C CNN "Vendor Link"
+F 7 "630-HCPL-0600" H 31450 19300 50  0001 C CNN "Vendor PN"
+	1    31450 19300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0241
+U 1 1 796F0869
+P 32225 19825
+F 0 "#PWR0241" H 32225 19575 50  0001 C CNN
+F 1 "GND" H 32230 19652 50  0000 C CNN
+F 2 "" H 32225 19825 50  0001 C CNN
+F 3 "" H 32225 19825 50  0001 C CNN
+	1    32225 19825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	31100 19525 31100 19500
+Wire Wire Line
+	31100 19500 31150 19500
+$Comp
+L Device:R R141
+U 1 1 796F0875
+P 32000 19300
+F 0 "R141" V 32100 19300 50  0000 R CNN
+F 1 "150" V 32000 19375 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 31930 19300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 32000 19300 50  0001 C CNN
+F 4 "0.10	" H 32000 19300 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 32000 19300 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 32000 19300 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 32000 19300 50  0001 C CNN "Vendor PN"
+	1    32000 19300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	31750 19300 31800 19300
+Wire Wire Line
+	32150 19300 32225 19300
+Wire Wire Line
+	32225 19300 32225 19450
+Connection ~ 32225 19300
+Wire Wire Line
+	32225 19300 32250 19300
+Wire Wire Line
+	32225 19750 32225 19825
+$Comp
+L power:GND #PWR0248
+U 1 1 796F0881
+P 32550 19825
+F 0 "#PWR0248" H 32550 19575 50  0001 C CNN
+F 1 "GND" H 32555 19652 50  0000 C CNN
+F 2 "" H 32550 19825 50  0001 C CNN
+F 3 "" H 32550 19825 50  0001 C CNN
+	1    32550 19825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	32550 19825 32550 19500
+Wire Wire Line
+	31800 19100 31750 19100
+$Comp
+L power:GND #PWR0232
+U 1 1 796F0889
+P 31800 19525
+F 0 "#PWR0232" H 31800 19275 50  0001 C CNN
+F 1 "GND" H 31805 19352 50  0000 C CNN
+F 2 "" H 31800 19525 50  0001 C CNN
+F 3 "" H 31800 19525 50  0001 C CNN
+	1    31800 19525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	31800 19525 31800 19500
+Wire Wire Line
+	31800 19500 31750 19500
+Wire Wire Line
+	31800 19200 31800 19100
+Wire Wire Line
+	31750 19200 31800 19200
+Connection ~ 31800 19100
+$Comp
+L Device:R R140
+U 1 1 796F0898
+P 32000 18975
+F 0 "R140" H 31930 18929 50  0000 R CNN
+F 1 "3.3K" H 31930 19020 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 31930 18975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 32000 18975 50  0001 C CNN
+F 4 "0.10	" H 32000 18975 50  0001 C CNN "Cost"
+F 5 "RC0603JR-103K3L" H 32000 18975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-103K3L?qs=IuGqVx9wL0LKNSLR70cQjA%3D%3D" H 32000 18975 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-103K3L" H 32000 18975 50  0001 C CNN "Vendor PN"
+	1    32000 18975
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	31800 18750 31800 19100
+Wire Wire Line
+	32000 18750 32000 18825
+Wire Wire Line
+	32000 19125 32000 19225
+Wire Wire Line
+	32000 19225 31800 19225
+Wire Wire Line
+	31800 19225 31800 19300
+Connection ~ 31800 19300
+Wire Wire Line
+	31800 19300 31850 19300
+$Comp
+L Device:R R158
+U 1 1 796F08A9
+P 33425 19150
+F 0 "R158" H 33355 19104 50  0000 R CNN
+F 1 "100" H 33355 19195 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 33355 19150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 33425 19150 50  0001 C CNN
+F 4 "0.10	" H 33425 19150 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 33425 19150 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 33425 19150 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 33425 19150 50  0001 C CNN "Vendor PN"
+	1    33425 19150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C36
+U 1 1 796F08B3
+P 33425 18750
+F 0 "C36" H 33310 18704 50  0000 R CNN
+F 1 "0.01uF" H 33310 18795 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 33463 18600 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf" H 33425 18750 50  0001 C CNN
+F 4 "0.10" H 33425 18750 50  0001 C CNN "Cost"
+F 5 "0603B103K100CT" H 33425 18750 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Walsin/0603B103K100CT?qs=ZrPdAQfJ6DMGaCVYT7SqlA%3D%3D" H 33425 18750 50  0001 C CNN "Vendor Link"
+F 7 "791-0603B103K100CT" H 33425 18750 50  0001 C CNN "Vendor PN"
+	1    33425 18750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	33425 18900 33425 18975
+$Comp
+L Device:D D31
+U 1 1 796F08BE
+P 33875 19175
+F 0 "D31" V 33829 19255 50  0000 L CNN
+F 1 "5A" V 33920 19255 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 33875 19175 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/vs_5ech06_m3-1769535.pdf" H 33875 19175 50  0001 C CNN
+F 4 "0.98" H 33875 19175 50  0001 C CNN "Cost"
+F 5 "VS-5ECH06-M3/9AT" H 33875 19175 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/VS-5ECH06-M3-9AT?qs=1FzmF4gO8okPI3ZFizAqng%3D%3D" H 33875 19175 50  0001 C CNN "Vendor Link"
+F 7 "78-VS-5ECH06-M3/9AT" H 33875 19175 50  0001 C CNN "Vendor PN"
+	1    33875 19175
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	33875 18975 33425 18975
+Connection ~ 33425 18975
+Wire Wire Line
+	33425 18975 33425 19000
+Wire Wire Line
+	33425 19300 33425 19400
+Wire Wire Line
+	33875 18975 33875 19025
+Wire Wire Line
+	33875 19325 33875 19400
+Wire Wire Line
+	33875 19400 33425 19400
+Wire Wire Line
+	33875 19400 34000 19400
+Connection ~ 33875 19400
+$Comp
+L power:+24V #PWR0253
+U 1 1 796F08CD
+P 32950 18225
+F 0 "#PWR0253" H 32950 18075 50  0001 C CNN
+F 1 "+24V" H 32965 18398 50  0000 C CNN
+F 2 "" H 32950 18225 50  0001 C CNN
+F 3 "" H 32950 18225 50  0001 C CNN
+	1    32950 18225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0231
+U 1 1 796F08D3
+P 31800 18750
+F 0 "#PWR0231" H 31800 18600 50  0001 C CNN
+F 1 "+5V" H 31815 18923 50  0000 C CNN
+F 2 "" H 31800 18750 50  0001 C CNN
+F 3 "" H 31800 18750 50  0001 C CNN
+	1    31800 18750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0237
+U 1 1 796F08D9
+P 32000 18750
+F 0 "#PWR0237" H 32000 18600 50  0001 C CNN
+F 1 "+5V" H 32015 18923 50  0000 C CNN
+F 2 "" H 32000 18750 50  0001 C CNN
+F 3 "" H 32000 18750 50  0001 C CNN
+	1    32000 18750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0247
+U 1 1 796F08DF
+P 32550 18225
+F 0 "#PWR0247" H 32550 18075 50  0001 C CNN
+F 1 "+5V" H 32565 18398 50  0000 C CNN
+F 2 "" H 32550 18225 50  0001 C CNN
+F 3 "" H 32550 18225 50  0001 C CNN
+	1    32550 18225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:QM6015D Q42
+U 1 1 796F08E9
+P 32850 18650
+F 0 "Q42" H 33054 18604 50  0000 L CNN
+F 1 "RD3P130S" H 33000 18825 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 33050 18575 50  0001 L CIN
+F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rd3p130spfratl-e.pdf" V 32850 18650 50  0001 L CNN
+F 4 "1.629" H 32850 18650 50  0001 C CNN "Cost"
+F 5 "RD3P130SPFRATL" H 32850 18650 50  0001 C CNN "Mfg PN"
+F 6 "https://www.zaikostore.com/zaikostore/en/stockDetail?stockID=st46295645" H 32850 18650 50  0001 C CNN "Vendor Link"
+F 7 "RD3P130SPFRATL" H 32850 18650 50  0001 C CNN "Vendor PN"
+	1    32850 18650
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R154
+U 1 1 796F08F3
+P 32550 18450
+F 0 "R154" H 32480 18404 50  0000 R CNN
+F 1 "10K" H 32480 18495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 32480 18450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 32550 18450 50  0001 C CNN
+F 4 "0.10	" H 32550 18450 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 32550 18450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 32550 18450 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 32550 18450 50  0001 C CNN "Vendor PN"
+	1    32550 18450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	32650 18650 32550 18650
+Wire Wire Line
+	32550 18650 32550 19100
+Wire Wire Line
+	32550 18225 32550 18300
+Wire Wire Line
+	32550 18600 32550 18650
+Connection ~ 32550 18650
+Wire Wire Line
+	32950 18225 32950 18400
+Wire Wire Line
+	33425 18400 32950 18400
+Wire Wire Line
+	33425 18400 33425 18600
+Connection ~ 32950 18400
+Wire Wire Line
+	32950 18400 32950 18450
+Wire Wire Line
+	33425 19400 32950 19400
+Wire Wire Line
+	32950 19400 32950 18850
+Connection ~ 33425 19400
+$Comp
+L Device:R R225
+U 1 1 7AE8B35D
+P 44725 16900
+F 0 "R225" V 44518 16900 50  0000 C CNN
+F 1 "180" V 44609 16900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 44655 16900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 44725 16900 50  0001 C CNN
+F 4 "0.10	" H 44725 16900 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD1800F" H 44725 16900 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD1800F?qs=HhNNkgKj039bxTQtK3h5%252BQ%3D%3D" H 44725 16900 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD1800F" H 44725 16900 50  0001 C CNN "Vendor PN"
+	1    44725 16900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	44875 16900 45025 16900
+Wire Wire Line
+	44500 16900 44575 16900
+$Comp
+L power:GND #PWR0298
+U 1 1 7AE8B366
+P 44975 17125
+F 0 "#PWR0298" H 44975 16875 50  0001 C CNN
+F 1 "GND" H 44980 16952 50  0000 C CNN
+F 2 "" H 44975 17125 50  0001 C CNN
+F 3 "" H 44975 17125 50  0001 C CNN
+	1    44975 17125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN10H220L Q61
+U 1 1 7AE8B370
+P 46325 16900
+F 0 "Q61" H 46529 16946 50  0000 L CNN
+F 1 "DMN10H220L" H 46425 16725 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 46525 16825 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/lcsc/1810010612_Diodes-Incorporated-DMN10H220L-7_C102615.pdf" H 46325 16900 50  0001 L CNN
+F 4 "0.18" H 46325 16900 50  0001 C CNN "Cost"
+F 5 "DMN10H220L-7" H 46325 16900 50  0001 C CNN "Mfg PN"
+F 6 "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMN10H220L-7_C102615.html" H 46325 16900 50  0001 C CNN "Vendor Link"
+F 7 "C102615" H 46325 16900 50  0001 C CNN "Vendor PN"
+	1    46325 16900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R243
+U 1 1 7AE8B37A
+P 46100 17200
+F 0 "R243" H 46030 17154 50  0000 R CNN
+F 1 "100K" H 46030 17245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 46030 17200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 46100 17200 50  0001 C CNN
+F 4 "0.10	" H 46100 17200 50  0001 C CNN "Cost"
+F 5 "RC0603JR-07100KL" H 46100 17200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-07100KL?qs=2cAdsCoAWRG9Rhqklpdeqg%3D%3D" H 46100 17200 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-07100KL" H 46100 17200 50  0001 C CNN "Vendor PN"
+	1    46100 17200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:HCPL-0600 U27
+U 1 1 7AE8B384
+P 45325 16900
+F 0 "U27" H 45325 17367 50  0000 C CNN
+F 1 "HCPL-0600" H 45325 17276 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 45325 16400 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/678/AVGO_S_A0011438143_1-2524870.pdf" H 44475 17500 50  0001 C CNN
+F 4 "3.63	" H 45325 16900 50  0001 C CNN "Cost"
+F 5 "HCPL-0600" H 45325 16900 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Broadcom-Avago/HCPL-0600?qs=xnajaXqBF99WEoYcFXgJxQ%3D%3D" H 45325 16900 50  0001 C CNN "Vendor Link"
+F 7 "630-HCPL-0600" H 45325 16900 50  0001 C CNN "Vendor PN"
+	1    45325 16900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0390
+U 1 1 7AE8B38A
+P 46100 17425
+F 0 "#PWR0390" H 46100 17175 50  0001 C CNN
+F 1 "GND" H 46105 17252 50  0000 C CNN
+F 2 "" H 46100 17425 50  0001 C CNN
+F 3 "" H 46100 17425 50  0001 C CNN
+	1    46100 17425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	44975 17125 44975 17100
+Wire Wire Line
+	44975 17100 45025 17100
+$Comp
+L Device:R R239
+U 1 1 7AE8B396
+P 45875 16900
+F 0 "R239" V 45975 16900 50  0000 R CNN
+F 1 "150" V 45875 16975 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 45805 16900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 45875 16900 50  0001 C CNN
+F 4 "0.10	" H 45875 16900 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 45875 16900 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 45875 16900 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 45875 16900 50  0001 C CNN "Vendor PN"
+	1    45875 16900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	45625 16900 45675 16900
+Wire Wire Line
+	46025 16900 46100 16900
+Wire Wire Line
+	46100 16900 46100 17050
+Connection ~ 46100 16900
+Wire Wire Line
+	46100 16900 46125 16900
+Wire Wire Line
+	46100 17350 46100 17425
+$Comp
+L power:GND #PWR0395
+U 1 1 7AE8B3A2
+P 46425 17425
+F 0 "#PWR0395" H 46425 17175 50  0001 C CNN
+F 1 "GND" H 46430 17252 50  0000 C CNN
+F 2 "" H 46425 17425 50  0001 C CNN
+F 3 "" H 46425 17425 50  0001 C CNN
+	1    46425 17425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	46425 17425 46425 17100
+Wire Wire Line
+	45675 16700 45625 16700
+$Comp
+L power:GND #PWR0381
+U 1 1 7AE8B3AA
+P 45675 17125
+F 0 "#PWR0381" H 45675 16875 50  0001 C CNN
+F 1 "GND" H 45680 16952 50  0000 C CNN
+F 2 "" H 45675 17125 50  0001 C CNN
+F 3 "" H 45675 17125 50  0001 C CNN
+	1    45675 17125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	45675 17125 45675 17100
+Wire Wire Line
+	45675 17100 45625 17100
+Wire Wire Line
+	45675 16800 45675 16700
+Wire Wire Line
+	45625 16800 45675 16800
+Connection ~ 45675 16700
+$Comp
+L Device:R R238
+U 1 1 7AE8B3B9
+P 45875 16575
+F 0 "R238" H 45805 16529 50  0000 R CNN
+F 1 "3.3K" H 45805 16620 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 45805 16575 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 45875 16575 50  0001 C CNN
+F 4 "0.10	" H 45875 16575 50  0001 C CNN "Cost"
+F 5 "RC0603JR-103K3L" H 45875 16575 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-103K3L?qs=IuGqVx9wL0LKNSLR70cQjA%3D%3D" H 45875 16575 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-103K3L" H 45875 16575 50  0001 C CNN "Vendor PN"
+	1    45875 16575
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	45675 16350 45675 16700
+Wire Wire Line
+	45875 16350 45875 16425
+Wire Wire Line
+	45875 16725 45875 16825
+Wire Wire Line
+	45875 16825 45675 16825
+Wire Wire Line
+	45675 16825 45675 16900
+Connection ~ 45675 16900
+Wire Wire Line
+	45675 16900 45725 16900
+$Comp
+L Device:R R249
+U 1 1 7AE8B3CA
+P 47300 16750
+F 0 "R249" H 47230 16704 50  0000 R CNN
+F 1 "100" H 47230 16795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 47230 16750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 47300 16750 50  0001 C CNN
+F 4 "0.10	" H 47300 16750 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 47300 16750 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 47300 16750 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 47300 16750 50  0001 C CNN "Vendor PN"
+	1    47300 16750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C57
+U 1 1 7AE8B3D4
+P 47300 16350
+F 0 "C57" H 47185 16304 50  0000 R CNN
+F 1 "0.01uF" H 47185 16395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 47338 16200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf" H 47300 16350 50  0001 C CNN
+F 4 "0.10" H 47300 16350 50  0001 C CNN "Cost"
+F 5 "0603B103K100CT" H 47300 16350 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Walsin/0603B103K100CT?qs=ZrPdAQfJ6DMGaCVYT7SqlA%3D%3D" H 47300 16350 50  0001 C CNN "Vendor Link"
+F 7 "791-0603B103K100CT" H 47300 16350 50  0001 C CNN "Vendor PN"
+	1    47300 16350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	47300 16500 47300 16575
+$Comp
+L Device:D D62
+U 1 1 7AE8B3DF
+P 47750 16775
+F 0 "D62" V 47704 16855 50  0000 L CNN
+F 1 "5A" V 47795 16855 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 47750 16775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/vs_5ech06_m3-1769535.pdf" H 47750 16775 50  0001 C CNN
+F 4 "0.98" H 47750 16775 50  0001 C CNN "Cost"
+F 5 "VS-5ECH06-M3/9AT" H 47750 16775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/VS-5ECH06-M3-9AT?qs=1FzmF4gO8okPI3ZFizAqng%3D%3D" H 47750 16775 50  0001 C CNN "Vendor Link"
+F 7 "78-VS-5ECH06-M3/9AT" H 47750 16775 50  0001 C CNN "Vendor PN"
+	1    47750 16775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	47750 16575 47300 16575
+Connection ~ 47300 16575
+Wire Wire Line
+	47300 16575 47300 16600
+Wire Wire Line
+	47300 16900 47300 17000
+Wire Wire Line
+	47750 16575 47750 16625
+Wire Wire Line
+	47750 16925 47750 17000
+Wire Wire Line
+	47750 17000 47300 17000
+Wire Wire Line
+	47750 17000 47875 17000
+Connection ~ 47750 17000
+$Comp
+L power:+24V #PWR0398
+U 1 1 7AE8B3EF
+P 46825 15825
+F 0 "#PWR0398" H 46825 15675 50  0001 C CNN
+F 1 "+24V" H 46840 15998 50  0000 C CNN
+F 2 "" H 46825 15825 50  0001 C CNN
+F 3 "" H 46825 15825 50  0001 C CNN
+	1    46825 15825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0380
+U 1 1 7AE8B3F5
+P 45675 16350
+F 0 "#PWR0380" H 45675 16200 50  0001 C CNN
+F 1 "+5V" H 45690 16523 50  0000 C CNN
+F 2 "" H 45675 16350 50  0001 C CNN
+F 3 "" H 45675 16350 50  0001 C CNN
+	1    45675 16350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0384
+U 1 1 7AE8B3FB
+P 45875 16350
+F 0 "#PWR0384" H 45875 16200 50  0001 C CNN
+F 1 "+5V" H 45890 16523 50  0000 C CNN
+F 2 "" H 45875 16350 50  0001 C CNN
+F 3 "" H 45875 16350 50  0001 C CNN
+	1    45875 16350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0394
+U 1 1 7AE8B401
+P 46425 15825
+F 0 "#PWR0394" H 46425 15675 50  0001 C CNN
+F 1 "+5V" H 46440 15998 50  0000 C CNN
+F 2 "" H 46425 15825 50  0001 C CNN
+F 3 "" H 46425 15825 50  0001 C CNN
+	1    46425 15825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:QM6015D Q64
+U 1 1 7AE8B411
+P 46725 16250
+F 0 "Q64" H 46929 16204 50  0000 L CNN
+F 1 "RD3P130S" H 46875 16425 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 46925 16175 50  0001 L CIN
+F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rd3p130spfratl-e.pdf" V 46725 16250 50  0001 L CNN
+F 4 "1.629" H 46725 16250 50  0001 C CNN "Cost"
+F 5 "RD3P130SPFRATL" H 46725 16250 50  0001 C CNN "Mfg PN"
+F 6 "https://www.zaikostore.com/zaikostore/en/stockDetail?stockID=st46295645" H 46725 16250 50  0001 C CNN "Vendor Link"
+F 7 "RD3P130SPFRATL" H 46725 16250 50  0001 C CNN "Vendor PN"
+	1    46725 16250
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R245
+U 1 1 7AE8B41B
+P 46425 16050
+F 0 "R245" H 46355 16004 50  0000 R CNN
+F 1 "10K" H 46355 16095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 46355 16050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 46425 16050 50  0001 C CNN
+F 4 "0.10	" H 46425 16050 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 46425 16050 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 46425 16050 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 46425 16050 50  0001 C CNN "Vendor PN"
+	1    46425 16050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	46525 16250 46425 16250
+Wire Wire Line
+	46425 16250 46425 16700
+Wire Wire Line
+	46425 15825 46425 15900
+Wire Wire Line
+	46425 16200 46425 16250
+Connection ~ 46425 16250
+Wire Wire Line
+	46825 15825 46825 16000
+Wire Wire Line
+	47300 16000 46825 16000
+Wire Wire Line
+	47300 16000 47300 16200
+Connection ~ 46825 16000
+Wire Wire Line
+	46825 16000 46825 16050
+Wire Wire Line
+	47300 17000 46825 17000
+Wire Wire Line
+	46825 17000 46825 16450
+Connection ~ 47300 17000
+$Comp
+L Device:R R224
+U 1 1 7AE8B4FF
+P 48350 19150
+F 0 "R224" V 48143 19150 50  0000 C CNN
+F 1 "180" V 48234 19150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 48280 19150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 48350 19150 50  0001 C CNN
+F 4 "0.10	" H 48350 19150 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD1800F" H 48350 19150 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD1800F?qs=HhNNkgKj039bxTQtK3h5%252BQ%3D%3D" H 48350 19150 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD1800F" H 48350 19150 50  0001 C CNN "Vendor PN"
+	1    48350 19150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	48500 19150 48650 19150
+Wire Wire Line
+	48125 19150 48200 19150
+$Comp
+L power:GND #PWR0297
+U 1 1 7AE8B507
+P 48600 19375
+F 0 "#PWR0297" H 48600 19125 50  0001 C CNN
+F 1 "GND" H 48605 19202 50  0000 C CNN
+F 2 "" H 48600 19375 50  0001 C CNN
+F 3 "" H 48600 19375 50  0001 C CNN
+	1    48600 19375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN10H220L Q59
+U 1 1 7AE8B511
+P 49950 19150
+F 0 "Q59" H 50154 19196 50  0000 L CNN
+F 1 "DMN10H220L" H 50050 18975 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 50150 19075 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/lcsc/1810010612_Diodes-Incorporated-DMN10H220L-7_C102615.pdf" H 49950 19150 50  0001 L CNN
+F 4 "0.18" H 49950 19150 50  0001 C CNN "Cost"
+F 5 "DMN10H220L-7" H 49950 19150 50  0001 C CNN "Mfg PN"
+F 6 "https://lcsc.com/product-detail/MOSFETs_Diodes-Incorporated-DMN10H220L-7_C102615.html" H 49950 19150 50  0001 C CNN "Vendor Link"
+F 7 "C102615" H 49950 19150 50  0001 C CNN "Vendor PN"
+	1    49950 19150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R242
+U 1 1 7AE8B51B
+P 49725 19450
+F 0 "R242" H 49655 19404 50  0000 R CNN
+F 1 "100K" H 49655 19495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 49655 19450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 49725 19450 50  0001 C CNN
+F 4 "0.10	" H 49725 19450 50  0001 C CNN "Cost"
+F 5 "RC0603JR-07100KL" H 49725 19450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-07100KL?qs=2cAdsCoAWRG9Rhqklpdeqg%3D%3D" H 49725 19450 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-07100KL" H 49725 19450 50  0001 C CNN "Vendor PN"
+	1    49725 19450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Isolator:HCPL-0600 U26
+U 1 1 7AE8B525
+P 48950 19150
+F 0 "U26" H 48950 19617 50  0000 C CNN
+F 1 "HCPL-0600" H 48950 19526 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 48950 18650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/678/AVGO_S_A0011438143_1-2524870.pdf" H 48100 19750 50  0001 C CNN
+F 4 "3.63	" H 48950 19150 50  0001 C CNN "Cost"
+F 5 "HCPL-0600" H 48950 19150 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Broadcom-Avago/HCPL-0600?qs=xnajaXqBF99WEoYcFXgJxQ%3D%3D" H 48950 19150 50  0001 C CNN "Vendor Link"
+F 7 "630-HCPL-0600" H 48950 19150 50  0001 C CNN "Vendor PN"
+	1    48950 19150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0389
+U 1 1 7AE8B52B
+P 49725 19675
+F 0 "#PWR0389" H 49725 19425 50  0001 C CNN
+F 1 "GND" H 49730 19502 50  0000 C CNN
+F 2 "" H 49725 19675 50  0001 C CNN
+F 3 "" H 49725 19675 50  0001 C CNN
+	1    49725 19675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	48600 19375 48600 19350
+Wire Wire Line
+	48600 19350 48650 19350
+$Comp
+L Device:R R237
+U 1 1 7AE8B537
+P 49500 19150
+F 0 "R237" V 49600 19150 50  0000 R CNN
+F 1 "150" V 49500 19225 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 49430 19150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/cr-1858361.pdf" H 49500 19150 50  0001 C CNN
+F 4 "0.10	" H 49500 19150 50  0001 C CNN "Cost"
+F 5 "CR0603-JW-151ELF" H 49500 19150 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Bourns/CR0603-JW-151ELF?qs=sGAEpiMZZMtlubZbdhIBIOIecdKRTybvyEaUOxL5Gq4%3D" H 49500 19150 50  0001 C CNN "Vendor Link"
+F 7 "652-CR0603-JW-151ELF" H 49500 19150 50  0001 C CNN "Vendor PN"
+	1    49500 19150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	49250 19150 49300 19150
+Wire Wire Line
+	49650 19150 49725 19150
+Wire Wire Line
+	49725 19150 49725 19300
+Connection ~ 49725 19150
+Wire Wire Line
+	49725 19150 49750 19150
+Wire Wire Line
+	49725 19600 49725 19675
+$Comp
+L power:GND #PWR0392
+U 1 1 7AE8B543
+P 50050 19675
+F 0 "#PWR0392" H 50050 19425 50  0001 C CNN
+F 1 "GND" H 50055 19502 50  0000 C CNN
+F 2 "" H 50050 19675 50  0001 C CNN
+F 3 "" H 50050 19675 50  0001 C CNN
+	1    50050 19675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	50050 19675 50050 19350
+Wire Wire Line
+	49300 18950 49250 18950
+$Comp
+L power:GND #PWR0370
+U 1 1 7AE8B54B
+P 49300 19375
+F 0 "#PWR0370" H 49300 19125 50  0001 C CNN
+F 1 "GND" H 49305 19202 50  0000 C CNN
+F 2 "" H 49300 19375 50  0001 C CNN
+F 3 "" H 49300 19375 50  0001 C CNN
+	1    49300 19375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	49300 19375 49300 19350
+Wire Wire Line
+	49300 19350 49250 19350
+Wire Wire Line
+	49300 19050 49300 18950
+Wire Wire Line
+	49250 19050 49300 19050
+Connection ~ 49300 18950
+$Comp
+L Device:R R236
+U 1 1 7AE8B55A
+P 49500 18825
+F 0 "R236" H 49430 18779 50  0000 R CNN
+F 1 "3.3K" H 49430 18870 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 49430 18825 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 49500 18825 50  0001 C CNN
+F 4 "0.10	" H 49500 18825 50  0001 C CNN "Cost"
+F 5 "RC0603JR-103K3L" H 49500 18825 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603JR-103K3L?qs=IuGqVx9wL0LKNSLR70cQjA%3D%3D" H 49500 18825 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603JR-103K3L" H 49500 18825 50  0001 C CNN "Vendor PN"
+	1    49500 18825
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	49300 18600 49300 18950
+Wire Wire Line
+	49500 18600 49500 18675
+Wire Wire Line
+	49500 18975 49500 19075
+Wire Wire Line
+	49500 19075 49300 19075
+Wire Wire Line
+	49300 19075 49300 19150
+Connection ~ 49300 19150
+Wire Wire Line
+	49300 19150 49350 19150
+$Comp
+L Device:R R248
+U 1 1 7AE8B56B
+P 50925 19000
+F 0 "R248" H 50855 18954 50  0000 R CNN
+F 1 "100" H 50855 19045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 50855 19000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 50925 19000 50  0001 C CNN
+F 4 "0.10	" H 50925 19000 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 50925 19000 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 50925 19000 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 50925 19000 50  0001 C CNN "Vendor PN"
+	1    50925 19000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C56
+U 1 1 7AE8B575
+P 50925 18600
+F 0 "C56" H 50810 18554 50  0000 R CNN
+F 1 "0.01uF" H 50810 18645 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 50963 18450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/210/WTC_MLCC_General_Purpose-1534899.pdf" H 50925 18600 50  0001 C CNN
+F 4 "0.10" H 50925 18600 50  0001 C CNN "Cost"
+F 5 "0603B103K100CT" H 50925 18600 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Walsin/0603B103K100CT?qs=ZrPdAQfJ6DMGaCVYT7SqlA%3D%3D" H 50925 18600 50  0001 C CNN "Vendor Link"
+F 7 "791-0603B103K100CT" H 50925 18600 50  0001 C CNN "Vendor PN"
+	1    50925 18600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	50925 18750 50925 18825
+$Comp
+L Device:D D61
+U 1 1 7AE8B580
+P 51375 19025
+F 0 "D61" V 51329 19105 50  0000 L CNN
+F 1 "5A" V 51420 19105 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 51375 19025 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/vs_5ech06_m3-1769535.pdf" H 51375 19025 50  0001 C CNN
+F 4 "0.98" H 51375 19025 50  0001 C CNN "Cost"
+F 5 "VS-5ECH06-M3/9AT" H 51375 19025 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/VS-5ECH06-M3-9AT?qs=1FzmF4gO8okPI3ZFizAqng%3D%3D" H 51375 19025 50  0001 C CNN "Vendor Link"
+F 7 "78-VS-5ECH06-M3/9AT" H 51375 19025 50  0001 C CNN "Vendor PN"
+	1    51375 19025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	51375 18825 50925 18825
+Connection ~ 50925 18825
+Wire Wire Line
+	50925 18825 50925 18850
+Wire Wire Line
+	50925 19150 50925 19250
+Wire Wire Line
+	51375 18825 51375 18875
+Wire Wire Line
+	51375 19175 51375 19250
+Wire Wire Line
+	51375 19250 50925 19250
+Wire Wire Line
+	51375 19250 51500 19250
+Connection ~ 51375 19250
+$Comp
+L power:+24V #PWR0397
+U 1 1 7AE8B58F
+P 50450 18075
+F 0 "#PWR0397" H 50450 17925 50  0001 C CNN
+F 1 "+24V" H 50465 18248 50  0000 C CNN
+F 2 "" H 50450 18075 50  0001 C CNN
+F 3 "" H 50450 18075 50  0001 C CNN
+	1    50450 18075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0369
+U 1 1 7AE8B595
+P 49300 18600
+F 0 "#PWR0369" H 49300 18450 50  0001 C CNN
+F 1 "+5V" H 49315 18773 50  0000 C CNN
+F 2 "" H 49300 18600 50  0001 C CNN
+F 3 "" H 49300 18600 50  0001 C CNN
+	1    49300 18600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0383
+U 1 1 7AE8B59B
+P 49500 18600
+F 0 "#PWR0383" H 49500 18450 50  0001 C CNN
+F 1 "+5V" H 49515 18773 50  0000 C CNN
+F 2 "" H 49500 18600 50  0001 C CNN
+F 3 "" H 49500 18600 50  0001 C CNN
+	1    49500 18600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0391
+U 1 1 7AE8B5A1
+P 50050 18075
+F 0 "#PWR0391" H 50050 17925 50  0001 C CNN
+F 1 "+5V" H 50065 18248 50  0000 C CNN
+F 2 "" H 50050 18075 50  0001 C CNN
+F 3 "" H 50050 18075 50  0001 C CNN
+	1    50050 18075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:QM6015D Q63
+U 1 1 7AE8B5AB
+P 50350 18500
+F 0 "Q63" H 50554 18454 50  0000 L CNN
+F 1 "RD3P130S" H 50500 18675 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 50550 18425 50  0001 L CIN
+F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/rd3p130spfratl-e.pdf" V 50350 18500 50  0001 L CNN
+F 4 "1.629" H 50350 18500 50  0001 C CNN "Cost"
+F 5 "RD3P130SPFRATL" H 50350 18500 50  0001 C CNN "Mfg PN"
+F 6 "https://www.zaikostore.com/zaikostore/en/stockDetail?stockID=st46295645" H 50350 18500 50  0001 C CNN "Vendor Link"
+F 7 "RD3P130SPFRATL" H 50350 18500 50  0001 C CNN "Vendor PN"
+	1    50350 18500
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R244
+U 1 1 7AE8B5B5
+P 50050 18300
+F 0 "R244" H 49980 18254 50  0000 R CNN
+F 1 "10K" H 49980 18345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 49980 18300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 50050 18300 50  0001 C CNN
+F 4 "0.10	" H 50050 18300 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 50050 18300 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 50050 18300 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 50050 18300 50  0001 C CNN "Vendor PN"
+	1    50050 18300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	50150 18500 50050 18500
+Wire Wire Line
+	50050 18500 50050 18950
+Wire Wire Line
+	50050 18075 50050 18150
+Wire Wire Line
+	50050 18450 50050 18500
+Connection ~ 50050 18500
+Wire Wire Line
+	50450 18075 50450 18250
+Wire Wire Line
+	50925 18250 50450 18250
+Wire Wire Line
+	50925 18250 50925 18450
+Connection ~ 50450 18250
+Wire Wire Line
+	50450 18250 50450 18300
+Wire Wire Line
+	50925 19250 50450 19250
+Wire Wire Line
+	50450 19250 50450 18700
+Connection ~ 50925 19250
+NoConn ~ 3650 4900
+NoConn ~ 3650 5100
+NoConn ~ 3650 5200
+NoConn ~ 3650 5300
+NoConn ~ 3650 6700
+NoConn ~ 20825 5375
+NoConn ~ 20825 5275
+NoConn ~ 20825 5175
+NoConn ~ 20825 4975
+NoConn ~ 20825 6775
+NoConn ~ 20825 6675
+NoConn ~ 20825 6175
+NoConn ~ 20825 5975
+NoConn ~ 3650 5900
+NoConn ~ 3650 6100
+NoConn ~ 2400 6300
+NoConn ~ 2400 6400
+NoConn ~ 2400 6600
+NoConn ~ 3650 6600
+NoConn ~ 19575 6675
+NoConn ~ 19575 6475
+NoConn ~ 19575 6375
+NoConn ~ 36950 6425
+NoConn ~ 36950 6525
+NoConn ~ 36950 6725
+NoConn ~ 38200 6825
+NoConn ~ 38200 6725
+NoConn ~ 38200 6225
+NoConn ~ 38200 6025
+NoConn ~ 2350 17800
+NoConn ~ 2350 17700
+NoConn ~ 2350 18000
+NoConn ~ 3600 18100
+NoConn ~ 3600 18000
+NoConn ~ 3600 17500
+NoConn ~ 3600 17300
+NoConn ~ 3600 16300
+NoConn ~ 3600 16500
+NoConn ~ 3600 16600
+NoConn ~ 3600 16700
+NoConn ~ 19300 17450
+NoConn ~ 19300 17550
+NoConn ~ 19300 17750
+NoConn ~ 20550 17850
+NoConn ~ 20550 17750
+NoConn ~ 20550 17250
+NoConn ~ 20550 17050
+NoConn ~ 20550 16050
+NoConn ~ 20550 16250
+NoConn ~ 20550 16350
+NoConn ~ 20550 16450
+NoConn ~ 37925 16050
+NoConn ~ 37925 16350
+NoConn ~ 37925 16250
+NoConn ~ 37925 16450
+NoConn ~ 37925 17050
+NoConn ~ 37925 17250
+NoConn ~ 37925 17750
+NoConn ~ 37925 17850
+NoConn ~ 36675 17750
+NoConn ~ 36675 17550
+NoConn ~ 36675 17450
+Wire Wire Line
+	21450 17350 20550 17350
+Wire Wire Line
+	20550 17550 21750 17550
+Wire Wire Line
+	38775 17350 37925 17350
+Wire Wire Line
+	37925 17450 39075 17450
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J2
+U 1 1 63243572
+P 9850 1700
+F 0 "J2" H 9900 2817 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 9900 2726 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 9850 1700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/6/ENG_CD_103169_L2-1959168.pdf" H 9850 1700 50  0001 C CNN
+F 4 "11.25" H 9850 1700 50  0001 C CNN "Cost"
+F 5 "6-103169-8" H 9850 1700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/TE-Connectivity/6-103169-8?qs=qBUTEyc9%2FKpks9WOxSMTwA%3D%3D" H 9850 1700 50  0001 C CNN "Vendor Link"
+F 7 "571-6-103169-8" H 9850 1700 50  0001 C CNN "Vendor PN"
+	1    9850 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 900  10375 900 
+Wire Wire Line
+	10375 900  10375 750 
+Wire Wire Line
+	10150 1000 10375 1000
+Wire Wire Line
+	10375 1000 10375 1050
+Wire Wire Line
+	9575 900  9650 900 
+Wire Wire Line
+	9575 1000 9650 1000
+Wire Wire Line
+	9575 1100 9650 1100
+Wire Wire Line
+	9575 1300 9650 1300
+Wire Wire Line
+	9575 1400 9650 1400
+Wire Wire Line
+	9575 1500 9650 1500
+Wire Wire Line
+	9575 1700 9650 1700
+Wire Wire Line
+	9575 1800 9650 1800
+Wire Wire Line
+	9575 1900 9650 1900
+Text GLabel 8950 2100 0    50   Input ~ 0
+SDA-0
+Wire Wire Line
+	9575 2200 9650 2200
+Wire Wire Line
+	9575 2300 9650 2300
+Wire Wire Line
+	9575 2400 9650 2400
+Wire Wire Line
+	10150 1800 10225 1800
+Wire Wire Line
+	10150 1900 10225 1900
+Wire Wire Line
+	10150 2000 10225 2000
+Text GLabel 10900 2100 2    50   Input ~ 0
+SCL-0
+Wire Wire Line
+	10150 2700 10225 2700
+Wire Wire Line
+	10150 2600 10225 2600
+Wire Wire Line
+	10150 2500 10225 2500
+$Comp
+L power:GND #PWR033
+U 1 1 6326F4C9
+P 10375 1050
+F 0 "#PWR033" H 10375 800 50  0001 C CNN
+F 1 "GND" H 10380 877 50  0000 C CNN
+F 2 "" H 10375 1050 50  0001 C CNN
+F 3 "" H 10375 1050 50  0001 C CNN
+	1    10375 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 6327008E
+P 3075 4150
+F 0 "#PWR030" H 3075 3900 50  0001 C CNN
+F 1 "GND" H 3080 3977 50  0000 C CNN
+F 2 "" H 3075 4150 50  0001 C CNN
+F 3 "" H 3075 4150 50  0001 C CNN
+	1    3075 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 4150 3075 4050
+Wire Wire Line
+	3075 4050 3650 4050
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 631ACCC3
+P 14175 750
+F 0 "H1" H 14275 796 50  0000 L CNN
+F 1 "MountingHole" H 14275 705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5.5mm" H 14275 659 50  0001 L CNN
+F 3 "~" H 14175 750 50  0001 C CNN
+	1    14175 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 631AE28E
+P 14925 750
+F 0 "H3" H 15025 796 50  0000 L CNN
+F 1 "MountingHole" H 15025 705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5.5mm" H 14925 750 50  0001 C CNN
+F 3 "~" H 14925 750 50  0001 C CNN
+	1    14925 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 631AE5E3
+P 15650 750
+F 0 "H5" H 15750 796 50  0000 L CNN
+F 1 "MountingHole" H 15750 705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5.5mm" H 15650 750 50  0001 C CNN
+F 3 "~" H 15650 750 50  0001 C CNN
+	1    15650 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 631AF96E
+P 16375 750
+F 0 "H4" H 16475 796 50  0000 L CNN
+F 1 "MountingHole" H 16475 705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5.5mm" H 16375 750 50  0001 C CNN
+F 3 "~" H 16375 750 50  0001 C CNN
+	1    16375 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 63778E74
+P 14175 1250
+F 0 "H2" H 14275 1296 50  0000 L CNN
+F 1 "MountingHole" H 14275 1205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 14275 1159 50  0001 L CNN
+F 3 "~" H 14175 1250 50  0001 C CNN
+	1    14175 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 63778E7E
+P 14925 1250
+F 0 "H7" H 15025 1296 50  0000 L CNN
+F 1 "MountingHole" H 15025 1205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 14925 1250 50  0001 C CNN
+F 3 "~" H 14925 1250 50  0001 C CNN
+	1    14925 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H9
+U 1 1 63778E88
+P 15650 1250
+F 0 "H9" H 15750 1296 50  0000 L CNN
+F 1 "MountingHole" H 15750 1205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 15650 1250 50  0001 C CNN
+F 3 "~" H 15650 1250 50  0001 C CNN
+	1    15650 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H11
+U 1 1 63778E92
+P 16375 1250
+F 0 "H11" H 16475 1296 50  0000 L CNN
+F 1 "MountingHole" H 16475 1205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 16375 1250 50  0001 C CNN
+F 3 "~" H 16375 1250 50  0001 C CNN
+	1    16375 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 63EE0E76
+P 14175 1700
+F 0 "H6" H 14275 1746 50  0000 L CNN
+F 1 "MountingHole" H 14275 1655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 14275 1609 50  0001 L CNN
+F 3 "~" H 14175 1700 50  0001 C CNN
+	1    14175 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 63EE0E88
+P 14925 1700
+F 0 "H8" H 15025 1746 50  0000 L CNN
+F 1 "MountingHole" H 15025 1655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 14925 1700 50  0001 C CNN
+F 3 "~" H 14925 1700 50  0001 C CNN
+	1    14925 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H10
+U 1 1 63EE0E92
+P 15650 1700
+F 0 "H10" H 15750 1746 50  0000 L CNN
+F 1 "MountingHole" H 15750 1655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 15650 1700 50  0001 C CNN
+F 3 "~" H 15650 1700 50  0001 C CNN
+	1    15650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H12
+U 1 1 63EE0E9C
+P 16375 1700
+F 0 "H12" H 16475 1746 50  0000 L CNN
+F 1 "MountingHole" H 16475 1655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 16375 1700 50  0001 C CNN
+F 3 "~" H 16375 1700 50  0001 C CNN
+	1    16375 1700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9650 800 
+NoConn ~ 10150 800 
+NoConn ~ 10150 1100
+NoConn ~ 10150 1200
+NoConn ~ 9650 1200
+NoConn ~ 10150 1300
+NoConn ~ 10150 1400
+NoConn ~ 10150 1500
+NoConn ~ 10150 1600
+NoConn ~ 9650 1600
+NoConn ~ 10150 1700
+NoConn ~ 10150 2200
+NoConn ~ 10150 2300
+NoConn ~ 10150 2400
+NoConn ~ 9650 2700
+NoConn ~ 9650 2600
+NoConn ~ 9650 2500
+NoConn ~ 9650 2000
+Text Notes 8300 5275 0    79   ~ 16
+To be programmed\nwith inverted logic
+Text Notes 25275 5725 0    79   ~ 16
+To be programmed\nwith inverted logic
+Text Notes 42850 5975 0    79   ~ 16
+To be programmed\nwith inverted logic
+Text Notes 42975 17250 0    79   ~ 16
+To be programmed\nwith inverted logic
+Text Notes 25600 17200 0    79   ~ 16
+To be programmed\nwith inverted logic
+Text Notes 8200 17150 0    79   ~ 16
+To be programmed\nwith inverted logic
+Text GLabel 16825 19275 2    50   Input ~ 0
+Pi4_DO3
+Text GLabel 13150 16925 2    50   Input ~ 0
+Pi4_DO1
+Text GLabel 18850 6175 0    50   Input ~ 0
+Pi1_SDA-1
+Text GLabel 18850 6275 0    50   Input ~ 0
+Pi1_SCL-1
+Text GLabel 19175 16950 0    50   Input ~ 0
+Pi5_D-OUT3
+Text GLabel 19175 16750 0    50   Input ~ 0
+Pi5_D-OUT1
+NoConn ~ 2400 5700
+NoConn ~ 2400 5900
+NoConn ~ 19575 5975
+NoConn ~ 19575 5775
+NoConn ~ 36950 5825
+NoConn ~ 36950 6025
+Wire Wire Line
+	19575 6175 18850 6175
+Wire Wire Line
+	18850 6275 19575 6275
+Text GLabel 36225 6225 0    50   Input ~ 0
+Pi1_SDA-1
+Text GLabel 36225 6325 0    50   Input ~ 0
+Pi1_SCL-1
+Wire Wire Line
+	36950 6225 36225 6225
+Wire Wire Line
+	36225 6325 36950 6325
+Text GLabel 35950 17250 0    50   Input ~ 0
+Pi1_SDA-1
+Text GLabel 35950 17350 0    50   Input ~ 0
+Pi1_SCL-1
+Wire Wire Line
+	36675 17250 35950 17250
+Wire Wire Line
+	35950 17350 36675 17350
+Text GLabel 18575 17250 0    50   Input ~ 0
+Pi1_SDA-1
+Text GLabel 18575 17350 0    50   Input ~ 0
+Pi1_SCL-1
+Wire Wire Line
+	19300 17250 18575 17250
+Wire Wire Line
+	18575 17350 19300 17350
+Text GLabel 1625 17500 0    50   Input ~ 0
+Pi1_SDA-1
+Text GLabel 1625 17600 0    50   Input ~ 0
+Pi1_SCL-1
+Wire Wire Line
+	2350 17500 1625 17500
+Wire Wire Line
+	1625 17600 2350 17600
+NoConn ~ 2350 17100
+NoConn ~ 2350 17300
+NoConn ~ 19300 17050
+NoConn ~ 19300 16850
+NoConn ~ 36675 16850
+NoConn ~ 36675 17050
+$Comp
+L Connector:Screw_Terminal_01x04 J13
+U 1 1 6E90A59B
+P 26150 4550
+F 0 "J13" H 26230 4542 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 26230 4451 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 26150 4550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984633-1458842.pdf" H 26150 4550 50  0001 C CNN
+F 4 "1.07" H 26150 4550 50  0001 C CNN "Cost"
+F 5 "1984633" H 26150 4550 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984633?qs=dKKAVK9nnHOP434WOXxXdg%3D%3D" H 26150 4550 50  0001 C CNN "Vendor Link"
+F 7 "651-1984633" H 26150 4550 50  0001 C CNN "Vendor PN"
+	1    26150 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25900 4850 25900 4750
+Wire Wire Line
+	25900 4550 25950 4550
+Wire Wire Line
+	25950 4750 25900 4750
+Connection ~ 25900 4750
+Wire Wire Line
+	25900 4750 25900 4550
+Wire Wire Line
+	8525 4050 8600 4050
+Wire Wire Line
+	8525 4250 8600 4250
+$Comp
+L power:GNDA #PWR03
+U 1 1 6F957918
+P 8550 4450
+F 0 "#PWR03" H 8550 4200 50  0001 C CNN
+F 1 "GNDA" H 8555 4277 50  0000 C CNN
+F 2 "" H 8550 4450 50  0001 C CNN
+F 3 "" H 8550 4450 50  0001 C CNN
+	1    8550 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J6
+U 1 1 6F957922
+P 8800 4150
+F 0 "J6" H 8880 4142 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 8880 4051 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 8800 4150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984633-1458842.pdf" H 8800 4150 50  0001 C CNN
+F 4 "1.07" H 8800 4150 50  0001 C CNN "Cost"
+F 5 "1984633" H 8800 4150 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984633?qs=dKKAVK9nnHOP434WOXxXdg%3D%3D" H 8800 4150 50  0001 C CNN "Vendor Link"
+F 7 "651-1984633" H 8800 4150 50  0001 C CNN "Vendor PN"
+	1    8800 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4450 8550 4350
+Wire Wire Line
+	8550 4150 8600 4150
+Wire Wire Line
+	8600 4350 8550 4350
+Connection ~ 8550 4350
+Wire Wire Line
+	8550 4350 8550 4150
+Text GLabel 8525 4250 0    50   Input ~ 0
+Pi1_DO3
+Text GLabel 8525 4050 0    50   Input ~ 0
+Pi1_DO1
+Wire Wire Line
+	43275 4450 43350 4450
+Wire Wire Line
+	43275 4650 43350 4650
+$Comp
+L power:GNDA #PWR034
+U 1 1 7018B266
+P 43300 4850
+F 0 "#PWR034" H 43300 4600 50  0001 C CNN
+F 1 "GNDA" H 43305 4677 50  0000 C CNN
+F 2 "" H 43300 4850 50  0001 C CNN
+F 3 "" H 43300 4850 50  0001 C CNN
+	1    43300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J21
+U 1 1 7018B270
+P 43550 4550
+F 0 "J21" H 43630 4542 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 43630 4451 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 43550 4550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984633-1458842.pdf" H 43550 4550 50  0001 C CNN
+F 4 "1.07" H 43550 4550 50  0001 C CNN "Cost"
+F 5 "1984633" H 43550 4550 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984633?qs=dKKAVK9nnHOP434WOXxXdg%3D%3D" H 43550 4550 50  0001 C CNN "Vendor Link"
+F 7 "651-1984633" H 43550 4550 50  0001 C CNN "Vendor PN"
+	1    43550 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	43300 4850 43300 4750
+Wire Wire Line
+	43300 4550 43350 4550
+Wire Wire Line
+	43350 4750 43300 4750
+Connection ~ 43300 4750
+Wire Wire Line
+	43300 4750 43300 4550
+Wire Wire Line
+	43350 15775 43425 15775
+Wire Wire Line
+	43350 15975 43425 15975
+$Comp
+L power:GNDA #PWR035
+U 1 1 70BC0B1D
+P 43375 16175
+F 0 "#PWR035" H 43375 15925 50  0001 C CNN
+F 1 "GNDA" H 43380 16002 50  0000 C CNN
+F 2 "" H 43375 16175 50  0001 C CNN
+F 3 "" H 43375 16175 50  0001 C CNN
+	1    43375 16175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J22
+U 1 1 70BC0B27
+P 43625 15875
+F 0 "J22" H 43705 15867 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 43705 15776 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 43625 15875 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984633-1458842.pdf" H 43625 15875 50  0001 C CNN
+F 4 "1.07" H 43625 15875 50  0001 C CNN "Cost"
+F 5 "1984633" H 43625 15875 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984633?qs=dKKAVK9nnHOP434WOXxXdg%3D%3D" H 43625 15875 50  0001 C CNN "Vendor Link"
+F 7 "651-1984633" H 43625 15875 50  0001 C CNN "Vendor PN"
+	1    43625 15875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	43375 16175 43375 16075
+Wire Wire Line
+	43375 15875 43425 15875
+Wire Wire Line
+	43425 16075 43375 16075
+Connection ~ 43375 16075
+Wire Wire Line
+	43375 16075 43375 15875
+Wire Wire Line
+	25900 15725 25975 15725
+Wire Wire Line
+	25900 15925 25975 15925
+$Comp
+L power:GNDA #PWR032
+U 1 1 713D2AAB
+P 25925 16125
+F 0 "#PWR032" H 25925 15875 50  0001 C CNN
+F 1 "GNDA" H 25930 15952 50  0000 C CNN
+F 2 "" H 25925 16125 50  0001 C CNN
+F 3 "" H 25925 16125 50  0001 C CNN
+	1    25925 16125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J14
+U 1 1 713D2AB5
+P 26175 15825
+F 0 "J14" H 26255 15817 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 26255 15726 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 26175 15825 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984633-1458842.pdf" H 26175 15825 50  0001 C CNN
+F 4 "1.07" H 26175 15825 50  0001 C CNN "Cost"
+F 5 "1984633" H 26175 15825 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984633?qs=dKKAVK9nnHOP434WOXxXdg%3D%3D" H 26175 15825 50  0001 C CNN "Vendor Link"
+F 7 "651-1984633" H 26175 15825 50  0001 C CNN "Vendor PN"
+	1    26175 15825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25925 16125 25925 16025
+Wire Wire Line
+	25925 15825 25975 15825
+Wire Wire Line
+	25975 16025 25925 16025
+Connection ~ 25925 16025
+Wire Wire Line
+	25925 16025 25925 15825
+Wire Wire Line
+	8525 15850 8600 15850
+Wire Wire Line
+	8525 16050 8600 16050
+$Comp
+L power:GNDA #PWR07
+U 1 1 71BCE8E2
+P 8550 16250
+F 0 "#PWR07" H 8550 16000 50  0001 C CNN
+F 1 "GNDA" H 8555 16077 50  0000 C CNN
+F 2 "" H 8550 16250 50  0001 C CNN
+F 3 "" H 8550 16250 50  0001 C CNN
+	1    8550 16250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J12
+U 1 1 71BCE8EC
+P 8800 15950
+F 0 "J12" H 8880 15942 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 8880 15851 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 8800 15950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/324/4/1984633-1458842.pdf" H 8800 15950 50  0001 C CNN
+F 4 "1.07" H 8800 15950 50  0001 C CNN "Cost"
+F 5 "1984633" H 8800 15950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984633?qs=dKKAVK9nnHOP434WOXxXdg%3D%3D" H 8800 15950 50  0001 C CNN "Vendor Link"
+F 7 "651-1984633" H 8800 15950 50  0001 C CNN "Vendor PN"
+	1    8800 15950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 16250 8550 16150
+Wire Wire Line
+	8550 15950 8600 15950
+Wire Wire Line
+	8600 16150 8550 16150
+Connection ~ 8550 16150
+Wire Wire Line
+	8550 16150 8550 15950
+$Comp
+L Mechanical:MountingHole H13
+U 1 1 630C773F
+P 25350 1550
+F 0 "H13" H 25450 1596 50  0000 L CNN
+F 1 "MountingHole" H 25450 1505 50  0000 L CNN
+F 2 "Juancho:logo1" H 25350 1550 50  0001 C CNN
+F 3 "~" H 25350 1550 50  0001 C CNN
+	1    25350 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 6600 2100 0    50   Input ~ 0
+Pi1_SDA-1
+Text GLabel 6600 2200 0    50   Input ~ 0
+Pi1_SCL-1
+Wire Wire Line
+	6600 2200 7125 2200
+Wire Wire Line
+	6600 2100 7125 2100
+Wire Wire Line
+	8950 2100 9025 2100
+Wire Wire Line
+	9025 1925 9025 2100
+Connection ~ 9025 2100
+Wire Wire Line
+	9025 2100 9650 2100
+Wire Wire Line
+	10150 2100 10750 2100
+Wire Wire Line
+	10750 1800 10750 2100
+Connection ~ 10750 2100
+Wire Wire Line
+	10750 2100 10900 2100
+$Comp
+L Device:R R7
+U 1 1 63305BD8
+P 9100 12675
+F 0 "R7" H 9170 12721 50  0000 L CNN
+F 1 "16K" H 9170 12630 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9030 12675 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 9100 12675 50  0001 C CNN
+F 4 "0.10	" H 9100 12675 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ163V" H 9100 12675 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ163V?qs=JjxTDIFmKPSqT6jK2g6mOw%3D%3D" H 9100 12675 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ163V" H 9100 12675 50  0001 C CNN "Vendor PN"
+	1    9100 12675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 6330B4F7
+P 9750 13075
+F 0 "C5" H 9865 13121 50  0000 L CNN
+F 1 "100nF" H 9775 12975 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9788 12925 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/1/GRM033R6YA104ME14_01A-1982036.pdf" H 9750 13075 50  0001 C CNN
+F 4 "0.10" H 9750 13075 50  0001 C CNN "Cost"
+F 5 "GRM033R6YA104ME14D" H 9750 13075 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM033R6YA104ME14D?qs=P%2FC4Eoq9CDwjSVlAMBrT%252Bw%3D%3D" H 9750 13075 50  0001 C CNN "Vendor Link"
+F 7 "81-GRM33R6YA104ME14D" H 9750 13075 50  0001 C CNN "Vendor PN"
+	1    9750 13075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10175 12550 9750 12550
+Wire Wire Line
+	9750 12550 9750 12925
+Wire Wire Line
+	9100 12525 9100 12325
+Wire Wire Line
+	9100 12325 9750 12325
+Wire Wire Line
+	9750 12325 9750 12550
+Connection ~ 9750 12550
+$Comp
+L power:GND #PWR039
+U 1 1 63729CDF
+P 9750 13725
+F 0 "#PWR039" H 9750 13475 50  0001 C CNN
+F 1 "GND" H 9755 13552 50  0000 C CNN
+F 2 "" H 9750 13725 50  0001 C CNN
+F 3 "" H 9750 13725 50  0001 C CNN
+	1    9750 13725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 63B326DE
+P 10075 11275
+F 0 "C6" H 10190 11321 50  0000 L CNN
+F 1 "1uF" H 10190 11230 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10113 11125 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/585/MLCC-1837944.pdf" H 10075 11275 50  0001 C CNN
+F 4 "0.15" H 10075 11275 50  0001 C CNN "Cost"
+F 5 "CL10A105KL8NNNC" H 10075 11275 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10A105KL8NNNC?qs=l7cgNqFNU1jr%252B%2Fap4UXsTA%3D%3D" H 10075 11275 50  0001 C CNN "Vendor Link"
+F 7 "187-CL10A105KL8NNNC" H 10075 11275 50  0001 C CNN "Vendor PN"
+	1    10075 11275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10075 11425 10075 11500
+Wire Wire Line
+	10475 11000 10075 11000
+Wire Wire Line
+	10075 11000 10075 11125
+$Comp
+L Device:C C8
+U 1 1 63F40057
+P 11325 13000
+F 0 "C8" H 11440 13046 50  0000 L CNN
+F 1 "220pF" H 11440 12955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11363 12850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf" H 11325 13000 50  0001 C CNN
+F 4 "0.10" H 11325 13000 50  0001 C CNN "Cost"
+F 5 "06035A221JAT2A" H 11325 13000 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KYOCERA-AVX/06035A221JAT2A?qs=WmCxkUxNecRgZRZgIi8bmQ%3D%3D" H 11325 13000 50  0001 C CNN "Vendor Link"
+F 7 "581-06035A221J" H 11325 13000 50  0001 C CNN "Vendor PN"
+	1    11325 13000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10175 12750 10075 12750
+Wire Wire Line
+	10075 12750 10075 13250
+Wire Wire Line
+	10075 13250 11325 13250
+Wire Wire Line
+	11325 13250 11325 13150
+Wire Wire Line
+	11325 12850 11325 12650
+Wire Wire Line
+	11325 12650 10775 12650
+$Comp
+L Device:R R15
+U 1 1 6435F207
+P 11775 12650
+F 0 "R15" V 11568 12650 50  0000 C CNN
+F 1 "100" V 11659 12650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11705 12650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 11775 12650 50  0001 C CNN
+F 4 "0.10	" H 11775 12650 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 11775 12650 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 11775 12650 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 11775 12650 50  0001 C CNN "Vendor PN"
+	1    11775 12650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11325 12650 11625 12650
+Connection ~ 11325 12650
+$Comp
+L Device:R R69
+U 1 1 64570B41
+P 15725 10325
+F 0 "R69" H 15655 10279 50  0000 R CNN
+F 1 "22.1" H 15655 10370 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15655 10325 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 15725 10325 50  0001 C CNN
+F 4 "0.10	" H 15725 10325 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD22R1F" H 15725 10325 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD22R1F?qs=h8%2FvSci3DWxf8SoKZOz2uA%3D%3D" H 15725 10325 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD22R1F" H 15725 10325 50  0001 C CNN "Vendor PN"
+	1    15725 10325
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11925 12650 12175 12650
+Wire Wire Line
+	11325 13250 12475 13250
+Wire Wire Line
+	12475 13250 12475 12850
+Connection ~ 11325 13250
+$Comp
+L Device:R R44
+U 1 1 64991ED6
+P 12475 13475
+F 0 "R44" H 12405 13429 50  0000 R CNN
+F 1 "6.2K" H 12405 13520 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12405 13475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/crcwce3-1762584.pdf" H 12475 13475 50  0001 C CNN
+F 4 "0.10	" H 12475 13475 50  0001 C CNN "Cost"
+F 5 "CRCW06036K20FKEAC" H 12475 13475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Dale/CRCW06036K20FKEAC?qs=E3Y5ESvWgWPIiSG1ut%252B03g%3D%3D" H 12475 13475 50  0001 C CNN "Vendor Link"
+F 7 "CRCW06036K20FKEAC" H 12475 13475 50  0001 C CNN "Vendor PN"
+	1    12475 13475
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12475 13625 12475 13725
+Wire Wire Line
+	9750 13225 9750 13725
+Wire Wire Line
+	12475 13325 12475 13250
+Connection ~ 12475 13250
+Wire Wire Line
+	12475 12450 12475 11750
+Wire Wire Line
+	12475 11750 13375 11750
+$Comp
+L Device:R R31
+U 1 1 655FB815
+P 12475 10925
+F 0 "R31" H 12405 10879 50  0000 R CNN
+F 1 "10K" H 12405 10970 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12405 10925 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 12475 10925 50  0001 C CNN
+F 4 "0.10	" H 12475 10925 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 12475 10925 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 12475 10925 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 12475 10925 50  0001 C CNN "Vendor PN"
+	1    12475 10925
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12475 11075 12475 11750
+Connection ~ 12475 11750
+$Comp
+L Device:R R46
+U 1 1 6580FA3E
+P 13125 10900
+F 0 "R46" H 13055 10854 50  0000 R CNN
+F 1 "249" H 13055 10945 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13055 10900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 13125 10900 50  0001 C CNN
+F 4 "0.10	" H 13125 10900 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD2490F" H 13125 10900 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD2490F?qs=P62ublwmbi9cHjyHmdcDCw%3D%3D" H 13125 10900 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD2490F" H 13125 10900 50  0001 C CNN "Vendor PN"
+	1    13125 10900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13125 11950 13375 11950
+Wire Wire Line
+	13125 11050 13125 11275
+Wire Wire Line
+	10475 10700 10475 11000
+$Comp
+L power:+24V #PWR075
+U 1 1 65E51685
+P 12475 10550
+F 0 "#PWR075" H 12475 10400 50  0001 C CNN
+F 1 "+24V" H 12490 10723 50  0000 C CNN
+F 2 "" H 12475 10550 50  0001 C CNN
+F 3 "" H 12475 10550 50  0001 C CNN
+	1    12475 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12475 10550 12475 10775
+$Comp
+L power:+24V #PWR078
+U 1 1 66068758
+P 13125 10575
+F 0 "#PWR078" H 13125 10425 50  0001 C CNN
+F 1 "+24V" H 13140 10748 50  0000 C CNN
+F 2 "" H 13125 10575 50  0001 C CNN
+F 3 "" H 13125 10575 50  0001 C CNN
+	1    13125 10575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13125 10575 13125 10750
+$Comp
+L Device:C C13
+U 1 1 664979D7
+P 14300 11575
+F 0 "C13" H 14415 11621 50  0000 L CNN
+F 1 "220pF" H 14415 11530 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 14338 11425 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf" H 14300 11575 50  0001 C CNN
+F 4 "0.10" H 14300 11575 50  0001 C CNN "Cost"
+F 5 "06035A221JAT2A" H 14300 11575 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KYOCERA-AVX/06035A221JAT2A?qs=WmCxkUxNecRgZRZgIi8bmQ%3D%3D" H 14300 11575 50  0001 C CNN "Vendor Link"
+F 7 "581-06035A221J" H 14300 11575 50  0001 C CNN "Vendor PN"
+	1    14300 11575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13975 11850 14300 11850
+Wire Wire Line
+	14300 11850 14300 11725
+Wire Wire Line
+	14300 11425 14300 11275
+Wire Wire Line
+	14300 11275 13125 11275
+Connection ~ 13125 11275
+Wire Wire Line
+	13125 11275 13125 11950
+$Comp
+L Device:R R51
+U 1 1 668CC9F9
+P 14850 11850
+F 0 "R51" V 14643 11850 50  0000 C CNN
+F 1 "100" V 14734 11850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14780 11850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 14850 11850 50  0001 C CNN
+F 4 "0.10	" H 14850 11850 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 14850 11850 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 14850 11850 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 14850 11850 50  0001 C CNN "Vendor PN"
+	1    14850 11850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14700 11850 14300 11850
+Connection ~ 14300 11850
+Wire Wire Line
+	15300 11850 15000 11850
+Wire Wire Line
+	15300 11850 15300 11300
+Wire Wire Line
+	15300 11300 15425 11300
+Wire Wire Line
+	14300 11275 14775 11275
+Wire Wire Line
+	14775 11275 14775 11600
+Wire Wire Line
+	14775 11600 15725 11600
+Wire Wire Line
+	15725 11600 15725 11500
+Connection ~ 14300 11275
+$Comp
+L Device:D D21
+U 1 1 6737ABE9
+P 15000 10925
+F 0 "D21" V 14954 11005 50  0000 L CNN
+F 1 "D" V 15045 11005 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 15000 10925 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 15000 10925 50  0001 C CNN
+F 4 "0.21" H 15000 10925 50  0001 C CNN "Cost"
+F 5 "1N4007-T" H 15000 10925 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Diodes-Incorporated/1N4007-T?qs=e%2FRqmsgwm9iVtgJYUW23AA%3D%3D" H 15000 10925 50  0001 C CNN "Vendor Link"
+F 7 "621-1N4007" H 15000 10925 50  0001 C CNN "Vendor PN"
+	1    15000 10925
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D20
+U 1 1 6737EE14
+P 15000 10475
+F 0 "D20" V 14954 10555 50  0000 L CNN
+F 1 "D" V 15045 10555 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 15000 10475 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 15000 10475 50  0001 C CNN
+F 4 "0.21" H 15000 10475 50  0001 C CNN "Cost"
+F 5 "1N4007-T" H 15000 10475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Diodes-Incorporated/1N4007-T?qs=e%2FRqmsgwm9iVtgJYUW23AA%3D%3D" H 15000 10475 50  0001 C CNN "Vendor Link"
+F 7 "621-1N4007" H 15000 10475 50  0001 C CNN "Vendor PN"
+	1    15000 10475
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+24V #PWR085
+U 1 1 677BF15D
+P 15000 10225
+F 0 "#PWR085" H 15000 10075 50  0001 C CNN
+F 1 "+24V" H 15015 10398 50  0000 C CNN
+F 2 "" H 15000 10225 50  0001 C CNN
+F 3 "" H 15000 10225 50  0001 C CNN
+	1    15000 10225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15000 10225 15000 10325
+Wire Wire Line
+	15000 10625 15000 10725
+Wire Wire Line
+	15000 11075 15000 11175
+Wire Wire Line
+	15000 10725 15725 10725
+Wire Wire Line
+	15725 10725 15725 10475
+Connection ~ 15000 10725
+Wire Wire Line
+	15000 10725 15000 10775
+Wire Wire Line
+	15725 11100 15725 10725
+Connection ~ 15725 10725
+Text GLabel 15825 9775 2    50   Input ~ 0
+Pi1_4-20_OUT-0-
+Wire Wire Line
+	9050 13025 9100 13025
+Wire Wire Line
+	9100 13025 9100 12825
+Wire Wire Line
+	15825 9775 15725 9775
+Wire Wire Line
+	15725 9775 15725 10175
+$Comp
+L power:GNDA #PWR086
+U 1 1 6378F633
+P 15000 11175
+F 0 "#PWR086" H 15000 10925 50  0001 C CNN
+F 1 "GNDA" H 15005 11002 50  0000 C CNN
+F 2 "" H 15000 11175 50  0001 C CNN
+F 3 "" H 15000 11175 50  0001 C CNN
+	1    15000 11175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR076
+U 1 1 633E0F9D
+P 12475 13725
+F 0 "#PWR076" H 12475 13475 50  0001 C CNN
+F 1 "GNDA" H 12480 13552 50  0000 C CNN
+F 2 "" H 12475 13725 50  0001 C CNN
+F 3 "" H 12475 13725 50  0001 C CNN
+	1    12475 13725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R71
+U 1 1 6389EACC
+P 26350 12450
+F 0 "R71" H 26420 12496 50  0000 L CNN
+F 1 "16K" H 26420 12405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 26280 12450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 26350 12450 50  0001 C CNN
+F 4 "0.10	" H 26350 12450 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ163V" H 26350 12450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ163V?qs=JjxTDIFmKPSqT6jK2g6mOw%3D%3D" H 26350 12450 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ163V" H 26350 12450 50  0001 C CNN "Vendor PN"
+	1    26350 12450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 6389EAD6
+P 27000 12850
+F 0 "C15" H 27115 12896 50  0000 L CNN
+F 1 "100nF" H 27025 12750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 27038 12700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/1/GRM033R6YA104ME14_01A-1982036.pdf" H 27000 12850 50  0001 C CNN
+F 4 "0.10" H 27000 12850 50  0001 C CNN "Cost"
+F 5 "GRM033R6YA104ME14D" H 27000 12850 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM033R6YA104ME14D?qs=P%2FC4Eoq9CDwjSVlAMBrT%252Bw%3D%3D" H 27000 12850 50  0001 C CNN "Vendor Link"
+F 7 "81-GRM33R6YA104ME14D" H 27000 12850 50  0001 C CNN "Vendor PN"
+	1    27000 12850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	27425 12325 27000 12325
+Wire Wire Line
+	27000 12325 27000 12700
+Wire Wire Line
+	26350 12300 26350 12100
+Wire Wire Line
+	26350 12100 27000 12100
+Wire Wire Line
+	27000 12100 27000 12325
+Connection ~ 27000 12325
+$Comp
+L power:GND #PWR090
+U 1 1 6389EAF0
+P 27000 13500
+F 0 "#PWR090" H 27000 13250 50  0001 C CNN
+F 1 "GND" H 27005 13327 50  0000 C CNN
+F 2 "" H 27000 13500 50  0001 C CNN
+F 3 "" H 27000 13500 50  0001 C CNN
+	1    27000 13500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 6389EB04
+P 27400 10950
+F 0 "C21" H 27515 10996 50  0000 L CNN
+F 1 "1uF" H 27515 10905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 27438 10800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/585/MLCC-1837944.pdf" H 27400 10950 50  0001 C CNN
+F 4 "0.15" H 27400 10950 50  0001 C CNN "Cost"
+F 5 "CL10A105KL8NNNC" H 27400 10950 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10A105KL8NNNC?qs=l7cgNqFNU1jr%252B%2Fap4UXsTA%3D%3D" H 27400 10950 50  0001 C CNN "Vendor Link"
+F 7 "187-CL10A105KL8NNNC" H 27400 10950 50  0001 C CNN "Vendor PN"
+	1    27400 10950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	27400 11100 27400 11175
+Wire Wire Line
+	27800 10675 27400 10675
+Wire Wire Line
+	27400 10675 27400 10800
+$Comp
+L Device:C C23
+U 1 1 6389EB1C
+P 28575 12775
+F 0 "C23" H 28690 12821 50  0000 L CNN
+F 1 "220pF" H 28690 12730 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 28613 12625 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf" H 28575 12775 50  0001 C CNN
+F 4 "0.10" H 28575 12775 50  0001 C CNN "Cost"
+F 5 "06035A221JAT2A" H 28575 12775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KYOCERA-AVX/06035A221JAT2A?qs=WmCxkUxNecRgZRZgIi8bmQ%3D%3D" H 28575 12775 50  0001 C CNN "Vendor Link"
+F 7 "581-06035A221J" H 28575 12775 50  0001 C CNN "Vendor PN"
+	1    28575 12775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	27425 12525 27325 12525
+Wire Wire Line
+	27325 12525 27325 13025
+Wire Wire Line
+	27325 13025 28575 13025
+Wire Wire Line
+	28575 13025 28575 12925
+Wire Wire Line
+	28575 12625 28575 12425
+Wire Wire Line
+	28575 12425 28025 12425
+$Comp
+L Device:R R73
+U 1 1 6389EB8C
+P 29025 12425
+F 0 "R73" V 28818 12425 50  0000 C CNN
+F 1 "100" V 28909 12425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 28955 12425 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 29025 12425 50  0001 C CNN
+F 4 "0.10	" H 29025 12425 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 29025 12425 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 29025 12425 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 29025 12425 50  0001 C CNN "Vendor PN"
+	1    29025 12425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28575 12425 28875 12425
+Connection ~ 28575 12425
+$Comp
+L Device:R R83
+U 1 1 6389EB98
+P 32975 10100
+F 0 "R83" H 32905 10054 50  0000 R CNN
+F 1 "22.1" H 32905 10145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 32905 10100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 32975 10100 50  0001 C CNN
+F 4 "0.10	" H 32975 10100 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD22R1F" H 32975 10100 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD22R1F?qs=h8%2FvSci3DWxf8SoKZOz2uA%3D%3D" H 32975 10100 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD22R1F" H 32975 10100 50  0001 C CNN "Vendor PN"
+	1    32975 10100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	29175 12425 29425 12425
+Wire Wire Line
+	28575 13025 29725 13025
+Wire Wire Line
+	29725 13025 29725 12625
+Connection ~ 28575 13025
+$Comp
+L Device:R R77
+U 1 1 6389EBB0
+P 29725 13250
+F 0 "R77" H 29655 13204 50  0000 R CNN
+F 1 "6.2K" H 29655 13295 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 29655 13250 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/crcwce3-1762584.pdf" H 29725 13250 50  0001 C CNN
+F 4 "0.10	" H 29725 13250 50  0001 C CNN "Cost"
+F 5 "CRCW06036K20FKEAC" H 29725 13250 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Dale/CRCW06036K20FKEAC?qs=E3Y5ESvWgWPIiSG1ut%252B03g%3D%3D" H 29725 13250 50  0001 C CNN "Vendor Link"
+F 7 "CRCW06036K20FKEAC" H 29725 13250 50  0001 C CNN "Vendor PN"
+	1    29725 13250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	29725 13400 29725 13500
+Wire Wire Line
+	27000 13000 27000 13500
+Wire Wire Line
+	29725 13100 29725 13025
+Connection ~ 29725 13025
+Wire Wire Line
+	29725 12225 29725 11525
+Wire Wire Line
+	29725 11525 30625 11525
+$Comp
+L Device:R R76
+U 1 1 6389EC3C
+P 29725 10700
+F 0 "R76" H 29655 10654 50  0000 R CNN
+F 1 "10K" H 29655 10745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 29655 10700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 29725 10700 50  0001 C CNN
+F 4 "0.10	" H 29725 10700 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 29725 10700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 29725 10700 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 29725 10700 50  0001 C CNN "Vendor PN"
+	1    29725 10700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	29725 10850 29725 11525
+Connection ~ 29725 11525
+$Comp
+L Device:R R79
+U 1 1 6389EC48
+P 30375 10675
+F 0 "R79" H 30305 10629 50  0000 R CNN
+F 1 "249" H 30305 10720 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 30305 10675 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 30375 10675 50  0001 C CNN
+F 4 "0.10	" H 30375 10675 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD2490F" H 30375 10675 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD2490F?qs=P62ublwmbi9cHjyHmdcDCw%3D%3D" H 30375 10675 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD2490F" H 30375 10675 50  0001 C CNN "Vendor PN"
+	1    30375 10675
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	30375 11725 30625 11725
+Wire Wire Line
+	30375 10825 30375 11050
+Wire Wire Line
+	27800 10375 27800 10675
+$Comp
+L power:+24V #PWR099
+U 1 1 6389EC56
+P 29725 10325
+F 0 "#PWR099" H 29725 10175 50  0001 C CNN
+F 1 "+24V" H 29740 10498 50  0000 C CNN
+F 2 "" H 29725 10325 50  0001 C CNN
+F 3 "" H 29725 10325 50  0001 C CNN
+	1    29725 10325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29725 10325 29725 10550
+$Comp
+L power:+24V #PWR0104
+U 1 1 6389EC61
+P 30375 10350
+F 0 "#PWR0104" H 30375 10200 50  0001 C CNN
+F 1 "+24V" H 30390 10523 50  0000 C CNN
+F 2 "" H 30375 10350 50  0001 C CNN
+F 3 "" H 30375 10350 50  0001 C CNN
+	1    30375 10350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30375 10350 30375 10525
+$Comp
+L Device:C C25
+U 1 1 6389EC6D
+P 31550 11350
+F 0 "C25" H 31665 11396 50  0000 L CNN
+F 1 "220pF" H 31665 11305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 31588 11200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf" H 31550 11350 50  0001 C CNN
+F 4 "0.10" H 31550 11350 50  0001 C CNN "Cost"
+F 5 "06035A221JAT2A" H 31550 11350 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KYOCERA-AVX/06035A221JAT2A?qs=WmCxkUxNecRgZRZgIi8bmQ%3D%3D" H 31550 11350 50  0001 C CNN "Vendor Link"
+F 7 "581-06035A221J" H 31550 11350 50  0001 C CNN "Vendor PN"
+	1    31550 11350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	31225 11625 31550 11625
+Wire Wire Line
+	31550 11625 31550 11500
+Wire Wire Line
+	31550 11200 31550 11050
+Wire Wire Line
+	31550 11050 30375 11050
+Connection ~ 30375 11050
+Wire Wire Line
+	30375 11050 30375 11725
+$Comp
+L Device:R R81
+U 1 1 6389ECBB
+P 32100 11625
+F 0 "R81" V 31893 11625 50  0000 C CNN
+F 1 "100" V 31984 11625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 32030 11625 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 32100 11625 50  0001 C CNN
+F 4 "0.10	" H 32100 11625 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 32100 11625 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 32100 11625 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 32100 11625 50  0001 C CNN "Vendor PN"
+	1    32100 11625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	31950 11625 31550 11625
+Connection ~ 31550 11625
+Wire Wire Line
+	32550 11625 32250 11625
+Wire Wire Line
+	32550 11625 32550 11075
+Wire Wire Line
+	32550 11075 32675 11075
+Wire Wire Line
+	31550 11050 32025 11050
+Wire Wire Line
+	32025 11050 32025 11375
+Wire Wire Line
+	32025 11375 32975 11375
+Wire Wire Line
+	32975 11375 32975 11275
+Connection ~ 31550 11050
+$Comp
+L Device:D D26
+U 1 1 6389ECD9
+P 32250 10700
+F 0 "D26" V 32204 10780 50  0000 L CNN
+F 1 "D" V 32295 10780 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 32250 10700 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 32250 10700 50  0001 C CNN
+F 4 "0.21" H 32250 10700 50  0001 C CNN "Cost"
+F 5 "1N4007-T" H 32250 10700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Diodes-Incorporated/1N4007-T?qs=e%2FRqmsgwm9iVtgJYUW23AA%3D%3D" H 32250 10700 50  0001 C CNN "Vendor Link"
+F 7 "621-1N4007" H 32250 10700 50  0001 C CNN "Vendor PN"
+	1    32250 10700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D24
+U 1 1 6389ECE3
+P 32250 10250
+F 0 "D24" V 32204 10330 50  0000 L CNN
+F 1 "D" V 32295 10330 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 32250 10250 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 32250 10250 50  0001 C CNN
+F 4 "0.21" H 32250 10250 50  0001 C CNN "Cost"
+F 5 "1N4007-T" H 32250 10250 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Diodes-Incorporated/1N4007-T?qs=e%2FRqmsgwm9iVtgJYUW23AA%3D%3D" H 32250 10250 50  0001 C CNN "Vendor Link"
+F 7 "621-1N4007" H 32250 10250 50  0001 C CNN "Vendor PN"
+	1    32250 10250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+24V #PWR0127
+U 1 1 6389ECED
+P 32250 10000
+F 0 "#PWR0127" H 32250 9850 50  0001 C CNN
+F 1 "+24V" H 32265 10173 50  0000 C CNN
+F 2 "" H 32250 10000 50  0001 C CNN
+F 3 "" H 32250 10000 50  0001 C CNN
+	1    32250 10000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	32250 10000 32250 10100
+Wire Wire Line
+	32250 10400 32250 10500
+Wire Wire Line
+	32250 10850 32250 10950
+Wire Wire Line
+	32250 10500 32975 10500
+Wire Wire Line
+	32975 10500 32975 10250
+Connection ~ 32250 10500
+Wire Wire Line
+	32250 10500 32250 10550
+Wire Wire Line
+	32975 10875 32975 10500
+Connection ~ 32975 10500
+Wire Wire Line
+	26300 12800 26350 12800
+Wire Wire Line
+	26350 12800 26350 12600
+Wire Wire Line
+	33075 9550 32975 9550
+Wire Wire Line
+	32975 9550 32975 9950
+$Comp
+L power:GNDA #PWR0130
+U 1 1 6389ED65
+P 32250 10950
+F 0 "#PWR0130" H 32250 10700 50  0001 C CNN
+F 1 "GNDA" H 32255 10777 50  0000 C CNN
+F 2 "" H 32250 10950 50  0001 C CNN
+F 3 "" H 32250 10950 50  0001 C CNN
+	1    32250 10950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0100
+U 1 1 6389ED83
+P 29725 13500
+F 0 "#PWR0100" H 29725 13250 50  0001 C CNN
+F 1 "GNDA" H 29730 13327 50  0000 C CNN
+F 2 "" H 29725 13500 50  0001 C CNN
+F 3 "" H 29725 13500 50  0001 C CNN
+	1    29725 13500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R84
+U 1 1 63B319BB
+P 43775 12475
+F 0 "R84" H 43845 12521 50  0000 L CNN
+F 1 "16K" H 43845 12430 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 43705 12475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 43775 12475 50  0001 C CNN
+F 4 "0.10	" H 43775 12475 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ163V" H 43775 12475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ163V?qs=JjxTDIFmKPSqT6jK2g6mOw%3D%3D" H 43775 12475 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ163V" H 43775 12475 50  0001 C CNN "Vendor PN"
+	1    43775 12475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C26
+U 1 1 63B319D1
+P 44425 12875
+F 0 "C26" H 44540 12921 50  0000 L CNN
+F 1 "100nF" H 44450 12775 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 44463 12725 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/1/GRM033R6YA104ME14_01A-1982036.pdf" H 44425 12875 50  0001 C CNN
+F 4 "0.10" H 44425 12875 50  0001 C CNN "Cost"
+F 5 "GRM033R6YA104ME14D" H 44425 12875 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM033R6YA104ME14D?qs=P%2FC4Eoq9CDwjSVlAMBrT%252Bw%3D%3D" H 44425 12875 50  0001 C CNN "Vendor Link"
+F 7 "81-GRM33R6YA104ME14D" H 44425 12875 50  0001 C CNN "Vendor PN"
+	1    44425 12875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	44850 12350 44425 12350
+Wire Wire Line
+	44425 12350 44425 12725
+Wire Wire Line
+	43775 12325 43775 12125
+Wire Wire Line
+	43775 12125 44425 12125
+Wire Wire Line
+	44425 12125 44425 12350
+Connection ~ 44425 12350
+$Comp
+L power:GND #PWR0148
+U 1 1 63B319EB
+P 44425 13525
+F 0 "#PWR0148" H 44425 13275 50  0001 C CNN
+F 1 "GND" H 44430 13352 50  0000 C CNN
+F 2 "" H 44425 13525 50  0001 C CNN
+F 3 "" H 44425 13525 50  0001 C CNN
+	1    44425 13525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C27
+U 1 1 63B319FF
+P 44725 10675
+F 0 "C27" H 44840 10721 50  0000 L CNN
+F 1 "1uF" H 44840 10630 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 44763 10525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/585/MLCC-1837944.pdf" H 44725 10675 50  0001 C CNN
+F 4 "0.15" H 44725 10675 50  0001 C CNN "Cost"
+F 5 "CL10A105KL8NNNC" H 44725 10675 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10A105KL8NNNC?qs=l7cgNqFNU1jr%252B%2Fap4UXsTA%3D%3D" H 44725 10675 50  0001 C CNN "Vendor Link"
+F 7 "187-CL10A105KL8NNNC" H 44725 10675 50  0001 C CNN "Vendor PN"
+	1    44725 10675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	44725 10825 44725 10900
+Wire Wire Line
+	45125 10400 44725 10400
+Wire Wire Line
+	44725 10400 44725 10525
+$Comp
+L Device:C C30
+U 1 1 63B31A17
+P 46000 12800
+F 0 "C30" H 46115 12846 50  0000 L CNN
+F 1 "220pF" H 46115 12755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 46038 12650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf" H 46000 12800 50  0001 C CNN
+F 4 "0.10" H 46000 12800 50  0001 C CNN "Cost"
+F 5 "06035A221JAT2A" H 46000 12800 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KYOCERA-AVX/06035A221JAT2A?qs=WmCxkUxNecRgZRZgIi8bmQ%3D%3D" H 46000 12800 50  0001 C CNN "Vendor Link"
+F 7 "581-06035A221J" H 46000 12800 50  0001 C CNN "Vendor PN"
+	1    46000 12800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	44850 12550 44750 12550
+Wire Wire Line
+	44750 12550 44750 13050
+Wire Wire Line
+	44750 13050 46000 13050
+Wire Wire Line
+	46000 13050 46000 12950
+Wire Wire Line
+	46000 12650 46000 12450
+Wire Wire Line
+	46000 12450 45450 12450
+$Comp
+L Device:R R86
+U 1 1 63B31A27
+P 46450 12450
+F 0 "R86" V 46243 12450 50  0000 C CNN
+F 1 "100" V 46334 12450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 46380 12450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 46450 12450 50  0001 C CNN
+F 4 "0.10	" H 46450 12450 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 46450 12450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 46450 12450 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 46450 12450 50  0001 C CNN "Vendor PN"
+	1    46450 12450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	46000 12450 46300 12450
+Connection ~ 46000 12450
+$Comp
+L Device:R R124
+U 1 1 63B31A93
+P 50400 10125
+F 0 "R124" H 50330 10079 50  0000 R CNN
+F 1 "22.1" H 50330 10170 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 50330 10125 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 50400 10125 50  0001 C CNN
+F 4 "0.10	" H 50400 10125 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD22R1F" H 50400 10125 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD22R1F?qs=h8%2FvSci3DWxf8SoKZOz2uA%3D%3D" H 50400 10125 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD22R1F" H 50400 10125 50  0001 C CNN "Vendor PN"
+	1    50400 10125
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	46600 12450 46850 12450
+Wire Wire Line
+	46000 13050 47150 13050
+Wire Wire Line
+	47150 13050 47150 12650
+Connection ~ 46000 13050
+$Comp
+L Device:R R117
+U 1 1 63B31AAB
+P 47150 13275
+F 0 "R117" H 47080 13229 50  0000 R CNN
+F 1 "6.2K" H 47080 13320 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 47080 13275 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/crcwce3-1762584.pdf" H 47150 13275 50  0001 C CNN
+F 4 "0.10	" H 47150 13275 50  0001 C CNN "Cost"
+F 5 "CRCW06036K20FKEAC" H 47150 13275 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Dale/CRCW06036K20FKEAC?qs=E3Y5ESvWgWPIiSG1ut%252B03g%3D%3D" H 47150 13275 50  0001 C CNN "Vendor Link"
+F 7 "CRCW06036K20FKEAC" H 47150 13275 50  0001 C CNN "Vendor PN"
+	1    47150 13275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	47150 13425 47150 13525
+Wire Wire Line
+	44425 13025 44425 13525
+Wire Wire Line
+	47150 13125 47150 13050
+Connection ~ 47150 13050
+Wire Wire Line
+	47150 12250 47150 11550
+Wire Wire Line
+	47150 11550 48050 11550
+$Comp
+L Device:R R92
+U 1 1 63B31AD1
+P 47150 10725
+F 0 "R92" H 47080 10679 50  0000 R CNN
+F 1 "10K" H 47080 10770 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 47080 10725 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 47150 10725 50  0001 C CNN
+F 4 "0.10	" H 47150 10725 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 47150 10725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 47150 10725 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 47150 10725 50  0001 C CNN "Vendor PN"
+	1    47150 10725
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	47150 10875 47150 11550
+Connection ~ 47150 11550
+$Comp
+L Device:R R120
+U 1 1 63B31ADD
+P 47800 10700
+F 0 "R120" H 47730 10654 50  0000 R CNN
+F 1 "249" H 47730 10745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 47730 10700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 47800 10700 50  0001 C CNN
+F 4 "0.10	" H 47800 10700 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD2490F" H 47800 10700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD2490F?qs=P62ublwmbi9cHjyHmdcDCw%3D%3D" H 47800 10700 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD2490F" H 47800 10700 50  0001 C CNN "Vendor PN"
+	1    47800 10700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	47800 11750 48050 11750
+Wire Wire Line
+	47800 10850 47800 11075
+Wire Wire Line
+	45125 10100 45125 10400
+$Comp
+L power:+24V #PWR0156
+U 1 1 63B31B5D
+P 47150 10350
+F 0 "#PWR0156" H 47150 10200 50  0001 C CNN
+F 1 "+24V" H 47165 10523 50  0000 C CNN
+F 2 "" H 47150 10350 50  0001 C CNN
+F 3 "" H 47150 10350 50  0001 C CNN
+	1    47150 10350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	47150 10350 47150 10575
+$Comp
+L power:+24V #PWR0160
+U 1 1 63B31B68
+P 47800 10375
+F 0 "#PWR0160" H 47800 10225 50  0001 C CNN
+F 1 "+24V" H 47815 10548 50  0000 C CNN
+F 2 "" H 47800 10375 50  0001 C CNN
+F 3 "" H 47800 10375 50  0001 C CNN
+	1    47800 10375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	47800 10375 47800 10550
+$Comp
+L Device:C C32
+U 1 1 63B31B74
+P 48975 11375
+F 0 "C32" H 49090 11421 50  0000 L CNN
+F 1 "220pF" H 49090 11330 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 49013 11225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf" H 48975 11375 50  0001 C CNN
+F 4 "0.10" H 48975 11375 50  0001 C CNN "Cost"
+F 5 "06035A221JAT2A" H 48975 11375 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KYOCERA-AVX/06035A221JAT2A?qs=WmCxkUxNecRgZRZgIi8bmQ%3D%3D" H 48975 11375 50  0001 C CNN "Vendor Link"
+F 7 "581-06035A221J" H 48975 11375 50  0001 C CNN "Vendor PN"
+	1    48975 11375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	48650 11650 48975 11650
+Wire Wire Line
+	48975 11650 48975 11525
+Wire Wire Line
+	48975 11225 48975 11075
+Wire Wire Line
+	48975 11075 47800 11075
+Connection ~ 47800 11075
+Wire Wire Line
+	47800 11075 47800 11750
+$Comp
+L Device:R R122
+U 1 1 63B31B84
+P 49525 11650
+F 0 "R122" V 49318 11650 50  0000 C CNN
+F 1 "100" V 49409 11650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 49455 11650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 49525 11650 50  0001 C CNN
+F 4 "0.10	" H 49525 11650 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 49525 11650 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 49525 11650 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 49525 11650 50  0001 C CNN "Vendor PN"
+	1    49525 11650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	49375 11650 48975 11650
+Connection ~ 48975 11650
+Wire Wire Line
+	49975 11650 49675 11650
+Wire Wire Line
+	49975 11650 49975 11100
+Wire Wire Line
+	49975 11100 50100 11100
+Wire Wire Line
+	48975 11075 49450 11075
+Wire Wire Line
+	49450 11075 49450 11400
+Wire Wire Line
+	49450 11400 50400 11400
+Wire Wire Line
+	50400 11400 50400 11300
+Connection ~ 48975 11075
+$Comp
+L Device:D D28
+U 1 1 63B31BFC
+P 49675 10725
+F 0 "D28" V 49629 10805 50  0000 L CNN
+F 1 "D" V 49720 10805 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 49675 10725 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 49675 10725 50  0001 C CNN
+F 4 "0.21" H 49675 10725 50  0001 C CNN "Cost"
+F 5 "1N4007-T" H 49675 10725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Diodes-Incorporated/1N4007-T?qs=e%2FRqmsgwm9iVtgJYUW23AA%3D%3D" H 49675 10725 50  0001 C CNN "Vendor Link"
+F 7 "621-1N4007" H 49675 10725 50  0001 C CNN "Vendor PN"
+	1    49675 10725
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D27
+U 1 1 63B31C06
+P 49675 10275
+F 0 "D27" V 49629 10355 50  0000 L CNN
+F 1 "D" V 49720 10355 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 49675 10275 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 49675 10275 50  0001 C CNN
+F 4 "0.21" H 49675 10275 50  0001 C CNN "Cost"
+F 5 "1N4007-T" H 49675 10275 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Diodes-Incorporated/1N4007-T?qs=e%2FRqmsgwm9iVtgJYUW23AA%3D%3D" H 49675 10275 50  0001 C CNN "Vendor Link"
+F 7 "621-1N4007" H 49675 10275 50  0001 C CNN "Vendor PN"
+	1    49675 10275
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+24V #PWR0207
+U 1 1 63B31C10
+P 49675 10025
+F 0 "#PWR0207" H 49675 9875 50  0001 C CNN
+F 1 "+24V" H 49690 10198 50  0000 C CNN
+F 2 "" H 49675 10025 50  0001 C CNN
+F 3 "" H 49675 10025 50  0001 C CNN
+	1    49675 10025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	49675 10025 49675 10125
+Wire Wire Line
+	49675 10425 49675 10525
+Wire Wire Line
+	49675 10875 49675 10975
+Wire Wire Line
+	49675 10525 50400 10525
+Wire Wire Line
+	50400 10525 50400 10275
+Connection ~ 49675 10525
+Wire Wire Line
+	49675 10525 49675 10575
+Wire Wire Line
+	50400 10900 50400 10525
+Connection ~ 50400 10525
+Wire Wire Line
+	43725 12825 43775 12825
+Wire Wire Line
+	43775 12825 43775 12625
+Wire Wire Line
+	50500 9575 50400 9575
+Wire Wire Line
+	50400 9575 50400 9975
+$Comp
+L power:GNDA #PWR0208
+U 1 1 63B31C28
+P 49675 10975
+F 0 "#PWR0208" H 49675 10725 50  0001 C CNN
+F 1 "GNDA" H 49680 10802 50  0000 C CNN
+F 2 "" H 49675 10975 50  0001 C CNN
+F 3 "" H 49675 10975 50  0001 C CNN
+	1    49675 10975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0157
+U 1 1 63B31C46
+P 47150 13525
+F 0 "#PWR0157" H 47150 13275 50  0001 C CNN
+F 1 "GNDA" H 47155 13352 50  0000 C CNN
+F 2 "" H 47150 13525 50  0001 C CNN
+F 3 "" H 47150 13525 50  0001 C CNN
+	1    47150 13525
+	1    0    0    -1  
+$EndComp
+Text Notes 28475 9500 0    146  ~ 29
+4-20mA OUTPUT - 1
+Text Notes 45875 9525 0    146  ~ 29
+4-20mA OUTPUT - 2
+$Comp
+L Device:R R85
+U 1 1 640A2A07
+P 44175 23750
+F 0 "R85" H 44245 23796 50  0000 L CNN
+F 1 "16K" H 44245 23705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 44105 23750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 44175 23750 50  0001 C CNN
+F 4 "0.10	" H 44175 23750 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ163V" H 44175 23750 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ163V?qs=JjxTDIFmKPSqT6jK2g6mOw%3D%3D" H 44175 23750 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ163V" H 44175 23750 50  0001 C CNN "Vendor PN"
+	1    44175 23750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C28
+U 1 1 640A2A11
+P 44825 24150
+F 0 "C28" H 44940 24196 50  0000 L CNN
+F 1 "100nF" H 44850 24050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 44863 24000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/1/GRM033R6YA104ME14_01A-1982036.pdf" H 44825 24150 50  0001 C CNN
+F 4 "0.10" H 44825 24150 50  0001 C CNN "Cost"
+F 5 "GRM033R6YA104ME14D" H 44825 24150 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM033R6YA104ME14D?qs=P%2FC4Eoq9CDwjSVlAMBrT%252Bw%3D%3D" H 44825 24150 50  0001 C CNN "Vendor Link"
+F 7 "81-GRM33R6YA104ME14D" H 44825 24150 50  0001 C CNN "Vendor PN"
+	1    44825 24150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	45250 23625 44825 23625
+Wire Wire Line
+	44825 23625 44825 24000
+Wire Wire Line
+	44175 23600 44175 23400
+Wire Wire Line
+	44175 23400 44825 23400
+Wire Wire Line
+	44825 23400 44825 23625
+Connection ~ 44825 23625
+$Comp
+L power:GND #PWR0150
+U 1 1 640A2A2B
+P 44825 24800
+F 0 "#PWR0150" H 44825 24550 50  0001 C CNN
+F 1 "GND" H 44830 24627 50  0000 C CNN
+F 2 "" H 44825 24800 50  0001 C CNN
+F 3 "" H 44825 24800 50  0001 C CNN
+	1    44825 24800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C29
+U 1 1 640A2A3F
+P 45000 22000
+F 0 "C29" H 45115 22046 50  0000 L CNN
+F 1 "1uF" H 45115 21955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 45038 21850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/585/MLCC-1837944.pdf" H 45000 22000 50  0001 C CNN
+F 4 "0.15" H 45000 22000 50  0001 C CNN "Cost"
+F 5 "CL10A105KL8NNNC" H 45000 22000 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10A105KL8NNNC?qs=l7cgNqFNU1jr%252B%2Fap4UXsTA%3D%3D" H 45000 22000 50  0001 C CNN "Vendor Link"
+F 7 "187-CL10A105KL8NNNC" H 45000 22000 50  0001 C CNN "Vendor PN"
+	1    45000 22000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	45000 22150 45000 22225
+Wire Wire Line
+	45400 21725 45000 21725
+Wire Wire Line
+	45000 21725 45000 21850
+$Comp
+L Device:C C31
+U 1 1 640A2A57
+P 46400 24075
+F 0 "C31" H 46515 24121 50  0000 L CNN
+F 1 "220pF" H 46515 24030 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 46438 23925 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf" H 46400 24075 50  0001 C CNN
+F 4 "0.10" H 46400 24075 50  0001 C CNN "Cost"
+F 5 "06035A221JAT2A" H 46400 24075 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KYOCERA-AVX/06035A221JAT2A?qs=WmCxkUxNecRgZRZgIi8bmQ%3D%3D" H 46400 24075 50  0001 C CNN "Vendor Link"
+F 7 "581-06035A221J" H 46400 24075 50  0001 C CNN "Vendor PN"
+	1    46400 24075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	45250 23825 45150 23825
+Wire Wire Line
+	45150 23825 45150 24325
+Wire Wire Line
+	45150 24325 46400 24325
+Wire Wire Line
+	46400 24325 46400 24225
+Wire Wire Line
+	46400 23925 46400 23725
+Wire Wire Line
+	46400 23725 45850 23725
+$Comp
+L Device:R R91
+U 1 1 640A2AC7
+P 46850 23725
+F 0 "R91" V 46643 23725 50  0000 C CNN
+F 1 "100" V 46734 23725 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 46780 23725 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 46850 23725 50  0001 C CNN
+F 4 "0.10	" H 46850 23725 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 46850 23725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 46850 23725 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 46850 23725 50  0001 C CNN "Vendor PN"
+	1    46850 23725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	46400 23725 46700 23725
+Connection ~ 46400 23725
+$Comp
+L Device:R R125
+U 1 1 640A2AD3
+P 50800 21400
+F 0 "R125" H 50730 21354 50  0000 R CNN
+F 1 "22.1" H 50730 21445 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 50730 21400 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 50800 21400 50  0001 C CNN
+F 4 "0.10	" H 50800 21400 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD22R1F" H 50800 21400 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD22R1F?qs=h8%2FvSci3DWxf8SoKZOz2uA%3D%3D" H 50800 21400 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD22R1F" H 50800 21400 50  0001 C CNN "Vendor PN"
+	1    50800 21400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	47000 23725 47250 23725
+Wire Wire Line
+	46400 24325 47550 24325
+Wire Wire Line
+	47550 24325 47550 23925
+Connection ~ 46400 24325
+$Comp
+L Device:R R119
+U 1 1 640A2AEB
+P 47550 24550
+F 0 "R119" H 47480 24504 50  0000 R CNN
+F 1 "6.2K" H 47480 24595 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 47480 24550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/crcwce3-1762584.pdf" H 47550 24550 50  0001 C CNN
+F 4 "0.10	" H 47550 24550 50  0001 C CNN "Cost"
+F 5 "CRCW06036K20FKEAC" H 47550 24550 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Dale/CRCW06036K20FKEAC?qs=E3Y5ESvWgWPIiSG1ut%252B03g%3D%3D" H 47550 24550 50  0001 C CNN "Vendor Link"
+F 7 "CRCW06036K20FKEAC" H 47550 24550 50  0001 C CNN "Vendor PN"
+	1    47550 24550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	47550 24700 47550 24800
+Wire Wire Line
+	44825 24300 44825 24800
+Wire Wire Line
+	47550 24400 47550 24325
+Connection ~ 47550 24325
+Wire Wire Line
+	47550 23525 47550 22825
+Wire Wire Line
+	47550 22825 48450 22825
+$Comp
+L Device:R R118
+U 1 1 640A2B11
+P 47550 22000
+F 0 "R118" H 47480 21954 50  0000 R CNN
+F 1 "10K" H 47480 22045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 47480 22000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 47550 22000 50  0001 C CNN
+F 4 "0.10	" H 47550 22000 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 47550 22000 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 47550 22000 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 47550 22000 50  0001 C CNN "Vendor PN"
+	1    47550 22000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	47550 22150 47550 22825
+Connection ~ 47550 22825
+$Comp
+L Device:R R121
+U 1 1 640A2B1D
+P 48200 21975
+F 0 "R121" H 48130 21929 50  0000 R CNN
+F 1 "249" H 48130 22020 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 48130 21975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 48200 21975 50  0001 C CNN
+F 4 "0.10	" H 48200 21975 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD2490F" H 48200 21975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD2490F?qs=P62ublwmbi9cHjyHmdcDCw%3D%3D" H 48200 21975 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD2490F" H 48200 21975 50  0001 C CNN "Vendor PN"
+	1    48200 21975
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	48200 23025 48450 23025
+Wire Wire Line
+	48200 22125 48200 22350
+Wire Wire Line
+	45400 21425 45400 21725
+$Comp
+L power:+24V #PWR0158
+U 1 1 640A2BA9
+P 47550 21625
+F 0 "#PWR0158" H 47550 21475 50  0001 C CNN
+F 1 "+24V" H 47565 21798 50  0000 C CNN
+F 2 "" H 47550 21625 50  0001 C CNN
+F 3 "" H 47550 21625 50  0001 C CNN
+	1    47550 21625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	47550 21625 47550 21850
+$Comp
+L power:+24V #PWR0161
+U 1 1 640A2BB4
+P 48200 21650
+F 0 "#PWR0161" H 48200 21500 50  0001 C CNN
+F 1 "+24V" H 48215 21823 50  0000 C CNN
+F 2 "" H 48200 21650 50  0001 C CNN
+F 3 "" H 48200 21650 50  0001 C CNN
+	1    48200 21650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	48200 21650 48200 21825
+$Comp
+L Device:C C33
+U 1 1 640A2BC0
+P 49375 22650
+F 0 "C33" H 49490 22696 50  0000 L CNN
+F 1 "220pF" H 49490 22605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 49413 22500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf" H 49375 22650 50  0001 C CNN
+F 4 "0.10" H 49375 22650 50  0001 C CNN "Cost"
+F 5 "06035A221JAT2A" H 49375 22650 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KYOCERA-AVX/06035A221JAT2A?qs=WmCxkUxNecRgZRZgIi8bmQ%3D%3D" H 49375 22650 50  0001 C CNN "Vendor Link"
+F 7 "581-06035A221J" H 49375 22650 50  0001 C CNN "Vendor PN"
+	1    49375 22650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	49050 22925 49375 22925
+Wire Wire Line
+	49375 22925 49375 22800
+Wire Wire Line
+	49375 22500 49375 22350
+Wire Wire Line
+	49375 22350 48200 22350
+Connection ~ 48200 22350
+Wire Wire Line
+	48200 22350 48200 23025
+$Comp
+L Device:R R123
+U 1 1 640A2BD0
+P 49925 22925
+F 0 "R123" V 49718 22925 50  0000 C CNN
+F 1 "100" V 49809 22925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 49855 22925 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 49925 22925 50  0001 C CNN
+F 4 "0.10	" H 49925 22925 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 49925 22925 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 49925 22925 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 49925 22925 50  0001 C CNN "Vendor PN"
+	1    49925 22925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	49775 22925 49375 22925
+Connection ~ 49375 22925
+Wire Wire Line
+	50375 22925 50075 22925
+Wire Wire Line
+	50375 22925 50375 22375
+Wire Wire Line
+	50375 22375 50500 22375
+Wire Wire Line
+	49375 22350 49850 22350
+Wire Wire Line
+	49850 22350 49850 22675
+Wire Wire Line
+	49850 22675 50800 22675
+Wire Wire Line
+	50800 22675 50800 22575
+Connection ~ 49375 22350
+$Comp
+L Device:D D34
+U 1 1 640A2C48
+P 50075 22000
+F 0 "D34" V 50029 22080 50  0000 L CNN
+F 1 "D" V 50120 22080 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 50075 22000 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 50075 22000 50  0001 C CNN
+F 4 "0.21" H 50075 22000 50  0001 C CNN "Cost"
+F 5 "1N4007-T" H 50075 22000 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Diodes-Incorporated/1N4007-T?qs=e%2FRqmsgwm9iVtgJYUW23AA%3D%3D" H 50075 22000 50  0001 C CNN "Vendor Link"
+F 7 "621-1N4007" H 50075 22000 50  0001 C CNN "Vendor PN"
+	1    50075 22000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D33
+U 1 1 640A2C52
+P 50075 21550
+F 0 "D33" V 50029 21630 50  0000 L CNN
+F 1 "D" V 50120 21630 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 50075 21550 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 50075 21550 50  0001 C CNN
+F 4 "0.21" H 50075 21550 50  0001 C CNN "Cost"
+F 5 "1N4007-T" H 50075 21550 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Diodes-Incorporated/1N4007-T?qs=e%2FRqmsgwm9iVtgJYUW23AA%3D%3D" H 50075 21550 50  0001 C CNN "Vendor Link"
+F 7 "621-1N4007" H 50075 21550 50  0001 C CNN "Vendor PN"
+	1    50075 21550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+24V #PWR0209
+U 1 1 640A2C5C
+P 50075 21300
+F 0 "#PWR0209" H 50075 21150 50  0001 C CNN
+F 1 "+24V" H 50090 21473 50  0000 C CNN
+F 2 "" H 50075 21300 50  0001 C CNN
+F 3 "" H 50075 21300 50  0001 C CNN
+	1    50075 21300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	50075 21300 50075 21400
+Wire Wire Line
+	50075 21700 50075 21800
+Wire Wire Line
+	50075 22150 50075 22250
+Wire Wire Line
+	50075 21800 50800 21800
+Wire Wire Line
+	50800 21800 50800 21550
+Connection ~ 50075 21800
+Wire Wire Line
+	50075 21800 50075 21850
+Wire Wire Line
+	50800 22175 50800 21800
+Connection ~ 50800 21800
+Wire Wire Line
+	44125 24100 44175 24100
+Wire Wire Line
+	44175 24100 44175 23900
+Wire Wire Line
+	50900 20850 50800 20850
+Wire Wire Line
+	50800 20850 50800 21250
+$Comp
+L power:GNDA #PWR0210
+U 1 1 640A2C73
+P 50075 22250
+F 0 "#PWR0210" H 50075 22000 50  0001 C CNN
+F 1 "GNDA" H 50080 22077 50  0000 C CNN
+F 2 "" H 50075 22250 50  0001 C CNN
+F 3 "" H 50075 22250 50  0001 C CNN
+	1    50075 22250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0159
+U 1 1 640A2C91
+P 47550 24800
+F 0 "#PWR0159" H 47550 24550 50  0001 C CNN
+F 1 "GNDA" H 47555 24627 50  0000 C CNN
+F 2 "" H 47550 24800 50  0001 C CNN
+F 3 "" H 47550 24800 50  0001 C CNN
+	1    47550 24800
+	1    0    0    -1  
+$EndComp
+Text Notes 46275 20800 0    146  ~ 29
+4-20mA OUTPUT - 5
+$Comp
+L Device:R R70
+U 1 1 6435BF10
+P 26300 23800
+F 0 "R70" H 26370 23846 50  0000 L CNN
+F 1 "16K" H 26370 23755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 26230 23800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 26300 23800 50  0001 C CNN
+F 4 "0.10	" H 26300 23800 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ163V" H 26300 23800 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ163V?qs=JjxTDIFmKPSqT6jK2g6mOw%3D%3D" H 26300 23800 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ163V" H 26300 23800 50  0001 C CNN "Vendor PN"
+	1    26300 23800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 6435BF1A
+P 26950 24200
+F 0 "C14" H 27065 24246 50  0000 L CNN
+F 1 "100nF" H 26975 24100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 26988 24050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/1/GRM033R6YA104ME14_01A-1982036.pdf" H 26950 24200 50  0001 C CNN
+F 4 "0.10" H 26950 24200 50  0001 C CNN "Cost"
+F 5 "GRM033R6YA104ME14D" H 26950 24200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM033R6YA104ME14D?qs=P%2FC4Eoq9CDwjSVlAMBrT%252Bw%3D%3D" H 26950 24200 50  0001 C CNN "Vendor Link"
+F 7 "81-GRM33R6YA104ME14D" H 26950 24200 50  0001 C CNN "Vendor PN"
+	1    26950 24200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	27375 23675 26950 23675
+Wire Wire Line
+	26950 23675 26950 24050
+Wire Wire Line
+	26300 23650 26300 23450
+Wire Wire Line
+	26300 23450 26950 23450
+Wire Wire Line
+	26950 23450 26950 23675
+Connection ~ 26950 23675
+$Comp
+L power:GND #PWR089
+U 1 1 6435BF34
+P 26950 24850
+F 0 "#PWR089" H 26950 24600 50  0001 C CNN
+F 1 "GND" H 26955 24677 50  0000 C CNN
+F 2 "" H 26950 24850 50  0001 C CNN
+F 3 "" H 26950 24850 50  0001 C CNN
+	1    26950 24850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 6435BF48
+P 27200 22125
+F 0 "C20" H 27315 22171 50  0000 L CNN
+F 1 "1uF" H 27315 22080 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 27238 21975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/585/MLCC-1837944.pdf" H 27200 22125 50  0001 C CNN
+F 4 "0.15" H 27200 22125 50  0001 C CNN "Cost"
+F 5 "CL10A105KL8NNNC" H 27200 22125 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10A105KL8NNNC?qs=l7cgNqFNU1jr%252B%2Fap4UXsTA%3D%3D" H 27200 22125 50  0001 C CNN "Vendor Link"
+F 7 "187-CL10A105KL8NNNC" H 27200 22125 50  0001 C CNN "Vendor PN"
+	1    27200 22125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	27200 22275 27200 22350
+Wire Wire Line
+	27600 21850 27200 21850
+Wire Wire Line
+	27200 21850 27200 21975
+$Comp
+L Device:C C22
+U 1 1 6435BF60
+P 28525 24125
+F 0 "C22" H 28640 24171 50  0000 L CNN
+F 1 "220pF" H 28640 24080 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 28563 23975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf" H 28525 24125 50  0001 C CNN
+F 4 "0.10" H 28525 24125 50  0001 C CNN "Cost"
+F 5 "06035A221JAT2A" H 28525 24125 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KYOCERA-AVX/06035A221JAT2A?qs=WmCxkUxNecRgZRZgIi8bmQ%3D%3D" H 28525 24125 50  0001 C CNN "Vendor Link"
+F 7 "581-06035A221J" H 28525 24125 50  0001 C CNN "Vendor PN"
+	1    28525 24125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	27375 23875 27275 23875
+Wire Wire Line
+	27275 23875 27275 24375
+Wire Wire Line
+	27275 24375 28525 24375
+Wire Wire Line
+	28525 24375 28525 24275
+Wire Wire Line
+	28525 23975 28525 23775
+Wire Wire Line
+	28525 23775 27975 23775
+$Comp
+L Device:R R72
+U 1 1 6435BFD0
+P 28975 23775
+F 0 "R72" V 28768 23775 50  0000 C CNN
+F 1 "100" V 28859 23775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 28905 23775 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 28975 23775 50  0001 C CNN
+F 4 "0.10	" H 28975 23775 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 28975 23775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 28975 23775 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 28975 23775 50  0001 C CNN "Vendor PN"
+	1    28975 23775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28525 23775 28825 23775
+Connection ~ 28525 23775
+$Comp
+L Device:R R82
+U 1 1 6435BFDC
+P 32925 21450
+F 0 "R82" H 32855 21404 50  0000 R CNN
+F 1 "22.1" H 32855 21495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 32855 21450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 32925 21450 50  0001 C CNN
+F 4 "0.10	" H 32925 21450 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD22R1F" H 32925 21450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD22R1F?qs=h8%2FvSci3DWxf8SoKZOz2uA%3D%3D" H 32925 21450 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD22R1F" H 32925 21450 50  0001 C CNN "Vendor PN"
+	1    32925 21450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	29125 23775 29375 23775
+Wire Wire Line
+	28525 24375 29675 24375
+Wire Wire Line
+	29675 24375 29675 23975
+Connection ~ 28525 24375
+$Comp
+L Device:R R75
+U 1 1 6435BFF4
+P 29675 24600
+F 0 "R75" H 29605 24554 50  0000 R CNN
+F 1 "6.2K" H 29605 24645 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 29605 24600 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/crcwce3-1762584.pdf" H 29675 24600 50  0001 C CNN
+F 4 "0.10	" H 29675 24600 50  0001 C CNN "Cost"
+F 5 "CRCW06036K20FKEAC" H 29675 24600 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Dale/CRCW06036K20FKEAC?qs=E3Y5ESvWgWPIiSG1ut%252B03g%3D%3D" H 29675 24600 50  0001 C CNN "Vendor Link"
+F 7 "CRCW06036K20FKEAC" H 29675 24600 50  0001 C CNN "Vendor PN"
+	1    29675 24600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	29675 24750 29675 24850
+Wire Wire Line
+	26950 24350 26950 24850
+Wire Wire Line
+	29675 24450 29675 24375
+Connection ~ 29675 24375
+Wire Wire Line
+	29675 23575 29675 22875
+Wire Wire Line
+	29675 22875 30575 22875
+$Comp
+L Device:R R74
+U 1 1 6435C01A
+P 29675 22050
+F 0 "R74" H 29605 22004 50  0000 R CNN
+F 1 "10K" H 29605 22095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 29605 22050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 29675 22050 50  0001 C CNN
+F 4 "0.10	" H 29675 22050 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 29675 22050 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 29675 22050 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 29675 22050 50  0001 C CNN "Vendor PN"
+	1    29675 22050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	29675 22200 29675 22875
+Connection ~ 29675 22875
+$Comp
+L Device:R R78
+U 1 1 6435C098
+P 30325 22025
+F 0 "R78" H 30255 21979 50  0000 R CNN
+F 1 "249" H 30255 22070 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 30255 22025 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 30325 22025 50  0001 C CNN
+F 4 "0.10	" H 30325 22025 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD2490F" H 30325 22025 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD2490F?qs=P62ublwmbi9cHjyHmdcDCw%3D%3D" H 30325 22025 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD2490F" H 30325 22025 50  0001 C CNN "Vendor PN"
+	1    30325 22025
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	30325 23075 30575 23075
+Wire Wire Line
+	30325 22175 30325 22400
+Wire Wire Line
+	27600 21550 27600 21850
+$Comp
+L power:+24V #PWR097
+U 1 1 6435C0A6
+P 29675 21675
+F 0 "#PWR097" H 29675 21525 50  0001 C CNN
+F 1 "+24V" H 29690 21848 50  0000 C CNN
+F 2 "" H 29675 21675 50  0001 C CNN
+F 3 "" H 29675 21675 50  0001 C CNN
+	1    29675 21675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	29675 21675 29675 21900
+$Comp
+L power:+24V #PWR0102
+U 1 1 6435C0B1
+P 30325 21700
+F 0 "#PWR0102" H 30325 21550 50  0001 C CNN
+F 1 "+24V" H 30340 21873 50  0000 C CNN
+F 2 "" H 30325 21700 50  0001 C CNN
+F 3 "" H 30325 21700 50  0001 C CNN
+	1    30325 21700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30325 21700 30325 21875
+$Comp
+L Device:C C24
+U 1 1 6435C0BD
+P 31500 22700
+F 0 "C24" H 31615 22746 50  0000 L CNN
+F 1 "220pF" H 31615 22655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 31538 22550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf" H 31500 22700 50  0001 C CNN
+F 4 "0.10" H 31500 22700 50  0001 C CNN "Cost"
+F 5 "06035A221JAT2A" H 31500 22700 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KYOCERA-AVX/06035A221JAT2A?qs=WmCxkUxNecRgZRZgIi8bmQ%3D%3D" H 31500 22700 50  0001 C CNN "Vendor Link"
+F 7 "581-06035A221J" H 31500 22700 50  0001 C CNN "Vendor PN"
+	1    31500 22700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	31175 22975 31500 22975
+Wire Wire Line
+	31500 22975 31500 22850
+Wire Wire Line
+	31500 22550 31500 22400
+Wire Wire Line
+	31500 22400 30325 22400
+Connection ~ 30325 22400
+Wire Wire Line
+	30325 22400 30325 23075
+$Comp
+L Device:R R80
+U 1 1 6435C0CD
+P 32050 22975
+F 0 "R80" V 31843 22975 50  0000 C CNN
+F 1 "100" V 31934 22975 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 31980 22975 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 32050 22975 50  0001 C CNN
+F 4 "0.10	" H 32050 22975 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 32050 22975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 32050 22975 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 32050 22975 50  0001 C CNN "Vendor PN"
+	1    32050 22975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	31900 22975 31500 22975
+Connection ~ 31500 22975
+Wire Wire Line
+	32500 22975 32200 22975
+Wire Wire Line
+	32500 22975 32500 22425
+Wire Wire Line
+	32500 22425 32625 22425
+Wire Wire Line
+	31500 22400 31975 22400
+Wire Wire Line
+	31975 22400 31975 22725
+Wire Wire Line
+	31975 22725 32925 22725
+Wire Wire Line
+	32925 22725 32925 22625
+Connection ~ 31500 22400
+$Comp
+L Device:D D23
+U 1 1 6435C151
+P 32200 22050
+F 0 "D23" V 32154 22130 50  0000 L CNN
+F 1 "D" V 32245 22130 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 32200 22050 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 32200 22050 50  0001 C CNN
+F 4 "0.21" H 32200 22050 50  0001 C CNN "Cost"
+F 5 "1N4007-T" H 32200 22050 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Diodes-Incorporated/1N4007-T?qs=e%2FRqmsgwm9iVtgJYUW23AA%3D%3D" H 32200 22050 50  0001 C CNN "Vendor Link"
+F 7 "621-1N4007" H 32200 22050 50  0001 C CNN "Vendor PN"
+	1    32200 22050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D22
+U 1 1 6435C15B
+P 32200 21600
+F 0 "D22" V 32154 21680 50  0000 L CNN
+F 1 "D" V 32245 21680 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 32200 21600 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 32200 21600 50  0001 C CNN
+F 4 "0.21" H 32200 21600 50  0001 C CNN "Cost"
+F 5 "1N4007-T" H 32200 21600 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Diodes-Incorporated/1N4007-T?qs=e%2FRqmsgwm9iVtgJYUW23AA%3D%3D" H 32200 21600 50  0001 C CNN "Vendor Link"
+F 7 "621-1N4007" H 32200 21600 50  0001 C CNN "Vendor PN"
+	1    32200 21600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+24V #PWR0111
+U 1 1 6435C165
+P 32200 21350
+F 0 "#PWR0111" H 32200 21200 50  0001 C CNN
+F 1 "+24V" H 32215 21523 50  0000 C CNN
+F 2 "" H 32200 21350 50  0001 C CNN
+F 3 "" H 32200 21350 50  0001 C CNN
+	1    32200 21350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	32200 21350 32200 21450
+Wire Wire Line
+	32200 21750 32200 21850
+Wire Wire Line
+	32200 22200 32200 22300
+Wire Wire Line
+	32200 21850 32925 21850
+Wire Wire Line
+	32925 21850 32925 21600
+Connection ~ 32200 21850
+Wire Wire Line
+	32200 21850 32200 21900
+Wire Wire Line
+	32925 22225 32925 21850
+Connection ~ 32925 21850
+Wire Wire Line
+	26250 24150 26300 24150
+Wire Wire Line
+	26300 24150 26300 23950
+Wire Wire Line
+	33025 20900 32925 20900
+Wire Wire Line
+	32925 20900 32925 21300
+$Comp
+L power:GNDA #PWR0121
+U 1 1 6435C17C
+P 32200 22300
+F 0 "#PWR0121" H 32200 22050 50  0001 C CNN
+F 1 "GNDA" H 32205 22127 50  0000 C CNN
+F 2 "" H 32200 22300 50  0001 C CNN
+F 3 "" H 32200 22300 50  0001 C CNN
+	1    32200 22300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR098
+U 1 1 6435C19A
+P 29675 24850
+F 0 "#PWR098" H 29675 24600 50  0001 C CNN
+F 1 "GNDA" H 29680 24677 50  0000 C CNN
+F 2 "" H 29675 24850 50  0001 C CNN
+F 3 "" H 29675 24850 50  0001 C CNN
+	1    29675 24850
+	1    0    0    -1  
+$EndComp
+Text Notes 28400 20850 0    146  ~ 29
+4-20mA OUTPUT - 4
+$Comp
+L Device:R R3
+U 1 1 6465AF99
+P 8800 23825
+F 0 "R3" H 8870 23871 50  0000 L CNN
+F 1 "16K" H 8870 23780 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8730 23825 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 8800 23825 50  0001 C CNN
+F 4 "0.10	" H 8800 23825 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ163V" H 8800 23825 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ163V?qs=JjxTDIFmKPSqT6jK2g6mOw%3D%3D" H 8800 23825 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ163V" H 8800 23825 50  0001 C CNN "Vendor PN"
+	1    8800 23825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 6465AFA3
+P 9450 24225
+F 0 "C2" H 9565 24271 50  0000 L CNN
+F 1 "100nF" H 9475 24125 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9488 24075 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/281/1/GRM033R6YA104ME14_01A-1982036.pdf" H 9450 24225 50  0001 C CNN
+F 4 "0.10" H 9450 24225 50  0001 C CNN "Cost"
+F 5 "GRM033R6YA104ME14D" H 9450 24225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM033R6YA104ME14D?qs=P%2FC4Eoq9CDwjSVlAMBrT%252Bw%3D%3D" H 9450 24225 50  0001 C CNN "Vendor Link"
+F 7 "81-GRM33R6YA104ME14D" H 9450 24225 50  0001 C CNN "Vendor PN"
+	1    9450 24225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9875 23700 9450 23700
+Wire Wire Line
+	9450 23700 9450 24075
+Wire Wire Line
+	8800 23675 8800 23475
+Wire Wire Line
+	8800 23475 9450 23475
+Wire Wire Line
+	9450 23475 9450 23700
+Connection ~ 9450 23700
+$Comp
+L power:GND #PWR037
+U 1 1 6465AFBD
+P 9450 24875
+F 0 "#PWR037" H 9450 24625 50  0001 C CNN
+F 1 "GND" H 9455 24702 50  0000 C CNN
+F 2 "" H 9450 24875 50  0001 C CNN
+F 3 "" H 9450 24875 50  0001 C CNN
+	1    9450 24875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 6465AFD1
+P 9700 22200
+F 0 "C4" H 9815 22246 50  0000 L CNN
+F 1 "1uF" H 9815 22155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9738 22050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/585/MLCC-1837944.pdf" H 9700 22200 50  0001 C CNN
+F 4 "0.15" H 9700 22200 50  0001 C CNN "Cost"
+F 5 "CL10A105KL8NNNC" H 9700 22200 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL10A105KL8NNNC?qs=l7cgNqFNU1jr%252B%2Fap4UXsTA%3D%3D" H 9700 22200 50  0001 C CNN "Vendor Link"
+F 7 "187-CL10A105KL8NNNC" H 9700 22200 50  0001 C CNN "Vendor PN"
+	1    9700 22200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 22350 9700 22425
+Wire Wire Line
+	10100 21925 9700 21925
+Wire Wire Line
+	9700 21925 9700 22050
+$Comp
+L Device:C C7
+U 1 1 6465AFE9
+P 11025 24150
+F 0 "C7" H 11140 24196 50  0000 L CNN
+F 1 "220pF" H 11140 24105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11063 24000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf" H 11025 24150 50  0001 C CNN
+F 4 "0.10" H 11025 24150 50  0001 C CNN "Cost"
+F 5 "06035A221JAT2A" H 11025 24150 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KYOCERA-AVX/06035A221JAT2A?qs=WmCxkUxNecRgZRZgIi8bmQ%3D%3D" H 11025 24150 50  0001 C CNN "Vendor Link"
+F 7 "581-06035A221J" H 11025 24150 50  0001 C CNN "Vendor PN"
+	1    11025 24150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9875 23900 9775 23900
+Wire Wire Line
+	9775 23900 9775 24400
+Wire Wire Line
+	9775 24400 11025 24400
+Wire Wire Line
+	11025 24400 11025 24300
+Wire Wire Line
+	11025 24000 11025 23800
+Wire Wire Line
+	11025 23800 10475 23800
+$Comp
+L Device:R R8
+U 1 1 6465B059
+P 11475 23800
+F 0 "R8" V 11268 23800 50  0000 C CNN
+F 1 "100" V 11359 23800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11405 23800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 11475 23800 50  0001 C CNN
+F 4 "0.10	" H 11475 23800 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 11475 23800 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 11475 23800 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 11475 23800 50  0001 C CNN "Vendor PN"
+	1    11475 23800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11025 23800 11325 23800
+Connection ~ 11025 23800
+$Comp
+L Device:R R68
+U 1 1 6465B065
+P 15425 21475
+F 0 "R68" H 15355 21429 50  0000 R CNN
+F 1 "22.1" H 15355 21520 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15355 21475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 15425 21475 50  0001 C CNN
+F 4 "0.10	" H 15425 21475 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD22R1F" H 15425 21475 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD22R1F?qs=h8%2FvSci3DWxf8SoKZOz2uA%3D%3D" H 15425 21475 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD22R1F" H 15425 21475 50  0001 C CNN "Vendor PN"
+	1    15425 21475
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11625 23800 11875 23800
+Wire Wire Line
+	11025 24400 12175 24400
+Wire Wire Line
+	12175 24400 12175 24000
+Connection ~ 11025 24400
+$Comp
+L Device:R R20
+U 1 1 6465B07D
+P 12175 24625
+F 0 "R20" H 12105 24579 50  0000 R CNN
+F 1 "6.2K" H 12105 24670 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12105 24625 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/crcwce3-1762584.pdf" H 12175 24625 50  0001 C CNN
+F 4 "0.10	" H 12175 24625 50  0001 C CNN "Cost"
+F 5 "CRCW06036K20FKEAC" H 12175 24625 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Dale/CRCW06036K20FKEAC?qs=E3Y5ESvWgWPIiSG1ut%252B03g%3D%3D" H 12175 24625 50  0001 C CNN "Vendor Link"
+F 7 "CRCW06036K20FKEAC" H 12175 24625 50  0001 C CNN "Vendor PN"
+	1    12175 24625
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12175 24775 12175 24875
+Wire Wire Line
+	9450 24375 9450 24875
+Wire Wire Line
+	12175 24475 12175 24400
+Connection ~ 12175 24400
+Wire Wire Line
+	12175 23600 12175 22900
+Wire Wire Line
+	12175 22900 13075 22900
+$Comp
+L Device:R R16
+U 1 1 6465B109
+P 12175 22075
+F 0 "R16" H 12105 22029 50  0000 R CNN
+F 1 "10K" H 12105 22120 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12105 22075 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/315/AOA0000C301-1488782.pdf" H 12175 22075 50  0001 C CNN
+F 4 "0.10	" H 12175 22075 50  0001 C CNN "Cost"
+F 5 "ERJ-3GEYJ103V" H 12175 22075 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Panasonic/ERJ-3GEYJ103V?qs=66DK8nO8gJBWgc%252B0VNNxzg%3D%3D" H 12175 22075 50  0001 C CNN "Vendor Link"
+F 7 "667-ERJ-3GEYJ103V" H 12175 22075 50  0001 C CNN "Vendor PN"
+	1    12175 22075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12175 22225 12175 22900
+Connection ~ 12175 22900
+$Comp
+L Device:R R45
+U 1 1 6465B115
+P 12825 22050
+F 0 "R45" H 12755 22004 50  0000 R CNN
+F 1 "249" H 12755 22095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12755 22050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf" H 12825 22050 50  0001 C CNN
+F 4 "0.10	" H 12825 22050 50  0001 C CNN "Cost"
+F 5 "RK73H1JTTD2490F" H 12825 22050 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KOA-Speer/RK73H1JTTD2490F?qs=P62ublwmbi9cHjyHmdcDCw%3D%3D" H 12825 22050 50  0001 C CNN "Vendor Link"
+F 7 "660-RK73H1JTTD2490F" H 12825 22050 50  0001 C CNN "Vendor PN"
+	1    12825 22050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12825 23100 13075 23100
+Wire Wire Line
+	12825 22200 12825 22425
+Wire Wire Line
+	10100 21625 10100 21925
+$Comp
+L power:+24V #PWR073
+U 1 1 6465B123
+P 12175 21700
+F 0 "#PWR073" H 12175 21550 50  0001 C CNN
+F 1 "+24V" H 12190 21873 50  0000 C CNN
+F 2 "" H 12175 21700 50  0001 C CNN
+F 3 "" H 12175 21700 50  0001 C CNN
+	1    12175 21700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12175 21700 12175 21925
+$Comp
+L power:+24V #PWR077
+U 1 1 6465B12E
+P 12825 21725
+F 0 "#PWR077" H 12825 21575 50  0001 C CNN
+F 1 "+24V" H 12840 21898 50  0000 C CNN
+F 2 "" H 12825 21725 50  0001 C CNN
+F 3 "" H 12825 21725 50  0001 C CNN
+	1    12825 21725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12825 21725 12825 21900
+$Comp
+L Device:C C12
+U 1 1 6465B13A
+P 14000 22725
+F 0 "C12" H 14115 22771 50  0000 L CNN
+F 1 "220pF" H 14115 22680 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 14038 22575 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/40/C0GNP0_Dielectric-951274.pdf" H 14000 22725 50  0001 C CNN
+F 4 "0.10" H 14000 22725 50  0001 C CNN "Cost"
+F 5 "06035A221JAT2A" H 14000 22725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/KYOCERA-AVX/06035A221JAT2A?qs=WmCxkUxNecRgZRZgIi8bmQ%3D%3D" H 14000 22725 50  0001 C CNN "Vendor Link"
+F 7 "581-06035A221J" H 14000 22725 50  0001 C CNN "Vendor PN"
+	1    14000 22725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13675 23000 14000 23000
+Wire Wire Line
+	14000 23000 14000 22875
+Wire Wire Line
+	14000 22575 14000 22425
+Wire Wire Line
+	14000 22425 12825 22425
+Connection ~ 12825 22425
+Wire Wire Line
+	12825 22425 12825 23100
+$Comp
+L Device:R R50
+U 1 1 6465B14A
+P 14550 23000
+F 0 "R50" V 14343 23000 50  0000 C CNN
+F 1 "100" V 14434 23000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14480 23000 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 14550 23000 50  0001 C CNN
+F 4 "0.10	" H 14550 23000 50  0001 C CNN "Cost"
+F 5 "RC0603FR-07100RL" H 14550 23000 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100RL?qs=NEN%2FsE%2FLsvPIwIWKCOS4%2FA%3D%3D" H 14550 23000 50  0001 C CNN "Vendor Link"
+F 7 "603-RC0603FR-07100RL" H 14550 23000 50  0001 C CNN "Vendor PN"
+	1    14550 23000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14400 23000 14000 23000
+Connection ~ 14000 23000
+Wire Wire Line
+	15000 23000 14700 23000
+Wire Wire Line
+	15000 23000 15000 22450
+Wire Wire Line
+	15000 22450 15125 22450
+Wire Wire Line
+	14000 22425 14475 22425
+Wire Wire Line
+	14475 22425 14475 22750
+Wire Wire Line
+	14475 22750 15425 22750
+Wire Wire Line
+	15425 22750 15425 22650
+Connection ~ 14000 22425
+$Comp
+L Device:D D19
+U 1 1 6465B1DA
+P 14700 22075
+F 0 "D19" V 14654 22155 50  0000 L CNN
+F 1 "D" V 14745 22155 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 14700 22075 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 14700 22075 50  0001 C CNN
+F 4 "0.21" H 14700 22075 50  0001 C CNN "Cost"
+F 5 "1N4007-T" H 14700 22075 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Diodes-Incorporated/1N4007-T?qs=e%2FRqmsgwm9iVtgJYUW23AA%3D%3D" H 14700 22075 50  0001 C CNN "Vendor Link"
+F 7 "621-1N4007" H 14700 22075 50  0001 C CNN "Vendor PN"
+	1    14700 22075
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D18
+U 1 1 6465B1E4
+P 14700 21625
+F 0 "D18" V 14654 21705 50  0000 L CNN
+F 1 "D" V 14745 21705 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 14700 21625 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds28002.pdf" H 14700 21625 50  0001 C CNN
+F 4 "0.21" H 14700 21625 50  0001 C CNN "Cost"
+F 5 "1N4007-T" H 14700 21625 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Diodes-Incorporated/1N4007-T?qs=e%2FRqmsgwm9iVtgJYUW23AA%3D%3D" H 14700 21625 50  0001 C CNN "Vendor Link"
+F 7 "621-1N4007" H 14700 21625 50  0001 C CNN "Vendor PN"
+	1    14700 21625
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+24V #PWR083
+U 1 1 6465B1EE
+P 14700 21375
+F 0 "#PWR083" H 14700 21225 50  0001 C CNN
+F 1 "+24V" H 14715 21548 50  0000 C CNN
+F 2 "" H 14700 21375 50  0001 C CNN
+F 3 "" H 14700 21375 50  0001 C CNN
+	1    14700 21375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14700 21375 14700 21475
+Wire Wire Line
+	14700 21775 14700 21875
+Wire Wire Line
+	14700 22225 14700 22325
+Wire Wire Line
+	14700 21875 15425 21875
+Wire Wire Line
+	15425 21875 15425 21625
+Connection ~ 14700 21875
+Wire Wire Line
+	14700 21875 14700 21925
+Wire Wire Line
+	15425 22250 15425 21875
+Connection ~ 15425 21875
+Wire Wire Line
+	8750 24175 8800 24175
+Wire Wire Line
+	8800 24175 8800 23975
+Wire Wire Line
+	15525 20925 15425 20925
+Wire Wire Line
+	15425 20925 15425 21325
+$Comp
+L power:GNDA #PWR084
+U 1 1 6465B205
+P 14700 22325
+F 0 "#PWR084" H 14700 22075 50  0001 C CNN
+F 1 "GNDA" H 14705 22152 50  0000 C CNN
+F 2 "" H 14700 22325 50  0001 C CNN
+F 3 "" H 14700 22325 50  0001 C CNN
+	1    14700 22325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR074
+U 1 1 6465B223
+P 12175 24875
+F 0 "#PWR074" H 12175 24625 50  0001 C CNN
+F 1 "GNDA" H 12180 24702 50  0000 C CNN
+F 2 "" H 12175 24875 50  0001 C CNN
+F 3 "" H 12175 24875 50  0001 C CNN
+	1    12175 24875
+	1    0    0    -1  
+$EndComp
+Text Notes 10900 20875 0    146  ~ 29
+4-20mA OUTPUT - 3
+Text GLabel 50500 9575 2    50   Input ~ 0
+Pi1_4-20_OUT-2-
+Text GLabel 43725 12825 0    50   Input ~ 0
+Pi1_O_2
+Text GLabel 33025 20900 2    50   Input ~ 0
+Pi1_4-20_OUT-4-
+Text GLabel 50900 20850 2    50   Input ~ 0
+Pi1_4-20_OUT-5-
+Text GLabel 26250 24150 0    50   Input ~ 0
+Pi1_O_4
+Text GLabel 44125 24100 0    50   Input ~ 0
+Pi1_O_5
+$Comp
+L Connector:Screw_Terminal_01x02 J23
+U 1 1 6498EC6E
+P 8300 9825
+F 0 "J23" H 8218 10042 50  0000 C CNN
+F 1 "4 - 20mA OUT" H 8218 9951 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 8300 9825 50  0001 C CNN
+F 3 "https://www.phoenixcontact.com/us/products/1984617/pdf" H 8300 9825 50  0001 C CNN
+F 4 "0.55" H 8300 9825 50  0001 C CNN "Cost"
+F 5 "1984617" H 8300 9825 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984617?qs=ATjOrvm3mOhUrGlJQoUcpQ%3D%3D" H 8300 9825 50  0001 C CNN "Vendor Link"
+F 7 "651-1984617" H 8300 9825 50  0001 C CNN "Vendor PN"
+	1    8300 9825
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J25
+U 1 1 6499066D
+P 25575 9675
+F 0 "J25" H 25493 9892 50  0000 C CNN
+F 1 "4 - 20mA OUT" H 25493 9801 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 25575 9675 50  0001 C CNN
+F 3 "https://www.phoenixcontact.com/us/products/1984617/pdf" H 25575 9675 50  0001 C CNN
+F 4 "0.55" H 25575 9675 50  0001 C CNN "Cost"
+F 5 "1984617" H 25575 9675 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984617?qs=ATjOrvm3mOhUrGlJQoUcpQ%3D%3D" H 25575 9675 50  0001 C CNN "Vendor Link"
+F 7 "651-1984617" H 25575 9675 50  0001 C CNN "Vendor PN"
+	1    25575 9675
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J26
+U 1 1 64991B05
+P 42650 9775
+F 0 "J26" H 42568 9992 50  0000 C CNN
+F 1 "4 - 20mA OUT" H 42568 9901 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 42650 9775 50  0001 C CNN
+F 3 "https://www.phoenixcontact.com/us/products/1984617/pdf" H 42650 9775 50  0001 C CNN
+F 4 "0.55" H 42650 9775 50  0001 C CNN "Cost"
+F 5 "1984617" H 42650 9775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984617?qs=ATjOrvm3mOhUrGlJQoUcpQ%3D%3D" H 42650 9775 50  0001 C CNN "Vendor Link"
+F 7 "651-1984617" H 42650 9775 50  0001 C CNN "Vendor PN"
+	1    42650 9775
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J7
+U 1 1 6499288F
+P 7900 20975
+F 0 "J7" H 7818 21192 50  0000 C CNN
+F 1 "4 - 20mA OUT" H 7818 21101 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 7900 20975 50  0001 C CNN
+F 3 "https://www.phoenixcontact.com/us/products/1984617/pdf" H 7900 20975 50  0001 C CNN
+F 4 "0.55" H 7900 20975 50  0001 C CNN "Cost"
+F 5 "1984617" H 7900 20975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984617?qs=ATjOrvm3mOhUrGlJQoUcpQ%3D%3D" H 7900 20975 50  0001 C CNN "Vendor Link"
+F 7 "651-1984617" H 7900 20975 50  0001 C CNN "Vendor PN"
+	1    7900 20975
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J24
+U 1 1 649940D6
+P 25350 21075
+F 0 "J24" H 25268 21292 50  0000 C CNN
+F 1 "4 - 20mA OUT" H 25268 21201 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 25350 21075 50  0001 C CNN
+F 3 "https://www.phoenixcontact.com/us/products/1984617/pdf" H 25350 21075 50  0001 C CNN
+F 4 "0.55" H 25350 21075 50  0001 C CNN "Cost"
+F 5 "1984617" H 25350 21075 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984617?qs=ATjOrvm3mOhUrGlJQoUcpQ%3D%3D" H 25350 21075 50  0001 C CNN "Vendor Link"
+F 7 "651-1984617" H 25350 21075 50  0001 C CNN "Vendor PN"
+	1    25350 21075
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J33
+U 1 1 6499495B
+P 42700 21225
+F 0 "J33" H 42618 21442 50  0000 C CNN
+F 1 "4 - 20mA OUT" H 42618 21351 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal" H 42700 21225 50  0001 C CNN
+F 3 "https://www.phoenixcontact.com/us/products/1984617/pdf" H 42700 21225 50  0001 C CNN
+F 4 "0.55" H 42700 21225 50  0001 C CNN "Cost"
+F 5 "1984617" H 42700 21225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Phoenix-Contact/1984617?qs=ATjOrvm3mOhUrGlJQoUcpQ%3D%3D" H 42700 21225 50  0001 C CNN "Vendor Link"
+F 7 "651-1984617" H 42700 21225 50  0001 C CNN "Vendor PN"
+	1    42700 21225
+	-1   0    0    -1  
+$EndComp
+Text GLabel 8600 9825 2    50   Input ~ 0
+Pi1_4-20_OUT-0-
+$Comp
+L power:+24V #PWR036
+U 1 1 64CBB321
+P 9425 9650
+F 0 "#PWR036" H 9425 9500 50  0001 C CNN
+F 1 "+24V" H 9440 9823 50  0000 C CNN
+F 2 "" H 9425 9650 50  0001 C CNN
+F 3 "" H 9425 9650 50  0001 C CNN
+	1    9425 9650
+	1    0    0    -1  
+$EndComp
+Text GLabel 25925 9675 2    50   Input ~ 0
+Pi1_4-20_OUT-1-
+$Comp
+L power:+24V #PWR088
+U 1 1 65305905
+P 26750 9575
+F 0 "#PWR088" H 26750 9425 50  0001 C CNN
+F 1 "+24V" H 26765 9748 50  0000 C CNN
+F 2 "" H 26750 9575 50  0001 C CNN
+F 3 "" H 26750 9575 50  0001 C CNN
+	1    26750 9575
+	1    0    0    -1  
+$EndComp
+Text GLabel 42925 9775 2    50   Input ~ 0
+Pi1_4-20_OUT-2-
+$Comp
+L power:+24V #PWR0131
+U 1 1 659546C4
+P 43800 9675
+F 0 "#PWR0131" H 43800 9525 50  0001 C CNN
+F 1 "+24V" H 43815 9848 50  0000 C CNN
+F 2 "" H 43800 9675 50  0001 C CNN
+F 3 "" H 43800 9675 50  0001 C CNN
+	1    43800 9675
+	1    0    0    -1  
+$EndComp
+Text GLabel 43100 21225 2    50   Input ~ 0
+Pi1_4-20_OUT-5-
+$Comp
+L power:+24V #PWR0147
+U 1 1 65C7DE58
+P 43925 21100
+F 0 "#PWR0147" H 43925 20950 50  0001 C CNN
+F 1 "+24V" H 43940 21273 50  0000 C CNN
+F 2 "" H 43925 21100 50  0001 C CNN
+F 3 "" H 43925 21100 50  0001 C CNN
+	1    43925 21100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	43100 21225 42900 21225
+Text GLabel 25800 21075 2    50   Input ~ 0
+Pi1_4-20_OUT-4-
+$Comp
+L power:+24V #PWR087
+U 1 1 662D4420
+P 26625 21025
+F 0 "#PWR087" H 26625 20875 50  0001 C CNN
+F 1 "+24V" H 26640 21198 50  0000 C CNN
+F 2 "" H 26625 21025 50  0001 C CNN
+F 3 "" H 26625 21025 50  0001 C CNN
+	1    26625 21025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	25800 21075 25550 21075
+Text GLabel 8300 20975 2    50   Input ~ 0
+Pi1_4-20_OUT-3-
+$Comp
+L power:+24V #PWR031
+U 1 1 66930F56
+P 9175 20850
+F 0 "#PWR031" H 9175 20700 50  0001 C CNN
+F 1 "+24V" H 9190 21023 50  0000 C CNN
+F 2 "" H 9175 20850 50  0001 C CNN
+F 3 "" H 9175 20850 50  0001 C CNN
+	1    9175 20850
+	1    0    0    -1  
+$EndComp
+Text GLabel 2150 6700 0    50   Input ~ 0
+Pi1_O_0
+Wire Wire Line
+	2150 6700 2400 6700
+Text GLabel 2175 18100 0    50   Input ~ 0
+Pi1_O_3
+Wire Wire Line
+	2175 18100 2350 18100
+Text GLabel 19375 6775 0    50   Input ~ 0
+Pi1_O_1
+Wire Wire Line
+	19575 6775 19375 6775
+Text GLabel 36650 6825 0    50   Input ~ 0
+Pi1_O_2
+Wire Wire Line
+	36950 6825 36650 6825
+Text GLabel 36450 17850 0    50   Input ~ 0
+Pi1_O_5
+Wire Wire Line
+	36675 17850 36450 17850
+Text GLabel 19050 17850 0    50   Input ~ 0
+Pi1_O_4
+Wire Wire Line
+	19050 17850 19300 17850
+$Comp
+L power:+24V #PWR046
+U 1 1 6351C214
+P 10475 10700
+F 0 "#PWR046" H 10475 10550 50  0001 C CNN
+F 1 "+24V" H 10490 10873 50  0000 C CNN
+F 2 "" H 10475 10700 50  0001 C CNN
+F 3 "" H 10475 10700 50  0001 C CNN
+	1    10475 10700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR047
+U 1 1 6351D7C7
+P 10475 11775
+F 0 "#PWR047" H 10475 11525 50  0001 C CNN
+F 1 "GNDA" H 10480 11602 50  0000 C CNN
+F 2 "" H 10475 11775 50  0001 C CNN
+F 3 "" H 10475 11775 50  0001 C CNN
+	1    10475 11775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR040
+U 1 1 6351ED37
+P 10075 11500
+F 0 "#PWR040" H 10075 11250 50  0001 C CNN
+F 1 "GNDA" H 10080 11327 50  0000 C CNN
+F 2 "" H 10075 11500 50  0001 C CNN
+F 3 "" H 10075 11500 50  0001 C CNN
+	1    10075 11500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR095
+U 1 1 63520574
+P 27800 10375
+F 0 "#PWR095" H 27800 10225 50  0001 C CNN
+F 1 "+24V" H 27815 10548 50  0000 C CNN
+F 2 "" H 27800 10375 50  0001 C CNN
+F 3 "" H 27800 10375 50  0001 C CNN
+	1    27800 10375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR092
+U 1 1 63521ADF
+P 27400 11175
+F 0 "#PWR092" H 27400 10925 50  0001 C CNN
+F 1 "GNDA" H 27405 11002 50  0000 C CNN
+F 2 "" H 27400 11175 50  0001 C CNN
+F 3 "" H 27400 11175 50  0001 C CNN
+	1    27400 11175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0108
+U 1 1 63522566
+P 27800 11375
+F 0 "#PWR0108" H 27800 11125 50  0001 C CNN
+F 1 "GNDA" H 27805 11202 50  0000 C CNN
+F 2 "" H 27800 11375 50  0001 C CNN
+F 3 "" H 27800 11375 50  0001 C CNN
+	1    27800 11375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0149
+U 1 1 63529206
+P 44725 10900
+F 0 "#PWR0149" H 44725 10650 50  0001 C CNN
+F 1 "GNDA" H 44730 10727 50  0000 C CNN
+F 2 "" H 44725 10900 50  0001 C CNN
+F 3 "" H 44725 10900 50  0001 C CNN
+	1    44725 10900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0151
+U 1 1 6352A3C4
+P 45125 10100
+F 0 "#PWR0151" H 45125 9950 50  0001 C CNN
+F 1 "+24V" H 45140 10273 50  0000 C CNN
+F 2 "" H 45125 10100 50  0001 C CNN
+F 3 "" H 45125 10100 50  0001 C CNN
+	1    45125 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR045
+U 1 1 6352CF1E
+P 10100 22675
+F 0 "#PWR045" H 10100 22425 50  0001 C CNN
+F 1 "GNDA" H 10105 22502 50  0000 C CNN
+F 2 "" H 10100 22675 50  0001 C CNN
+F 3 "" H 10100 22675 50  0001 C CNN
+	1    10100 22675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR038
+U 1 1 6352D507
+P 9700 22425
+F 0 "#PWR038" H 9700 22175 50  0001 C CNN
+F 1 "GNDA" H 9705 22252 50  0000 C CNN
+F 2 "" H 9700 22425 50  0001 C CNN
+F 3 "" H 9700 22425 50  0001 C CNN
+	1    9700 22425
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR044
+U 1 1 6352EAF6
+P 10100 21625
+F 0 "#PWR044" H 10100 21475 50  0001 C CNN
+F 1 "+24V" H 10115 21798 50  0000 C CNN
+F 2 "" H 10100 21625 50  0001 C CNN
+F 3 "" H 10100 21625 50  0001 C CNN
+	1    10100 21625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR094
+U 1 1 63531539
+P 27600 22600
+F 0 "#PWR094" H 27600 22350 50  0001 C CNN
+F 1 "GNDA" H 27605 22427 50  0000 C CNN
+F 2 "" H 27600 22600 50  0001 C CNN
+F 3 "" H 27600 22600 50  0001 C CNN
+	1    27600 22600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR091
+U 1 1 63532756
+P 27200 22350
+F 0 "#PWR091" H 27200 22100 50  0001 C CNN
+F 1 "GNDA" H 27205 22177 50  0000 C CNN
+F 2 "" H 27200 22350 50  0001 C CNN
+F 3 "" H 27200 22350 50  0001 C CNN
+	1    27200 22350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR093
+U 1 1 635330E7
+P 27600 21550
+F 0 "#PWR093" H 27600 21400 50  0001 C CNN
+F 1 "+24V" H 27615 21723 50  0000 C CNN
+F 2 "" H 27600 21550 50  0001 C CNN
+F 3 "" H 27600 21550 50  0001 C CNN
+	1    27600 21550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0154
+U 1 1 63535BDB
+P 45400 21425
+F 0 "#PWR0154" H 45400 21275 50  0001 C CNN
+F 1 "+24V" H 45415 21598 50  0000 C CNN
+F 2 "" H 45400 21425 50  0001 C CNN
+F 3 "" H 45400 21425 50  0001 C CNN
+	1    45400 21425
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0155
+U 1 1 63537C44
+P 45400 22500
+F 0 "#PWR0155" H 45400 22250 50  0001 C CNN
+F 1 "GNDA" H 45405 22327 50  0000 C CNN
+F 2 "" H 45400 22500 50  0001 C CNN
+F 3 "" H 45400 22500 50  0001 C CNN
+	1    45400 22500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0153
+U 1 1 6353882D
+P 45000 22225
+F 0 "#PWR0153" H 45000 21975 50  0001 C CNN
+F 1 "GNDA" H 45005 22052 50  0000 C CNN
+F 2 "" H 45000 22225 50  0001 C CNN
+F 3 "" H 45000 22225 50  0001 C CNN
+	1    45000 22225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U9
+U 1 1 635D393A
+P 10475 12650
+F 0 "U9" H 10475 13017 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 10475 12926 50  0000 C CNN
+F 2 "Juancho:DFN-8_DD" H 10475 12650 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 10475 12650 50  0001 C CNN
+F 4 "6.632" H 10475 12650 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 10475 12650 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 10475 12650 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 10475 12650 50  0001 C CNN "Vendor PN"
+	1    10475 12650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U9
+U 2 1 635D7FBE
+P 13675 11850
+F 0 "U9" H 13675 12217 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 13675 12126 50  0000 C CNN
+F 2 "Juancho:DFN-8_DD" H 13675 11850 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 13675 11850 50  0001 C CNN
+F 4 "6.632" H 13675 11850 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 13675 11850 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 13675 11850 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 13675 11850 50  0001 C CNN "Vendor PN"
+	2    13675 11850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U9
+U 3 1 635DC930
+P 10575 11375
+F 0 "U9" H 10533 11421 50  0000 L CNN
+F 1 "Opamp_Dual_Generic" H 10533 11330 50  0000 L CNN
+F 2 "Juancho:DFN-8_DD" H 10575 11375 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 10575 11375 50  0001 C CNN
+F 4 "6.632" H 10575 11375 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 10575 11375 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 10575 11375 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 10575 11375 50  0001 C CNN "Vendor PN"
+	3    10575 11375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10475 11675 10475 11775
+Wire Wire Line
+	10475 11000 10475 11075
+Connection ~ 10475 11000
+$Comp
+L Device:Opamp_Dual_Generic U11
+U 1 1 64BA52F8
+P 27725 12425
+F 0 "U11" H 27725 12792 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 27725 12701 50  0000 C CNN
+F 2 "Juancho:DFN-8_DD" H 27725 12425 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 27725 12425 50  0001 C CNN
+F 4 "6.632" H 27725 12425 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 27725 12425 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 27725 12425 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 27725 12425 50  0001 C CNN "Vendor PN"
+	1    27725 12425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U11
+U 2 1 64BA5DAB
+P 30925 11625
+F 0 "U11" H 30925 11992 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 30925 11901 50  0000 C CNN
+F 2 "Juancho:DFN-8_DD" H 30925 11625 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 30925 11625 50  0001 C CNN
+F 4 "6.632" H 30925 11625 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 30925 11625 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 30925 11625 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 30925 11625 50  0001 C CNN "Vendor PN"
+	2    30925 11625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U11
+U 3 1 64BAA6FD
+P 27900 11025
+F 0 "U11" H 27858 11071 50  0000 L CNN
+F 1 "Opamp_Dual_Generic" H 27858 10980 50  0000 L CNN
+F 2 "Juancho:DFN-8_DD" H 27900 11025 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 27900 11025 50  0001 C CNN
+F 4 "6.632" H 27900 11025 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 27900 11025 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 27900 11025 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 27900 11025 50  0001 C CNN "Vendor PN"
+	3    27900 11025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	27800 10725 27800 10675
+Connection ~ 27800 10675
+Wire Wire Line
+	27800 11325 27800 11375
+$Comp
+L power:GNDA #PWR0152
+U 1 1 63528A62
+P 45125 11150
+F 0 "#PWR0152" H 45125 10900 50  0001 C CNN
+F 1 "GNDA" H 45130 10977 50  0000 C CNN
+F 2 "" H 45125 11150 50  0001 C CNN
+F 3 "" H 45125 11150 50  0001 C CNN
+	1    45125 11150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U18
+U 1 1 65692838
+P 45150 12450
+F 0 "U18" H 45150 12817 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 45150 12726 50  0000 C CNN
+F 2 "Juancho:DFN-8_DD" H 45150 12450 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 45150 12450 50  0001 C CNN
+F 4 "6.632" H 45150 12450 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 45150 12450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 45150 12450 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 45150 12450 50  0001 C CNN "Vendor PN"
+	1    45150 12450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U18
+U 2 1 65697CE4
+P 48350 11650
+F 0 "U18" H 48350 12017 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 48350 11926 50  0000 C CNN
+F 2 "Juancho:DFN-8_DD" H 48350 11650 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 48350 11650 50  0001 C CNN
+F 4 "6.632" H 48350 11650 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 48350 11650 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 48350 11650 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 48350 11650 50  0001 C CNN "Vendor PN"
+	2    48350 11650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U18
+U 3 1 6569CB78
+P 45225 10750
+F 0 "U18" H 45183 10796 50  0000 L CNN
+F 1 "Opamp_Dual_Generic" H 45183 10705 50  0000 L CNN
+F 2 "Juancho:DFN-8_DD" H 45225 10750 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 45225 10750 50  0001 C CNN
+F 4 "6.632" H 45225 10750 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 45225 10750 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 45225 10750 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 45225 10750 50  0001 C CNN "Vendor PN"
+	3    45225 10750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	45125 11050 45125 11150
+Wire Wire Line
+	45125 10450 45125 10400
+Connection ~ 45125 10400
+$Comp
+L Device:Opamp_Dual_Generic U8
+U 1 1 65EB72B0
+P 10175 23800
+F 0 "U8" H 10175 24167 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 10175 24076 50  0000 C CNN
+F 2 "Juancho:DFN-8_DD" H 10175 23800 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 10175 23800 50  0001 C CNN
+F 4 "6.632" H 10175 23800 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 10175 23800 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 10175 23800 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 10175 23800 50  0001 C CNN "Vendor PN"
+	1    10175 23800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U8
+U 2 1 65EC0161
+P 13375 23000
+F 0 "U8" H 13375 23367 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 13375 23276 50  0000 C CNN
+F 2 "Juancho:DFN-8_DD" H 13375 23000 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 13375 23000 50  0001 C CNN
+F 4 "6.632" H 13375 23000 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 13375 23000 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 13375 23000 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 13375 23000 50  0001 C CNN "Vendor PN"
+	2    13375 23000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U8
+U 3 1 65EC4D1E
+P 10200 22300
+F 0 "U8" H 10158 22346 50  0000 L CNN
+F 1 "Opamp_Dual_Generic" H 10158 22255 50  0000 L CNN
+F 2 "Juancho:DFN-8_DD" H 10200 22300 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 10200 22300 50  0001 C CNN
+F 4 "6.632" H 10200 22300 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 10200 22300 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 10200 22300 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 10200 22300 50  0001 C CNN "Vendor PN"
+	3    10200 22300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 22000 10100 21925
+Connection ~ 10100 21925
+Wire Wire Line
+	10100 22675 10100 22600
+$Comp
+L Device:Opamp_Dual_Generic U10
+U 1 1 66433DE6
+P 27675 23775
+F 0 "U10" H 27675 24142 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 27675 24051 50  0000 C CNN
+F 2 "Juancho:DFN-8_DD" H 27675 23775 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 27675 23775 50  0001 C CNN
+F 4 "6.632" H 27675 23775 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 27675 23775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 27675 23775 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 27675 23775 50  0001 C CNN "Vendor PN"
+	1    27675 23775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U10
+U 2 1 664384BF
+P 30875 22975
+F 0 "U10" H 30875 23342 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 30875 23251 50  0000 C CNN
+F 2 "Juancho:DFN-8_DD" H 30875 22975 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 30875 22975 50  0001 C CNN
+F 4 "6.632" H 30875 22975 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 30875 22975 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 30875 22975 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 30875 22975 50  0001 C CNN "Vendor PN"
+	2    30875 22975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U10
+U 3 1 6643940E
+P 27700 22225
+F 0 "U10" H 27658 22271 50  0000 L CNN
+F 1 "Opamp_Dual_Generic" H 27658 22180 50  0000 L CNN
+F 2 "Juancho:DFN-8_DD" H 27700 22225 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 27700 22225 50  0001 C CNN
+F 4 "6.632" H 27700 22225 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 27700 22225 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 27700 22225 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 27700 22225 50  0001 C CNN "Vendor PN"
+	3    27700 22225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	27600 21925 27600 21850
+Connection ~ 27600 21850
+Wire Wire Line
+	27600 22600 27600 22525
+$Comp
+L Device:Opamp_Dual_Generic U19
+U 1 1 66F02C86
+P 45550 23725
+F 0 "U19" H 45550 24092 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 45550 24001 50  0000 C CNN
+F 2 "Juancho:DFN-8_DD" H 45550 23725 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 45550 23725 50  0001 C CNN
+F 4 "6.632" H 45550 23725 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 45550 23725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 45550 23725 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 45550 23725 50  0001 C CNN "Vendor PN"
+	1    45550 23725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U19
+U 2 1 66F076D2
+P 48750 22925
+F 0 "U19" H 48750 23292 50  0000 C CNN
+F 1 "Opamp_Dual_Generic" H 48750 23201 50  0000 C CNN
+F 2 "Juancho:DFN-8_DD" H 48750 22925 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 48750 22925 50  0001 C CNN
+F 4 "6.632" H 48750 22925 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 48750 22925 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 48750 22925 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 48750 22925 50  0001 C CNN "Vendor PN"
+	2    48750 22925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U19
+U 3 1 66F1055C
+P 45500 22100
+F 0 "U19" H 45458 22146 50  0000 L CNN
+F 1 "Opamp_Dual_Generic" H 45458 22055 50  0000 L CNN
+F 2 "Juancho:DFN-8_DD" H 45500 22100 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/473968/LT1490ACDDTRPBF.pdf" H 45500 22100 50  0001 C CNN
+F 4 "6.632" H 45500 22100 50  0001 C CNN "Cost"
+F 5 "LT1490ACDD#TRPBF" H 45500 22100 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/linear-technology/lt1490acdd-trpbf.html" H 45500 22100 50  0001 C CNN "Vendor Link"
+F 7 "LT1490ACDD#TRPBF" H 45500 22100 50  0001 C CNN "Vendor PN"
+	3    45500 22100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	45400 22500 45400 22400
+Wire Wire Line
+	45400 21800 45400 21725
+Connection ~ 45400 21725
+$Comp
+L Device:Q_DUAL_NMOS_G1S2G2D2S1D1 Q4
+U 1 1 674E2886
+P 12375 12650
+F 0 "Q4" H 12580 12696 50  0000 L CNN
+F 1 "NDC7002N" H 12580 12605 50  0000 L CNN
+F 2 "Juancho:SSOT-6" H 12575 12650 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/251676/NDC7002N.pdf" H 12575 12650 50  0001 C CNN
+F 4 "1.257" H 12375 12650 50  0001 C CNN "Cost"
+F 5 "NDC7002N" H 12375 12650 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/fairchild-on-semiconductor/ndc7002n.html" H 12375 12650 50  0001 C CNN "Vendor Link"
+F 7 "NDC7002N" H 12375 12650 50  0001 C CNN "Vendor PN"
+	1    12375 12650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GDS Q8
+U 1 1 674E87EB
+P 15625 11300
+F 0 "Q8" H 15830 11346 50  0000 L CNN
+F 1 "IRF9Z24S" H 15830 11255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 15825 11400 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/sihf9z24-1768558.pdf" H 15625 11300 50  0001 C CNN
+F 4 "2.29" H 15625 11300 50  0001 C CNN "Cost"
+F 5 "IRF9Z24SPBF" H 15625 11300 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/IRF9Z24SPBF?qs=I1ZA2VTqfvRS9QDMbElVCQ%3D%3D" H 15625 11300 50  0001 C CNN "Vendor Link"
+F 7 "844-IRF9Z24SPBF" H 15625 11300 50  0001 C CNN "Vendor PN"
+	1    15625 11300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GDS Q15
+U 1 1 675060B9
+P 32875 11075
+F 0 "Q15" H 33080 11121 50  0000 L CNN
+F 1 "IRF9Z24S" H 33080 11030 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 33075 11175 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/sihf9z24-1768558.pdf" H 32875 11075 50  0001 C CNN
+F 4 "2.29" H 32875 11075 50  0001 C CNN "Cost"
+F 5 "IRF9Z24SPBF" H 32875 11075 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/IRF9Z24SPBF?qs=I1ZA2VTqfvRS9QDMbElVCQ%3D%3D" H 32875 11075 50  0001 C CNN "Vendor Link"
+F 7 "844-IRF9Z24SPBF" H 32875 11075 50  0001 C CNN "Vendor PN"
+	1    32875 11075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GDS Q18
+U 1 1 675088DB
+P 50300 11100
+F 0 "Q18" H 50505 11146 50  0000 L CNN
+F 1 "IRF9Z24S" H 50505 11055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 50500 11200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/sihf9z24-1768558.pdf" H 50300 11100 50  0001 C CNN
+F 4 "2.29" H 50300 11100 50  0001 C CNN "Cost"
+F 5 "IRF9Z24SPBF" H 50300 11100 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/IRF9Z24SPBF?qs=I1ZA2VTqfvRS9QDMbElVCQ%3D%3D" H 50300 11100 50  0001 C CNN "Vendor Link"
+F 7 "844-IRF9Z24SPBF" H 50300 11100 50  0001 C CNN "Vendor PN"
+	1    50300 11100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GDS Q19
+U 1 1 6750F067
+P 50700 22375
+F 0 "Q19" H 50905 22421 50  0000 L CNN
+F 1 "IRF9Z24S" H 50905 22330 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 50900 22475 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/sihf9z24-1768558.pdf" H 50700 22375 50  0001 C CNN
+F 4 "2.29" H 50700 22375 50  0001 C CNN "Cost"
+F 5 "IRF9Z24SPBF" H 50700 22375 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/IRF9Z24SPBF?qs=I1ZA2VTqfvRS9QDMbElVCQ%3D%3D" H 50700 22375 50  0001 C CNN "Vendor Link"
+F 7 "844-IRF9Z24SPBF" H 50700 22375 50  0001 C CNN "Vendor PN"
+	1    50700 22375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GDS Q14
+U 1 1 6750FF12
+P 32825 22425
+F 0 "Q14" H 33030 22471 50  0000 L CNN
+F 1 "IRF9Z24S" H 33030 22380 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 33025 22525 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/sihf9z24-1768558.pdf" H 32825 22425 50  0001 C CNN
+F 4 "2.29" H 32825 22425 50  0001 C CNN "Cost"
+F 5 "IRF9Z24SPBF" H 32825 22425 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/IRF9Z24SPBF?qs=I1ZA2VTqfvRS9QDMbElVCQ%3D%3D" H 32825 22425 50  0001 C CNN "Vendor Link"
+F 7 "844-IRF9Z24SPBF" H 32825 22425 50  0001 C CNN "Vendor PN"
+	1    32825 22425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GDS Q7
+U 1 1 6751138A
+P 15325 22450
+F 0 "Q7" H 15530 22496 50  0000 L CNN
+F 1 "IRF9Z24S" H 15530 22405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 15525 22550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/sihf9z24-1768558.pdf" H 15325 22450 50  0001 C CNN
+F 4 "2.29" H 15325 22450 50  0001 C CNN "Cost"
+F 5 "IRF9Z24SPBF" H 15325 22450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/IRF9Z24SPBF?qs=I1ZA2VTqfvRS9QDMbElVCQ%3D%3D" H 15325 22450 50  0001 C CNN "Vendor Link"
+F 7 "844-IRF9Z24SPBF" H 15325 22450 50  0001 C CNN "Vendor PN"
+	1    15325 22450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_DUAL_NMOS_G1S2G2D2S1D1 Q3
+U 1 1 67535CF3
+P 12075 23800
+F 0 "Q3" H 12280 23846 50  0000 L CNN
+F 1 "NDC7002N" H 12280 23755 50  0000 L CNN
+F 2 "Juancho:SSOT-6" H 12275 23800 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/251676/NDC7002N.pdf" H 12275 23800 50  0001 C CNN
+F 4 "1.257" H 12075 23800 50  0001 C CNN "Cost"
+F 5 "NDC7002N" H 12075 23800 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/fairchild-on-semiconductor/ndc7002n.html" H 12075 23800 50  0001 C CNN "Vendor Link"
+F 7 "NDC7002N" H 12075 23800 50  0001 C CNN "Vendor PN"
+	1    12075 23800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_DUAL_NMOS_G1S2G2D2S1D1 Q9
+U 1 1 6753ECE2
+P 47050 12450
+F 0 "Q9" H 47255 12496 50  0000 L CNN
+F 1 "NDC7002N" H 47255 12405 50  0000 L CNN
+F 2 "Juancho:SSOT-6" H 47250 12450 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/251676/NDC7002N.pdf" H 47250 12450 50  0001 C CNN
+F 4 "1.257" H 47050 12450 50  0001 C CNN "Cost"
+F 5 "NDC7002N" H 47050 12450 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/fairchild-on-semiconductor/ndc7002n.html" H 47050 12450 50  0001 C CNN "Vendor Link"
+F 7 "NDC7002N" H 47050 12450 50  0001 C CNN "Vendor PN"
+	1    47050 12450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_DUAL_NMOS_G1S2G2D2S1D1 Q16
+U 1 1 6754D1C4
+P 29625 12425
+F 0 "Q16" H 29830 12471 50  0000 L CNN
+F 1 "NDC7002N" H 29830 12380 50  0000 L CNN
+F 2 "Juancho:SSOT-6" H 29825 12425 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/251676/NDC7002N.pdf" H 29825 12425 50  0001 C CNN
+F 4 "1.257" H 29625 12425 50  0001 C CNN "Cost"
+F 5 "NDC7002N" H 29625 12425 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/fairchild-on-semiconductor/ndc7002n.html" H 29625 12425 50  0001 C CNN "Vendor Link"
+F 7 "NDC7002N" H 29625 12425 50  0001 C CNN "Vendor PN"
+	1    29625 12425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_DUAL_NMOS_G1S2G2D2S1D1 Q10
+U 1 1 6754DF93
+P 29575 23775
+F 0 "Q10" H 29780 23821 50  0000 L CNN
+F 1 "NDC7002N" H 29780 23730 50  0000 L CNN
+F 2 "Juancho:SSOT-6" H 29775 23775 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/251676/NDC7002N.pdf" H 29775 23775 50  0001 C CNN
+F 4 "1.257" H 29575 23775 50  0001 C CNN "Cost"
+F 5 "NDC7002N" H 29575 23775 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/fairchild-on-semiconductor/ndc7002n.html" H 29575 23775 50  0001 C CNN "Vendor Link"
+F 7 "NDC7002N" H 29575 23775 50  0001 C CNN "Vendor PN"
+	1    29575 23775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_DUAL_NMOS_G1S2G2D2S1D1 Q65
+U 1 1 6756E69A
+P 47450 23725
+F 0 "Q65" H 47655 23771 50  0000 L CNN
+F 1 "NDC7002N" H 47655 23680 50  0000 L CNN
+F 2 "Juancho:SSOT-6" H 47650 23725 50  0001 C CNN
+F 3 "https://www.win-source.net/datasheet/251676/NDC7002N.pdf" H 47650 23725 50  0001 C CNN
+F 4 "1.257" H 47450 23725 50  0001 C CNN "Cost"
+F 5 "NDC7002N" H 47450 23725 50  0001 C CNN "Mfg PN"
+F 6 "https://www.win-source.net/products/detail/fairchild-on-semiconductor/ndc7002n.html" H 47450 23725 50  0001 C CNN "Vendor Link"
+F 7 "NDC7002N" H 47450 23725 50  0001 C CNN "Vendor PN"
+	1    47450 23725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 9825 8600 9825
+Wire Wire Line
+	9425 9925 9425 9650
+Wire Wire Line
+	8500 9925 9425 9925
+Wire Wire Line
+	25775 9675 25925 9675
+Wire Wire Line
+	26750 9575 26750 9775
+Wire Wire Line
+	26750 9775 25775 9775
+Wire Wire Line
+	42850 9775 42925 9775
+Wire Wire Line
+	43800 9875 43800 9675
+Wire Wire Line
+	42850 9875 43800 9875
+Wire Wire Line
+	8300 20975 8100 20975
+Wire Wire Line
+	9175 21075 9175 20850
+Wire Wire Line
+	8100 21075 9175 21075
+Wire Wire Line
+	26625 21175 26625 21025
+Wire Wire Line
+	25550 21175 26625 21175
+Wire Wire Line
+	43925 21100 43925 21325
+Wire Wire Line
+	42900 21325 43925 21325
+$EndSCHEMATC
